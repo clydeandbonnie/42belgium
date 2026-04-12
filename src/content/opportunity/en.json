@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Start a Tech Career — No Experience Required | 42 Belgium",
+    "description": "Land a remote tech job with no CS degree. 42 Belgium's free training program helps career changers break into IT with hands-on skills employers need."
+  },
+  "hero": {
+    "headline": "Land a remote tech job — no CS degree required",
+    "subheadline": "Career changers and job seekers: 42 Belgium's free, peer-to-peer program gives you the skills to break into tech and work from anywhere.",
+    "cta": "Start your tech career →"
+  },
+  "whatYouLearn": {
+    "title": "What you'll gain",
+    "outcomes": [
+      "Real programming skills through hands-on projects — not lectures",
+      "A portfolio that proves your abilities to employers",
+      "The confidence to apply for remote jobs in tech",
+      "Peer-to-peer learning that mirrors real team collaboration",
+      "Direct pathways to job opportunities in Belgium's growing IT sector"
+    ]
+  },
+  "whoItsFor": {
+    "title": "Is this for you?",
+    "description": "You're considering an IT career change but don't have a tech background. Maybe you're exploring job opportunities in a new field, looking for remote jobs, or simply ready for a career switch. No prior experience needed — just motivation."
+  },
+  "socialProof": {
+    "title": "The numbers speak",
+    "stats": [
+      { "value": "100%", "label": "Free — no tuition, ever" },
+      { "value": "973", "label": "Registrations in 4 months" },
+      { "value": "42", "label": "Campuses worldwide" }
+    ]
+  },
+  "ctaSection": {
+    "title": "Ready to start your tech career?",
+    "description": "Join thousands of career changers who found new job opportunities through 42 Belgium. No degree required. No fees. Just your determination.",
+    "cta": "Start your tech career →"
+  }
+}

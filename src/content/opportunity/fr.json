@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Formation professionnelle IT à Bruxelles — Reconversion gratuite | 42 Belgium",
+    "description": "Reconvertissez-vous dans l'IT avec la formation professionnelle gratuite de 42 Belgium à Bruxelles. Pour adultes, sans prérequis technique."
+  },
+  "hero": {
+    "headline": "Formation professionnelle IT à Bruxelles — votre passerelle vers le numérique",
+    "subheadline": "Vous êtes adulte et vous voulez vous reconvertir dans l'IT ? 42 Belgium propose une formation gratuite, sans diplôme requis, au cœur de Bruxelles.",
+    "cta": "Commencez votre reconversion →"
+  },
+  "whatYouLearn": {
+    "title": "Ce que vous apprendrez",
+    "outcomes": [
+      "La programmation par la pratique — pas de cours magistraux",
+      "Des compétences directement recherchées par les employeurs",
+      "L'apprentissage en équipe, comme dans une vraie école de formation",
+      "Un portfolio de projets concrets à montrer en entretien",
+      "Les bases pour se reconvertir dans l'IT durablement"
+    ]
+  },
+  "whoItsFor": {
+    "title": "C'est pour vous ?",
+    "description": "Vous cherchez une formation pour adultes pour changer de carrière. Que vous visiez une formation professionnelle gratuite ou une formation en ligne, aucun prérequis technique n'est nécessaire. Juste de la motivation."
+  },
+  "socialProof": {
+    "title": "Les chiffres parlent",
+    "stats": [
+      { "value": "100%", "label": "Gratuit — aucun frais" },
+      { "value": "973", "label": "Inscriptions en 4 mois" },
+      { "value": "42", "label": "Campus dans le monde" }
+    ]
+  },
+  "ctaSection": {
+    "title": "Prêt·e à vous reconvertir dans l'IT ?",
+    "description": "Rejoignez les milliers de personnes qui ont changé de carrière grâce à 42 Belgium. Sans diplôme requis. Sans frais. Juste votre détermination.",
+    "cta": "Commencez votre reconversion →"
+  }
+}

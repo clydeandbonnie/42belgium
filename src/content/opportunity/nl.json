@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Loopbaanomschakeling naar IT — Gratis opleiding | 42 Belgium",
+    "description": "Omscholen naar IT? 42 Belgium biedt een gratis IT opleiding voor beginners. Geen diploma vereist. Start je nieuwe carrière in tech."
+  },
+  "hero": {
+    "headline": "Omscholen naar IT — geen voorkennis vereist",
+    "subheadline": "Klaar voor een loopbaanomschakeling? 42 Belgium biedt een gratis IT opleiding voor beginners. Ontdek nieuwe kansen in IT en start je nieuwe carrière.",
+    "cta": "Start je IT carrière →"
+  },
+  "whatYouLearn": {
+    "title": "Wat je leert",
+    "outcomes": [
+      "Programmeren door te doen — geen saaie theorielessen",
+      "Vaardigheden die werkgevers echt zoeken",
+      "Samenwerken in teams, zoals in het echte werkveld",
+      "Een portfolio met concrete projecten voor sollicitaties",
+      "De basis om te werk in IT te vinden"
+    ]
+  },
+  "whoItsFor": {
+    "title": "Is dit iets voor jou?",
+    "description": "Je overweegt een loopbaanomschakeling naar IT maar hebt geen technische achtergrond. Of je nu op zoek bent naar kansen in IT, wilt omscholen, of een nieuwe carrière wilt starten — geen voorkennis nodig. Enkel motivatie."
+  },
+  "socialProof": {
+    "title": "De cijfers spreken",
+    "stats": [
+      { "value": "100%", "label": "Gratis — geen kosten" },
+      { "value": "973", "label": "Inschrijvingen in 4 maanden" },
+      { "value": "42", "label": "Campussen wereldwijd" }
+    ]
+  },
+  "ctaSection": {
+    "title": "Klaar om te starten in IT?",
+    "description": "Sluit je aan bij duizenden mensen die een nieuwe carrière vonden via 42 Belgium. Geen diploma vereist. Geen kosten. Enkel jouw motivatie.",
+    "cta": "Start je IT carrière →"
+  }
+}
