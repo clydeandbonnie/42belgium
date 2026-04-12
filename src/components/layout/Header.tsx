@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Language } from "@/lib/themes";
 import { getNavItems, getApplyUrl, getApplyLabel } from "@/lib/navigation";
-import { languageNames } from "@/lib/i18n";
 import { LANGUAGES } from "@/lib/themes";
 
 interface HeaderProps {
@@ -20,10 +19,21 @@ export function Header({ lang }: HeaderProps) {
   const applyLabel = getApplyLabel(lang);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-black">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        {/* Logo */}
-        <Link href={`https://42belgium.be/${lang}/`} className="flex items-center shrink-0">
+    <header
+      className="fixed top-0 left-0 right-0 z-[999]"
+      style={{ height: 100 }}
+    >
+      {/* Main bar — 3-column grid matching Elementor: logo | nav | actions */}
+      <div
+        className="mx-auto grid h-full items-center px-4"
+        style={{
+          maxWidth: 1470,
+          gridTemplateColumns: "1fr 3fr 1fr",
+          borderBottom: "1px solid rgba(163, 173, 179, 0.5)",
+        }}
+      >
+        {/* ── Logo ── */}
+        <Link href={`https://42belgium.be/${lang}/`} className="flex items-center">
           <Image
             src="/assets/logo-42-white.svg"
             alt="42 Belgium"
@@ -33,32 +43,63 @@ export function Header({ lang }: HeaderProps) {
           />
         </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-1">
+        {/* ── Desktop nav ── */}
+        <nav className="hidden lg:flex items-center justify-center gap-0">
           {navItems.map((item) => (
             <div
               key={item.label}
-              className="relative group"
+              className="relative"
               onMouseEnter={() => item.children && setOpenDropdown(item.label)}
               onMouseLeave={() => setOpenDropdown(null)}
             >
               <a
                 href={item.href}
-                className="flex items-center gap-1 px-3 py-2 text-sm text-white hover:text-[var(--color-primary)] transition-colors"
+                className="flex items-center gap-1 text-white hover:text-[#00BABC] transition-colors"
+                style={{
+                  fontFamily: "futura-pt, sans-serif",
+                  fontSize: 15,
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  padding: "13px 5px",
+                  lineHeight: "20px",
+                }}
               >
                 {item.label}
                 {item.children && (
-                  <i className="fa-solid fa-chevron-down text-[10px] ml-1 opacity-60" />
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="currentColor"
+                    className="ml-1 opacity-60"
+                  >
+                    <path d="M1 3.5L5 7.5L9 3.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                  </svg>
                 )}
               </a>
-              {/* Dropdown */}
+
+              {/* Dropdown — white bg + pink box-shadow */}
               {item.children && openDropdown === item.label && (
-                <div className="absolute top-full left-0 bg-zinc-900 border border-zinc-800 py-2 min-w-[220px] shadow-xl">
+                <div
+                  className="absolute top-full left-0 bg-white"
+                  style={{
+                    minWidth: 220,
+                    boxShadow: "rgb(237, 52, 145) 6px 6px 0px 0px",
+                    padding: 0,
+                  }}
+                >
                   {item.children.map((child) => (
                     <a
                       key={child.label}
                       href={child.href}
-                      className="block px-4 py-2 text-sm text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"
+                      className="block text-black hover:text-[#00BABC] transition-colors"
+                      style={{
+                        fontFamily: "futura-pt, sans-serif",
+                        fontSize: 18,
+                        fontWeight: 400,
+                        padding: "13px 10px",
+                        lineHeight: "20px",
+                      }}
                     >
                       {child.label}
                     </a>
@@ -69,53 +110,82 @@ export function Header({ lang }: HeaderProps) {
           ))}
         </nav>
 
-        {/* Right side: lang switcher + CTA + mobile toggle */}
-        <div className="flex items-center gap-3">
+        {/* ── Right: lang + Apply ── */}
+        <div className="hidden lg:flex items-center justify-end gap-4">
           {/* Language switcher */}
-          <div className="hidden sm:flex items-center gap-0 text-sm">
+          <div className="flex items-center">
             {LANGUAGES.map((l) => (
               <a
                 key={l}
                 href={`https://42belgium.be/${l}/`}
-                className={`px-2 py-1 uppercase text-xs tracking-wider transition-colors ${
+                className={`transition-colors ${
                   l === lang
-                    ? "font-bold text-white"
-                    : "text-zinc-500 hover:text-white"
+                    ? "text-white"
+                    : "text-zinc-400 hover:text-white"
                 }`}
+                style={{
+                  fontFamily: "futura-pt, sans-serif",
+                  fontSize: 15,
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  padding: "0 4px",
+                }}
               >
                 {l}
               </a>
             ))}
           </div>
 
-          {/* Apply CTA */}
+          {/* Apply CTA — gradient teal→purple with arrow */}
           <a
             href={applyUrl}
-            className="hidden sm:inline-flex items-center justify-center bg-[var(--color-primary)] text-white text-sm font-bold uppercase tracking-wider px-5 py-2 hover:brightness-110 transition-all"
+            className="inline-flex items-center gap-2.5 text-white hover:shadow-[4px_4px_0px_0px_rgb(237,52,145)] transition-all"
+            style={{
+              background: "linear-gradient(90deg, #00BABC 0%, #7D8EE9 100%)",
+              fontFamily: "futura-pt, sans-serif",
+              fontSize: 16,
+              fontWeight: 600,
+              textTransform: "uppercase",
+              padding: "16px 20px",
+              lineHeight: "1",
+            }}
           >
             {applyLabel}
+            {/* Arrow SVG matching the site */}
+            <svg width="14" height="14" viewBox="0 0 108 108" fill="none">
+              <path
+                d="M16 54L86 54L54 86L57.5 89.5L96 51.3L57.5 13L54 16.5L86 49H16V54Z"
+                fill="currentColor"
+              />
+            </svg>
           </a>
-
-          {/* Mobile hamburger */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden text-white p-2"
-            aria-label="Toggle menu"
-          >
-            <i className={`fa-solid ${mobileOpen ? "fa-xmark" : "fa-bars"} text-xl`} />
-          </button>
         </div>
+
+        {/* ── Mobile hamburger ── */}
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="lg:hidden text-white p-2 justify-self-end"
+          aria-label="Toggle menu"
+        >
+          <i className={`fa-solid ${mobileOpen ? "fa-xmark" : "fa-bars"} text-xl`} />
+        </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* ── Mobile menu ── */}
       {mobileOpen && (
-        <div className="lg:hidden bg-zinc-950 border-t border-zinc-800 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-[#090909] border-t border-zinc-800 max-h-[80vh] overflow-y-auto">
           <nav className="px-6 py-4 space-y-1">
             {navItems.map((item) => (
               <div key={item.label}>
                 <a
                   href={item.href}
-                  className="block py-3 text-sm font-bold text-white border-b border-zinc-800"
+                  className="block py-3 text-white border-b border-zinc-800"
+                  style={{
+                    fontFamily: "futura-pt, sans-serif",
+                    fontSize: 15,
+                    fontWeight: 700,
+                    textTransform: "uppercase",
+                  }}
                 >
                   {item.label}
                 </a>
@@ -125,7 +195,12 @@ export function Header({ lang }: HeaderProps) {
                       <a
                         key={child.label}
                         href={child.href}
-                        className="block py-2 text-sm text-zinc-400 hover:text-white"
+                        className="block py-2 text-[#E8ECF2] hover:text-[#00BABC]"
+                        style={{
+                          fontFamily: "futura-pt, sans-serif",
+                          fontSize: 18,
+                          fontWeight: 400,
+                        }}
                       >
                         {child.label}
                       </a>
@@ -134,24 +209,37 @@ export function Header({ lang }: HeaderProps) {
                 )}
               </div>
             ))}
-            {/* Mobile CTA */}
+            {/* Mobile Apply */}
             <a
               href={applyUrl}
-              className="block mt-4 text-center bg-[var(--color-primary)] text-white text-sm font-bold uppercase tracking-wider px-5 py-3"
+              className="block mt-4 text-center text-white"
+              style={{
+                background: "linear-gradient(90deg, #00BABC 0%, #7D8EE9 100%)",
+                fontFamily: "futura-pt, sans-serif",
+                fontSize: 16,
+                fontWeight: 600,
+                textTransform: "uppercase",
+                padding: "16px 20px",
+              }}
             >
               {applyLabel}
             </a>
-            {/* Mobile lang switcher */}
+            {/* Mobile lang */}
             <div className="flex items-center gap-4 pt-4 border-t border-zinc-800 mt-4">
               {LANGUAGES.map((l) => (
                 <a
                   key={l}
                   href={`https://42belgium.be/${l}/`}
-                  className={`uppercase text-sm tracking-wider ${
-                    l === lang ? "font-bold text-white" : "text-zinc-500"
+                  className={`uppercase ${
+                    l === lang ? "text-white font-bold" : "text-zinc-400"
                   }`}
+                  style={{
+                    fontFamily: "futura-pt, sans-serif",
+                    fontSize: 15,
+                    fontWeight: 700,
+                  }}
                 >
-                  {languageNames[l]}
+                  {l}
                 </a>
               ))}
             </div>
