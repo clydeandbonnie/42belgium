@@ -45,10 +45,6 @@ export default async function ProposalPage({
 
   return (
     <>
-      {/* Proposal badge */}
-      <div className="bg-[var(--color-secondary)] text-white text-center py-2 text-sm font-bold uppercase tracking-widest">
-        {variantTitles[variant as Variant]}
-      </div>
       {variant === "a" && <ProposalA />}
       {variant === "b" && <ProposalB />}
       {variant === "c" && <ProposalC />}
