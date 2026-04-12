@@ -65,7 +65,7 @@ export default async function LangHomePage({
                     {config.priority}
                   </span>
                 </div>
-                <p className="mt-1 text-sm text-zinc-500">
+                <p className="mt-1 text-sm text-zinc-600">
                   {config.intentSummary}
                 </p>
               </div>

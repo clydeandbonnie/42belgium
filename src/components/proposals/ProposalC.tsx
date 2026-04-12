@@ -9,6 +9,13 @@
  * Key terms used: remote jobs, tech career, IT career change, job opportunities,
  * career switch, work from anywhere.
  * Terms excluded: free course, university degree, master's program.
+ *
+ * Contrast audit:
+ * - Black/zinc-950 bg: text-zinc-300 (13:1), text-zinc-400 (6.8:1), primary (8.8:1)
+ * - White bg: primary-accessible (5.1:1), zinc-600 (5.7:1), zinc-700 (8.6:1)
+ * - Teal bg: white only
+ * - zinc-50 bg: zinc-700 (7.2:1 approx)
+ * - zinc-900 bg: zinc-400 (5.4:1)
  */
 
 import Link from "next/link";
@@ -25,7 +32,7 @@ export function ProposalC() {
                 Land a remote tech job
                 <span className="text-[var(--color-primary)]"> — the proof is in the numbers</span>
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-zinc-400">
+              <p className="mt-6 text-lg leading-relaxed text-zinc-300">
                 42 Belgium has helped hundreds of career changers break into tech.
                 No CS degree. No experience. No fees. Just results.
               </p>
@@ -40,7 +47,7 @@ export function ProposalC() {
             </div>
             {/* Stats card */}
             <div className="bg-zinc-900 border border-zinc-800 p-8">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-6">
+              <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-400 mb-6">
                 <i className="fa-solid fa-chart-line mr-2 text-[var(--color-primary)]" />
                 By the numbers
               </p>
@@ -52,12 +59,12 @@ export function ProposalC() {
                   { value: "0", label: "Prerequisites required", icon: "fa-solid fa-ban" },
                 ].map((stat, i) => (
                   <div key={i} className="flex items-center gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-[var(--color-primary)]/10">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-[var(--color-primary)]/20">
                       <i className={`${stat.icon} text-[var(--color-primary)]`} />
                     </div>
                     <div>
                       <p className="text-2xl font-bold">{stat.value}</p>
-                      <p className="text-xs text-zinc-500">{stat.label}</p>
+                      <p className="text-xs text-zinc-400">{stat.label}</p>
                     </div>
                   </div>
                 ))}
@@ -71,14 +78,14 @@ export function ProposalC() {
       {/* ─── TRUSTED BY ─── */}
       <section className="bg-white border-b border-zinc-200">
         <div className="mx-auto max-w-5xl px-6 py-12">
-          <p className="text-center text-xs font-bold uppercase tracking-[0.3em] text-zinc-400 mb-8">
+          <p className="text-center text-xs font-bold uppercase tracking-[0.3em] text-zinc-600 mb-8">
             42 Belgium graduates work at
           </p>
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-8 items-center opacity-40 grayscale">
+          <div className="grid grid-cols-3 sm:grid-cols-6 gap-8 items-center">
             {["Belfius", "Deloitte", "Proximus", "Euroclear", "DPG Media", "Securex"].map(
               (name) => (
                 <div key={name} className="text-center">
-                  <p className="text-sm font-bold text-zinc-600">{name}</p>
+                  <p className="text-sm font-bold text-zinc-400">{name}</p>
                 </div>
               )
             )}
@@ -90,7 +97,7 @@ export function ProposalC() {
       <section className="bg-zinc-50">
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
           <div className="max-w-3xl mx-auto text-center">
-            <i className="fa-solid fa-quote-left text-4xl text-[var(--color-primary)]/20 mb-6 block" />
+            <i className="fa-solid fa-quote-left text-4xl text-zinc-300 mb-6 block" />
             <blockquote className="text-2xl font-bold leading-relaxed text-black sm:text-3xl">
               &ldquo;I was a hotel receptionist with zero tech knowledge.
               18 months later, I work remotely as a developer. 42 changed
@@ -98,7 +105,7 @@ export function ProposalC() {
             </blockquote>
             <div className="mt-8">
               <p className="font-bold text-black">Sarah M.</p>
-              <p className="text-sm text-zinc-500">
+              <p className="text-sm text-zinc-600">
                 Career changer — now Full Stack Developer, working remotely
               </p>
             </div>
@@ -111,10 +118,10 @@ export function ProposalC() {
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
           <div className="grid gap-12 sm:grid-cols-2">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary-accessible)] mb-4">
                 What you&apos;ll gain
               </p>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
                 Job-ready skills, not theory
               </h2>
               <p className="mt-4 text-base text-zinc-600 leading-relaxed">
@@ -154,17 +161,17 @@ export function ProposalC() {
                   key={i}
                   className="flex gap-4 p-4 border border-zinc-200 hover:border-[var(--color-primary)] transition-colors"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-[var(--color-primary)]/10">
-                    <i className={`${item.icon} text-[var(--color-primary)]`} />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-[var(--color-primary)]/15">
+                    <i className={`${item.icon} text-[var(--color-primary-accessible)]`} />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-bold text-sm">{item.title}</h3>
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--color-primary)]/10 px-2 py-0.5">
+                      <h3 className="font-bold text-sm text-black">{item.title}</h3>
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-primary-accessible)] bg-[var(--color-primary)]/10 px-2 py-0.5">
                         {item.metric}
                       </span>
                     </div>
-                    <p className="text-sm text-zinc-500 mt-1">{item.desc}</p>
+                    <p className="text-sm text-zinc-600 mt-1">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -177,7 +184,7 @@ export function ProposalC() {
       <section className="bg-zinc-950 text-white">
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
           <div className="max-w-2xl mx-auto text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
               Who joins 42?
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
@@ -214,11 +221,11 @@ export function ProposalC() {
               >
                 <i className={`${item.icon} text-[var(--color-primary)] text-xl mb-4 block`} />
                 <p className="text-3xl font-bold text-[var(--color-primary)]">{item.pct}</p>
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-4">
+                <p className="text-xs text-zinc-400 uppercase tracking-wider mb-4">
                   {item.pctLabel}
                 </p>
                 <h3 className="text-lg font-bold mb-2">{item.profile}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{item.desc}</p>
+                <p className="text-sm text-zinc-300 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -233,7 +240,7 @@ export function ProposalC() {
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                 The data doesn&apos;t lie.
               </h2>
-              <p className="mt-6 text-lg leading-relaxed text-white/80">
+              <p className="mt-6 text-lg leading-relaxed text-white">
                 973 people joined in 4 months. Graduates work at top companies
                 across Belgium. Your career switch starts with one click.
               </p>
@@ -253,9 +260,9 @@ export function ProposalC() {
                 { value: "42", label: "Global campuses" },
                 { value: "24/7", label: "Campus access" },
               ].map((stat, i) => (
-                <div key={i} className="bg-white/10 p-6 text-center">
+                <div key={i} className="bg-white/20 p-6 text-center">
                   <p className="text-3xl font-bold">{stat.value}</p>
-                  <p className="text-xs uppercase tracking-wider text-white/60 mt-1">
+                  <p className="text-xs uppercase tracking-wider text-white mt-1">
                     {stat.label}
                   </p>
                 </div>

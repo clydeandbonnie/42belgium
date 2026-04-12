@@ -9,6 +9,12 @@
  * Key terms used: remote jobs, tech career, IT career change, job opportunities,
  * career switch, work from anywhere.
  * Terms excluded: free course, university degree, master's program.
+ *
+ * Contrast audit:
+ * - Black bg: text-zinc-300 (13:1), text-zinc-400 (6.8:1), primary (8.8:1)
+ * - White bg: text-zinc-600 (5.7:1), primary-accessible (5.1:1), secondary-accessible (5.5:1)
+ * - Teal bg: white (4.6:1 large text), white text only
+ * - zinc-100 bg: text-zinc-700 (7.2:1)
  */
 
 import Link from "next/link";
@@ -18,7 +24,6 @@ export function ProposalA() {
     <>
       {/* ─── HERO ─── */}
       <section className="relative bg-black text-white overflow-hidden">
-        {/* Background decorative element */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[var(--color-primary)]/10 to-transparent pointer-events-none" />
         <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-28 sm:pb-32 sm:pt-36">
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
@@ -42,7 +47,7 @@ export function ProposalA() {
             </Link>
             <Link
               href="#learn"
-              className="inline-flex items-center justify-center border-2 border-zinc-600 text-zinc-300 font-bold uppercase tracking-wider px-10 py-4 text-base hover:border-white hover:text-white transition-all"
+              className="inline-flex items-center justify-center border-2 border-zinc-400 text-zinc-300 font-bold uppercase tracking-wider px-10 py-4 text-base hover:border-white hover:text-white transition-all"
             >
               See what you&apos;ll gain
             </Link>
@@ -64,7 +69,7 @@ export function ProposalA() {
               <div key={i}>
                 <i className={`${stat.icon} text-[var(--color-primary)] text-lg mb-3 block`} />
                 <p className="text-3xl font-bold sm:text-4xl">{stat.value}</p>
-                <p className="mt-1 text-xs uppercase tracking-wider text-zinc-500">
+                <p className="mt-1 text-xs uppercase tracking-wider text-zinc-400">
                   {stat.label}
                 </p>
               </div>
@@ -76,7 +81,7 @@ export function ProposalA() {
       {/* ─── WHAT YOU'LL GAIN ─── */}
       <section className="bg-white text-black" id="learn">
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary-accessible)] mb-4">
             Skills that get you hired
           </p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-2xl">
@@ -119,7 +124,7 @@ export function ProposalA() {
                 key={i}
                 className="group border border-zinc-200 p-6 hover:border-[var(--color-primary)] transition-colors"
               >
-                <i className={`${item.icon} text-2xl text-[var(--color-primary)] mb-4 block`} />
+                <i className={`${item.icon} text-2xl text-[var(--color-primary-accessible)] mb-4 block`} />
                 <h3 className="text-lg font-bold mb-2">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-zinc-600">{item.desc}</p>
               </div>
@@ -133,13 +138,13 @@ export function ProposalA() {
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
           <div className="grid gap-12 sm:grid-cols-2 items-center">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
+              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-secondary-accessible)] mb-4">
                 Is this for you?
               </p>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
                 You don&apos;t need a tech background. Just the drive to change.
               </h2>
-              <p className="mt-6 text-lg leading-relaxed text-zinc-600">
+              <p className="mt-6 text-lg leading-relaxed text-zinc-700">
                 You&apos;re considering an IT career change but have zero coding
                 experience. Maybe you&apos;re exploring remote jobs, or you&apos;re
                 ready for a complete career switch. Whatever brought you here — this
@@ -161,7 +166,7 @@ export function ProposalA() {
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center bg-[var(--color-primary)] text-white">
                     <i className={item.icon} />
                   </span>
-                  <p className="font-bold text-sm">{item.text}</p>
+                  <p className="font-bold text-sm text-black">{item.text}</p>
                 </div>
               ))}
             </div>
@@ -172,7 +177,7 @@ export function ProposalA() {
       {/* ─── JOURNEY ─── */}
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary-accessible)] mb-4">
             Your path
           </p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
@@ -186,8 +191,8 @@ export function ProposalA() {
               { step: "04", title: "Launch", desc: "Graduate job-ready. Access our employer network and land your role.", icon: "fa-solid fa-rocket" },
             ].map((item, i) => (
               <div key={i} className="relative p-6 border-l-2 border-[var(--color-primary)] sm:border-l-0 sm:border-t-2">
-                <span className="text-4xl font-bold text-zinc-100">{item.step}</span>
-                <i className={`${item.icon} text-[var(--color-primary)] text-lg mt-2 block`} />
+                <span className="text-4xl font-bold text-zinc-300">{item.step}</span>
+                <i className={`${item.icon} text-[var(--color-primary-accessible)] text-lg mt-2 block`} />
                 <h3 className="text-lg font-bold mt-2">{item.title}</h3>
                 <p className="text-sm text-zinc-600 mt-1 leading-relaxed">{item.desc}</p>
               </div>
@@ -203,7 +208,7 @@ export function ProposalA() {
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Ready to start your tech career?
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-white/80">
+            <p className="mt-6 text-lg leading-relaxed text-white">
               Join thousands of career changers who found new job opportunities
               through 42 Belgium. No degree required. No fees. Just your determination.
             </p>
