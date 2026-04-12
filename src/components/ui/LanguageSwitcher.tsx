@@ -20,8 +20,8 @@ export function LanguageSwitcher({ currentLang }: { currentLang: Language }) {
             href={newPath}
             className={`px-2 py-1 rounded transition-colors ${
               isActive
-                ? "font-semibold text-black dark:text-white"
-                : "text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300"
+                ? "font-bold text-white"
+                : "text-zinc-400 hover:text-[var(--color-primary)]"
             }`}
             aria-current={isActive ? "page" : undefined}
           >

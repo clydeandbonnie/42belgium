@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: {
@@ -14,6 +9,10 @@ export const metadata: Metadata = {
   },
   description:
     "Free, peer-to-peer tech education in Belgium. 10 specialisations, 3 languages. No degree required.",
+  icons: {
+    icon: "/assets/favicon-42belgium.png",
+    apple: "/assets/favicon-42belgium.png",
+  },
 };
 
 export default function RootLayout({
@@ -22,7 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html lang="en" className="h-full antialiased">
+      <head>
+        <Script
+          src="https://kit.fontawesome.com/4334c803c2.js"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );
