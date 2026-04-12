@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { Language } from "@/lib/themes";
@@ -14,14 +14,25 @@ interface HeaderProps {
 export function Header({ lang }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
   const navItems = getNavItems(lang);
   const applyUrl = getApplyUrl(lang);
   const applyLabel = getApplyLabel(lang);
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-[999]"
-      style={{ height: 100 }}
+      className="fixed top-0 left-0 right-0 z-[999] transition-colors duration-500 ease-in-out"
+      style={{
+        height: 100,
+        backgroundColor: scrolled ? "#ffffff" : "transparent",
+      }}
     >
       {/* Main bar — 3-column grid matching Elementor: logo | nav | actions */}
       <div
@@ -29,7 +40,7 @@ export function Header({ lang }: HeaderProps) {
         style={{
           maxWidth: 1470,
           gridTemplateColumns: "1fr 3fr 1fr",
-          borderBottom: "1px solid rgba(163, 173, 179, 0.5)",
+          borderBottom: scrolled ? "1px solid rgba(0, 0, 0, 0.1)" : "1px solid rgba(163, 173, 179, 0.5)",
         }}
       >
         {/* ── Logo ── */}
@@ -40,6 +51,8 @@ export function Header({ lang }: HeaderProps) {
             width={140}
             height={26}
             priority
+            className="transition-all duration-500"
+            style={{ filter: scrolled ? "invert(1)" : "none" }}
           />
         </Link>
 
@@ -54,7 +67,7 @@ export function Header({ lang }: HeaderProps) {
             >
               <a
                 href={item.href}
-                className="flex items-center gap-1 text-white hover:text-[#00BABC] transition-colors"
+                className={`flex items-center gap-1 ${scrolled ? "text-black" : "text-white"} hover:text-[#00BABC] transition-colors`}
                 style={{
                   fontFamily: "futura-pt, sans-serif",
                   fontSize: 15,
@@ -120,8 +133,8 @@ export function Header({ lang }: HeaderProps) {
                 href={`https://42belgium.be/${l}/`}
                 className={`transition-colors ${
                   l === lang
-                    ? "text-white"
-                    : "text-zinc-400 hover:text-white"
+                    ? scrolled ? "text-black" : "text-white"
+                    : scrolled ? "text-zinc-400 hover:text-black" : "text-zinc-400 hover:text-white"
                 }`}
                 style={{
                   fontFamily: "futura-pt, sans-serif",
@@ -164,7 +177,7 @@ export function Header({ lang }: HeaderProps) {
         {/* ── Mobile hamburger ── */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden text-white p-2 justify-self-end"
+          className={`lg:hidden p-2 justify-self-end transition-colors duration-500 ${scrolled ? "text-black" : "text-white"}`}
           aria-label="Toggle menu"
         >
           <i className={`fa-solid ${mobileOpen ? "fa-xmark" : "fa-bars"} text-xl`} />
