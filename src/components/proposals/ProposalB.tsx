@@ -11,11 +11,12 @@
  * career switch, work from anywhere.
  * Terms excluded: free course, university degree, master's program.
  *
- * Contrast audit:
- * - White bg: primary-accessible (5.1:1), secondary-accessible (5.5:1), zinc-600 (5.7:1)
- * - Black bg: text-zinc-300 (13:1), primary (8.8:1)
- * - Teal bg: white only
- * - zinc-50 bg: zinc-600 (5.3:1)
+ * Contrast rules:
+ * - White bg: text-black for headings, text-zinc-700 for body (8.6:1)
+ * - Black bg: text-zinc-300 (13:1), primary #00babc (8.8:1)
+ * - Teal bg: text-white only
+ * - zinc-50 bg: text-zinc-700 (7.2:1), text-black for headings
+ * - Brand colors on light bg: short accent labels only (1-2 words)
  */
 
 import Link from "next/link";
@@ -28,16 +29,16 @@ export function ProposalB() {
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/5 via-transparent to-[var(--color-secondary)]/5 pointer-events-none" />
         <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-28 sm:pb-32 sm:pt-36">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-[var(--color-primary)]/10 text-[var(--color-primary-accessible)] text-sm font-bold uppercase tracking-wider px-4 py-2 mb-8">
+            <div className="inline-flex items-center gap-2 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-bold uppercase tracking-wider px-4 py-2 mb-8">
               <i className="fa-solid fa-door-open" />
               Open to everyone
             </div>
             <h1 className="text-5xl font-bold leading-[1.1] tracking-tight sm:text-6xl lg:text-7xl">
               Your tech career starts here.
               <br />
-              <span className="text-[var(--color-primary-accessible)]">No experience needed.</span>
+              <span className="text-[var(--color-primary)]">No experience</span> needed.
             </h1>
-            <p className="mt-8 text-xl leading-relaxed text-zinc-600 max-w-2xl mx-auto">
+            <p className="mt-8 text-xl leading-relaxed text-zinc-700 max-w-2xl mx-auto">
               Thinking about an IT career change? 42 Belgium is a free training
               program designed for people with zero tech background. Learn at your
               own pace. Work from anywhere after.
@@ -58,7 +59,7 @@ export function ProposalB() {
       <section className="bg-zinc-50 border-y border-zinc-200">
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
           <div className="max-w-2xl mx-auto text-center mb-14">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-secondary-accessible)] mb-4">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
               We get it
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
@@ -102,7 +103,7 @@ export function ProposalB() {
                 key={i}
                 className="bg-white p-8 border border-zinc-200 hover:border-[var(--color-primary)] transition-colors"
               >
-                <i className={`${item.icon} text-[var(--color-primary-accessible)] text-xl mb-4 block`} />
+                <i className={`${item.icon} text-[var(--color-primary)] text-xl mb-4 block`} />
                 <h3 className="text-base font-bold mb-3 text-black">{item.question}</h3>
                 <p className="text-sm leading-relaxed text-zinc-700">{item.answer}</p>
               </div>
@@ -115,7 +116,7 @@ export function ProposalB() {
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
           <div className="max-w-2xl mx-auto text-center mb-14">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary-accessible)] mb-4">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
               Simple process
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
@@ -149,7 +150,7 @@ export function ProposalB() {
                 </div>
                 <i className={`${item.icon} text-zinc-400 text-2xl mb-4 block`} />
                 <h3 className="text-lg font-bold mb-3 text-black">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-zinc-600">{item.desc}</p>
+                <p className="text-sm leading-relaxed text-zinc-700">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -198,7 +199,7 @@ export function ProposalB() {
               { value: "0", label: "Prerequisites" },
             ].map((stat, i) => (
               <div key={i}>
-                <p className="text-4xl font-bold text-[var(--color-primary-accessible)]">{stat.value}</p>
+                <p className="text-4xl font-bold text-black">{stat.value}</p>
                 <p className="mt-1 text-xs uppercase tracking-wider text-zinc-600">
                   {stat.label}
                 </p>

@@ -10,12 +10,13 @@
  * career switch, work from anywhere.
  * Terms excluded: free course, university degree, master's program.
  *
- * Contrast audit:
- * - Black/zinc-950 bg: text-zinc-300 (13:1), text-zinc-400 (6.8:1), primary (8.8:1)
- * - White bg: primary-accessible (5.1:1), zinc-600 (5.7:1), zinc-700 (8.6:1)
- * - Teal bg: white only
- * - zinc-50 bg: zinc-700 (7.2:1 approx)
- * - zinc-900 bg: zinc-400 (5.4:1)
+ * Contrast rules:
+ * - Black/zinc-950 bg: text-zinc-300 (13:1), text-zinc-400 (6.8:1), primary #00babc (8.8:1)
+ * - White bg: text-zinc-700 for body (8.6:1), text-black for headings
+ * - Teal bg: text-white only
+ * - zinc-50 bg: text-zinc-700, text-black for headings
+ * - zinc-900 bg: text-zinc-300 (9.3:1), text-zinc-400 (5.4:1)
+ * - Brand colors on light bg: short accent labels only (1-2 words)
  */
 
 import Link from "next/link";
@@ -105,7 +106,7 @@ export function ProposalC() {
             </blockquote>
             <div className="mt-8">
               <p className="font-bold text-black">Sarah M.</p>
-              <p className="text-sm text-zinc-600">
+              <p className="text-sm text-zinc-700">
                 Career changer — now Full Stack Developer, working remotely
               </p>
             </div>
@@ -118,13 +119,13 @@ export function ProposalC() {
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
           <div className="grid gap-12 sm:grid-cols-2">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary-accessible)] mb-4">
+              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
                 What you&apos;ll gain
               </p>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
                 Job-ready skills, not theory
               </h2>
-              <p className="mt-4 text-base text-zinc-600 leading-relaxed">
+              <p className="mt-4 text-base text-zinc-700 leading-relaxed">
                 Every project at 42 is designed to build the exact skills tech
                 employers look for. By the end, you don&apos;t just know how to
                 code — you know how to ship.
@@ -162,16 +163,16 @@ export function ProposalC() {
                   className="flex gap-4 p-4 border border-zinc-200 hover:border-[var(--color-primary)] transition-colors"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-[var(--color-primary)]/15">
-                    <i className={`${item.icon} text-[var(--color-primary-accessible)]`} />
+                    <i className={`${item.icon} text-[var(--color-primary)]`} />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between">
                       <h3 className="font-bold text-sm text-black">{item.title}</h3>
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-primary-accessible)] bg-[var(--color-primary)]/10 px-2 py-0.5">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-black bg-[var(--color-primary)]/10 px-2 py-0.5">
                         {item.metric}
                       </span>
                     </div>
-                    <p className="text-sm text-zinc-600 mt-1">{item.desc}</p>
+                    <p className="text-sm text-zinc-700 mt-1">{item.desc}</p>
                   </div>
                 </div>
               ))}

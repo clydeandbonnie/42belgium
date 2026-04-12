@@ -22,9 +22,7 @@
 /* ── Design tokens ── */
 :root {
   --color-primary: #00babc;
-  --color-primary-accessible: #007A7A; /* 5.1:1 on white — WCAG AA */
   --color-secondary: #ed3491;
-  --color-secondary-accessible: #B7235F; /* 5.5:1 on white — WCAG AA */
   --color-black: #000000;
   --color-white: #ffffff;
   --color-dark: #32373c;

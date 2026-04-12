@@ -10,11 +10,12 @@
  * career switch, work from anywhere.
  * Terms excluded: free course, university degree, master's program.
  *
- * Contrast audit:
- * - Black bg: text-zinc-300 (13:1), text-zinc-400 (6.8:1), primary (8.8:1)
- * - White bg: text-zinc-600 (5.7:1), primary-accessible (5.1:1), secondary-accessible (5.5:1)
- * - Teal bg: white (4.6:1 large text), white text only
- * - zinc-100 bg: text-zinc-700 (7.2:1)
+ * Contrast rules:
+ * - Black bg: text-zinc-300 (13:1), text-zinc-400 (6.8:1), primary #00babc (8.8:1)
+ * - White bg: text-zinc-600 (5.7:1), text-black for body/headings
+ * - Teal bg: text-white only (4.6:1 large text)
+ * - zinc-100 bg: text-zinc-700 (7.2:1), text-black for headings
+ * - Brand colors on light bg: only for short accent labels (1-2 words), not body text
  */
 
 import Link from "next/link";
@@ -81,7 +82,7 @@ export function ProposalA() {
       {/* ─── WHAT YOU'LL GAIN ─── */}
       <section className="bg-white text-black" id="learn">
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary-accessible)] mb-4">
+          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
             Skills that get you hired
           </p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-2xl">
@@ -124,9 +125,9 @@ export function ProposalA() {
                 key={i}
                 className="group border border-zinc-200 p-6 hover:border-[var(--color-primary)] transition-colors"
               >
-                <i className={`${item.icon} text-2xl text-[var(--color-primary-accessible)] mb-4 block`} />
+                <i className={`${item.icon} text-2xl text-[var(--color-primary)] mb-4 block`} />
                 <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-zinc-600">{item.desc}</p>
+                <p className="text-sm leading-relaxed text-zinc-700">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -138,10 +139,10 @@ export function ProposalA() {
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
           <div className="grid gap-12 sm:grid-cols-2 items-center">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-secondary-accessible)] mb-4">
+              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
                 Is this for you?
               </p>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
                 You don&apos;t need a tech background. Just the drive to change.
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-zinc-700">
@@ -177,7 +178,7 @@ export function ProposalA() {
       {/* ─── JOURNEY ─── */}
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary-accessible)] mb-4">
+          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
             Your path
           </p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
@@ -192,9 +193,9 @@ export function ProposalA() {
             ].map((item, i) => (
               <div key={i} className="relative p-6 border-l-2 border-[var(--color-primary)] sm:border-l-0 sm:border-t-2">
                 <span className="text-4xl font-bold text-zinc-300">{item.step}</span>
-                <i className={`${item.icon} text-[var(--color-primary-accessible)] text-lg mt-2 block`} />
+                <i className={`${item.icon} text-[var(--color-primary)] text-lg mt-2 block`} />
                 <h3 className="text-lg font-bold mt-2">{item.title}</h3>
-                <p className="text-sm text-zinc-600 mt-1 leading-relaxed">{item.desc}</p>
+                <p className="text-sm text-zinc-700 mt-1 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
