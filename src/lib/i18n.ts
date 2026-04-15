@@ -62,10 +62,59 @@ export interface SchemaOrgCourse {
   educationalLevel?: string;
 }
 
+export interface AfterFortySection {
+  heading: string;
+  description: string;
+  stat: { value: string; label: string };
+  careers: { icon: string; label: string }[];
+  communityNote?: string;
+}
+
+export interface WhatYouBuildSection {
+  heading: string;
+  intro: string;
+  coreLabel: string;
+  coreBlurb: string;
+  coreTopics: string[];
+  advancedLabel: string;
+  advancedBlurb: string;
+  advancedTracks: string[];
+  plusNote?: string;
+}
+
+export interface VideoTestimonial {
+  name: string;
+  subtitle: string;
+  youtubeId: string;
+}
+
+export interface RealStoriesSection {
+  heading: string;
+  description: string;
+  videos: VideoTestimonial[];
+}
+
+export interface ApplicationStep {
+  number: string;
+  title: string;
+  description: string;
+}
+
+export interface HowToApplySection {
+  heading: string;
+  steps: ApplicationStep[];
+  ctaLabel: string;
+  microcopy?: string;
+}
+
 export interface PageContent {
   meta: PageMeta;
   hero: HeroContent;
   clusters: Cluster[];
+  afterForty?: AfterFortySection;
+  whatYouBuild?: WhatYouBuildSection;
+  realStories?: RealStoriesSection;
+  howToApply?: HowToApplySection;
   faq?: FaqItem[];
   stats?: Stat[];
   ctaFinal?: {
@@ -140,6 +189,22 @@ export function extractBodyText(content: PageContent): string {
     content.hero.reassurance || "",
     content.hero.cta,
     ...content.clusters.flatMap((c) => [c.heading, c.body, ...(c.bullets || [])]),
+    content.afterForty?.heading || "",
+    content.afterForty?.description || "",
+    ...(content.afterForty?.careers || []).map((c) => c.label),
+    content.afterForty?.communityNote || "",
+    content.whatYouBuild?.heading || "",
+    content.whatYouBuild?.intro || "",
+    content.whatYouBuild?.coreBlurb || "",
+    ...(content.whatYouBuild?.coreTopics || []),
+    content.whatYouBuild?.advancedBlurb || "",
+    ...(content.whatYouBuild?.advancedTracks || []),
+    content.whatYouBuild?.plusNote || "",
+    content.realStories?.heading || "",
+    content.realStories?.description || "",
+    content.howToApply?.heading || "",
+    ...(content.howToApply?.steps || []).flatMap((s) => [s.title, s.description]),
+    content.howToApply?.microcopy || "",
     ...(content.faq || []).flatMap((f) => [f.question, f.answer]),
     ...(content.stats || []).flatMap((s) => [s.value, s.label]),
     content.ctaFinal?.title || "",

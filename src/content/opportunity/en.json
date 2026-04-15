@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Free Tech Training — Get a Remote Tech Job | 42 Belgium",
-    "description": "Free digital skills training in Belgium — not a MOOC. Build tech skills for remote jobs, online work and career change. Apply today — no degree.",
+    "title": "Free Tech Training — Get Hired in Tech | 42 Belgium",
+    "description": "Free digital skills training in Belgium. Build the tech skills that get you hired — remotely or anywhere. No degree, no experience required.",
     "slug": "free-training-remote-jobs",
     "primaryQuery": "remote jobs / work from home / free online courses",
     "convertingKeywords": [
@@ -18,92 +18,193 @@
     ]
   },
   "hero": {
-    "headline": "Free Digital Skills Training — Get a Remote Tech Job",
-    "subheadline": "Build the tech skills that get you hired. Remotely or anywhere. Free structured training — not a MOOC.",
-    "reassurance": "No fees · No degree required · Brussels & Antwerp campuses",
+    "headline": "Free Tech Training — Get Hired Remotely or Anywhere",
+    "subheadline": "Build the tech skills that get you hired. Remotely, hybrid, or on-site — your choice. 100% free, peer-to-peer, project-based.",
+    "reassurance": "100% free · No degree required · No experience needed · Brussels & Antwerp",
     "cta": "Find your training →"
   },
   "clusters": [
     {
       "name": "FLEXIBILITY & REMOTE WORK",
-      "heading": "Work flexibility. Tech skills that travel.",
-      "body": "Remote jobs are the dominant reason people start learning tech — and the data proves it. The modern labour market rewards the people who can deliver value from anywhere. At 42 Belgium, you build the exact skills that unlock remote jobs, online work, and work from home roles across Europe. You learn the tools distributed engineering teams actually use: version control, pair programming, code review, continuous deployment, and asynchronous collaboration. By the time you graduate, you have a portfolio you can review from anywhere, projects you shipped with peers you never met in person, and the confidence to apply for online jobs work from home. This is not theory. This is the way modern software teams operate every single day.",
-      "keywords": ["remote jobs", "online work", "work from home", "online jobs work from home"],
+      "heading": "Built for how tech actually works today.",
+      "body": "Remote jobs, online work, work from home — or a hybrid setup in Brussels or Antwerp. However you want to work, the modern tech industry rewards people who can ship. 42 Belgium trains you for the reality of today's job market: distributed teams, asynchronous collaboration, real codebases, real deadlines. You won't learn from theory slides. You'll learn by shipping alongside peers — writing code, reviewing code, fixing code together. The same skills apply whether your first tech job is remote for a startup in Berlin, hybrid for Belfius in Brussels, or on-site for Proximus in Antwerp. Online jobs no experience required? No — but after 42, you'll have the experience.",
+      "keywords": [
+        "remote jobs",
+        "online work",
+        "work from home",
+        "online jobs work from home"
+      ],
       "bullets": [
-        "Real programming skills for remote jobs across Europe",
-        "Tools and workflows used by distributed engineering teams",
-        "A portfolio that travels — review it and show it from anywhere",
-        "Peer-to-peer collaboration that mirrors how remote tech teams work",
-        "Direct pathway from training to online work opportunities"
+        "Real programming skills, not certificate-collecting",
+        "Tools and workflows used by distributed engineering teams worldwide",
+        "A portfolio of shipped projects — review it from anywhere",
+        "Peer-to-peer learning that mirrors real tech teams",
+        "Direct pathway to remote jobs, online work, and online jobs work from home"
       ]
     },
     {
       "name": "ACCESSIBLE FREE TRAINING",
-      "heading": "Free structured training — not a MOOC.",
-      "body": "Let us be blunt. This is not a free online course you scroll through at midnight and forget by morning. 42 Belgium is a complete, peer-to-peer training program — free of charge, with physical campuses in Brussels and Antwerp. Unlike free online courses or online classes free that everybody starts and nobody finishes, here you build projects alongside peers, submit your work for review, and graduate ready to work. Unlike a typical free online course, you leave with a portfolio of shipped projects, not a PDF certificate you lose in your downloads folder. We offer the accessibility people love about free online courses with free certificates and free online courses with certificates, combined with the structure, accountability, and outcomes a self-paced MOOC can never deliver. Our program is fully funded so that talent — not budget — decides who gets access to tech education. No tuition. No hidden fees. No upsells. Ever.",
+      "heading": "Free structured training. Not a MOOC.",
+      "body": "Let's be clear. This is not a free online course you scroll through at midnight and forget by morning. Unlike free online courses, online classes free, or free online courses with certificates that everyone starts and nobody finishes, 42 Belgium is a complete peer-to-peer program with physical campuses, shared projects, and real feedback. Free online courses with free certificates prove you watched videos. Our program proves you can ship real software with a team. The difference shows up in your portfolio — and in the job offers you receive afterwards. The 42 model is fully funded so that talent, not budget, decides who accesses tech education. No tuition. No hidden fees. No upsells. Ever.",
       "keywords": [
         "free online courses",
         "free online course",
         "online classes free",
         "free online courses with free certificates",
         "free online courses with certificates"
+      ],
+      "bullets": [
+        "A typical MOOC: you start alone, finish alone → At 42: peer-to-peer in real teams",
+        "A typical MOOC: a PDF certificate employers ignore → At 42: a portfolio of shipped projects",
+        "A typical MOOC: no feedback on your code → At 42: code review every week",
+        "A typical MOOC: stuck the first time you hit a bug → At 42: campus open 24/7, help next to you"
       ]
     },
     {
       "name": "LOW BARRIER TO ENTRY",
       "heading": "No CV. No degree. No experience required.",
-      "body": "If you have searched for online jobs no experience, you already know the problem. Every entry-level tech role asks for two years of experience. 42 Belgium is the bridge. We welcome career changers from every possible background — retail, hospitality, teaching, administration, hospitality, music, parenting — people with zero technical training but real motivation to build a new path. Our entry process measures potential, not past. No coding knowledge assumed. No diploma required. No CV to polish. You take a short online logic test, discover peer-to-peer learning in our Piscine, and decide together if this path is right for you. The only experience required is the willingness to start.",
-      "keywords": ["online jobs no experience", "no experience required", "career change"],
+      "body": "If you have searched for online jobs no experience, you already know the problem: every entry-level role asks for two years of experience. 42 Belgium is the bridge. We welcome career changers from every possible background — retail, hospitality, teaching, administration, music, parenting. The only experience required is the willingness to start. No coding knowledge assumed. No diploma to file. No CV to polish. No age limit. Our entry process measures potential, not past. You take a short online logic test, then discover peer-to-peer learning in our Piscine. You decide together with us if this path is right for you.",
+      "keywords": [
+        "online jobs no experience",
+        "no experience required",
+        "career change"
+      ],
       "bullets": [
-        "Online jobs no experience — we prepare you for them",
-        "No technical background required to apply",
-        "No age limit — career changers of every age welcome",
-        "No diploma, no CV, no admission essay",
-        "A real career change, not a side hobby"
+        "No technical background required",
+        "No diploma — no CV, no admission essay",
+        "No age limit — adult learners of all stages welcome",
+        "Online test measures potential, not past knowledge",
+        "A real career change, not a hobby on the side"
       ]
     }
   ],
+  "afterForty": {
+    "heading": "Life after 42 — 98% employment.",
+    "description": "98% of students who complete the advanced curriculum secure a job. Many are recruited during internships or while still working on projects at 42. You graduate with a portfolio, a track record, and a global alumni network in every major tech city.",
+    "stat": { "value": "98%", "label": "of advanced grads secure a job" },
+    "careers": [
+      { "icon": "fa-solid fa-code", "label": "Software developer or engineer" },
+      { "icon": "fa-solid fa-chart-line", "label": "Data scientist or AI specialist" },
+      { "icon": "fa-solid fa-shield-halved", "label": "Cybersecurity analyst" },
+      { "icon": "fa-solid fa-server", "label": "DevOps or systems engineer" },
+      { "icon": "fa-solid fa-mobile-screen", "label": "Mobile and web developer" },
+      { "icon": "fa-solid fa-rocket", "label": "Entrepreneur or startup founder" }
+    ],
+    "communityNote": "Graduation doesn't mean goodbye. Alumni are students for life — always welcome back to campus to exchange, mentor, or keep learning."
+  },
+  "whatYouBuild": {
+    "heading": "What you'll actually build.",
+    "intro": "The 42 Belgium program is structured around real projects, not lectures. From your first line of code to your final specialisation, every skill is earned by shipping something that works.",
+    "coreLabel": "Core Curriculum — the foundation (6–24 months, avg 18)",
+    "coreBlurb": "You learn to code from scratch, then build your way up through progressively harder projects.",
+    "coreTopics": [
+      "Languages: C, Python, and others along the way",
+      "Algorithms & data structures — the logic behind every codebase",
+      "UNIX, file systems, processes — how software actually runs",
+      "Network programming — the architecture behind modern apps",
+      "Object-oriented programming — writing code that scales",
+      "Client-server projects — building the backend of real systems",
+      "Web programming — from HTML to full-stack deployment",
+      "Graphics programming — rendering pixels, building interfaces",
+      "Artificial intelligence — the fundamentals powering modern systems",
+      "Concurrent programming — multi-threading and parallelism"
+    ],
+    "advancedLabel": "Advanced Curriculum — specialise in what drives you",
+    "advancedBlurb": "After the core, you choose your track. Depth up to a master-equivalent level.",
+    "advancedTracks": [
+      "Artificial Intelligence & Data",
+      "Cybersecurity",
+      "Web & Mobile development",
+      "Operating systems",
+      "Graphical programming"
+    ],
+    "plusNote": "Plus: industry certifications (AWS cloud and others), ethics built into every module, and a philosophy of sharing that shapes how you learn."
+  },
+  "realStories": {
+    "heading": "Real stories from real students.",
+    "description": "Three alumni share what the 42 journey was like — in their own words.",
+    "videos": [
+      { "name": "Kevin", "subtitle": "42 Stories · Piscine selection sprint", "youtubeId": "OO_dbpwed3s" },
+      { "name": "Morgane", "subtitle": "42 Stories · Piscine selection sprint", "youtubeId": "DGQnrVNZRZ0" },
+      { "name": "Sam", "subtitle": "42 Stories · Piscine selection sprint", "youtubeId": "sDcqpzBtjtM" }
+    ]
+  },
+  "howToApply": {
+    "heading": "How to join 42 Belgium.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Online logic test (~1 hour)",
+        "description": "Not a coding test. A series of short logic games that measure how you think, not what you already know. You can take it whenever you're ready, from home."
+      },
+      {
+        "number": "02",
+        "title": "The Piscine (4 weeks on campus)",
+        "description": "Selected candidates spend four intensive weeks on campus in Brussels or Antwerp. You discover peer-to-peer learning, write your first lines of code, and decide together with us if 42 is your path. Free. Honest. No commitment until you complete it."
+      },
+      {
+        "number": "03",
+        "title": "Core Curriculum (6 to 24 months)",
+        "description": "If the Piscine goes well, you join the core curriculum. You learn C, Python, algorithms, networks, and ship projects alongside peers. You work at your own pace — most students take around 18 months."
+      },
+      {
+        "number": "04",
+        "title": "Advanced Curriculum & career launch",
+        "description": "Choose your specialisation, pass industry certifications, complete internships, and enter the job market. Many students secure offers before they officially graduate."
+      }
+    ],
+    "ctaLabel": "Find your training →",
+    "microcopy": "Next Piscine dates on campus — apply anytime."
+  },
   "faq": [
     {
       "question": "Is this really free?",
-      "answer": "Yes. 42 Belgium is 100% free — no tuition, no hidden costs, no upsells. Our program is fully funded so that talent, not budget, decides who gets access to tech education."
+      "answer": "Yes. 100% free — no tuition, no hidden costs, no upsells. The program is fully funded so that talent, not budget, decides who gets access to tech education."
     },
     {
       "question": "Is this just another MOOC or free online course?",
-      "answer": "No. Unlike free online courses with certificates you complete alone at home, 42 is a structured program with physical campuses, peer-to-peer learning, shared projects and deadlines. You graduate with a portfolio of real work — not just a PDF."
+      "answer": "No. Unlike free online courses with certificates you complete alone at home, 42 is structured with physical campuses, peer-to-peer learning, shared projects and deadlines. You graduate with a portfolio of real work — not a PDF."
     },
     {
       "question": "Can I really find remote jobs after graduating?",
-      "answer": "Many of our graduates land remote jobs, work from home contracts, and online work roles. The skills you build — modern programming, team collaboration, shipping real projects — are exactly what distributed tech teams hire for."
+      "answer": "Yes, many do. You can also work hybrid or on-site — the 42 skill set travels. 98% of advanced curriculum graduates secure a job, many before they graduate."
     },
     {
       "question": "I have zero tech experience. Can I still apply?",
-      "answer": "Yes. 42 Belgium was built for online jobs no experience candidates and career changers with no coding background. Our selection test measures potential, not past knowledge. Most students arrive from completely non-tech fields."
+      "answer": "Yes. 42 was built for career changers and online jobs no experience candidates. Our selection test measures potential, not past knowledge. Most students arrive from non-tech fields."
     },
     {
       "question": "Do I need a degree or diploma?",
-      "answer": "No. No diploma, no CV required. The only prerequisites are motivation and the willingness to take our short online logic test."
+      "answer": "No. No diploma, no CV required. Only motivation and the willingness to take our logic test."
+    },
+    {
+      "question": "How long does it take?",
+      "answer": "The core curriculum averages 18 months but ranges from 6 to 24 depending on your pace. The advanced curriculum can extend up to 5 years at your rhythm. You graduate when you're ready."
     },
     {
       "question": "How is this different from free online courses with free certificates?",
-      "answer": "Free online certificates prove you completed a video series. Our program proves you can ship real software with a team. The difference shows in your portfolio — and in the job offers you receive afterwards."
+      "answer": "Free online certificates prove you watched videos. Our program proves you can ship software with a team. Employers notice the difference."
+    },
+    {
+      "question": "What happens during the Piscine if I'm not ready?",
+      "answer": "You leave with the experience and no obligation. The Piscine is designed for both of us to know if 42 is the right fit. No failure, just clarity."
     }
   ],
   "stats": [
+    { "value": "98%", "label": "of advanced grads secure a job" },
     { "value": "100%", "label": "Free — no tuition" },
-    { "value": "973", "label": "Registrations in 4 months" },
     { "value": "42", "label": "Campuses worldwide" },
     { "value": "0", "label": "Prerequisites" }
   ],
   "ctaFinal": {
     "title": "Ready to find your training?",
-    "description": "Free structured training. Real remote job opportunities. No degree required. No MOOC. Start with our online test — no experience needed.",
+    "description": "Free structured training. Real jobs — remote, hybrid, or on-site. No degree, no CV, no experience required. Start with our online logic test. It takes an hour and it's free.",
     "cta": "Find your training →"
   },
   "schemaOrg": {
     "course": {
       "name": "42 Belgium — Free Digital Skills Training",
-      "description": "Free, peer-to-peer tech training program in Belgium. Build real programming skills and land remote tech jobs — no degree or prior experience required.",
+      "description": "Free, peer-to-peer tech training program in Belgium. Build real programming skills and land a tech job — remotely or anywhere. No degree or prior experience required.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/en/free-training-remote-jobs",
       "courseMode": "blended",
