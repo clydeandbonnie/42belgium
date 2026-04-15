@@ -132,7 +132,7 @@
 .dropdownItem {
   composes: dropdownFont;
   display: block;
-  padding: 5px 10px;
+  padding: 13px 15px;
   color: #000000;
   white-space: nowrap;
   transition:
