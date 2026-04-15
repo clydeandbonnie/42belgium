@@ -94,7 +94,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 13px 5px;
+  padding: 13px 20px;
   color: #ffffff;
   border-bottom: 2px solid transparent;
   transition: color 200ms ease-in-out, border-color 200ms ease-in-out;
@@ -137,7 +137,7 @@
 .dropdownItem {
   composes: dropdownFont;
   display: block;
-  padding: 13px 15px;
+  padding: 13px 20px;
   color: #000000;
   white-space: nowrap;
   transition:
