@@ -18,19 +18,26 @@ export function ProposalB({ content }: { content: PageContent }) {
 
   return (
     <>
-      {/* ─── HERO ─── */}
-      <section className="relative bg-white text-black overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/8 via-transparent to-[var(--color-secondary)]/8 pointer-events-none" />
+      {/* ─── HERO — black bg, centered, welcoming glow ─── */}
+      <section className="relative bg-black text-white overflow-hidden">
+        {/* Soft radial glow, anchored centre, evokes openness */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse at 50% 40%, rgba(0,186,188,0.18), transparent 55%), radial-gradient(ellipse at 80% 80%, rgba(237,52,145,0.10), transparent 60%)",
+          }}
+        />
         <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-28 sm:pb-32 sm:pt-36">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-bold uppercase tracking-wider px-4 py-2 mb-8">
+            <div className="inline-flex items-center gap-2 border border-[var(--color-primary)]/40 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-bold uppercase tracking-wider px-4 py-2 mb-8">
               <i className="fa-solid fa-door-open" />
               Not a MOOC — structured free training
             </div>
             <h1 className="text-5xl font-bold leading-[1.1] tracking-tight sm:text-6xl lg:text-7xl">
               {hero.headline}
             </h1>
-            <p className="mt-8 text-xl leading-relaxed text-zinc-700 max-w-2xl mx-auto">
+            <p className="mt-8 text-xl leading-relaxed text-zinc-300 max-w-2xl mx-auto">
               {hero.subheadline}
             </p>
             <div className="mt-10">
@@ -42,12 +49,13 @@ export function ProposalB({ content }: { content: PageContent }) {
               </Link>
             </div>
             {hero.reassurance && (
-              <p className="mt-6 text-xs uppercase tracking-widest text-zinc-600">
+              <p className="mt-6 text-xs uppercase tracking-widest text-zinc-500">
                 {hero.reassurance}
               </p>
             )}
           </div>
         </div>
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[var(--color-primary)]/40 to-transparent" />
       </section>
 
       {/* ─── CLUSTERS ─── */}
