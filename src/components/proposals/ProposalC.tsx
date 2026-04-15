@@ -2,13 +2,15 @@
  * PROPOSITION C — Proof-Led / Data design variant
  *
  * Reads the SAME canonical content as Proposals A and B. Design signatures:
- *   - Data-driven visual language: numbers ON the stats, metrics in badges,
- *     matrix v3 search data surfaced as proof
- *   - Split hero: narrative left, metrics card right
- *   - Employer logo strip for instant credibility
- *   - Each cluster gets a small stats side-panel
- *   - FAQ in dense 2-column format
+ *   - Data-driven visual language, but with PUBLIC stats only
+ *     (employment, registrations, campuses, curriculum counts, employer logos)
+ *   - Split hero: narrative left, credibility card right
+ *   - Employer logo strip for instant trust
+ *   - Each section uses numeric framing without ad-campaign data
  *   - Enterprise/credible feel — muted palette with bold stat highlights
+ *
+ * Explicitly NOT used: internal Ads metrics (CTR, CVR, impression share,
+ * keyword converting rates). Those stay in the matrix v3, not on the page.
  */
 
 import Link from "next/link";
@@ -18,23 +20,16 @@ import { YouTubeEmbed } from "./YouTubeEmbed";
 export function ProposalC({ content }: { content: PageContent }) {
   const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
 
-  // Matrix v3 data surfaced as proof per cluster
-  const clusterMetrics = [
-    { clicks: "880", conv: "58.8", cvr: "6.7%", kw: "remote jobs" },
-    { clicks: "66", conv: "6", cvr: "9.1%", kw: "free online courses" },
-    { clicks: "10", conv: "1", cvr: "10.0%", kw: "online jobs no experience" },
-  ];
-
   return (
     <>
-      {/* ─── HERO + stats card ─── */}
+      {/* ─── HERO + credibility card ─── */}
       <section className="relative bg-black text-white overflow-hidden">
         <div className="mx-auto max-w-5xl px-6 pb-12 pt-28 sm:pt-36">
           <div className="grid gap-12 sm:grid-cols-2 items-center">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
-                <i className="fa-solid fa-chart-line mr-2" />
-                Backed by 4 months of conversion data
+                <i className="fa-solid fa-shield-halved mr-2" />
+                Proven program. Real outcomes.
               </p>
               <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
                 {hero.headline}
@@ -50,19 +45,24 @@ export function ProposalC({ content }: { content: PageContent }) {
                   {hero.cta}
                 </Link>
               </div>
+              {hero.reassurance && (
+                <p className="mt-6 text-xs uppercase tracking-widest text-zinc-500">
+                  {hero.reassurance}
+                </p>
+              )}
             </div>
-            {/* Stats card */}
+            {/* Credibility card — public, prospect-relevant stats */}
             <div className="bg-zinc-900 border border-zinc-800 p-8">
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-400 mb-6">
-                <i className="fa-solid fa-chart-line mr-2 text-[var(--color-primary)]" />
-                The search data · Dec 25 – Mar 26
+                <i className="fa-solid fa-award mr-2 text-[var(--color-primary)]" />
+                By the numbers
               </p>
               <div className="space-y-6">
                 {[
-                  { value: "880", label: "clicks on remote jobs searches" },
-                  { value: "58.8", label: "conversions from remote jobs intent" },
-                  { value: "6.7%", label: "CVR on remote jobs keywords" },
-                  { value: "973", label: "total registrations in 4 months" },
+                  { value: "98%", label: "of advanced grads secure a job" },
+                  { value: "100%", label: "free — no tuition, ever" },
+                  { value: "42", label: "campuses across the world" },
+                  { value: "0", label: "prerequisites — no degree, no CV" },
                 ].map((stat, i) => (
                   <div key={i} className="flex items-center gap-4">
                     <p className="text-3xl font-bold text-[var(--color-primary)] w-24">
@@ -94,19 +94,24 @@ export function ProposalC({ content }: { content: PageContent }) {
         </div>
       </section>
 
-      {/* ─── CLUSTERS with metric sidebar ─── */}
+      {/* ─── CLUSTERS — clean two-column with numbered accent ─── */}
       {clusters.map((cluster, i) => (
         <section key={cluster.name} className="bg-white border-b border-zinc-200">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <div className="grid gap-12 sm:grid-cols-[2fr_1fr] items-start">
-              <div>
-                <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-                  Cluster {i + 1} · {cluster.name}
+            <div className="grid gap-12 sm:grid-cols-[auto_1fr] items-start">
+              <div className="sm:pr-6 sm:border-r sm:border-zinc-200 sm:w-32">
+                <p className="text-6xl font-bold text-[var(--color-primary)] leading-none">
+                  {String(i + 1).padStart(2, "0")}
                 </p>
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black max-w-2xl">
+                <p className="mt-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+                  {cluster.name}
+                </p>
+              </div>
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black max-w-3xl">
                   {cluster.heading}
                 </h2>
-                <p className="mt-6 text-base leading-relaxed text-zinc-700 max-w-2xl">
+                <p className="mt-6 text-base leading-relaxed text-zinc-700 max-w-3xl">
                   {cluster.body}
                 </p>
                 {cluster.bullets && cluster.bullets.length > 0 && (
@@ -119,28 +124,6 @@ export function ProposalC({ content }: { content: PageContent }) {
                     ))}
                   </ul>
                 )}
-              </div>
-              {/* Metric sidebar */}
-              <div className="bg-zinc-50 border border-zinc-200 p-6">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-600 mb-4">
-                  Converting search
-                </p>
-                <p className="text-xs text-zinc-500 mb-1">Keyword</p>
-                <p className="text-sm font-bold text-black mb-4">&ldquo;{clusterMetrics[i].kw}&rdquo;</p>
-                <div className="grid grid-cols-3 gap-3 pt-4 border-t border-zinc-200">
-                  <div>
-                    <p className="text-lg font-bold text-black">{clusterMetrics[i].clicks}</p>
-                    <p className="text-[10px] text-zinc-500 uppercase tracking-wider">clicks</p>
-                  </div>
-                  <div>
-                    <p className="text-lg font-bold text-black">{clusterMetrics[i].conv}</p>
-                    <p className="text-[10px] text-zinc-500 uppercase tracking-wider">conv</p>
-                  </div>
-                  <div>
-                    <p className="text-lg font-bold text-[var(--color-primary)]">{clusterMetrics[i].cvr}</p>
-                    <p className="text-[10px] text-zinc-500 uppercase tracking-wider">CVR</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -346,7 +329,7 @@ export function ProposalC({ content }: { content: PageContent }) {
               Every question
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black mb-12">
-              Answered with data.
+              Answered honestly.
             </h2>
             <div className="grid gap-5 sm:grid-cols-2">
               {faq.map((item, i) => (
