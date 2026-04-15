@@ -123,7 +123,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 220px;
+  width: max-content;
   background: #ffffff;
   box-shadow: 6px 6px 0 0 #ED3491;
   padding: 0;
@@ -132,8 +132,9 @@
 .dropdownItem {
   composes: dropdownFont;
   display: block;
-  padding: 13px 10px;
+  padding: 5px 10px;
   color: #000000;
+  white-space: nowrap;
   transition:
     background-color 300ms ease-in-out 100ms,
     color 300ms ease-in-out 100ms;
