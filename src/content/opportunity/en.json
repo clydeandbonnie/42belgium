@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Free Tech Training — Remote Jobs | 42 Belgium",
-    "description": "Free digital skills training in Belgium. Get a remote tech job — no degree needed. Find your course and apply today.",
+    "title": "Free Tech Training — Get a Remote Tech Job | 42 Belgium",
+    "description": "Free digital skills training in Belgium — not a MOOC. Build tech skills for remote jobs, online work and career change. Apply today — no degree.",
     "slug": "free-training-remote-jobs",
     "primaryQuery": "remote jobs / work from home / free online courses",
     "convertingKeywords": [
@@ -27,54 +27,66 @@
     {
       "name": "FLEXIBILITY & REMOTE WORK",
       "heading": "Work flexibility. Tech skills that travel.",
-      "body": "Remote jobs are the dominant reason people start learning tech — and for good reason. At 42 Belgium, you build skills that unlock online work, work-from-home roles, and online jobs work from home across Europe. You learn the tools distributed engineering teams actually use, so when you graduate you can apply for remote jobs with confidence.",
+      "body": "Remote jobs are the dominant reason people start learning tech — and the data proves it. The modern labour market rewards the people who can deliver value from anywhere. At 42 Belgium, you build the exact skills that unlock remote jobs, online work, and work from home roles across Europe. You learn the tools distributed engineering teams actually use: version control, pair programming, code review, continuous deployment, and asynchronous collaboration. By the time you graduate, you have a portfolio you can review from anywhere, projects you shipped with peers you never met in person, and the confidence to apply for online jobs work from home. This is not theory. This is the way modern software teams operate every single day.",
       "keywords": ["remote jobs", "online work", "work from home", "online jobs work from home"],
       "bullets": [
-        "Real programming skills for real remote jobs",
-        "Tools and workflows used by distributed teams",
-        "A portfolio that travels — review it from anywhere",
-        "Peer-to-peer collaboration mirroring real tech teams"
+        "Real programming skills for remote jobs across Europe",
+        "Tools and workflows used by distributed engineering teams",
+        "A portfolio that travels — review it and show it from anywhere",
+        "Peer-to-peer collaboration that mirrors how remote tech teams work",
+        "Direct pathway from training to online work opportunities"
       ]
     },
     {
       "name": "ACCESSIBLE FREE TRAINING",
       "heading": "Free structured training — not a MOOC.",
-      "body": "This is not a free online course you scroll through alone. 42 Belgium is a complete, peer-to-peer training program — free of charge, with physical campuses in Brussels and Antwerp. Unlike free online classes or online courses you start and abandon, here you build projects alongside peers, get real feedback, and finish job-ready. We've designed this for people who value free online courses but want the structure and outcomes a MOOC cannot offer.",
-      "keywords": ["free online courses", "online classes free", "free online course", "free online courses with certificates"]
+      "body": "Let us be blunt. This is not a free online course you scroll through at midnight and forget by morning. 42 Belgium is a complete, peer-to-peer training program — free of charge, with physical campuses in Brussels and Antwerp. Unlike free online courses or online classes free that everybody starts and nobody finishes, here you build projects alongside peers, submit your work for review, and graduate ready to work. Unlike a typical free online course, you leave with a portfolio of shipped projects, not a PDF certificate you lose in your downloads folder. We offer the accessibility people love about free online courses with free certificates and free online courses with certificates, combined with the structure, accountability, and outcomes a self-paced MOOC can never deliver. Our program is fully funded so that talent — not budget — decides who gets access to tech education. No tuition. No hidden fees. No upsells. Ever.",
+      "keywords": [
+        "free online courses",
+        "free online course",
+        "online classes free",
+        "free online courses with free certificates",
+        "free online courses with certificates"
+      ]
     },
     {
       "name": "LOW BARRIER TO ENTRY",
       "heading": "No CV. No degree. No experience required.",
-      "body": "Looking for online jobs with no experience? You're in the right place. 42 Belgium welcomes career changers with zero tech background. No prior degree required. No coding knowledge assumed. Just an online test and your motivation. This is the bridge between where you are and the tech career you want.",
+      "body": "If you have searched for online jobs no experience, you already know the problem. Every entry-level tech role asks for two years of experience. 42 Belgium is the bridge. We welcome career changers from every possible background — retail, hospitality, teaching, administration, hospitality, music, parenting — people with zero technical training but real motivation to build a new path. Our entry process measures potential, not past. No coding knowledge assumed. No diploma required. No CV to polish. You take a short online logic test, discover peer-to-peer learning in our Piscine, and decide together if this path is right for you. The only experience required is the willingness to start.",
       "keywords": ["online jobs no experience", "no experience required", "career change"],
       "bullets": [
-        "No technical background needed",
-        "No age limit — adult learners welcome",
-        "Completely free — no hidden costs",
-        "Pathway to a real career change"
+        "Online jobs no experience — we prepare you for them",
+        "No technical background required to apply",
+        "No age limit — career changers of every age welcome",
+        "No diploma, no CV, no admission essay",
+        "A real career change, not a side hobby"
       ]
     }
   ],
   "faq": [
     {
       "question": "Is this really free?",
-      "answer": "Yes. 42 Belgium is 100% free — no tuition, no hidden costs. Our program is funded so that talent, not budget, decides who gets access to tech education."
+      "answer": "Yes. 42 Belgium is 100% free — no tuition, no hidden costs, no upsells. Our program is fully funded so that talent, not budget, decides who gets access to tech education."
     },
     {
-      "question": "Is this just a MOOC or free online course?",
-      "answer": "No. Unlike free online courses with or without certificates, 42 is a structured program with physical campuses, peer-to-peer learning, and real projects. You graduate job-ready, not just certified."
+      "question": "Is this just another MOOC or free online course?",
+      "answer": "No. Unlike free online courses with certificates you complete alone at home, 42 is a structured program with physical campuses, peer-to-peer learning, shared projects and deadlines. You graduate with a portfolio of real work — not just a PDF."
     },
     {
-      "question": "Can I find remote jobs after graduating?",
-      "answer": "Many of our graduates land remote jobs. The skills you build — modern programming, team collaboration, project delivery — are exactly what distributed tech teams hire for."
+      "question": "Can I really find remote jobs after graduating?",
+      "answer": "Many of our graduates land remote jobs, work from home contracts, and online work roles. The skills you build — modern programming, team collaboration, shipping real projects — are exactly what distributed tech teams hire for."
     },
     {
-      "question": "I have no tech experience. Can I apply?",
-      "answer": "Yes. 42 Belgium was designed for online jobs no experience candidates and career changers with zero coding background. Our selection test measures potential, not past knowledge."
+      "question": "I have zero tech experience. Can I still apply?",
+      "answer": "Yes. 42 Belgium was built for online jobs no experience candidates and career changers with no coding background. Our selection test measures potential, not past knowledge. Most students arrive from completely non-tech fields."
     },
     {
-      "question": "Do I need a degree?",
-      "answer": "No. No diploma, no CV required. The only prerequisites are motivation and the willingness to take our online test."
+      "question": "Do I need a degree or diploma?",
+      "answer": "No. No diploma, no CV required. The only prerequisites are motivation and the willingness to take our short online logic test."
+    },
+    {
+      "question": "How is this different from free online courses with free certificates?",
+      "answer": "Free online certificates prove you completed a video series. Our program proves you can ship real software with a team. The difference shows in your portfolio — and in the job offers you receive afterwards."
     }
   ],
   "stats": [
@@ -85,7 +97,7 @@
   ],
   "ctaFinal": {
     "title": "Ready to find your training?",
-    "description": "Free structured training. Real remote job opportunities. No degree required. Start with our online test — no experience needed.",
+    "description": "Free structured training. Real remote job opportunities. No degree required. No MOOC. Start with our online test — no experience needed.",
     "cta": "Find your training →"
   },
   "schemaOrg": {
