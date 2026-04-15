@@ -127,7 +127,8 @@
 .dropdown {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: max-content;
   background: #ffffff;
   box-shadow: 6px 6px 0 0 #ED3491;
