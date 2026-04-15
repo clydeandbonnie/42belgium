@@ -105,7 +105,7 @@ export function Header({ lang }: HeaderProps) {
                     <a
                       key={child.label}
                       href={child.href}
-                      className="block text-black hover:text-[#00BABC] transition-colors"
+                      className="block text-black hover:text-white hover:bg-[#ED3491] transition-colors"
                       style={{
                         fontFamily: "futura-pt, sans-serif",
                         fontSize: 18,
