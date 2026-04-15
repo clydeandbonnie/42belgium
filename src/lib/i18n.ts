@@ -30,6 +30,19 @@ export interface HeroContent {
   cta: string;
 }
 
+export interface ComparisonRow {
+  /** Left column cell — typically the "bad" or competing option. */
+  left: string;
+  /** Right column cell — typically "42 Belgium" / the winning option. */
+  right: string;
+}
+
+export interface ClusterComparison {
+  leftLabel: string;
+  rightLabel: string;
+  rows: ComparisonRow[];
+}
+
 export interface Cluster {
   /** Cluster name from matrix — uppercase label. */
   name: string;
@@ -41,6 +54,8 @@ export interface Cluster {
   keywords: string[];
   /** Optional bullet points rendered under the body. */
   bullets?: string[];
+  /** Optional side-by-side comparison (e.g. MOOC vs 42). */
+  comparison?: ClusterComparison;
 }
 
 export interface FaqItem {
@@ -188,7 +203,18 @@ export function extractBodyText(content: PageContent): string {
     content.hero.subheadline,
     content.hero.reassurance || "",
     content.hero.cta,
-    ...content.clusters.flatMap((c) => [c.heading, c.body, ...(c.bullets || [])]),
+    ...content.clusters.flatMap((c) => [
+      c.heading,
+      c.body,
+      ...(c.bullets || []),
+      ...(c.comparison
+        ? [
+            c.comparison.leftLabel,
+            c.comparison.rightLabel,
+            ...c.comparison.rows.flatMap((r) => [r.left, r.right]),
+          ]
+        : []),
+    ]),
     content.afterForty?.heading || "",
     content.afterForty?.description || "",
     ...(content.afterForty?.careers || []).map((c) => c.label),

@@ -114,6 +114,69 @@ export function ProposalC({ content }: { content: PageContent }) {
                 <p className="mt-6 text-base leading-relaxed text-zinc-700 max-w-3xl">
                   {cluster.body}
                 </p>
+
+                {/* Comparison block — spec sheet / data table */}
+                {cluster.comparison && (
+                  <div className="mt-10 border border-zinc-300 overflow-hidden">
+                    {/* Column headers */}
+                    <div className="grid grid-cols-[160px_1fr_1fr] bg-zinc-50 border-b border-zinc-300">
+                      <div className="p-4 border-r border-zinc-300">
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+                          Criterion
+                        </p>
+                      </div>
+                      <div className="p-4 border-r border-zinc-300">
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 mb-1">
+                          <i className="fa-solid fa-xmark mr-2" />
+                          Elsewhere
+                        </p>
+                        <p className="text-sm font-bold text-zinc-700">
+                          {cluster.comparison.leftLabel}
+                        </p>
+                      </div>
+                      <div className="p-4 bg-[var(--color-primary)]/5">
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-primary)] mb-1">
+                          <i className="fa-solid fa-check mr-2" />
+                          Here at
+                        </p>
+                        <p className="text-sm font-bold text-black">
+                          {cluster.comparison.rightLabel}
+                        </p>
+                      </div>
+                    </div>
+                    {/* Rows */}
+                    {cluster.comparison.rows.map((row, ri) => {
+                      const criteria = [
+                        "Structure",
+                        "Certification",
+                        "Feedback",
+                        "Support",
+                        "Retention",
+                      ];
+                      return (
+                        <div
+                          key={ri}
+                          className={`grid grid-cols-[160px_1fr_1fr] ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
+                        >
+                          <div className="p-4 bg-zinc-50 border-r border-zinc-200 flex items-center">
+                            <p className="text-[11px] font-bold uppercase tracking-wider text-zinc-600">
+                              {criteria[ri] || `Criterion ${ri + 1}`}
+                            </p>
+                          </div>
+                          <div className="p-4 border-r border-zinc-200 text-sm text-zinc-500 flex items-start gap-3">
+                            <i className="fa-solid fa-xmark text-red-500/70 mt-1 text-xs" />
+                            <span className="line-through decoration-zinc-400">{row.left}</span>
+                          </div>
+                          <div className="p-4 bg-[var(--color-primary)]/5 text-sm text-black font-semibold flex items-start gap-3">
+                            <i className="fa-solid fa-check text-[var(--color-primary)] mt-1 text-xs" />
+                            <span>{row.right}</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+
                 {cluster.bullets && cluster.bullets.length > 0 && (
                   <ul className="mt-8 space-y-3">
                     {cluster.bullets.map((bullet, bi) => (

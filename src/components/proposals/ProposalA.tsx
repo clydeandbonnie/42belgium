@@ -72,6 +72,48 @@ export function ProposalA({ content }: { content: PageContent }) {
               <p className="mt-6 text-lg leading-relaxed text-zinc-700 max-w-3xl">
                 {cluster.body}
               </p>
+
+              {/* Comparison block — versus table, dark dramatic */}
+              {cluster.comparison && (
+                <div className="mt-12 bg-black text-white overflow-hidden">
+                  <div className="grid grid-cols-[1fr_auto_1fr] items-stretch">
+                    <div className="p-6 bg-zinc-900 text-center">
+                      <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-zinc-500 mb-2">
+                        <i className="fa-solid fa-xmark mr-2" />
+                        Them
+                      </p>
+                      <p className="text-sm font-bold text-zinc-400">{cluster.comparison.leftLabel}</p>
+                    </div>
+                    <div className="flex items-center justify-center bg-black px-4">
+                      <span className="text-2xl font-bold text-[var(--color-secondary)]">VS</span>
+                    </div>
+                    <div className="p-6 bg-[var(--color-primary)] text-white text-center">
+                      <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/70 mb-2">
+                        <i className="fa-solid fa-check mr-2" />
+                        Us
+                      </p>
+                      <p className="text-sm font-bold">{cluster.comparison.rightLabel}</p>
+                    </div>
+                  </div>
+                  {cluster.comparison.rows.map((row, ri) => (
+                    <div
+                      key={ri}
+                      className="grid grid-cols-[1fr_auto_1fr] items-stretch border-t border-zinc-800"
+                    >
+                      <div className="p-6 bg-zinc-950 text-zinc-400 text-sm">
+                        <i className="fa-solid fa-xmark text-red-500 mr-3" />
+                        <span className="line-through decoration-zinc-700">{row.left}</span>
+                      </div>
+                      <div className="bg-zinc-800 w-px" />
+                      <div className="p-6 bg-zinc-900 text-white text-sm font-semibold">
+                        <i className="fa-solid fa-check text-[var(--color-primary)] mr-3" />
+                        {row.right}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               {cluster.bullets && cluster.bullets.length > 0 && (
                 <ul className="mt-10 grid gap-4 sm:grid-cols-2">
                   {cluster.bullets.map((bullet, bi) => (

@@ -53,12 +53,17 @@
         "free online courses with free certificates",
         "free online courses with certificates"
       ],
-      "bullets": [
-        "A typical MOOC: you start alone, finish alone → At 42: peer-to-peer in real teams",
-        "A typical MOOC: a PDF certificate employers ignore → At 42: a portfolio of shipped projects",
-        "A typical MOOC: no feedback on your code → At 42: code review every week",
-        "A typical MOOC: stuck the first time you hit a bug → At 42: campus open 24/7, help next to you"
-      ]
+      "comparison": {
+        "leftLabel": "A typical MOOC or free online course",
+        "rightLabel": "42 Belgium",
+        "rows": [
+          { "left": "You start alone. You finish alone.", "right": "Peer-to-peer learning in real teams." },
+          { "left": "A PDF certificate employers ignore.", "right": "A portfolio of shipped projects." },
+          { "left": "No feedback on your code.", "right": "Code review from peers every week." },
+          { "left": "Stuck the first time you hit a bug.", "right": "Campus open 24/7 — help next to you." },
+          { "left": "Most people quit in the first month.", "right": "Cohorts that ship together, stay together." }
+        ]
+      }
     },
     {
       "name": "LOW BARRIER TO ENTRY",

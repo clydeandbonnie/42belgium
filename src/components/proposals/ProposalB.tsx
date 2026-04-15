@@ -65,6 +65,71 @@ export function ProposalB({ content }: { content: PageContent }) {
                 {cluster.body}
               </p>
             </div>
+
+            {/* Comparison block — two facing cards with centered VS badge */}
+            {cluster.comparison && (
+              <div className="relative max-w-4xl mx-auto">
+                <div className="grid gap-6 sm:grid-cols-2">
+                  {/* LEFT — MOOC */}
+                  <div className="bg-white border border-zinc-300 p-8">
+                    <div className="flex items-center gap-3 mb-6 pb-5 border-b border-zinc-200">
+                      <span className="flex h-10 w-10 items-center justify-center bg-zinc-100 text-zinc-500">
+                        <i className="fa-solid fa-xmark text-lg" />
+                      </span>
+                      <div>
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+                          Elsewhere
+                        </p>
+                        <p className="text-sm font-bold text-zinc-700">
+                          {cluster.comparison.leftLabel}
+                        </p>
+                      </div>
+                    </div>
+                    <ul className="space-y-4">
+                      {cluster.comparison.rows.map((row, ri) => (
+                        <li key={ri} className="flex gap-3 text-sm text-zinc-500">
+                          <i className="fa-solid fa-minus text-zinc-400 mt-1" />
+                          <span>{row.left}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* RIGHT — 42 */}
+                  <div className="bg-white border-2 border-[var(--color-primary)] p-8 relative">
+                    <div className="flex items-center gap-3 mb-6 pb-5 border-b border-zinc-200">
+                      <span className="flex h-10 w-10 items-center justify-center bg-[var(--color-primary)] text-white">
+                        <i className="fa-solid fa-check text-lg" />
+                      </span>
+                      <div>
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-primary)]">
+                          Here at
+                        </p>
+                        <p className="text-sm font-bold text-black">
+                          {cluster.comparison.rightLabel}
+                        </p>
+                      </div>
+                    </div>
+                    <ul className="space-y-4">
+                      {cluster.comparison.rows.map((row, ri) => (
+                        <li key={ri} className="flex gap-3 text-sm text-zinc-900 font-semibold">
+                          <i className="fa-solid fa-circle-check text-[var(--color-primary)] mt-0.5" />
+                          <span>{row.right}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Centered VS badge */}
+                <div className="hidden sm:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                  <span className="flex h-14 w-14 items-center justify-center bg-black text-white text-sm font-bold tracking-wider rounded-full shadow-lg">
+                    VS
+                  </span>
+                </div>
+              </div>
+            )}
+
             {cluster.bullets && cluster.bullets.length > 0 && (
               <div className="grid gap-4 sm:grid-cols-2 max-w-3xl mx-auto">
                 {cluster.bullets.map((bullet, bi) => (
