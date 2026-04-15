@@ -98,7 +98,7 @@ export function Header({ lang }: HeaderProps) {
                   style={{
                     minWidth: 220,
                     boxShadow: "rgb(237, 52, 145) 6px 6px 0px 0px",
-                    padding: 0,
+                    padding: "0 10px",
                   }}
                 >
                   {item.children.map((child) => (
