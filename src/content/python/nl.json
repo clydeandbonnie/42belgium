@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Python — 42 Belgium",
+    "description": "Python at 42 Belgium. Placeholder content — Phase 2 will populate this from the lexical matrix v3.",
+    "slug": "python-cursus-beginners",
+    "primaryQuery": "Python cursus voor beginners",
+    "convertingKeywords": [
+      "Python cursus voor beginners"
+    ]
+  },
+  "hero": {
+    "headline": "Python",
+    "subheadline": "Coming soon — full copy from matrix v3 in Phase 2.",
+    "cta": "Ontdek je opleiding →"
+  },
+  "clusters": [
+    {
+      "name": "PLACEHOLDER",
+      "heading": "Content coming soon",
+      "body": "This page is a placeholder. Phase 2 will populate it with copy aligned on the lexical matrix v3 for python / nl.",
+      "keywords": [
+        "Python cursus voor beginners"
+      ]
+    }
+  ]
+}

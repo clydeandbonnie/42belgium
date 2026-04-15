@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Data Analyst / BI — 42 Belgium",
+    "description": "Data Analyst / BI at 42 Belgium. Placeholder content — Phase 2 will populate this from the lexical matrix v3.",
+    "slug": "opleiding-data-analist",
+    "primaryQuery": "opleiding data analist",
+    "convertingKeywords": [
+      "opleiding data analist"
+    ]
+  },
+  "hero": {
+    "headline": "Data Analyst / BI",
+    "subheadline": "Coming soon — full copy from matrix v3 in Phase 2.",
+    "cta": "Ontdek je opleiding →"
+  },
+  "clusters": [
+    {
+      "name": "PLACEHOLDER",
+      "heading": "Content coming soon",
+      "body": "This page is a placeholder. Phase 2 will populate it with copy aligned on the lexical matrix v3 for analystbi / nl.",
+      "keywords": [
+        "opleiding data analist"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "AI Engineering — 42 Belgium",
+    "description": "AI Engineering at 42 Belgium. Placeholder content — Phase 2 will populate this from the lexical matrix v3.",
+    "slug": "opleiding-artificial-intelligence",
+    "primaryQuery": "opleiding artificial intelligence",
+    "convertingKeywords": [
+      "opleiding artificial intelligence"
+    ]
+  },
+  "hero": {
+    "headline": "AI Engineering",
+    "subheadline": "Coming soon — full copy from matrix v3 in Phase 2.",
+    "cta": "Ontdek je opleiding →"
+  },
+  "clusters": [
+    {
+      "name": "PLACEHOLDER",
+      "heading": "Content coming soon",
+      "body": "This page is a placeholder. Phase 2 will populate it with copy aligned on the lexical matrix v3 for aiengineering / nl.",
+      "keywords": [
+        "opleiding artificial intelligence"
+      ]
+    }
+  ]
+}

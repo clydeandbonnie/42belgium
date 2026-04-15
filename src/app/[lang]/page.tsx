@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { isValidLanguage, themeConfigs, THEMES, type Language } from "@/lib/themes";
+import { isValidLanguage, themeConfigs, THEMES, getSlug, type Language } from "@/lib/themes";
 
 const homepageText: Record<Language, { title: string; subtitle: string; cta: string }> = {
   en: {
@@ -42,12 +42,12 @@ export default async function LangHomePage({
         {t.subtitle}
       </p>
       <div className="mt-12 grid gap-4 sm:grid-cols-2">
-        {THEMES.map((themeSlug) => {
-          const config = themeConfigs[themeSlug];
+        {THEMES.map((theme) => {
+          const config = themeConfigs[theme];
           return (
             <Link
-              key={themeSlug}
-              href={`/${lang}/${themeSlug}`}
+              key={theme}
+              href={`/${lang}/${getSlug(theme, lang)}`}
               className="group flex items-center justify-between rounded-xl border border-zinc-200 p-5 transition-all hover:border-black hover:shadow-sm dark:border-zinc-800 dark:hover:border-white"
             >
               <div>
