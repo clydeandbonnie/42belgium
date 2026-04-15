@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
-/* ── Futura PT ── */
+/* ── Futura PT via Typekit (same kit as 42belgium.be) ── */
+@import url("https://use.typekit.net/owj0osl.css");
+
+/* ── Local Futura PT fallback (Light + Heavy only) ── */
 @font-face {
-  font-family: "Futura PT";
+  font-family: "futura-pt";
   src: url("/fonts/futura-pt-light.woff") format("woff"),
        url("/fonts/futura-pt-light.otf") format("opentype");
   font-weight: 300;
@@ -11,7 +14,7 @@
 }
 
 @font-face {
-  font-family: "Futura PT";
+  font-family: "futura-pt";
   src: url("/fonts/futura-pt-bold.woff") format("woff"),
        url("/fonts/futura-pt-bold.otf") format("opentype");
   font-weight: 700;
@@ -40,7 +43,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
-  --font-sans: "Futura PT", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "futura-pt", "Futura", "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,7 +56,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Futura PT", "Inter", ui-sans-serif, system-ui, sans-serif;
+  font-family: "futura-pt", "Futura", "Inter", ui-sans-serif, system-ui, sans-serif;
   font-weight: 300;
 }
 
