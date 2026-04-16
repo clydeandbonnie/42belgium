@@ -20,7 +20,7 @@ export function ProposalA({ content }: { content: PageContent }) {
 
   return (
     <>
-      {/* ─── HERO — text left, image right (full section height) ─── */}
+      {/* ─── HERO — full width, text left, image right ─── */}
       <section className="relative bg-black text-white overflow-hidden">
         {/* Image — absolute, pinned to right half, full section height */}
         <div className="absolute top-0 right-0 bottom-0 w-1/2 hidden sm:block">
@@ -33,9 +33,9 @@ export function ProposalA({ content }: { content: PageContent }) {
             quality={85}
           />
         </div>
-        {/* Text — left half, padded */}
-        <div className="relative mx-auto max-w-6xl px-6 pt-28 pb-16 sm:pt-36 sm:pb-24">
-          <div className="sm:w-1/2 sm:pr-12">
+        {/* Text — left half, generous left padding, no max-width container */}
+        <div className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 pl-[max(24px,calc((100vw-1200px)/2))] pr-6 sm:pr-0">
+          <div className="sm:w-1/2 sm:pr-16">
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
               <i className="fa-solid fa-rocket mr-2" />
               Free structured training
