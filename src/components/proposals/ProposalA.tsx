@@ -99,44 +99,45 @@ export function ProposalA({ content }: { content: PageContent }) {
                 </p>
               )}
 
-              {/* Comparison block — versus table, dark dramatic */}
+              {/* Comparison block — two clean columns */}
               {cluster.comparison && (
-                <div className="mt-12 bg-black text-white overflow-hidden">
-                  <div className="grid grid-cols-[1fr_auto_1fr] items-stretch">
-                    <div className="p-6 bg-zinc-900 text-center">
-                      <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-zinc-500 mb-2">
-                        <i className="fa-solid fa-xmark mr-2" />
-                        Them
+                <div className="mt-12 grid sm:grid-cols-2 gap-6">
+                  {/* LEFT — what they offer */}
+                  <div className="border border-zinc-200 overflow-hidden">
+                    <div className="bg-zinc-100 px-6 py-4 border-b border-zinc-200">
+                      <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">
+                        <i className="fa-solid fa-xmark text-[var(--color-secondary)] mr-2" />
+                        {cluster.comparison.leftLabel}
                       </p>
-                      <p className="text-sm font-bold text-zinc-400">{cluster.comparison.leftLabel}</p>
                     </div>
-                    <div className="flex items-center justify-center bg-black px-4">
-                      <span className="text-2xl font-bold text-[var(--color-secondary)]">VS</span>
-                    </div>
-                    <div className="p-6 bg-[var(--color-primary)] text-white text-center">
-                      <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/70 mb-2">
-                        <i className="fa-solid fa-check mr-2" />
-                        Us
-                      </p>
-                      <p className="text-sm font-bold">{cluster.comparison.rightLabel}</p>
-                    </div>
+                    {cluster.comparison.rows.map((row, ri) => (
+                      <div
+                        key={ri}
+                        className={`px-6 py-5 flex items-start gap-4 ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
+                      >
+                        <i className="fa-solid fa-xmark text-[var(--color-secondary)] mt-1 shrink-0" />
+                        <p className="text-sm text-zinc-500 line-through decoration-zinc-300">{row.left}</p>
+                      </div>
+                    ))}
                   </div>
-                  {cluster.comparison.rows.map((row, ri) => (
-                    <div
-                      key={ri}
-                      className="grid grid-cols-[1fr_auto_1fr] items-stretch border-t border-zinc-800"
-                    >
-                      <div className="p-6 bg-zinc-950 text-zinc-400 text-sm">
-                        <i className="fa-solid fa-xmark text-red-500 mr-3" />
-                        <span className="line-through decoration-zinc-700">{row.left}</span>
-                      </div>
-                      <div className="bg-zinc-800 w-px" />
-                      <div className="p-6 bg-zinc-900 text-white text-sm font-semibold">
-                        <i className="fa-solid fa-check text-[var(--color-primary)] mr-3" />
-                        {row.right}
-                      </div>
+                  {/* RIGHT — what 42 offers */}
+                  <div className="border-2 border-[var(--color-primary)] overflow-hidden">
+                    <div className="bg-[var(--color-primary)] px-6 py-4">
+                      <p className="text-xs font-bold uppercase tracking-[0.3em] text-white">
+                        <i className="fa-solid fa-check mr-2" />
+                        {cluster.comparison.rightLabel}
+                      </p>
                     </div>
-                  ))}
+                    {cluster.comparison.rows.map((row, ri) => (
+                      <div
+                        key={ri}
+                        className={`px-6 py-5 flex items-start gap-4 ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
+                      >
+                        <i className="fa-solid fa-check text-[var(--color-primary)] mt-1 shrink-0" />
+                        <p className="text-sm font-bold text-black">{row.right}</p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
 
