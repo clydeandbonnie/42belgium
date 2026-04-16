@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* ─── Smooth scroll for anchor links ─── */
+html {
+  scroll-behavior: smooth;
+}
+
 /* ── Futura PT: loaded via <link> in layout.tsx head ── */
 /* ── Local fallback (Light + Heavy only, if Typekit fails) ── */
 @font-face {

@@ -20,55 +20,53 @@ export function ProposalA({ content }: { content: PageContent }) {
 
   return (
     <>
-      {/* ─── HERO — text left, image right ─── */}
+      {/* ─── HERO — text left, image right (full section height) ─── */}
       <section className="relative bg-black text-white overflow-hidden">
-        <div className="mx-auto max-w-6xl px-6 pt-28 pb-0 sm:pt-36">
-          <div className="grid gap-12 sm:grid-cols-2 items-stretch">
-            {/* Text column */}
-            <div className="pb-16 sm:pb-24">
-              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
-                <i className="fa-solid fa-rocket mr-2" />
-                Free structured training
-              </p>
-              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-                {hero.headline.split("\n").map((line, i) => (
-                  <span key={i}>{i > 0 && <br />}{line}</span>
-                ))}
-              </h1>
-              <p className="mt-8 text-lg leading-relaxed text-zinc-300 max-w-lg">
-                {hero.subheadline}
-              </p>
-              <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="#apply"
-                  className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
-                >
-                  {hero.cta}
-                </Link>
-                <Link
-                  href="#after"
-                  className="inline-flex items-center justify-center border-2 border-zinc-400 text-zinc-300 font-bold uppercase tracking-wider px-10 py-4 text-base hover:border-white hover:text-white transition-all"
-                >
-                  See the outcomes
-                </Link>
-              </div>
-              {hero.reassurance && (
-                <p className="mt-6 text-xs uppercase tracking-widest text-zinc-500">
-                  {hero.reassurance}
-                </p>
-              )}
+        {/* Image — absolute, pinned to right half, full section height */}
+        <div className="absolute top-0 right-0 bottom-0 w-1/2 hidden sm:block">
+          <Image
+            src="/assets/gallery/42Belgium-Antwerp3.png"
+            alt="Students coding at 42 Belgium Antwerp campus"
+            fill
+            className="object-cover object-center"
+            priority
+            quality={85}
+          />
+        </div>
+        {/* Text — left half, padded */}
+        <div className="relative mx-auto max-w-6xl px-6 pt-28 pb-16 sm:pt-36 sm:pb-24">
+          <div className="sm:w-1/2 sm:pr-12">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
+              <i className="fa-solid fa-rocket mr-2" />
+              Free structured training
+            </p>
+            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+              {hero.headline.split("\n").map((line, i) => (
+                <span key={i}>{i > 0 && <br />}{line}</span>
+              ))}
+            </h1>
+            <p className="mt-8 text-lg leading-relaxed text-zinc-300 max-w-lg">
+              {hero.subheadline}
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <Link
+                href="#apply"
+                className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
+              >
+                {hero.cta}
+              </Link>
+              <Link
+                href="#after"
+                className="inline-flex items-center justify-center border-2 border-zinc-400 text-zinc-300 font-bold uppercase tracking-wider px-10 py-4 text-base hover:border-white hover:text-white transition-all"
+              >
+                See the outcomes
+              </Link>
             </div>
-            {/* Image column — fills full height of the section */}
-            <div className="relative hidden sm:block -mb-0 self-stretch">
-              <Image
-                src="/assets/gallery/42Belgium-Antwerp3.png"
-                alt="Students coding at 42 Belgium Antwerp campus"
-                fill
-                className="object-cover object-center"
-                priority
-                quality={85}
-              />
-            </div>
+            {hero.reassurance && (
+              <p className="mt-6 text-xs uppercase tracking-widest text-zinc-500">
+                {hero.reassurance}
+              </p>
+            )}
           </div>
         </div>
         <div className="h-1 w-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)]" />
