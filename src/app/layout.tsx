@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <head>
+        <link rel="stylesheet" href="https://use.typekit.net/seg0ngf.css" />
         <Script
           src="https://kit.fontawesome.com/4334c803c2.js"
           crossOrigin="anonymous"

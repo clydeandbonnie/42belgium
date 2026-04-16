@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-/* ── Futura PT via Typekit ── */
-@import url("https://use.typekit.net/seg0ngf.css");
-
-/* ── Local Futura PT fallback (Light + Heavy only) ── */
+/* ── Futura PT: loaded via <link> in layout.tsx head ── */
+/* ── Local fallback (Light + Heavy only, if Typekit fails) ── */
 @font-face {
   font-family: "futura-pt";
   src: url("/fonts/futura-pt-light.woff") format("woff"),
