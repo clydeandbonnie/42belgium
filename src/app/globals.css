@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-/* ── Futura PT via Typekit (same kit as 42belgium.be) ── */
-@import url("https://use.typekit.net/owj0osl.css");
+/* ── Futura PT via Typekit ── */
+@import url("https://use.typekit.net/seg0ngf.css");
 
 /* ── Local Futura PT fallback (Light + Heavy only) ── */
 @font-face {
