@@ -99,46 +99,52 @@ export function ProposalA({ content }: { content: PageContent }) {
                 </p>
               )}
 
-              {/* Comparison block — unified table with arrow transitions */}
-              {cluster.comparison && (
-                <div className="mt-12 border border-zinc-200 overflow-hidden">
-                  {/* Header row */}
-                  <div className="grid grid-cols-[1fr_40px_1fr]">
-                    <div className="bg-zinc-100 px-6 py-4 border-b border-zinc-200">
-                      <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">
-                        <i className="fa-solid fa-xmark text-[var(--color-secondary)] mr-2" />
-                        {cluster.comparison.leftLabel}
-                      </p>
+              {/* Comparison block — pricing table style */}
+              {cluster.comparison && (() => {
+                const criteria = ["Learning structure", "Proof of skills", "Code feedback", "Support", "Retention"];
+                return (
+                  <div className="mt-12 border border-zinc-200 overflow-hidden">
+                    {/* Header row */}
+                    <div className="grid grid-cols-[1fr_1fr_1fr] border-b border-zinc-200">
+                      <div className="px-6 py-5 bg-zinc-50" />
+                      <div className="px-6 py-5 bg-zinc-50 text-center border-x border-zinc-200">
+                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">
+                          {cluster.comparison!.leftLabel}
+                        </p>
+                      </div>
+                      <div className="px-6 py-5 bg-[var(--color-primary)] text-center">
+                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-white">
+                          {cluster.comparison!.rightLabel}
+                        </p>
+                      </div>
                     </div>
-                    <div className="bg-zinc-100 border-b border-zinc-200" />
-                    <div className="bg-[var(--color-primary)] px-6 py-4 border-b border-[var(--color-primary)]">
-                      <p className="text-xs font-bold uppercase tracking-[0.3em] text-white">
-                        <i className="fa-solid fa-check mr-2" />
-                        {cluster.comparison.rightLabel}
-                      </p>
-                    </div>
+                    {/* Feature rows */}
+                    {cluster.comparison!.rows.map((row, ri) => (
+                      <div
+                        key={ri}
+                        className={`grid grid-cols-[1fr_1fr_1fr] ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
+                      >
+                        {/* Criterion label */}
+                        <div className="px-6 py-6 bg-zinc-50 flex items-center">
+                          <p className="text-sm font-bold text-black">
+                            {criteria[ri] || `Feature ${ri + 1}`}
+                          </p>
+                        </div>
+                        {/* MOOC cell */}
+                        <div className="px-6 py-6 text-center border-x border-zinc-200">
+                          <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-2xl block mb-2" />
+                          <p className="text-xs text-zinc-500">{row.left}</p>
+                        </div>
+                        {/* 42 cell */}
+                        <div className="px-6 py-6 text-center bg-[var(--color-primary)]/5">
+                          <i className="fa-solid fa-check text-[var(--color-primary)] text-2xl block mb-2" />
+                          <p className="text-xs font-bold text-black">{row.right}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  {/* Rows — left | arrow | right */}
-                  {cluster.comparison.rows.map((row, ri) => (
-                    <div
-                      key={ri}
-                      className={`grid grid-cols-[1fr_40px_1fr] ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
-                    >
-                      <div className="px-6 py-5 flex items-center gap-3 bg-red-50/50">
-                        <i className="fa-solid fa-xmark text-[var(--color-secondary)] shrink-0" />
-                        <p className="text-sm text-zinc-500 line-through decoration-zinc-300">{row.left}</p>
-                      </div>
-                      <div className="flex items-center justify-center bg-zinc-50">
-                        <i className="fa-solid fa-arrow-right text-[var(--color-primary)] text-xs" />
-                      </div>
-                      <div className="px-6 py-5 flex items-center gap-3 bg-emerald-50/50">
-                        <i className="fa-solid fa-check text-[var(--color-primary)] shrink-0" />
-                        <p className="text-sm font-bold text-black">{row.right}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
+                );
+              })()}
 
               {cluster.bullets && cluster.bullets.length > 0 && (
                 <ul className="mt-12 space-y-0 border-l-2 border-[var(--color-primary)] ml-1">
