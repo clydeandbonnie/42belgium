@@ -23,7 +23,7 @@ export function ProposalA({ content }: { content: PageContent }) {
       {/* ─── HERO — text left, image right ─── */}
       <section className="relative bg-black text-white overflow-hidden">
         <div className="mx-auto max-w-6xl px-6 pt-28 pb-0 sm:pt-36">
-          <div className="grid gap-12 sm:grid-cols-2 items-end">
+          <div className="grid gap-12 sm:grid-cols-2 items-stretch">
             {/* Text column */}
             <div className="pb-16 sm:pb-24">
               <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
@@ -56,14 +56,13 @@ export function ProposalA({ content }: { content: PageContent }) {
                 </p>
               )}
             </div>
-            {/* Image column — flush bottom, no padding */}
-            <div className="relative hidden sm:block">
+            {/* Image column — fills full height of the section */}
+            <div className="relative hidden sm:block -mb-0 self-stretch">
               <Image
-                src="/assets/hero-alumni.png"
-                alt="42 Belgium students working together on campus"
-                width={640}
-                height={480}
-                className="object-cover w-full h-auto"
+                src="/assets/gallery/42Belgium-Antwerp3.png"
+                alt="Students coding at 42 Belgium Antwerp campus"
+                fill
+                className="object-cover object-center"
                 priority
                 quality={85}
               />
