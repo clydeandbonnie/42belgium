@@ -32,7 +32,9 @@ export function ProposalC({ content }: { content: PageContent }) {
                 Proven program. Real outcomes.
               </p>
               <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-                {hero.headline}
+                {hero.headline.split("\n").map((line, i) => (
+                  <span key={i}>{i > 0 && <br />}{line}</span>
+                ))}
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-zinc-300">
                 {hero.subheadline}

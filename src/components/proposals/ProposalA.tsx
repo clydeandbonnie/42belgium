@@ -31,7 +31,9 @@ export function ProposalA({ content }: { content: PageContent }) {
                 Free structured training — not a MOOC
               </p>
               <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-                {hero.headline}
+                {hero.headline.split("\n").map((line, i) => (
+                  <span key={i}>{i > 0 && <br />}{line}</span>
+                ))}
               </h1>
               <p className="mt-8 text-lg leading-relaxed text-zinc-300 max-w-lg">
                 {hero.subheadline}
