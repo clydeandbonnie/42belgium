@@ -131,13 +131,13 @@ export function ProposalA({ content }: { content: PageContent }) {
               )}
 
               {cluster.bullets && cluster.bullets.length > 0 && (
-                <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+                <ul className="mt-12 space-y-0 border-l-2 border-[var(--color-primary)] ml-1">
                   {cluster.bullets.map((bullet, bi) => (
-                    <li key={bi} className="flex gap-4">
-                      <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center bg-[var(--color-primary)] text-white text-xs font-bold">
-                        <i className="fa-solid fa-check text-xs" />
+                    <li key={bi} className="flex items-center gap-5 py-5 pl-6 border-b border-zinc-200 last:border-b-0">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center bg-[var(--color-primary)] text-white">
+                        <i className="fa-solid fa-check" />
                       </span>
-                      <p className="text-base leading-relaxed text-zinc-700">{bullet}</p>
+                      <p className="text-base font-bold text-black">{bullet}</p>
                     </li>
                   ))}
                 </ul>
