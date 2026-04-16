@@ -101,11 +101,11 @@ export function ProposalA({ content }: { content: PageContent }) {
 
               {/* Comparison block — pricing table style */}
               {cluster.comparison && (() => {
-                const criteria = ["Learning structure", "Proof of skills", "Code feedback", "Support", "Retention"];
+                const criteria = ["Learning", "Proof of skills", "Feedback", "Support", "Motivation"];
                 return (
                   <div className="mt-12 border border-zinc-200 overflow-hidden">
                     {/* Header row */}
-                    <div className="grid grid-cols-[1fr_1fr_1fr] border-b border-zinc-200">
+                    <div className="grid grid-cols-[auto_1fr_1fr] border-b border-zinc-200">
                       <div className="px-6 py-5 bg-zinc-50" />
                       <div className="px-6 py-5 bg-zinc-50 text-center border-x border-zinc-200">
                         <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">
@@ -122,22 +122,22 @@ export function ProposalA({ content }: { content: PageContent }) {
                     {cluster.comparison!.rows.map((row, ri) => (
                       <div
                         key={ri}
-                        className={`grid grid-cols-[1fr_1fr_1fr] ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
+                        className={`grid grid-cols-[auto_1fr_1fr] ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
                       >
-                        {/* Criterion label */}
-                        <div className="px-6 py-6 bg-zinc-50 flex items-center">
+                        {/* Criterion label — auto width, equal padding both sides */}
+                        <div className="px-6 py-6 bg-zinc-50 flex items-center min-w-[140px]">
                           <p className="text-sm font-bold text-black">
                             {criteria[ri] || `Feature ${ri + 1}`}
                           </p>
                         </div>
-                        {/* MOOC cell */}
-                        <div className="px-6 py-6 text-center border-x border-zinc-200">
-                          <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-2xl block mb-2" />
+                        {/* MOOC cell — icon inline with text */}
+                        <div className="px-6 py-6 border-x border-zinc-200 flex items-center justify-center gap-3">
+                          <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-lg shrink-0" />
                           <p className="text-xs text-zinc-500">{row.left}</p>
                         </div>
-                        {/* 42 cell */}
-                        <div className="px-6 py-6 text-center bg-[var(--color-primary)]/5">
-                          <i className="fa-solid fa-check text-[var(--color-primary)] text-2xl block mb-2" />
+                        {/* 42 cell — icon inline with text */}
+                        <div className="px-6 py-6 bg-[var(--color-primary)]/5 flex items-center justify-center gap-3">
+                          <i className="fa-solid fa-check text-[var(--color-primary)] text-lg shrink-0" />
                           <p className="text-xs font-bold text-black">{row.right}</p>
                         </div>
                       </div>

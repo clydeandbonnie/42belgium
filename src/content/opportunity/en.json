@@ -61,9 +61,9 @@
         "rows": [
           { "left": "You start alone. You finish alone.", "right": "Peer-to-peer learning in real teams." },
           { "left": "A PDF certificate employers ignore.", "right": "A portfolio of shipped projects." },
-          { "left": "No feedback on your code.", "right": "Code review from peers every week." },
+          { "left": "Feedback is rare, if it exists at all.", "right": "Peer-to-peer feedback on every project." },
           { "left": "Stuck the first time you hit a bug.", "right": "Campus open 24/7 — help next to you." },
-          { "left": "Most people quit in the first month.", "right": "Cohorts that ship together, stay together." }
+          { "left": "Most people lose motivation and drop out.", "right": "Cohorts that ship together, stay together." }
         ]
       }
     },
