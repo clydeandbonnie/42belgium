@@ -63,7 +63,7 @@ export function ProposalA({ content }: { content: PageContent }) {
               </Link>
             </div>
             {hero.reassurance && (
-              <p className="mt-6 text-xs uppercase tracking-widest text-zinc-500">
+              <p className="mt-6 text-[11px] font-bold uppercase tracking-widest text-zinc-400">
                 {hero.reassurance}
               </p>
             )}
