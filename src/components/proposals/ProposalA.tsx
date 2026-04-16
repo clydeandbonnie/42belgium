@@ -99,45 +99,44 @@ export function ProposalA({ content }: { content: PageContent }) {
                 </p>
               )}
 
-              {/* Comparison block — two clean columns */}
+              {/* Comparison block — unified table with arrow transitions */}
               {cluster.comparison && (
-                <div className="mt-12 grid sm:grid-cols-2 gap-6">
-                  {/* LEFT — what they offer */}
-                  <div className="border border-zinc-200 overflow-hidden">
+                <div className="mt-12 border border-zinc-200 overflow-hidden">
+                  {/* Header row */}
+                  <div className="grid grid-cols-[1fr_40px_1fr]">
                     <div className="bg-zinc-100 px-6 py-4 border-b border-zinc-200">
                       <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">
                         <i className="fa-solid fa-xmark text-[var(--color-secondary)] mr-2" />
                         {cluster.comparison.leftLabel}
                       </p>
                     </div>
-                    {cluster.comparison.rows.map((row, ri) => (
-                      <div
-                        key={ri}
-                        className={`px-6 py-5 flex items-start gap-4 ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
-                      >
-                        <i className="fa-solid fa-xmark text-[var(--color-secondary)] mt-1 shrink-0" />
-                        <p className="text-sm text-zinc-500 line-through decoration-zinc-300">{row.left}</p>
-                      </div>
-                    ))}
-                  </div>
-                  {/* RIGHT — what 42 offers */}
-                  <div className="border-2 border-[var(--color-primary)] overflow-hidden">
-                    <div className="bg-[var(--color-primary)] px-6 py-4">
+                    <div className="bg-zinc-100 border-b border-zinc-200" />
+                    <div className="bg-[var(--color-primary)] px-6 py-4 border-b border-[var(--color-primary)]">
                       <p className="text-xs font-bold uppercase tracking-[0.3em] text-white">
                         <i className="fa-solid fa-check mr-2" />
                         {cluster.comparison.rightLabel}
                       </p>
                     </div>
-                    {cluster.comparison.rows.map((row, ri) => (
-                      <div
-                        key={ri}
-                        className={`px-6 py-5 flex items-start gap-4 ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
-                      >
-                        <i className="fa-solid fa-check text-[var(--color-primary)] mt-1 shrink-0" />
+                  </div>
+                  {/* Rows — left | arrow | right */}
+                  {cluster.comparison.rows.map((row, ri) => (
+                    <div
+                      key={ri}
+                      className={`grid grid-cols-[1fr_40px_1fr] ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
+                    >
+                      <div className="px-6 py-5 flex items-center gap-3 bg-red-50/50">
+                        <i className="fa-solid fa-xmark text-[var(--color-secondary)] shrink-0" />
+                        <p className="text-sm text-zinc-500 line-through decoration-zinc-300">{row.left}</p>
+                      </div>
+                      <div className="flex items-center justify-center bg-zinc-50">
+                        <i className="fa-solid fa-arrow-right text-[var(--color-primary)] text-xs" />
+                      </div>
+                      <div className="px-6 py-5 flex items-center gap-3 bg-emerald-50/50">
+                        <i className="fa-solid fa-check text-[var(--color-primary)] shrink-0" />
                         <p className="text-sm font-bold text-black">{row.right}</p>
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
               )}
 
