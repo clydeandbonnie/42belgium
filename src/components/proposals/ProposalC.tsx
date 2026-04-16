@@ -42,7 +42,7 @@ export function ProposalC({ content }: { content: PageContent }) {
               </p>
               <div className="mt-8">
                 <Link
-                  href="#apply"
+                  href="https://admission.42belgium.be/users/sign_up"
                   className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
                 >
                   {hero.cta}
@@ -336,7 +336,7 @@ export function ProposalC({ content }: { content: PageContent }) {
                 )}
               </div>
               <Link
-                href="#"
+                href="https://admission.42belgium.be/users/sign_up"
                 className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all shrink-0"
               >
                 {howToApply.ctaLabel}
@@ -400,7 +400,7 @@ export function ProposalC({ content }: { content: PageContent }) {
                 </p>
                 <div className="mt-8">
                   <Link
-                    href="#"
+                    href="https://admission.42belgium.be/users/sign_up"
                     className="inline-flex items-center justify-center bg-white text-black font-bold uppercase tracking-wider px-10 py-4 text-base hover:bg-zinc-100 transition-all"
                   >
                     {ctaFinal.cta}

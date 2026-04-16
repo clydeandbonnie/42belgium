@@ -51,7 +51,7 @@ export function ProposalA({ content }: { content: PageContent }) {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link
-                href="#apply"
+                href="https://admission.42belgium.be/users/sign_up"
                 className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
               >
                 {hero.cta}
@@ -286,7 +286,7 @@ export function ProposalA({ content }: { content: PageContent }) {
             </div>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 items-center">
               <Link
-                href="#"
+                href="https://admission.42belgium.be/users/sign_up"
                 className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
               >
                 {howToApply.ctaLabel}
@@ -356,7 +356,7 @@ export function ProposalA({ content }: { content: PageContent }) {
               </p>
               <div className="mt-10">
                 <Link
-                  href="#"
+                  href="https://admission.42belgium.be/users/sign_up"
                   className="inline-flex items-center justify-center border-2 border-white text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:bg-white hover:text-black transition-all"
                 >
                   {ctaFinal.cta}

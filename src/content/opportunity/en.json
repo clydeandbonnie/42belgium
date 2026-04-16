@@ -21,7 +21,7 @@
     "headline": "Free tech training that gets you hired.\nRemotely or anywhere.",
     "subheadline": "Tech jobs come with flexibility built in. Train for free and land the remote work, hybrid, or on-site role you want. 100% free, peer-to-peer, project-based.",
     "reassurance": "100% free · No degree required · No experience needed · Brussels & Antwerp",
-    "cta": "Find your training →"
+    "cta": "Apply now →"
   },
   "clusters": [
     {
@@ -194,7 +194,7 @@
         "description": "Choose your specialisation, pass industry certifications, complete internships, and enter the job market. Many students secure offers before they officially graduate."
       }
     ],
-    "ctaLabel": "Find your training →",
+    "ctaLabel": "Apply now →",
     "microcopy": "Next Piscine dates on campus — apply anytime."
   },
   "faq": [
@@ -240,7 +240,7 @@
   "ctaFinal": {
     "title": "Ready to find your training?",
     "description": "Free structured training. Real jobs — remote, hybrid, or on-site. No degree, no CV, no experience required. Start with our online logic test. It takes an hour and it's free.",
-    "cta": "Find your training →"
+    "cta": "Apply now →"
   },
   "schemaOrg": {
     "course": {
