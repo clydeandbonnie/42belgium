@@ -28,7 +28,7 @@ export function ProposalA({ content }: { content: PageContent }) {
             <div className="pb-16 sm:pb-24">
               <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
                 <i className="fa-solid fa-rocket mr-2" />
-                Free structured training — not a MOOC
+                Free structured training — Brussels &amp; Antwerp
               </p>
               <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
                 {hero.headline.split("\n").map((line, i) => (

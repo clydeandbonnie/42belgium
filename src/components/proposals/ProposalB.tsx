@@ -32,7 +32,7 @@ export function ProposalB({ content }: { content: PageContent }) {
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 border border-[var(--color-primary)]/40 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-bold uppercase tracking-wider px-4 py-2 mb-8">
               <i className="fa-solid fa-door-open" />
-              Not a MOOC — structured free training
+              Free structured training — Brussels &amp; Antwerp
             </div>
             <h1 className="text-5xl font-bold leading-[1.1] tracking-tight sm:text-6xl lg:text-7xl">
               {hero.headline.split("\n").map((line, i) => (
