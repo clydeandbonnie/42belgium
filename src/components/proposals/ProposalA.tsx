@@ -105,7 +105,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                 return (
                   <div className="mt-12 border border-zinc-200 overflow-hidden">
                     {/* Header row */}
-                    <div className="grid grid-cols-[auto_1fr_1fr] border-b border-zinc-200">
+                    <div className="grid grid-cols-[160px_1fr_1fr] border-b border-zinc-200">
                       <div className="px-6 py-5 bg-zinc-50" />
                       <div className="px-6 py-5 bg-zinc-50 text-center border-x border-zinc-200">
                         <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">
@@ -122,7 +122,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                     {cluster.comparison!.rows.map((row, ri) => (
                       <div
                         key={ri}
-                        className={`grid grid-cols-[auto_1fr_1fr] ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
+                        className={`grid grid-cols-[160px_1fr_1fr] ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
                       >
                         {/* Criterion label — auto width, equal padding both sides */}
                         <div className="px-6 py-6 bg-zinc-50 flex items-center min-w-[140px]">
