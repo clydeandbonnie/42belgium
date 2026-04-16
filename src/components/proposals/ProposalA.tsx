@@ -69,7 +69,7 @@ export function ProposalA({ content }: { content: PageContent }) {
             )}
           </div>
         </div>
-        <div className="h-1 w-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)]" />
+        <div className="h-1 w-full bg-gradient-to-r from-[var(--color-secondary)] to-[var(--color-secondary)]/25" />
       </section>
 
       {/* ─── CLUSTERS ─── */}
