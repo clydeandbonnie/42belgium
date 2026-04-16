@@ -11,6 +11,7 @@
  */
 
 import Link from "next/link";
+import Image from "next/image";
 import type { PageContent } from "@/lib/i18n";
 import { YouTubeEmbed } from "./YouTubeEmbed";
 
@@ -20,9 +21,21 @@ export function ProposalA({ content }: { content: PageContent }) {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative bg-black text-white overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[var(--color-primary)]/15 to-transparent pointer-events-none" />
-        <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-28 sm:pb-32 sm:pt-36">
+      <section className="relative bg-black text-white overflow-hidden min-h-[90vh] flex items-center">
+        {/* Background image — silhouettes, contre-jour */}
+        <Image
+          src="/assets/hero-silhouettes.jpg"
+          alt="Students at 42 Belgium campus discussing in silhouette"
+          fill
+          className="object-cover object-center"
+          priority
+          quality={85}
+        />
+        {/* Gradient overlay — dark left (for text), lighter right (show image) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/40" />
+        {/* Subtle teal glow at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[var(--color-primary)]/10 to-transparent pointer-events-none" />
+        <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-28 sm:pb-32 sm:pt-36 w-full">
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
             <i className="fa-solid fa-rocket mr-2" />
             Free structured training — not a MOOC
