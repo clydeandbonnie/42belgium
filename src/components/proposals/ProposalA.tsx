@@ -175,7 +175,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                 <p className="text-7xl sm:text-8xl font-bold text-[var(--color-primary)] leading-none">
                   {afterForty.stat.value}
                 </p>
-                <p className="mt-3 text-base uppercase tracking-wider text-zinc-400">
+                <p className="mt-3 text-base uppercase tracking-wider text-zinc-300">
                   {afterForty.stat.label}
                 </p>
                 <h2 className="mt-10 text-3xl font-bold tracking-tight sm:text-4xl">
@@ -196,7 +196,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                   </div>
                 ))}
                 {afterForty.communityNote && (
-                  <p className="mt-4 text-sm text-zinc-500 italic leading-relaxed">
+                  <p className="mt-4 text-sm text-zinc-300 italic leading-relaxed">
                     {afterForty.communityNote}
                   </p>
                 )}
