@@ -20,51 +20,55 @@ export function ProposalA({ content }: { content: PageContent }) {
 
   return (
     <>
-      {/* ─── HERO ─── */}
-      <section className="relative bg-black text-white overflow-hidden min-h-[90vh] flex items-center">
-        {/* Background image — silhouettes, contre-jour */}
-        <Image
-          src="/assets/hero-silhouettes.jpg"
-          alt="Students at 42 Belgium campus discussing in silhouette"
-          fill
-          className="object-cover object-center"
-          priority
-          quality={85}
-        />
-        {/* Gradient overlay — dark left (for text), lighter right (show image) */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/40" />
-        {/* Subtle teal glow at bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[var(--color-primary)]/10 to-transparent pointer-events-none" />
-        <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-28 sm:pb-32 sm:pt-36 w-full">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
-            <i className="fa-solid fa-rocket mr-2" />
-            Free structured training — not a MOOC
-          </p>
-          <h1 className="text-5xl font-bold leading-[1.1] tracking-tight sm:text-6xl lg:text-7xl max-w-4xl">
-            {hero.headline}
-          </h1>
-          <p className="mt-8 text-xl leading-relaxed text-zinc-300 max-w-2xl">
-            {hero.subheadline}
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <Link
-              href="#apply"
-              className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
-            >
-              {hero.cta}
-            </Link>
-            <Link
-              href="#after"
-              className="inline-flex items-center justify-center border-2 border-zinc-400 text-zinc-300 font-bold uppercase tracking-wider px-10 py-4 text-base hover:border-white hover:text-white transition-all"
-            >
-              See the outcomes
-            </Link>
+      {/* ─── HERO — text left, image right ─── */}
+      <section className="relative bg-black text-white overflow-hidden">
+        <div className="mx-auto max-w-6xl px-6 pt-28 pb-0 sm:pt-36">
+          <div className="grid gap-12 sm:grid-cols-2 items-end">
+            {/* Text column */}
+            <div className="pb-16 sm:pb-24">
+              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
+                <i className="fa-solid fa-rocket mr-2" />
+                Free structured training — not a MOOC
+              </p>
+              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+                {hero.headline}
+              </h1>
+              <p className="mt-8 text-lg leading-relaxed text-zinc-300 max-w-lg">
+                {hero.subheadline}
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="#apply"
+                  className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
+                >
+                  {hero.cta}
+                </Link>
+                <Link
+                  href="#after"
+                  className="inline-flex items-center justify-center border-2 border-zinc-400 text-zinc-300 font-bold uppercase tracking-wider px-10 py-4 text-base hover:border-white hover:text-white transition-all"
+                >
+                  See the outcomes
+                </Link>
+              </div>
+              {hero.reassurance && (
+                <p className="mt-6 text-xs uppercase tracking-widest text-zinc-500">
+                  {hero.reassurance}
+                </p>
+              )}
+            </div>
+            {/* Image column — flush bottom, no padding */}
+            <div className="relative hidden sm:block">
+              <Image
+                src="/assets/hero-alumni.png"
+                alt="42 Belgium students working together on campus"
+                width={640}
+                height={480}
+                className="object-cover w-full h-auto"
+                priority
+                quality={85}
+              />
+            </div>
           </div>
-          {hero.reassurance && (
-            <p className="mt-6 text-xs uppercase tracking-widest text-zinc-500">
-              {hero.reassurance}
-            </p>
-          )}
         </div>
         <div className="h-1 w-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)]" />
       </section>
