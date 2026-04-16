@@ -54,6 +54,10 @@ export interface Cluster {
   keywords: string[];
   /** Optional bullet points rendered under the body. */
   bullets?: string[];
+  /** Optional H3 subheading to split the body in two parts. */
+  subheading?: string;
+  /** Optional second paragraph of body text, shown after the subheading. */
+  bodyPart2?: string;
   /** Optional side-by-side comparison (e.g. MOOC vs 42). */
   comparison?: ClusterComparison;
 }
@@ -206,6 +210,8 @@ export function extractBodyText(content: PageContent): string {
     ...content.clusters.flatMap((c) => [
       c.heading,
       c.body,
+      c.subheading || "",
+      c.bodyPart2 || "",
       ...(c.bullets || []),
       ...(c.comparison
         ? [

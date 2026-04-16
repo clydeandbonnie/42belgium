@@ -74,6 +74,16 @@ export function ProposalB({ content }: { content: PageContent }) {
               <p className="mt-6 text-base leading-relaxed text-zinc-700">
                 {cluster.body}
               </p>
+              {cluster.subheading && (
+                <h3 className="mt-8 text-xl font-bold tracking-tight text-black">
+                  {cluster.subheading}
+                </h3>
+              )}
+              {cluster.bodyPart2 && (
+                <p className="mt-4 text-base leading-relaxed text-zinc-700">
+                  {cluster.bodyPart2}
+                </p>
+              )}
             </div>
 
             {/* Comparison block — two facing cards with centered VS badge */}

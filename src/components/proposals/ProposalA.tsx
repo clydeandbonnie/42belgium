@@ -88,6 +88,16 @@ export function ProposalA({ content }: { content: PageContent }) {
               <p className="mt-6 text-lg leading-relaxed text-zinc-700 max-w-3xl">
                 {cluster.body}
               </p>
+              {cluster.subheading && (
+                <h3 className="mt-10 text-2xl font-bold tracking-tight text-black">
+                  {cluster.subheading}
+                </h3>
+              )}
+              {cluster.bodyPart2 && (
+                <p className="mt-4 text-lg leading-relaxed text-zinc-700 max-w-3xl">
+                  {cluster.bodyPart2}
+                </p>
+              )}
 
               {/* Comparison block — versus table, dark dramatic */}
               {cluster.comparison && (
