@@ -89,15 +89,18 @@ export interface AfterFortySection {
   communityNote?: string;
 }
 
+export interface CurriculumPhase {
+  number: string;
+  title: string;
+  duration: string;
+  description: string;
+  items: string[];
+}
+
 export interface WhatYouBuildSection {
   heading: string;
   intro: string;
-  coreLabel: string;
-  coreBlurb: string;
-  coreTopics: string[];
-  advancedLabel: string;
-  advancedBlurb: string;
-  advancedTracks: string[];
+  phases: CurriculumPhase[];
   plusNote?: string;
 }
 
@@ -227,10 +230,7 @@ export function extractBodyText(content: PageContent): string {
     content.afterForty?.communityNote || "",
     content.whatYouBuild?.heading || "",
     content.whatYouBuild?.intro || "",
-    content.whatYouBuild?.coreBlurb || "",
-    ...(content.whatYouBuild?.coreTopics || []),
-    content.whatYouBuild?.advancedBlurb || "",
-    ...(content.whatYouBuild?.advancedTracks || []),
+    ...(content.whatYouBuild?.phases || []).flatMap((p) => [p.title, p.description, ...p.items]),
     content.whatYouBuild?.plusNote || "",
     content.realStories?.heading || "",
     content.realStories?.description || "",

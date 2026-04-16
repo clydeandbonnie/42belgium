@@ -103,29 +103,61 @@
   },
   "whatYouBuild": {
     "heading": "What you'll actually build.",
-    "intro": "The 42 Belgium program is structured around real projects, not lectures. From your first line of code to your final specialisation, every skill is earned by shipping something that works.",
-    "coreLabel": "Core Curriculum — the foundation (6–24 months, avg 18)",
-    "coreBlurb": "You learn to code from scratch, then build your way up through progressively harder projects.",
-    "coreTopics": [
-      "Languages: C, Python, and others along the way",
-      "Algorithms & data structures — the logic behind every codebase",
-      "UNIX, file systems, processes — how software actually runs",
-      "Network programming — the architecture behind modern apps",
-      "Object-oriented programming — writing code that scales",
-      "Client-server projects — building the backend of real systems",
-      "Web programming — from HTML to full-stack deployment",
-      "Graphics programming — rendering pixels, building interfaces",
-      "Artificial intelligence — the fundamentals powering modern systems",
-      "Concurrent programming — multi-threading and parallelism"
-    ],
-    "advancedLabel": "Advanced Curriculum — specialise in what drives you",
-    "advancedBlurb": "After the core, you choose your track. Depth up to a master-equivalent level.",
-    "advancedTracks": [
-      "Artificial Intelligence & Data",
-      "Cybersecurity",
-      "Web & Mobile development",
-      "Operating systems",
-      "Graphical programming"
+    "intro": "The 42 Belgium program is structured around real projects, not lectures. Four phases, one trajectory — from your first line of code to your career launch.",
+    "phases": [
+      {
+        "number": "01",
+        "title": "Core Curriculum",
+        "duration": "6–24 months, avg 18",
+        "description": "You learn to code from scratch, then build your way up through progressively harder projects. The core gives every student a solid foundation — both hard and soft skills.",
+        "items": [
+          "Languages: C, Python, and others along the way",
+          "Algorithms & data structures — the logic behind every codebase",
+          "UNIX, file systems, processes — how software actually runs",
+          "Network programming — the architecture behind modern apps",
+          "Object-oriented programming — writing code that scales",
+          "Client-server projects — building the backend of real systems",
+          "Web programming — from HTML to full-stack deployment",
+          "Graphics programming — rendering pixels, building interfaces",
+          "Artificial intelligence — the fundamentals powering modern systems",
+          "Concurrent programming — multi-threading and parallelism"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "First work experience",
+        "duration": "Recommended",
+        "description": "After the core, many students take a first internship or job in tech. Not mandatory, but strongly recommended.",
+        "items": [
+          "Apply your skills in real-world conditions",
+          "Understand professional workflows, tools, and team dynamics",
+          "Explore possible career paths before specialising"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Advanced Curriculum",
+        "duration": "Up to 5 years",
+        "description": "Choose your specialisation and go deeper — up to a master-equivalent level. Like in a video game, you level up by completing and validating projects.",
+        "items": [
+          "Artificial Intelligence & Data",
+          "Cybersecurity",
+          "Web & Mobile development",
+          "Operating systems",
+          "Graphical programming"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Career launch",
+        "duration": "98% hired",
+        "description": "Many students secure job offers during this phase — often before they officially graduate. Industry certifications (AWS and others) add professional credibility.",
+        "items": [
+          "Put advanced skills into practice in longer, specialised roles",
+          "Build deeper professional expertise and network",
+          "Secure long-term opportunities — many receive offers here"
+        ]
+      }
     ],
     "plusNote": "Plus: industry certifications (AWS cloud and others), ethics built into every module, and a philosophy of sharing that shapes how you learn."
   },

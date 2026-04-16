@@ -16,6 +16,7 @@
 import Link from "next/link";
 import type { PageContent } from "@/lib/i18n";
 import { YouTubeEmbed } from "./YouTubeEmbed";
+import { TimelineAccordion } from "./TimelineAccordion";
 
 export function ProposalC({ content }: { content: PageContent }) {
   const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
@@ -245,12 +246,12 @@ export function ProposalC({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── WHAT YOU'LL BUILD — grid with counts ─── */}
-      {whatYouBuild && (
+      {/* ─── WHAT YOU'LL BUILD — timeline accordion ─── */}
+      {whatYouBuild && whatYouBuild.phases && (
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-              The means
+              The program
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black max-w-3xl">
               {whatYouBuild.heading}
@@ -258,59 +259,8 @@ export function ProposalC({ content }: { content: PageContent }) {
             <p className="mt-6 text-base leading-relaxed text-zinc-700 max-w-3xl">
               {whatYouBuild.intro}
             </p>
-            <div className="mt-12 grid gap-6 sm:grid-cols-2">
-              {/* Core */}
-              <div className="border border-zinc-200 p-8">
-                <div className="flex items-baseline justify-between mb-4">
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-primary)]">
-                      Phase 1
-                    </p>
-                    <h3 className="text-lg font-bold text-black mt-1">
-                      {whatYouBuild.coreLabel}
-                    </h3>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-3xl font-bold text-black">{whatYouBuild.coreTopics.length}</p>
-                    <p className="text-[10px] uppercase tracking-wider text-zinc-500">topics</p>
-                  </div>
-                </div>
-                <p className="text-sm text-zinc-700 mb-5">{whatYouBuild.coreBlurb}</p>
-                <ul className="grid gap-2">
-                  {whatYouBuild.coreTopics.map((topic) => (
-                    <li key={topic} className="flex gap-3 text-sm">
-                      <i className="fa-solid fa-check text-[var(--color-primary)] mt-1 text-xs" />
-                      <span className="text-zinc-800">{topic}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {/* Advanced */}
-              <div className="border border-zinc-200 p-8">
-                <div className="flex items-baseline justify-between mb-4">
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-primary)]">
-                      Phase 3
-                    </p>
-                    <h3 className="text-lg font-bold text-black mt-1">
-                      {whatYouBuild.advancedLabel}
-                    </h3>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-3xl font-bold text-black">{whatYouBuild.advancedTracks.length}</p>
-                    <p className="text-[10px] uppercase tracking-wider text-zinc-500">tracks</p>
-                  </div>
-                </div>
-                <p className="text-sm text-zinc-700 mb-5">{whatYouBuild.advancedBlurb}</p>
-                <ul className="grid gap-3">
-                  {whatYouBuild.advancedTracks.map((track) => (
-                    <li key={track} className="flex gap-3">
-                      <i className="fa-solid fa-diamond text-[var(--color-primary)] mt-1.5 text-xs" />
-                      <span className="text-sm text-zinc-900 font-semibold">{track}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="mt-12">
+              <TimelineAccordion phases={whatYouBuild.phases} />
             </div>
             {whatYouBuild.plusNote && (
               <p className="mt-8 text-sm text-zinc-600 italic leading-relaxed max-w-3xl">

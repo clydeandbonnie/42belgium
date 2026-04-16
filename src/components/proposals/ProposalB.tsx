@@ -12,6 +12,7 @@
 import Link from "next/link";
 import type { PageContent } from "@/lib/i18n";
 import { YouTubeEmbed } from "./YouTubeEmbed";
+import { TimelineAccordion } from "./TimelineAccordion";
 
 export function ProposalB({ content }: { content: PageContent }) {
   const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
@@ -201,13 +202,13 @@ export function ProposalB({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── WHAT YOU'LL BUILD ─── */}
-      {whatYouBuild && (
+      {/* ─── WHAT YOU'LL BUILD — timeline accordion ─── */}
+      {whatYouBuild && whatYouBuild.phases && (
         <section className="bg-zinc-50 border-y border-zinc-200">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
             <div className="max-w-2xl mx-auto text-center mb-12">
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-                The means
+                The program
               </p>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
                 {whatYouBuild.heading}
@@ -216,37 +217,8 @@ export function ProposalB({ content }: { content: PageContent }) {
                 {whatYouBuild.intro}
               </p>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 max-w-4xl mx-auto">
-              <div className="bg-white p-8 border border-zinc-200">
-                <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-primary)] mb-2">
-                  Phase 1
-                </p>
-                <h3 className="text-lg font-bold mb-3 text-black">{whatYouBuild.coreLabel}</h3>
-                <p className="text-sm text-zinc-700 mb-5">{whatYouBuild.coreBlurb}</p>
-                <ul className="space-y-2">
-                  {whatYouBuild.coreTopics.map((topic) => (
-                    <li key={topic} className="flex gap-3 text-sm">
-                      <i className="fa-solid fa-check text-[var(--color-primary)] mt-1 text-xs" />
-                      <span className="text-zinc-800">{topic}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="bg-white p-8 border border-zinc-200">
-                <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-primary)] mb-2">
-                  Phase 3
-                </p>
-                <h3 className="text-lg font-bold mb-3 text-black">{whatYouBuild.advancedLabel}</h3>
-                <p className="text-sm text-zinc-700 mb-5">{whatYouBuild.advancedBlurb}</p>
-                <ul className="space-y-3">
-                  {whatYouBuild.advancedTracks.map((track) => (
-                    <li key={track} className="flex gap-3">
-                      <i className="fa-solid fa-diamond text-[var(--color-primary)] mt-1.5 text-xs" />
-                      <span className="text-sm text-zinc-900 font-semibold">{track}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="max-w-3xl mx-auto">
+              <TimelineAccordion phases={whatYouBuild.phases} />
             </div>
             {whatYouBuild.plusNote && (
               <p className="mt-8 text-center text-sm text-zinc-600 italic leading-relaxed max-w-2xl mx-auto">
