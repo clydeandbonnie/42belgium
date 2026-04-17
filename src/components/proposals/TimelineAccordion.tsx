@@ -108,13 +108,21 @@ export function TimelineAccordion({ phases }: Props) {
               {/* Content — collapsible */}
               <div
                 className={`overflow-hidden transition-all duration-400 ease-in-out ${
-                  isOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
+                  isOpen ? "max-h-[1600px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="pl-[60px] pb-8 pr-4">
-                  <p className="text-base leading-relaxed text-zinc-700 mb-6">
-                    {phase.description}
-                  </p>
+                  {phase.description.split("\n\n").map((para, pi) => {
+                    const match = para.match(/^\*\*(.+?)\*\*(.*)$/);
+                    const head = match ? match[1] : null;
+                    const rest = match ? match[2] : para;
+                    return (
+                      <p key={pi} className="text-base leading-relaxed text-zinc-700 mb-6">
+                        {head && <strong className="font-bold text-black">{head}</strong>}
+                        {rest}
+                      </p>
+                    );
+                  })}
                   <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
                     {phase.items.map((item) => {
                       const match = item.match(/^\*\*(.+?)\*\*(.*)$/);
@@ -131,6 +139,24 @@ export function TimelineAccordion({ phases }: Props) {
                       );
                     })}
                   </ul>
+                  {phase.flexibility && phase.flexibility.length > 0 && (
+                    <div className="mt-8">
+                      <p className="text-base font-bold text-black mb-3">Flexibility:</p>
+                      <ul className="space-y-2 list-disc pl-5">
+                        {phase.flexibility.map((item, i) => (
+                          <li key={i} className="text-sm text-zinc-800 leading-relaxed">
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {phase.globalMobility && (
+                    <p className="mt-6 text-sm text-zinc-800 leading-relaxed">
+                      <strong className="font-bold text-black">Global mobility:</strong>{" "}
+                      {phase.globalMobility}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>

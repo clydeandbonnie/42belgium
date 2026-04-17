@@ -99,6 +99,8 @@ export interface CurriculumPhase {
   duration: string;
   description: string;
   items: string[];
+  flexibility?: string[];
+  globalMobility?: string;
 }
 
 export interface WhatYouBuildSection {

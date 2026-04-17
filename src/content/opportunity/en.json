@@ -142,15 +142,21 @@
       {
         "number": "03",
         "title": "Advanced Curriculum",
-        "duration": "Up to 5 years",
-        "description": "Choose your specialisation and go deeper — up to a master-equivalent level. Like in a video game, you level up by completing and validating projects.",
+        "duration": "Up to 5 years (flexible pace)",
+        "description": "Choose your specialisation and go deeper — up to a master-equivalent level.\n\n**How it works:** Like in a video game, you can try, fail, and try again until you succeed. As you complete and validate projects, your level increases to reflect the skills you've mastered along the way. At each level, you discover new areas of coding and IT. This makes every student's journey unique, while still covering a shared foundation.",
         "items": [
           "Artificial Intelligence & Data",
           "Cybersecurity",
           "Web & Mobile development",
           "Operating systems",
           "Graphical programming"
-        ]
+        ],
+        "flexibility": [
+          "You are not obligated to stick to one specialisation or complete it fully.",
+          "You can move between tracks, experiment with different fields, and choose projects that fit your goals.",
+          "Each student is free to decide when to graduate and officially become a 42 Alumni."
+        ],
+        "globalMobility": "This phase can be pursued not only in Brussels or Antwerp but also at any other 42 campus worldwide."
       },
       {
         "number": "04",
