@@ -58,7 +58,7 @@
         "free online courses with certificates"
       ],
       "comparison": {
-        "leftLabel": "A typical MOOC or free online course",
+        "leftLabel": "A typical online course",
         "rightLabel": "42 Belgium",
         "rows": [
           { "left": "You start alone. You finish alone.", "right": "Peer-to-peer learning in real teams." },
