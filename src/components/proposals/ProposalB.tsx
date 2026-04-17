@@ -13,6 +13,7 @@ import Link from "next/link";
 import type { PageContent } from "@/lib/i18n";
 import { YouTubeEmbed } from "./YouTubeEmbed";
 import { TimelineAccordion } from "./TimelineAccordion";
+import { ApplyLink } from "./ApplyLink";
 
 export function ProposalB({ content }: { content: PageContent }) {
   const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
@@ -44,12 +45,9 @@ export function ProposalB({ content }: { content: PageContent }) {
               {hero.subheadline}
             </p>
             <div className="mt-10">
-              <Link
-                href="https://admission.42belgium.be/users/sign_up"
-                className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
-              >
+              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
                 {hero.cta}
-              </Link>
+              </ApplyLink>
             </div>
             {hero.reassurance && (
               <p className="mt-6 text-[11px] font-bold uppercase tracking-widest text-zinc-400">
@@ -283,12 +281,9 @@ export function ProposalB({ content }: { content: PageContent }) {
               ))}
             </div>
             <div className="mt-12 text-center">
-              <Link
-                href="https://admission.42belgium.be/users/sign_up"
-                className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
-              >
+              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
                 {howToApply.ctaLabel}
-              </Link>
+              </ApplyLink>
               {howToApply.microcopy && (
                 <p className="mt-4 text-sm text-zinc-600">{howToApply.microcopy}</p>
               )}
@@ -358,12 +353,9 @@ export function ProposalB({ content }: { content: PageContent }) {
                 {ctaFinal.description}
               </p>
               <div className="mt-10">
-                <Link
-                  href="https://admission.42belgium.be/users/sign_up"
-                  className="inline-flex items-center justify-center bg-white text-black font-bold uppercase tracking-wider px-10 py-4 text-base hover:bg-zinc-100 transition-all"
-                >
-                  {ctaFinal.cta}
-                </Link>
+                <ApplyLink className="inline-flex items-center justify-center bg-white text-black font-bold uppercase tracking-wider px-10 py-4 text-base hover:bg-zinc-100 transition-all">
+                {ctaFinal.cta}
+              </ApplyLink>
               </div>
             </div>
           </div>

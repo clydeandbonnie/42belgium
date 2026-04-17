@@ -15,6 +15,7 @@ import Image from "next/image";
 import type { PageContent } from "@/lib/i18n";
 import { YouTubeEmbed } from "./YouTubeEmbed";
 import { TimelineAccordion } from "./TimelineAccordion";
+import { ApplyLink } from "./ApplyLink";
 
 export function ProposalA({ content }: { content: PageContent }) {
   const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
@@ -50,12 +51,9 @@ export function ProposalA({ content }: { content: PageContent }) {
               {hero.subheadline}
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <Link
-                href="https://admission.42belgium.be/users/sign_up"
-                className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
-              >
+              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
                 {hero.cta}
-              </Link>
+              </ApplyLink>
               <Link
                 href="#after"
                 className="inline-flex items-center justify-center border-2 border-zinc-400 text-zinc-300 font-bold uppercase tracking-wider px-10 py-4 text-base hover:border-white hover:text-white transition-all"
@@ -186,13 +184,13 @@ export function ProposalA({ content }: { content: PageContent }) {
                   {cluster.bullets!.map((bullet, bi) => {
                     const isYes = bullet.toLowerCase().startsWith("yes");
                     return isYes ? (
-                      <span
+                      <ApplyLink
                         key={bi}
-                        className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-5 py-2.5 text-sm font-bold"
+                        className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-5 py-2.5 text-sm font-bold hover:brightness-110 transition-all"
                       >
                         <i className="fa-solid fa-check text-sm" />
                         {bullet}
-                      </span>
+                      </ApplyLink>
                     ) : (
                       <span
                         key={bi}
@@ -343,12 +341,9 @@ export function ProposalA({ content }: { content: PageContent }) {
               ))}
             </div>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 items-center">
-              <Link
-                href="https://admission.42belgium.be/users/sign_up"
-                className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
-              >
+              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
                 {howToApply.ctaLabel}
-              </Link>
+              </ApplyLink>
               {howToApply.microcopy && (
                 <p className="text-sm text-zinc-600">{howToApply.microcopy}</p>
               )}
@@ -413,12 +408,9 @@ export function ProposalA({ content }: { content: PageContent }) {
                 {ctaFinal.description}
               </p>
               <div className="mt-10">
-                <Link
-                  href="https://admission.42belgium.be/users/sign_up"
-                  className="inline-flex items-center justify-center border-2 border-white text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:bg-white hover:text-black transition-all"
-                >
-                  {ctaFinal.cta}
-                </Link>
+                <ApplyLink className="inline-flex items-center justify-center border-2 border-white text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:bg-white hover:text-black transition-all">
+                {ctaFinal.cta}
+              </ApplyLink>
               </div>
             </div>
           </div>
