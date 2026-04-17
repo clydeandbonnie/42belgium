@@ -181,7 +181,32 @@ export function ProposalA({ content }: { content: PageContent }) {
                 );
               })()}
 
-              {cluster.bullets && cluster.bullets.length > 0 && (
+              {cluster.bullets && cluster.bullets.length > 0 && cluster.name === "LOW BARRIER TO ENTRY" && (() => {
+                // Thematic FA icons for each barrier-lifted bullet — order matches JSON
+                const icons = [
+                  "fa-solid fa-seedling",          // No technical background
+                  "fa-solid fa-file-circle-xmark", // No diploma / CV / essay
+                  "fa-solid fa-infinity",          // No age limit
+                  "fa-solid fa-brain",             // Online test — potential
+                  "fa-solid fa-route",             // Real career change
+                ];
+                return (
+                  <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    {cluster.bullets!.map((bullet, bi) => (
+                      <div
+                        key={bi}
+                        className="group border border-zinc-200 bg-white p-6 flex flex-col gap-4 hover:border-[var(--color-primary)] transition-colors"
+                      >
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-2xl group-hover:bg-[var(--color-primary)] group-hover:text-white transition-colors">
+                          <i className={icons[bi] || "fa-solid fa-check"} />
+                        </span>
+                        <p className="text-base font-bold text-black leading-snug">{bullet}</p>
+                      </div>
+                    ))}
+                  </div>
+                );
+              })()}
+              {cluster.bullets && cluster.bullets.length > 0 && cluster.name !== "LOW BARRIER TO ENTRY" && (
                 <ul className="mt-12 space-y-0 border-l-2 border-[var(--color-primary)] ml-1">
                   {cluster.bullets.map((bullet, bi) => (
                     <li key={bi} className="flex items-center gap-5 py-5 pl-6 border-b border-zinc-200 last:border-b-0">
