@@ -81,7 +81,7 @@ export function ProposalA({ content }: { content: PageContent }) {
           <section key={cluster.name} className={bgClass}>
             <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
               {cluster.image ? (
-                <div className="grid gap-12 lg:grid-cols-[1fr_440px] items-start">
+                <div className="grid gap-12 lg:grid-cols-[1fr_440px] items-stretch">
                   <div>
                     <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
                       {String(i + 1).padStart(2, "0")} · {cluster.name}
@@ -94,18 +94,20 @@ export function ProposalA({ content }: { content: PageContent }) {
                     </p>
                   </div>
                   {/* Image with pink offset block behind — 42 Belgium signature treatment */}
-                  <div className="relative lg:mt-2">
+                  <div className="relative min-h-[280px] lg:min-h-0">
                     <div
                       aria-hidden="true"
                       className="absolute inset-0 bg-[var(--color-secondary)] translate-x-2 translate-y-2"
                     />
-                    <Image
-                      src={cluster.image}
-                      alt={cluster.imageAlt || ""}
-                      width={440}
-                      height={330}
-                      className="relative block w-full h-auto object-cover"
-                    />
+                    <div className="relative w-full h-full overflow-hidden">
+                      <Image
+                        src={cluster.image}
+                        alt={cluster.imageAlt || ""}
+                        fill
+                        sizes="(min-width: 1024px) 440px, 100vw"
+                        className="object-cover brightness-110 contrast-105 saturate-125"
+                      />
+                    </div>
                   </div>
                 </div>
               ) : (
