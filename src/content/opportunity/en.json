@@ -80,15 +80,18 @@
         "no experience required",
         "career change"
       ],
-      "bullets": [
+      "dontAsk": [
         "No technical background expected",
         "No diploma required",
         "No CV",
         "No admission essay",
         "No age limit",
-        "No prior experience needed",
-        "Yes to potential",
-        "Yes to a real career change"
+        "No prior experience needed"
+      ],
+      "lookFor": [
+        "Potential",
+        "Career-change drive",
+        "Willingness to start"
       ]
     }
   ],

@@ -54,6 +54,10 @@ export interface Cluster {
   keywords: string[];
   /** Optional bullet points rendered under the body. */
   bullets?: string[];
+  /** Optional list of things NOT required (LOW BARRIER cluster). */
+  dontAsk?: string[];
+  /** Optional list of qualities we look for (LOW BARRIER cluster). */
+  lookFor?: string[];
   /** Optional H3 subheading to split the body in two parts. */
   subheading?: string;
   /** Optional second paragraph of body text, shown after the subheading. */
@@ -223,6 +227,8 @@ export function extractBodyText(content: PageContent): string {
       c.subheading || "",
       c.bodyPart2 || "",
       ...(c.bullets || []),
+      ...(c.dontAsk || []),
+      ...(c.lookFor || []),
       ...(c.comparison
         ? [
             c.comparison.leftLabel,
