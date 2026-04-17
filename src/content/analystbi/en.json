@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Data Analyst / BI — 42 Belgium",
-    "description": "Data Analyst / BI at 42 Belgium. Placeholder content — Phase 2 will populate this from the lexical matrix v3.",
+    "title": "Data Analyst / BI - 42 Belgium",
+    "description": "Data Analyst / BI at 42 Belgium. Placeholder content - Phase 2 will populate this from the lexical matrix v3.",
     "slug": "data-analyst-bootcamp",
     "primaryQuery": "data analyst bootcamp",
     "convertingKeywords": [
@@ -10,7 +10,7 @@
   },
   "hero": {
     "headline": "Data Analyst / BI",
-    "subheadline": "Coming soon — full copy from matrix v3 in Phase 2.",
+    "subheadline": "Coming soon - full copy from matrix v3 in Phase 2.",
     "cta": "Find your training →"
   },
   "clusters": [

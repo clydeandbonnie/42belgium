@@ -56,7 +56,7 @@ export function FaqAccordion({ items }: Props) {
       onKeyDown={onSectionKeyDown}
       className="grid gap-8 lg:grid-cols-[1fr_1.3fr] lg:gap-12"
     >
-      {/* LEFT — tablist */}
+      {/* LEFT - tablist */}
       <div
         role="tablist"
         aria-orientation="vertical"
@@ -110,7 +110,7 @@ export function FaqAccordion({ items }: Props) {
         })}
       </div>
 
-      {/* RIGHT — panel + controls */}
+      {/* RIGHT - panel + controls */}
       <div>
         <div
           key={active}

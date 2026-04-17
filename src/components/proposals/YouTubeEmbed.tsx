@@ -1,5 +1,5 @@
 /**
- * Lightweight YouTube embed — lazy-loaded iframe with poster image.
+ * Lightweight YouTube embed - lazy-loaded iframe with poster image.
  * Avoids loading the YouTube player until the user clicks.
  */
 

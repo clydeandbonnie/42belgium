@@ -1,7 +1,7 @@
 /**
- * PROPOSITION A — Bold / Story design variant
+ * PROPOSITION A - Bold / Story design variant
  *
- * Reads the SAME canonical content as Proposals B and C — only the design
+ * Reads the SAME canonical content as Proposals B and C - only the design
  * differs. Design signatures of this variant:
  *   - Dark dominant palette (black + teal accent)
  *   - Large, confident typography (7xl hero)
@@ -25,9 +25,9 @@ export function ProposalA({ content }: { content: PageContent }) {
 
   return (
     <>
-      {/* ─── HERO — full width, text left, image right ─── */}
+      {/* ─── HERO - full width, text left, image right ─── */}
       <section className="relative bg-black text-white overflow-hidden">
-        {/* Image — absolute, pinned to right half, full section height */}
+        {/* Image - absolute, pinned to right half, full section height */}
         <div className="absolute top-0 right-0 bottom-0 w-1/2 hidden sm:block">
           <Image
             src="/assets/gallery/42Belgium-Antwerp3.png"
@@ -38,7 +38,7 @@ export function ProposalA({ content }: { content: PageContent }) {
             quality={85}
           />
         </div>
-        {/* Text — left half, generous left padding, no max-width container */}
+        {/* Text - left half, generous left padding, no max-width container */}
         <div className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 pl-[max(24px,calc((100vw-1470px)/2+16px))] pr-6 sm:pr-0">
           <div className="sm:w-1/2 sm:pr-16">
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
@@ -105,7 +105,7 @@ export function ProposalA({ content }: { content: PageContent }) {
             <div className={`mx-auto max-w-5xl px-6 py-20 sm:py-28${isLowBarrier ? " relative" : ""}`}>
               {isLowBarrier ? (
                 <div className="grid gap-12 lg:grid-cols-2 items-start">
-                  {/* LEFT — text content */}
+                  {/* LEFT - text content */}
                   <div>
                     <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
                       {String(i + 1).padStart(2, "0")} · {cluster.name}
@@ -127,7 +127,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                       </p>
                     )}
                   </div>
-                  {/* RIGHT — tag groups, offset to align with the H2 */}
+                  {/* RIGHT - tag groups, offset to align with the H2 */}
                   <div className="space-y-10">
                     {/* Invisible spacer matching the eyebrow so the first group aligns with the H2 */}
                     <p
@@ -180,7 +180,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                       {cluster.body}
                     </p>
                   </div>
-                  {/* Image with pink offset block behind — 42 Belgium signature treatment */}
+                  {/* Image with pink offset block behind - 42 Belgium signature treatment */}
                   <div className="relative min-h-[280px] lg:min-h-0">
                     <div
                       aria-hidden="true"
@@ -221,7 +221,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                 </p>
               )}
 
-              {/* Comparison block — asymmetric (42 column elevated) */}
+              {/* Comparison block - asymmetric (42 column elevated) */}
               {cluster.comparison && (() => {
                 const criteria = ["Learning", "Proof of skills", "Feedback", "Support", "Motivation"];
                 return (
@@ -249,12 +249,12 @@ export function ProposalA({ content }: { content: PageContent }) {
                               {criteria[ri] || `Feature ${ri + 1}`}
                             </p>
                           </div>
-                          {/* MOOC cell — muted */}
+                          {/* MOOC cell - muted */}
                           <div className="px-6 py-6 flex items-center gap-4 border-b border-zinc-200">
                             <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-base shrink-0" />
                             <p className="text-base text-zinc-500">{row.left}</p>
                           </div>
-                          {/* 42 cell — elevated, teal-tinted, bold */}
+                          {/* 42 cell - elevated, teal-tinted, bold */}
                           <div className={`px-6 py-6 flex items-center gap-4 bg-[var(--color-primary)]/5 border-l-4 border-[var(--color-primary)] ${!isLast ? "border-b border-b-zinc-200" : ""}`}>
                             <i className="fa-solid fa-check text-[var(--color-primary)] text-2xl shrink-0" />
                             <p className="text-base font-bold text-black leading-snug">{row.right}</p>
@@ -334,10 +334,10 @@ export function ProposalA({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── PARTNER STRIP — between The Outcome and The Program ─── */}
+      {/* ─── PARTNER STRIP - between The Outcome and The Program ─── */}
       <PartnerStrip />
 
-      {/* ─── WHAT YOU'LL BUILD — timeline accordion ─── */}
+      {/* ─── WHAT YOU'LL BUILD - timeline accordion ─── */}
       {whatYouBuild && whatYouBuild.phases && (
         <section className="bg-white text-black">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
@@ -378,7 +378,7 @@ export function ProposalA({ content }: { content: PageContent }) {
             <div className="mt-12 grid gap-6 sm:grid-cols-3">
               {realStories.videos.map((video) => (
                 <div key={video.youtubeId}>
-                  <YouTubeEmbed youtubeId={video.youtubeId} title={`${video.name} — ${video.subtitle}`} />
+                  <YouTubeEmbed youtubeId={video.youtubeId} title={`${video.name} - ${video.subtitle}`} />
                   <p className="mt-4 text-lg font-bold text-black">{video.name}</p>
                   <p className="text-xs uppercase tracking-wider text-zinc-600">{video.subtitle}</p>
                 </div>

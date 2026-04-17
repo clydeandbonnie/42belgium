@@ -64,7 +64,7 @@ export function LookForTag({ children }: Props) {
               You already have what it takes.
             </h3>
             <p className="mt-5 text-base leading-relaxed text-zinc-700">
-              Potential, drive, willingness to start — the rest we teach on campus.
+              Potential, drive, willingness to start - the rest we teach on campus.
             </p>
             <p className="mt-3 text-base leading-relaxed text-zinc-700">
               Next step: a one-hour online logic test. Free, from home, at your own pace.

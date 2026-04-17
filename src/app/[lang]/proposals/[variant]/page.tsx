@@ -10,9 +10,9 @@ const VARIANTS = ["a", "b", "c"] as const;
 type Variant = (typeof VARIANTS)[number];
 
 const variantTitles: Record<Variant, string> = {
-  a: "Proposition A — Bold / Story",
-  b: "Proposition B — Classic / Welcoming",
-  c: "Proposition C — Proof-Led / Data",
+  a: "Proposition A - Bold / Story",
+  b: "Proposition B - Classic / Welcoming",
+  c: "Proposition C - Proof-Led / Data",
 };
 
 export function generateStaticParams() {
@@ -30,7 +30,7 @@ export async function generateMetadata({
   const v = variant as Variant;
   return {
     title: variantTitles[v] || "Proposal",
-    description: "42 Belgium — Opportunity Landing Page Proposal",
+    description: "42 Belgium - Opportunity Landing Page Proposal",
   };
 }
 
@@ -45,7 +45,7 @@ export default async function ProposalPage({
   if (!VARIANTS.includes(variant as Variant)) notFound();
 
   // All three proposals read the SAME canonical content for Opportunity.
-  // Design is what differs between A, B and C — never the copy.
+  // Design is what differs between A, B and C - never the copy.
   const content = await getPageContent("opportunity", lang as Language);
 
   return (

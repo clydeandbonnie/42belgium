@@ -76,7 +76,7 @@ export function PartnerStrip() {
         </p>
 
         <div className="relative">
-          {/* Prev arrow — only once the user has actually scrolled forward */}
+          {/* Prev arrow - only once the user has actually scrolled forward */}
           {hasMoved && canPrev && (
             <button
               type="button"
@@ -109,7 +109,7 @@ export function PartnerStrip() {
             ))}
           </div>
 
-          {/* Next arrow — only when scroll-forward is possible */}
+          {/* Next arrow - only when scroll-forward is possible */}
           {canNext && (
             <button
               type="button"

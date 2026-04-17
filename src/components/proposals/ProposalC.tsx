@@ -1,5 +1,5 @@
 /**
- * PROPOSITION C — Proof-Led / Data design variant
+ * PROPOSITION C - Proof-Led / Data design variant
  *
  * Reads the SAME canonical content as Proposals A and B. Design signatures:
  *   - Data-driven visual language, but with PUBLIC stats only
@@ -7,7 +7,7 @@
  *   - Split hero: narrative left, credibility card right
  *   - Employer logo strip for instant trust
  *   - Each section uses numeric framing without ad-campaign data
- *   - Enterprise/credible feel — muted palette with bold stat highlights
+ *   - Enterprise/credible feel - muted palette with bold stat highlights
  *
  * Explicitly NOT used: internal Ads metrics (CTR, CVR, impression share,
  * keyword converting rates). Those stay in the matrix v3, not on the page.
@@ -52,7 +52,7 @@ export function ProposalC({ content }: { content: PageContent }) {
                 </p>
               )}
             </div>
-            {/* Credibility card — public, prospect-relevant stats */}
+            {/* Credibility card - public, prospect-relevant stats */}
             <div className="bg-zinc-900 border border-zinc-800 p-8">
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-400 mb-6">
                 <i className="fa-solid fa-award mr-2 text-[var(--color-primary)]" />
@@ -61,9 +61,9 @@ export function ProposalC({ content }: { content: PageContent }) {
               <div className="space-y-6">
                 {[
                   { value: "98%", label: "of advanced grads secure a job" },
-                  { value: "100%", label: "free — no tuition, ever" },
+                  { value: "100%", label: "free - no tuition, ever" },
                   { value: "42", label: "campuses across the world" },
-                  { value: "0", label: "prerequisites — no degree, no CV" },
+                  { value: "0", label: "prerequisites - no degree, no CV" },
                 ].map((stat, i) => (
                   <div key={i} className="flex items-center gap-4">
                     <p className="text-3xl font-bold text-[var(--color-primary)] w-24">
@@ -95,7 +95,7 @@ export function ProposalC({ content }: { content: PageContent }) {
         </div>
       </section>
 
-      {/* ─── CLUSTERS — clean two-column with numbered accent ─── */}
+      {/* ─── CLUSTERS - clean two-column with numbered accent ─── */}
       {clusters.map((cluster, i) => (
         <section key={cluster.name} className="bg-white border-b border-zinc-200">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
@@ -126,7 +126,7 @@ export function ProposalC({ content }: { content: PageContent }) {
                   </p>
                 )}
 
-                {/* Comparison block — spec sheet / data table */}
+                {/* Comparison block - spec sheet / data table */}
                 {cluster.comparison && (
                   <div className="mt-10 border border-zinc-300 overflow-hidden">
                     {/* Column headers */}
@@ -204,7 +204,7 @@ export function ProposalC({ content }: { content: PageContent }) {
         </section>
       ))}
 
-      {/* ─── AFTER 42 — stat hero ─── */}
+      {/* ─── AFTER 42 - stat hero ─── */}
       {afterForty && (
         <section className="bg-zinc-950 text-white">
           <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
@@ -244,7 +244,7 @@ export function ProposalC({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── WHAT YOU'LL BUILD — timeline accordion ─── */}
+      {/* ─── WHAT YOU'LL BUILD - timeline accordion ─── */}
       {whatYouBuild && whatYouBuild.phases && (
         <section className="bg-white">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
@@ -285,7 +285,7 @@ export function ProposalC({ content }: { content: PageContent }) {
             <div className="mt-12 grid gap-6 sm:grid-cols-3">
               {realStories.videos.map((video) => (
                 <div key={video.youtubeId} className="bg-white border border-zinc-200">
-                  <YouTubeEmbed youtubeId={video.youtubeId} title={`${video.name} — ${video.subtitle}`} />
+                  <YouTubeEmbed youtubeId={video.youtubeId} title={`${video.name} - ${video.subtitle}`} />
                   <div className="p-5 flex items-center justify-between">
                     <div>
                       <p className="text-base font-bold text-black">{video.name}</p>
@@ -300,7 +300,7 @@ export function ProposalC({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── HOW TO APPLY — grid with numbers ─── */}
+      {/* ─── HOW TO APPLY - grid with numbers ─── */}
       {howToApply && (
         <section className="bg-white" id="apply">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
@@ -341,7 +341,7 @@ export function ProposalC({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── FAQ — dense 2-col ─── */}
+      {/* ─── FAQ - dense 2-col ─── */}
       {faq && faq.length > 0 && (
         <section className="bg-zinc-50 border-y border-zinc-200">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
@@ -381,7 +381,7 @@ export function ProposalC({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── FINAL CTA — with mini-stats ─── */}
+      {/* ─── FINAL CTA - with mini-stats ─── */}
       {ctaFinal && (
         <section className="bg-[var(--color-primary)] text-white">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">

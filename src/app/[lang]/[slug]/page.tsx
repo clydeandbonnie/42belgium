@@ -79,7 +79,7 @@ export default async function ThemePage({
       />
       {content.clusters.map((cluster, i) => {
         // First cluster → outcomes grid, second → text block, others → outcomes grid.
-        // Design will be refined in Phase 2 — here we just scaffold the structure.
+        // Design will be refined in Phase 2 - here we just scaffold the structure.
         if (i === 1) {
           return (
             <WhoItsFor

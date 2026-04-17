@@ -1,11 +1,11 @@
 /**
- * PROPOSITION B — Classic / Welcoming design variant
+ * PROPOSITION B - Classic / Welcoming design variant
  *
  * Reads the SAME canonical content as Proposals A and C. Design signatures:
  *   - Light dominant palette (white + soft gradient tints)
  *   - Centered layouts, generous whitespace, approachable rhythm
  *   - Cards with soft borders, rounded accents
- *   - FAQ treated as the VISUAL centerpiece — larger, prominent, inviting
+ *   - FAQ treated as the VISUAL centerpiece - larger, prominent, inviting
  *   - Horizontal timeline for process (less imposing than the left-bar variant)
  */
 
@@ -20,7 +20,7 @@ export function ProposalB({ content }: { content: PageContent }) {
 
   return (
     <>
-      {/* ─── HERO — black bg, centered, welcoming glow ─── */}
+      {/* ─── HERO - black bg, centered, welcoming glow ─── */}
       <section className="relative bg-black text-white overflow-hidden">
         {/* Soft radial glow, anchored centre, evokes openness */}
         <div
@@ -85,11 +85,11 @@ export function ProposalB({ content }: { content: PageContent }) {
               )}
             </div>
 
-            {/* Comparison block — two facing cards with centered VS badge */}
+            {/* Comparison block - two facing cards with centered VS badge */}
             {cluster.comparison && (
               <div className="relative max-w-4xl mx-auto">
                 <div className="grid gap-6 sm:grid-cols-2">
-                  {/* LEFT — MOOC */}
+                  {/* LEFT - MOOC */}
                   <div className="bg-white border border-zinc-300 p-8">
                     <div className="flex items-center gap-3 mb-6 pb-5 border-b border-zinc-200">
                       <span className="flex h-10 w-10 items-center justify-center bg-zinc-100 text-zinc-500">
@@ -114,7 +114,7 @@ export function ProposalB({ content }: { content: PageContent }) {
                     </ul>
                   </div>
 
-                  {/* RIGHT — 42 */}
+                  {/* RIGHT - 42 */}
                   <div className="bg-white border-2 border-[var(--color-primary)] p-8 relative">
                     <div className="flex items-center gap-3 mb-6 pb-5 border-b border-zinc-200">
                       <span className="flex h-10 w-10 items-center justify-center bg-[var(--color-primary)] text-white">
@@ -200,7 +200,7 @@ export function ProposalB({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── WHAT YOU'LL BUILD — timeline accordion ─── */}
+      {/* ─── WHAT YOU'LL BUILD - timeline accordion ─── */}
       {whatYouBuild && whatYouBuild.phases && (
         <section className="bg-zinc-50 border-y border-zinc-200">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
@@ -245,7 +245,7 @@ export function ProposalB({ content }: { content: PageContent }) {
             <div className="grid gap-6 sm:grid-cols-3 max-w-4xl mx-auto">
               {realStories.videos.map((video) => (
                 <div key={video.youtubeId} className="bg-white border border-zinc-200 overflow-hidden">
-                  <YouTubeEmbed youtubeId={video.youtubeId} title={`${video.name} — ${video.subtitle}`} />
+                  <YouTubeEmbed youtubeId={video.youtubeId} title={`${video.name} - ${video.subtitle}`} />
                   <div className="p-4 text-center">
                     <p className="text-base font-bold text-black">{video.name}</p>
                     <p className="text-xs text-zinc-600">{video.subtitle}</p>
@@ -292,7 +292,7 @@ export function ProposalB({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── FAQ — visual centerpiece ─── */}
+      {/* ─── FAQ - visual centerpiece ─── */}
       {faq && faq.length > 0 && (
         <section className="bg-white">
           <div className="mx-auto max-w-4xl px-6 py-20 sm:py-28">
@@ -340,7 +340,7 @@ export function ProposalB({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── FINAL CTA — gradient warm ─── */}
+      {/* ─── FINAL CTA - gradient warm ─── */}
       {ctaFinal && (
         <section className="bg-gradient-to-r from-[var(--color-primary)] to-[#7D8EE9] text-white">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">

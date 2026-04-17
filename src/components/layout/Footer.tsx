@@ -100,7 +100,7 @@ export function Footer({ lang }: { lang: Language }) {
       <div className={styles.bottomBar}>
         <div className={styles.bottomContainer}>
           <p className={styles.copyright}>
-            © 42 Belgium — All rights reserved
+            © 42 Belgium - All rights reserved
           </p>
           <div className="flex flex-wrap gap-4">
             {legalLinks.map((link) => (

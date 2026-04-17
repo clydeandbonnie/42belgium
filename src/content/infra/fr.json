@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "DevOps / Infrastructure — 42 Belgium",
-    "description": "DevOps / Infrastructure at 42 Belgium. Placeholder content — Phase 2 will populate this from the lexical matrix v3.",
+    "title": "DevOps / Infrastructure - 42 Belgium",
+    "description": "DevOps / Infrastructure at 42 Belgium. Placeholder content - Phase 2 will populate this from the lexical matrix v3.",
     "slug": "formation-devops-administrateur",
     "primaryQuery": "formation DevOps",
     "convertingKeywords": [
@@ -10,7 +10,7 @@
   },
   "hero": {
     "headline": "DevOps / Infrastructure",
-    "subheadline": "Coming soon — full copy from matrix v3 in Phase 2.",
+    "subheadline": "Coming soon - full copy from matrix v3 in Phase 2.",
     "cta": "Commence ta formation →"
   },
   "clusters": [

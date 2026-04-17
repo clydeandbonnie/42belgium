@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: {
     template: "%s | 42 Belgium",
-    default: "42 Belgium — Free Tech Training",
+    default: "42 Belgium - Free Tech Training",
   },
   description:
     "Free, peer-to-peer tech education in Belgium. 10 specialisations, 3 languages. No degree required.",
