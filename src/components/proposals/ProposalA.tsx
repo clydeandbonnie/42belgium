@@ -140,7 +140,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                   <div className="mt-12 grid grid-cols-[160px_1fr_1.1fr]">
                     {/* Header row */}
                     <div />
-                    <div className="px-6 py-5 flex items-center justify-center">
+                    <div className="px-6 py-5 flex items-center justify-center border-l border-zinc-200">
                       <p className="text-sm font-bold uppercase tracking-[0.25em] text-zinc-400">
                         {cluster.comparison!.leftLabel}
                       </p>
@@ -163,7 +163,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                           </div>
                           {/* MOOC cell — muted */}
                           <div className={`px-6 py-6 flex items-center gap-4 ${!isLast ? "border-b border-zinc-200" : ""}`}>
-                            <i className="fa-solid fa-xmark text-zinc-400 text-base shrink-0" />
+                            <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-base shrink-0" />
                             <p className="text-base text-zinc-500">{row.left}</p>
                           </div>
                           {/* 42 cell — elevated, teal-tinted, bold */}
