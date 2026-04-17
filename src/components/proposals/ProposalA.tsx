@@ -86,9 +86,31 @@ export function ProposalA({ content }: { content: PageContent }) {
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
                 {cluster.heading}
               </h2>
-              <p className="mt-6 text-lg leading-relaxed text-zinc-700 max-w-3xl">
-                {cluster.body}
-              </p>
+              {cluster.image ? (
+                <div className="mt-8 grid gap-12 lg:grid-cols-[1fr_440px] items-start">
+                  <p className="text-lg leading-relaxed text-zinc-700">
+                    {cluster.body}
+                  </p>
+                  {/* Image with pink offset block behind — 42 Belgium signature treatment */}
+                  <div className="relative">
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 bg-[var(--color-secondary)] translate-x-4 translate-y-4"
+                    />
+                    <Image
+                      src={cluster.image}
+                      alt={cluster.imageAlt || ""}
+                      width={440}
+                      height={330}
+                      className="relative block w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
+              ) : (
+                <p className="mt-6 text-lg leading-relaxed text-zinc-700 max-w-3xl">
+                  {cluster.body}
+                </p>
+              )}
               {cluster.subheading && (
                 <h3 className="mt-10 text-2xl font-bold tracking-tight text-black">
                   {cluster.subheading}

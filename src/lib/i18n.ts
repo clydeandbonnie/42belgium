@@ -58,6 +58,10 @@ export interface Cluster {
   subheading?: string;
   /** Optional second paragraph of body text, shown after the subheading. */
   bodyPart2?: string;
+  /** Optional illustrative image (path under /public). */
+  image?: string;
+  /** Optional alt text for the illustrative image. */
+  imageAlt?: string;
   /** Optional side-by-side comparison (e.g. MOOC vs 42). */
   comparison?: ClusterComparison;
 }
