@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import type { CurriculumPhase } from "@/lib/i18n";
 
 interface Props {
@@ -8,63 +8,16 @@ interface Props {
 }
 
 export function TimelineAccordion({ phases }: Props) {
-  const [openPhases, setOpenPhases] = useState<Set<number>>(new Set([0]));
-  const phaseRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
-
-  const toggle = (i: number) => {
-    setOpenPhases((prev) => {
-      const next = new Set(prev);
-      if (next.has(i)) next.delete(i);
-      else next.add(i);
-      return next;
-    });
-  };
-
-  // Open a phase when the BOTTOM of its header button enters the viewport
-  // (threshold 1.0 — the whole button is visible). Once opened, it stays open.
-  // Skip phases whose button is already fully visible at mount.
-  useEffect(() => {
-    const observers: IntersectionObserver[] = [];
-    const raf = requestAnimationFrame(() => {
-      buttonRefs.current.forEach((el, i) => {
-        if (!el || i === 0) return;
-        const rect = el.getBoundingClientRect();
-        const alreadyFullyVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
-        if (alreadyFullyVisible) return;
-        const observer = new IntersectionObserver(
-          ([entry]) => {
-            if (entry.isIntersecting) {
-              setOpenPhases((prev) => new Set(prev).add(i));
-              observer.disconnect();
-            }
-          },
-          { threshold: 1.0 }
-        );
-        observer.observe(el);
-        observers.push(observer);
-      });
-    });
-    return () => {
-      cancelAnimationFrame(raf);
-      observers.forEach((o) => o.disconnect());
-    };
-  }, []);
-
-  const maxOpen = openPhases.size > 0 ? Math.max(...openPhases) : -1;
+  const [openPhase, setOpenPhase] = useState<number>(0);
 
   return (
     <div className="space-y-0">
       {phases.map((phase, i) => {
-        const isOpen = openPhases.has(i);
-        const isReached = isOpen || i < maxOpen;
+        const isOpen = openPhase === i;
+        const isReached = isOpen || i < openPhase;
         const isNotLast = i < phases.length - 1;
         return (
-          <div
-            key={phase.number}
-            ref={(el) => { phaseRefs.current[i] = el; }}
-            className="flex gap-5"
-          >
+          <div key={phase.number} className="flex gap-5">
             {/* Left rail: dot + connector segment */}
             <div className="flex flex-col items-center shrink-0">
               <span
@@ -79,7 +32,7 @@ export function TimelineAccordion({ phases }: Props) {
               {isNotLast && (
                 <div
                   className={`w-px flex-1 transition-colors duration-400 ${
-                    i < maxOpen ? "bg-[var(--color-primary)]" : "bg-zinc-300"
+                    i < openPhase ? "bg-[var(--color-primary)]" : "bg-zinc-300"
                   }`}
                 />
               )}
@@ -89,8 +42,7 @@ export function TimelineAccordion({ phases }: Props) {
             <div className="flex-1 min-w-0">
               <button
                 type="button"
-                ref={(el) => { buttonRefs.current[i] = el; }}
-                onClick={() => toggle(i)}
+                onClick={() => setOpenPhase((prev) => (prev === i ? -1 : i))}
                 aria-expanded={isOpen}
                 className="w-full flex items-center gap-4 py-5 text-left group"
               >
