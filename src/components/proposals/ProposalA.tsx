@@ -463,19 +463,26 @@ export function ProposalA({ content }: { content: PageContent }) {
 
       {/* ─── FINAL CTA ─── */}
       {ctaFinal && (
-        <section className="bg-[var(--color-secondary)] text-black">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+        <section className="relative overflow-hidden bg-white text-black">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/code-pink.svg"
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 w-[60%] max-w-[700px] opacity-25 select-none"
+          />
+          <div className="relative mx-auto max-w-5xl px-6 py-20 sm:py-28">
             <div className="max-w-2xl">
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                 {ctaFinal.title}
               </h2>
-              <p className="mt-6 text-lg leading-relaxed text-black">
+              <p className="mt-6 text-lg leading-relaxed text-zinc-700">
                 {ctaFinal.description}
               </p>
               <div className="mt-10">
-                <ApplyLink className="inline-flex items-center justify-center border-2 border-black text-black font-bold uppercase tracking-wider px-10 py-4 text-base hover:bg-black hover:text-white transition-all">
-                {ctaFinal.cta}
-              </ApplyLink>
+                <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
+                  {ctaFinal.cta}
+                </ApplyLink>
               </div>
             </div>
           </div>
