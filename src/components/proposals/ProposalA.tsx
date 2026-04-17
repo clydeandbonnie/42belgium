@@ -125,8 +125,15 @@ export function ProposalA({ content }: { content: PageContent }) {
                       </p>
                     )}
                   </div>
-                  {/* RIGHT — tag groups */}
-                  <div className="space-y-10 lg:pt-2">
+                  {/* RIGHT — tag groups, offset to align with the H2 */}
+                  <div className="space-y-10">
+                    {/* Invisible spacer matching the eyebrow so the first group aligns with the H2 */}
+                    <p
+                      aria-hidden="true"
+                      className="hidden lg:block invisible text-sm font-bold uppercase tracking-[0.3em] mb-4"
+                    >
+                      &nbsp;
+                    </p>
                     {cluster.dontAsk && cluster.dontAsk.length > 0 && (
                       <div>
                         <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-5">
