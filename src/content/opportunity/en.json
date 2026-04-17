@@ -116,16 +116,16 @@
         "duration": "6–24 months, avg 18",
         "description": "You learn to code from scratch, then build your way up through progressively harder projects. The core gives every student a solid foundation — both hard and soft skills.",
         "items": [
-          "Languages: C, Python, and others along the way",
-          "Algorithms & data structures — the logic behind every codebase",
-          "UNIX, file systems, processes — how software actually runs",
-          "Network programming — the architecture behind modern apps",
-          "Object-oriented programming — writing code that scales",
-          "Client-server projects — building the backend of real systems",
-          "Web programming — from HTML to full-stack deployment",
-          "Graphics programming — rendering pixels, building interfaces",
-          "Artificial intelligence — the fundamentals powering modern systems",
-          "Concurrent programming — multi-threading and parallelism"
+          "Languages - C, Python, and others along the way",
+          "Algorithms & data structures - the logic behind every codebase",
+          "UNIX, file systems, processes - how software actually runs",
+          "Network programming - the architecture behind modern apps",
+          "Object-oriented programming - writing code that scales",
+          "Client-server projects - building the backend of real systems",
+          "Web programming - from HTML to full-stack deployment",
+          "Graphics programming - rendering pixels, building interfaces",
+          "Artificial intelligence - the fundamentals powering modern systems",
+          "Concurrent programming - multi-threading and parallelism"
         ]
       },
       {
@@ -160,7 +160,7 @@
         "items": [
           "Put advanced skills into practice in longer, specialised roles",
           "Build deeper professional expertise and network",
-          "Secure long-term opportunities — many receive offers here"
+          "Secure long-term opportunities - many receive offers here"
         ]
       }
     ],

@@ -23,26 +23,34 @@ export function TimelineAccordion({ phases }: Props) {
     });
   };
 
-  // Auto-deploy on scroll via Intersection Observer
+  // Auto-deploy on scroll via Intersection Observer.
+  // Skip phases already in view at mount — user must scroll to trigger.
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
-
-    phaseRefs.current.forEach((el, i) => {
-      if (!el || i === 0) return; // Phase 0 is open by default
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setOpenPhases((prev) => new Set(prev).add(i));
-            observer.disconnect(); // Only trigger once
-          }
-        },
-        { threshold: 0.6 }
-      );
-      observer.observe(el);
-      observers.push(observer);
+    const raf = requestAnimationFrame(() => {
+      phaseRefs.current.forEach((el, i) => {
+        if (!el || i === 0) return; // Phase 0 is open by default
+        const rect = el.getBoundingClientRect();
+        const alreadyVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        if (alreadyVisible) return;
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              setOpenPhases((prev) => new Set(prev).add(i));
+              observer.disconnect();
+            }
+          },
+          { threshold: 0.6 }
+        );
+        observer.observe(el);
+        observers.push(observer);
+      });
     });
 
-    return () => observers.forEach((o) => o.disconnect());
+    return () => {
+      cancelAnimationFrame(raf);
+      observers.forEach((o) => o.disconnect());
+    };
   }, []);
 
   return (
@@ -107,13 +115,21 @@ export function TimelineAccordion({ phases }: Props) {
                   <p className="text-base leading-relaxed text-zinc-700 mb-6">
                     {phase.description}
                   </p>
-                  <ul className="space-y-3">
-                    {phase.items.map((item) => (
-                      <li key={item} className="flex gap-3 text-sm">
-                        <i className="fa-solid fa-chevron-right text-[var(--color-primary)] mt-1 text-xs shrink-0" />
-                        <span className="text-zinc-800">{item}</span>
-                      </li>
-                    ))}
+                  <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
+                    {phase.items.map((item) => {
+                      const sepIndex = item.indexOf(" - ");
+                      const head = sepIndex >= 0 ? item.slice(0, sepIndex) : item;
+                      const tail = sepIndex >= 0 ? item.slice(sepIndex) : "";
+                      return (
+                        <li key={item} className="flex gap-3 text-sm">
+                          <i className="fa-solid fa-chevron-right text-[var(--color-primary)] mt-1 text-xs shrink-0" />
+                          <span className="text-zinc-800">
+                            <strong className="font-bold text-black">{head}</strong>
+                            {tail}
+                          </span>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </div>
