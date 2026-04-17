@@ -160,7 +160,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                           {cluster.lookFor.map((bullet, bi) => (
                             <span
                               key={bi}
-                              className="inline-flex items-center px-4 py-2 bg-[var(--color-primary)] text-white text-sm font-bold"
+                              className="inline-flex items-center px-4 py-2 border-2 border-[var(--color-secondary)] bg-white text-[var(--color-secondary)] text-sm font-bold uppercase tracking-wider"
                             >
                               {bullet}
                             </span>
