@@ -80,22 +80,24 @@ export function ProposalA({ content }: { content: PageContent }) {
         return (
           <section key={cluster.name} className={bgClass}>
             <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-              <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-                {String(i + 1).padStart(2, "0")} · {cluster.name}
-              </p>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
-                {cluster.heading}
-              </h2>
               {cluster.image ? (
-                <div className="mt-8 grid gap-12 lg:grid-cols-[1fr_440px] items-start">
-                  <p className="text-lg leading-relaxed text-zinc-700">
-                    {cluster.body}
-                  </p>
+                <div className="grid gap-12 lg:grid-cols-[1fr_440px] items-start">
+                  <div>
+                    <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+                      {String(i + 1).padStart(2, "0")} · {cluster.name}
+                    </p>
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                      {cluster.heading}
+                    </h2>
+                    <p className="mt-6 text-lg leading-relaxed text-zinc-700">
+                      {cluster.body}
+                    </p>
+                  </div>
                   {/* Image with pink offset block behind — 42 Belgium signature treatment */}
-                  <div className="relative">
+                  <div className="relative lg:mt-2">
                     <div
                       aria-hidden="true"
-                      className="absolute inset-0 bg-[var(--color-secondary)] translate-x-4 translate-y-4"
+                      className="absolute inset-0 bg-[var(--color-secondary)] translate-x-2 translate-y-2"
                     />
                     <Image
                       src={cluster.image}
@@ -107,9 +109,17 @@ export function ProposalA({ content }: { content: PageContent }) {
                   </div>
                 </div>
               ) : (
-                <p className="mt-6 text-lg leading-relaxed text-zinc-700 max-w-3xl">
-                  {cluster.body}
-                </p>
+                <>
+                  <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+                    {String(i + 1).padStart(2, "0")} · {cluster.name}
+                  </p>
+                  <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
+                    {cluster.heading}
+                  </h2>
+                  <p className="mt-6 text-lg leading-relaxed text-zinc-700 max-w-3xl">
+                    {cluster.body}
+                  </p>
+                </>
               )}
               {cluster.subheading && (
                 <h3 className="mt-10 text-2xl font-bold tracking-tight text-black">
