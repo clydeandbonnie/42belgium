@@ -38,6 +38,8 @@ export function PartnerStrip() {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(true);
+  // Suppress the prev arrow until the user has actually scrolled forward at least once.
+  const [hasMoved, setHasMoved] = useState(false);
 
   const updateArrows = () => {
     const el = scrollerRef.current;
@@ -50,10 +52,14 @@ export function PartnerStrip() {
     updateArrows();
     const el = scrollerRef.current;
     if (!el) return;
-    el.addEventListener("scroll", updateArrows, { passive: true });
+    const onScroll = () => {
+      setHasMoved(true);
+      updateArrows();
+    };
+    el.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", updateArrows);
     return () => {
-      el.removeEventListener("scroll", updateArrows);
+      el.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", updateArrows);
     };
   }, []);
@@ -70,8 +76,8 @@ export function PartnerStrip() {
         </p>
 
         <div className="relative">
-          {/* Prev arrow — only when scroll-back is possible */}
-          {canPrev && (
+          {/* Prev arrow — only once the user has actually scrolled forward */}
+          {hasMoved && canPrev && (
             <button
               type="button"
               onClick={() => scrollBy(-SCROLL_STEP)}
