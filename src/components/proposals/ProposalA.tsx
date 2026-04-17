@@ -133,49 +133,47 @@ export function ProposalA({ content }: { content: PageContent }) {
                 </p>
               )}
 
-              {/* Comparison block — pricing table style */}
+              {/* Comparison block — asymmetric (42 column elevated) */}
               {cluster.comparison && (() => {
                 const criteria = ["Learning", "Proof of skills", "Feedback", "Support", "Motivation"];
                 return (
-                  <div className="mt-12 border border-zinc-200 overflow-hidden">
+                  <div className="mt-12 grid grid-cols-[160px_1fr_1.1fr]">
                     {/* Header row */}
-                    <div className="grid grid-cols-[160px_1fr_1fr] border-b border-zinc-200">
-                      <div className="px-6 py-5 bg-zinc-50" />
-                      <div className="px-6 py-5 bg-zinc-50 text-center border-x border-zinc-200">
-                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500">
-                          {cluster.comparison!.leftLabel}
-                        </p>
-                      </div>
-                      <div className="px-6 py-5 bg-[var(--color-primary)] text-center">
-                        <p className="text-xs font-bold uppercase tracking-[0.3em] text-white">
-                          {cluster.comparison!.rightLabel}
-                        </p>
-                      </div>
+                    <div />
+                    <div className="px-6 py-5 flex items-center justify-center">
+                      <p className="text-sm font-bold uppercase tracking-[0.25em] text-zinc-400">
+                        {cluster.comparison!.leftLabel}
+                      </p>
+                    </div>
+                    <div className="px-6 py-5 bg-[var(--color-primary)] rounded-t-md flex items-center justify-center shadow-[0_-4px_20px_-8px_rgba(0,0,0,0.15)]">
+                      <p className="text-base font-bold uppercase tracking-[0.25em] text-white">
+                        {cluster.comparison!.rightLabel}
+                      </p>
                     </div>
                     {/* Feature rows */}
-                    {cluster.comparison!.rows.map((row, ri) => (
-                      <div
-                        key={ri}
-                        className={`grid grid-cols-[160px_1fr_1fr] ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
-                      >
-                        {/* Criterion label — auto width, equal padding both sides */}
-                        <div className="px-6 py-6 bg-zinc-50 flex items-center min-w-[140px]">
-                          <p className="text-sm font-bold text-black">
-                            {criteria[ri] || `Feature ${ri + 1}`}
-                          </p>
+                    {cluster.comparison!.rows.map((row, ri) => {
+                      const isLast = ri === cluster.comparison!.rows.length - 1;
+                      return (
+                        <div key={ri} className="contents group">
+                          {/* Criterion label */}
+                          <div className={`px-2 py-6 flex items-center ${!isLast ? "border-b border-zinc-200" : ""}`}>
+                            <p className="text-sm font-bold uppercase tracking-wider text-black">
+                              {criteria[ri] || `Feature ${ri + 1}`}
+                            </p>
+                          </div>
+                          {/* MOOC cell — muted */}
+                          <div className={`px-6 py-6 flex items-center gap-4 transition-colors duration-200 group-hover:bg-zinc-50 ${!isLast ? "border-b border-zinc-200" : ""}`}>
+                            <i className="fa-solid fa-xmark text-zinc-400 text-base shrink-0" />
+                            <p className="text-base text-zinc-500">{row.left}</p>
+                          </div>
+                          {/* 42 cell — elevated, teal-tinted, bold */}
+                          <div className={`px-6 py-6 flex items-center gap-4 bg-[var(--color-primary)]/5 border-l-4 border-[var(--color-primary)] transition-colors duration-200 group-hover:bg-[var(--color-primary)]/10 ${!isLast ? "border-b border-b-zinc-200" : "rounded-b-md"}`}>
+                            <i className="fa-solid fa-check text-[var(--color-primary)] text-2xl shrink-0" />
+                            <p className="text-base font-bold text-black leading-snug">{row.right}</p>
+                          </div>
                         </div>
-                        {/* MOOC cell — icon inline with text */}
-                        <div className="px-6 py-6 border-x border-zinc-200 flex items-center gap-3">
-                          <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-lg shrink-0" />
-                          <p className="text-xs text-zinc-500">{row.left}</p>
-                        </div>
-                        {/* 42 cell — icon inline with text */}
-                        <div className="px-6 py-6 bg-[var(--color-primary)]/5 flex items-center gap-3">
-                          <i className="fa-solid fa-check text-[var(--color-primary)] text-lg shrink-0" />
-                          <p className="text-xs font-bold text-black">{row.right}</p>
-                        </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 );
               })()}
