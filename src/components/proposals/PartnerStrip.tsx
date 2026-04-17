@@ -70,16 +70,17 @@ export function PartnerStrip() {
         </p>
 
         <div className="relative">
-          {/* Prev arrow */}
-          <button
-            type="button"
-            onClick={() => scrollBy(-SCROLL_STEP)}
-            disabled={!canPrev}
-            aria-label="Previous partners"
-            className="absolute -left-8 sm:-left-12 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center bg-white border border-zinc-300 text-zinc-600 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-          >
-            <i className="fa-solid fa-chevron-left text-sm" />
-          </button>
+          {/* Prev arrow — only when scroll-back is possible */}
+          {canPrev && (
+            <button
+              type="button"
+              onClick={() => scrollBy(-SCROLL_STEP)}
+              aria-label="Previous partners"
+              className="absolute -left-8 sm:-left-12 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center text-zinc-600 hover:text-[var(--color-primary)] transition-colors"
+            >
+              <i className="fa-solid fa-chevron-left text-base" />
+            </button>
+          )}
 
           {/* Scroller */}
           <div
@@ -102,16 +103,17 @@ export function PartnerStrip() {
             ))}
           </div>
 
-          {/* Next arrow */}
-          <button
-            type="button"
-            onClick={() => scrollBy(SCROLL_STEP)}
-            disabled={!canNext}
-            aria-label="Next partners"
-            className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center bg-white border border-zinc-300 text-zinc-600 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-          >
-            <i className="fa-solid fa-chevron-right text-sm" />
-          </button>
+          {/* Next arrow — only when scroll-forward is possible */}
+          {canNext && (
+            <button
+              type="button"
+              onClick={() => scrollBy(SCROLL_STEP)}
+              aria-label="Next partners"
+              className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center text-zinc-600 hover:text-[var(--color-primary)] transition-colors"
+            >
+              <i className="fa-solid fa-chevron-right text-base" />
+            </button>
+          )}
         </div>
       </div>
     </section>
