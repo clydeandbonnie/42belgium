@@ -114,6 +114,7 @@
         "number": "01",
         "title": "Core Curriculum",
         "duration": "6–24 months, avg 18",
+        "icon": "fa-solid fa-code",
         "description": "You learn to code from scratch, then build your way up through progressively harder projects. The core gives every student a solid foundation — both hard and soft skills.",
         "items": [
           "**Languages** - C, Python, and others along the way",
@@ -132,6 +133,7 @@
         "number": "02",
         "title": "First work experience",
         "duration": "Recommended",
+        "icon": "fa-solid fa-briefcase",
         "description": "After the core, many students take a first internship or job in tech. Not mandatory, but strongly recommended. This phase often helps students confirm their interests and return to 42 with clearer goals.",
         "items": [
           "**Apply your skills** in real-world conditions",
@@ -143,6 +145,7 @@
         "number": "03",
         "title": "Advanced Curriculum",
         "duration": "Up to 5 years (flexible pace)",
+        "icon": "fa-solid fa-layer-group",
         "description": "Choose your specialisation and go deeper — up to a master-equivalent level.\n\n**How it works:** Like in a video game, you can try, fail, and try again until you succeed. As you complete and validate projects, your level increases to reflect the skills you've mastered along the way. At each level, you discover new areas of coding and IT. This makes every student's journey unique, while still covering a shared foundation.",
         "items": [
           "Artificial Intelligence & Data",
@@ -162,6 +165,7 @@
         "number": "04",
         "title": "Career launch",
         "duration": "98% hired",
+        "icon": "fa-solid fa-rocket",
         "description": "Many students secure job offers during this phase — often before they officially graduate. Industry certifications (AWS and others) add professional credibility.",
         "items": [
           "**Put advanced skills into practice** in longer, specialised roles",

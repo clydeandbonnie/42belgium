@@ -8,36 +8,23 @@ interface Props {
 }
 
 export function TimelineAccordion({ phases }: Props) {
-  const [openPhases, setOpenPhases] = useState<Set<number>>(new Set([0]));
+  const [openPhase, setOpenPhase] = useState<number>(0);
   const phaseRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const toggle = (index: number) => {
-    setOpenPhases((prev) => {
-      const next = new Set(prev);
-      if (next.has(index)) {
-        next.delete(index);
-      } else {
-        next.add(index);
-      }
-      return next;
-    });
-  };
-
-  // Auto-deploy on scroll via Intersection Observer.
-  // Skip phases already in view at mount — user must scroll to trigger.
+  // Auto-advance the active phase as the user scrolls into each one.
+  // Skip phases already in view at mount so the initial state sticks.
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
     const raf = requestAnimationFrame(() => {
       phaseRefs.current.forEach((el, i) => {
-        if (!el || i === 0) return; // Phase 0 is open by default
+        if (!el || i === 0) return;
         const rect = el.getBoundingClientRect();
         const alreadyVisible = rect.top < window.innerHeight && rect.bottom > 0;
         if (alreadyVisible) return;
         const observer = new IntersectionObserver(
           ([entry]) => {
             if (entry.isIntersecting) {
-              setOpenPhases((prev) => new Set(prev).add(i));
-              observer.disconnect();
+              setOpenPhase(i);
             }
           },
           { threshold: 0.6 }
@@ -46,7 +33,6 @@ export function TimelineAccordion({ phases }: Props) {
         observers.push(observer);
       });
     });
-
     return () => {
       cancelAnimationFrame(raf);
       observers.forEach((o) => o.disconnect());
@@ -54,37 +40,54 @@ export function TimelineAccordion({ phases }: Props) {
   }, []);
 
   return (
-    <div className="relative">
-      {/* Vertical timeline line */}
-      <div className="absolute left-[19px] top-0 bottom-0 w-px bg-zinc-300" />
+    <div className="space-y-0">
+      {phases.map((phase, i) => {
+        const isOpen = openPhase === i;
+        const isPast = i < openPhase;
+        const isReached = isOpen || isPast;
+        const isNotLast = i < phases.length - 1;
+        return (
+          <div
+            key={phase.number}
+            ref={(el) => { phaseRefs.current[i] = el; }}
+            className="flex gap-5"
+          >
+            {/* Left rail: dot + connector segment */}
+            <div className="flex flex-col items-center shrink-0">
+              <span
+                className={`relative z-10 mt-5 flex h-10 w-10 shrink-0 items-center justify-center text-sm font-bold transition-all duration-400 ${
+                  isReached
+                    ? "bg-[var(--color-primary)] text-white"
+                    : "bg-white border-2 border-zinc-300 text-zinc-500"
+                }`}
+              >
+                {phase.number}
+              </span>
+              {isNotLast && (
+                <div
+                  className={`w-px flex-1 transition-colors duration-400 ${
+                    isPast ? "bg-[var(--color-primary)]" : "bg-zinc-300"
+                  }`}
+                />
+              )}
+            </div>
 
-      <div className="space-y-0">
-        {phases.map((phase, i) => {
-          const isOpen = openPhases.has(i);
-          return (
-            <div
-              key={phase.number}
-              ref={(el) => { phaseRefs.current[i] = el; }}
-            >
-              {/* Header — always visible, clickable */}
+            {/* Right: header button + collapsible content */}
+            <div className="flex-1 min-w-0">
               <button
                 type="button"
-                onClick={() => toggle(i)}
-                className="relative w-full flex items-center gap-5 py-5 text-left group"
+                onClick={() => setOpenPhase(i)}
+                aria-expanded={isOpen}
+                className="w-full flex items-center gap-4 py-5 text-left group"
               >
-                {/* Timeline dot */}
-                <span
-                  className={`relative z-10 flex h-10 w-10 shrink-0 items-center justify-center text-sm font-bold transition-all duration-400 ${
-                    isOpen
-                      ? "bg-[var(--color-primary)] text-white"
-                      : "bg-white border-2 border-zinc-300 text-zinc-500 group-hover:border-[var(--color-primary)] group-hover:text-[var(--color-primary)]"
-                  }`}
-                >
-                  {phase.number}
-                </span>
-
-                {/* Title + duration */}
-                <div className="flex-1 flex items-baseline justify-between gap-4 min-w-0">
+                <div className="flex items-center gap-3 min-w-0 flex-1">
+                  {phase.icon && (
+                    <i
+                      className={`${phase.icon} text-lg shrink-0 transition-colors duration-300 ${
+                        isReached ? "text-[var(--color-primary)]" : "text-zinc-400"
+                      }`}
+                    />
+                  )}
                   <h3
                     className={`text-lg font-bold transition-colors duration-300 ${
                       isOpen ? "text-black" : "text-zinc-600 group-hover:text-black"
@@ -92,12 +95,10 @@ export function TimelineAccordion({ phases }: Props) {
                   >
                     {phase.title}
                   </h3>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] shrink-0">
-                    {phase.duration}
-                  </span>
                 </div>
-
-                {/* Chevron */}
+                <span className="text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] shrink-0">
+                  {phase.duration}
+                </span>
                 <i
                   className={`fa-solid fa-chevron-down text-zinc-400 text-sm transition-transform duration-300 ${
                     isOpen ? "rotate-180" : ""
@@ -105,13 +106,13 @@ export function TimelineAccordion({ phases }: Props) {
                 />
               </button>
 
-              {/* Content — collapsible */}
+              {/* Collapsible content */}
               <div
                 className={`overflow-hidden transition-all duration-400 ease-in-out ${
                   isOpen ? "max-h-[1600px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="pl-[60px] pb-8 pr-4">
+                <div className="pb-8 pr-4">
                   {phase.description.split("\n\n").map((para, pi) => {
                     const match = para.match(/^\*\*(.+?)\*\*(.*)$/);
                     const head = match ? match[1] : null;
@@ -143,8 +144,8 @@ export function TimelineAccordion({ phases }: Props) {
                     <div className="mt-8">
                       <p className="text-base font-bold text-black mb-3">Flexibility:</p>
                       <ul className="space-y-2 list-disc pl-5">
-                        {phase.flexibility.map((item, i) => (
-                          <li key={i} className="text-sm text-zinc-800 leading-relaxed">
+                        {phase.flexibility.map((item, idx) => (
+                          <li key={idx} className="text-sm text-zinc-800 leading-relaxed">
                             {item}
                           </li>
                         ))}
@@ -160,9 +161,9 @@ export function TimelineAccordion({ phases }: Props) {
                 </div>
               </div>
             </div>
-          );
-        })}
-      </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

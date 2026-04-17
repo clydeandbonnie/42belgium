@@ -99,6 +99,7 @@ export interface CurriculumPhase {
   duration: string;
   description: string;
   items: string[];
+  icon?: string;
   flexibility?: string[];
   globalMobility?: string;
 }
