@@ -463,16 +463,16 @@ export function ProposalA({ content }: { content: PageContent }) {
 
       {/* ─── FINAL CTA ─── */}
       {ctaFinal && (
-        <section className="relative overflow-hidden bg-white text-black">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/assets/code-pink.svg"
-            alt=""
-            aria-hidden="true"
-            className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 w-[60%] max-w-[700px] opacity-25 select-none"
-          />
-          <div className="relative mx-auto max-w-5xl px-6 py-20 sm:py-28">
+        <section className="bg-white text-black">
+          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
             <div className="max-w-2xl">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/3-chevrons-pink.svg"
+                alt=""
+                aria-hidden="true"
+                className="w-40 sm:w-56 mb-8 select-none"
+              />
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                 {ctaFinal.title}
               </h2>
