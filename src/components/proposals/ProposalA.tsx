@@ -16,6 +16,7 @@ import type { PageContent } from "@/lib/i18n";
 import { YouTubeEmbed } from "./YouTubeEmbed";
 import { TimelineAccordion } from "./TimelineAccordion";
 import { ApplyLink } from "./ApplyLink";
+import { PartnerStrip } from "./PartnerStrip";
 
 export function ProposalA({ content }: { content: PageContent }) {
   const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
@@ -262,6 +263,9 @@ export function ProposalA({ content }: { content: PageContent }) {
           </div>
         </section>
       )}
+
+      {/* ─── PARTNER STRIP — between The Outcome and The Program ─── */}
+      <PartnerStrip />
 
       {/* ─── WHAT YOU'LL BUILD — timeline accordion ─── */}
       {whatYouBuild && whatYouBuild.phases && (

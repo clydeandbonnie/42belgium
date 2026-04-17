@@ -5,6 +5,19 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ─── Infinite horizontal marquee (partner logos) ───
+   Moves a duplicated flex row by -50% so the seam between
+   the first half and its clone is invisible. */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+  width: max-content;
+}
+
 /* ── Futura PT: loaded via <link> in layout.tsx head ── */
 /* ── Local fallback (Light + Heavy only, if Typekit fails) ── */
 @font-face {
