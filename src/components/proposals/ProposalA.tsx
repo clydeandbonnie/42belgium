@@ -76,9 +76,31 @@ export function ProposalA({ content }: { content: PageContent }) {
       {clusters.map((cluster, i) => {
         const isEven = i % 2 === 0;
         const bgClass = isEven ? "bg-white text-black" : "bg-zinc-100 text-black";
+        const isLowBarrier = cluster.name === "LOW BARRIER TO ENTRY";
         return (
-          <section key={cluster.name} className={bgClass}>
-            <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+          <section
+            key={cluster.name}
+            className={`${bgClass}${isLowBarrier ? " relative overflow-hidden" : ""}`}
+          >
+            {isLowBarrier && (
+              <>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/3-chevrons-blue.svg"
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -top-6 -left-20 w-[300px] sm:w-[380px] opacity-[0.07] select-none"
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/3-chevrons-pink.svg"
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -bottom-10 -right-16 w-[320px] sm:w-[420px] opacity-[0.08] select-none"
+                />
+              </>
+            )}
+            <div className={`mx-auto max-w-5xl px-6 py-20 sm:py-28${isLowBarrier ? " relative" : ""}`}>
               {cluster.image ? (
                 <div className="grid gap-12 lg:grid-cols-[1fr_440px] items-stretch">
                   <div>
@@ -178,30 +200,51 @@ export function ProposalA({ content }: { content: PageContent }) {
                 );
               })()}
 
-              {cluster.bullets && cluster.bullets.length > 0 && cluster.name === "LOW BARRIER TO ENTRY" && (
-                <div className="mt-12 flex flex-wrap gap-3">
-                  {cluster.bullets!.map((bullet, bi) => {
-                    const isYes = bullet.toLowerCase().startsWith("yes");
-                    return isYes ? (
-                      <ApplyLink
-                        key={bi}
-                        className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-5 py-2.5 text-sm font-bold hover:brightness-110 transition-all"
-                      >
-                        <i className="fa-solid fa-check text-sm" />
-                        {bullet}
-                      </ApplyLink>
-                    ) : (
-                      <span
-                        key={bi}
-                        className="inline-flex items-center gap-2 border border-zinc-300 bg-white text-zinc-800 px-5 py-2.5 text-sm font-bold"
-                      >
-                        <i className="fa-solid fa-ban text-sm text-[var(--color-secondary)]" />
-                        {bullet}
-                      </span>
-                    );
-                  })}
-                </div>
-              )}
+              {cluster.bullets && cluster.bullets.length > 0 && isLowBarrier && (() => {
+                const noItems = cluster.bullets.filter((b) => !b.toLowerCase().startsWith("yes"));
+                const yesItems = cluster.bullets.filter((b) => b.toLowerCase().startsWith("yes"));
+                return (
+                  <div className="mt-14 space-y-12">
+                    {/* NO group — rejection stamps */}
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-5">
+                        What we don&apos;t ask for
+                      </p>
+                      <div className="flex flex-wrap gap-3">
+                        {noItems.map((bullet, bi) => (
+                          <span
+                            key={bi}
+                            className="inline-flex items-center px-5 py-2.5 border border-dashed border-zinc-300 bg-white text-sm font-bold uppercase tracking-wider text-zinc-500"
+                            style={{ transform: `rotate(${bi % 2 === 0 ? -1 : 1}deg)` }}
+                          >
+                            <span className="line-through decoration-[var(--color-secondary)] decoration-2 decoration-solid underline-offset-2">
+                              {bullet}
+                            </span>
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    {/* YES group — clickable CTA pills */}
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-5">
+                        What we look for
+                      </p>
+                      <div className="flex flex-wrap gap-3">
+                        {yesItems.map((bullet, bi) => (
+                          <ApplyLink
+                            key={bi}
+                            className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white px-6 py-3.5 text-base font-bold hover:brightness-110 transition-all"
+                          >
+                            <i className="fa-solid fa-check text-base" />
+                            {bullet}
+                            <i className="fa-solid fa-arrow-right text-sm text-[var(--color-secondary)] transition-transform duration-200 group-hover:translate-x-1" />
+                          </ApplyLink>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
               {cluster.bullets && cluster.bullets.length > 0 && cluster.name !== "LOW BARRIER TO ENTRY" && (
                 <ul className="mt-12 space-y-0 border-l-2 border-[var(--color-primary)] ml-1">
                   {cluster.bullets.map((bullet, bi) => (
