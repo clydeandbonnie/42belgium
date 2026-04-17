@@ -53,7 +53,9 @@ export function PartnerStrip() {
     const el = scrollerRef.current;
     if (!el) return;
     const onScroll = () => {
-      setHasMoved(true);
+      // Only mark as "moved" once the user has actually advanced past the start —
+      // avoids scroll-snap noise or sub-pixel micro-scrolls flipping the flag.
+      if (el.scrollLeft > 4) setHasMoved(true);
       updateArrows();
     };
     el.addEventListener("scroll", onScroll, { passive: true });
@@ -66,6 +68,11 @@ export function PartnerStrip() {
 
   const scrollBy = (delta: number) => {
     scrollerRef.current?.scrollBy({ left: delta, behavior: "smooth" });
+  };
+
+  const onNext = () => {
+    setHasMoved(true);
+    scrollBy(SCROLL_STEP);
   };
 
   return (
@@ -113,7 +120,7 @@ export function PartnerStrip() {
           {canNext && (
             <button
               type="button"
-              onClick={() => scrollBy(SCROLL_STEP)}
+              onClick={onNext}
               aria-label="Next partners"
               className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center text-zinc-600 hover:text-[var(--color-primary)] transition-colors"
             >

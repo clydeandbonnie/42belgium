@@ -39,8 +39,8 @@ export function ProposalA({ content }: { content: PageContent }) {
           />
         </div>
         {/* Text - left half, generous left padding, no max-width container */}
-        <div className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 pl-[max(32px,calc((100vw-1440px)/2+32px))] pr-8 sm:pr-0">
-          <div className="sm:w-1/2 sm:pr-20 lg:pr-24">
+        <div className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 pl-[max(48px,calc((100vw-1400px)/2+48px))] pr-10 sm:pr-0">
+          <div className="sm:w-1/2 sm:pr-24 lg:pr-32">
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
               <i className="fa-solid fa-rocket mr-2" />
               Free structured training
