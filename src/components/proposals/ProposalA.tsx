@@ -181,41 +181,30 @@ export function ProposalA({ content }: { content: PageContent }) {
                 );
               })()}
 
-              {cluster.bullets && cluster.bullets.length > 0 && cluster.name === "LOW BARRIER TO ENTRY" && (() => {
-                // Split each bullet into an emphasised first token (NO / YES) + rest.
-                const splitBullet = (bullet: string) => {
-                  const match = bullet.match(/^(Yes to|No|Yes)\s+(.+)$/i);
-                  if (match) return { emphasis: match[1].toUpperCase(), rest: match[2] };
-                  return { emphasis: "", rest: bullet };
-                };
-                return (
-                  <div className="mt-12">
-                    {cluster.bullets!.map((bullet, bi) => {
-                      const { emphasis, rest } = splitBullet(bullet);
-                      const isYes = emphasis.startsWith("YES");
-                      return (
-                        <div
-                          key={bi}
-                          className="grid grid-cols-[auto_1fr] gap-6 sm:gap-10 items-baseline py-6 border-b border-zinc-300 last:border-b-0"
-                        >
-                          <span
-                            className={`font-bold leading-none shrink-0 tracking-tight ${
-                              isYes
-                                ? "text-[var(--color-primary)] text-5xl sm:text-6xl lg:text-7xl"
-                                : "text-black text-5xl sm:text-6xl lg:text-7xl"
-                            }`}
-                          >
-                            {emphasis}
-                          </span>
-                          <p className="text-lg sm:text-xl font-bold text-black leading-snug">
-                            {rest}
-                          </p>
-                        </div>
-                      );
-                    })}
-                  </div>
-                );
-              })()}
+              {cluster.bullets && cluster.bullets.length > 0 && cluster.name === "LOW BARRIER TO ENTRY" && (
+                <div className="mt-12 flex flex-wrap gap-3">
+                  {cluster.bullets!.map((bullet, bi) => {
+                    const isYes = bullet.toLowerCase().startsWith("yes");
+                    return isYes ? (
+                      <span
+                        key={bi}
+                        className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-5 py-2.5 text-sm font-bold"
+                      >
+                        <i className="fa-solid fa-check text-sm" />
+                        {bullet}
+                      </span>
+                    ) : (
+                      <span
+                        key={bi}
+                        className="inline-flex items-center gap-2 border border-zinc-300 bg-white text-zinc-800 px-5 py-2.5 text-sm font-bold"
+                      >
+                        <i className="fa-solid fa-ban text-sm text-[var(--color-secondary)]" />
+                        {bullet}
+                      </span>
+                    );
+                  })}
+                </div>
+              )}
               {cluster.bullets && cluster.bullets.length > 0 && cluster.name !== "LOW BARRIER TO ENTRY" && (
                 <ul className="mt-12 space-y-0 border-l-2 border-[var(--color-primary)] ml-1">
                   {cluster.bullets.map((bullet, bi) => (
