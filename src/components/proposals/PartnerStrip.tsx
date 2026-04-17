@@ -20,10 +20,10 @@ const PARTNERS: Partner[] = [
   { name: "Belfius", src: "/assets/partners/Belfius.png" },
   { name: "Deloitte", src: "/assets/partners/Deloitte.png" },
   { name: "Proximus", src: "/assets/partners/Proximus.png" },
-  { name: "Euroclear", src: "/assets/partners/Euroclear.png" },
   { name: "DPG Media", src: "/assets/partners/DPG.png" },
   { name: "Securex", src: "/assets/partners/Securex.png" },
   { name: "GBL", src: "/assets/partners/GBL.png" },
+  { name: "Euroclear", src: "/assets/partners/Euroclear.png" },
   { name: "Digipolis", src: "/assets/partners/Digipolis.png" },
   { name: "Duvel", src: "/assets/partners/Duvel.png" },
   { name: "HUBO", src: "/assets/partners/HUBO.png" },
@@ -76,7 +76,7 @@ export function PartnerStrip() {
             onClick={() => scrollBy(-SCROLL_STEP)}
             disabled={!canPrev}
             aria-label="Previous partners"
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center bg-white border border-zinc-300 text-zinc-600 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            className="absolute -left-8 sm:-left-12 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center bg-white border border-zinc-300 text-zinc-600 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
           >
             <i className="fa-solid fa-chevron-left text-sm" />
           </button>
@@ -108,7 +108,7 @@ export function PartnerStrip() {
             onClick={() => scrollBy(SCROLL_STEP)}
             disabled={!canNext}
             aria-label="Next partners"
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center bg-white border border-zinc-300 text-zinc-600 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center bg-white border border-zinc-300 text-zinc-600 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
           >
             <i className="fa-solid fa-chevron-right text-sm" />
           </button>
