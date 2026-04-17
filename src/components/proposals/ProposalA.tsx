@@ -145,7 +145,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                         {cluster.comparison!.leftLabel}
                       </p>
                     </div>
-                    <div className="px-6 py-5 bg-[var(--color-primary)] rounded-t-md flex items-center justify-center shadow-[0_-4px_20px_-8px_rgba(0,0,0,0.15)]">
+                    <div className="px-6 py-5 bg-[var(--color-primary)] flex items-center justify-center shadow-[0_-4px_20px_-8px_rgba(0,0,0,0.15)]">
                       <p className="text-base font-bold uppercase tracking-[0.25em] text-white">
                         {cluster.comparison!.rightLabel}
                       </p>
@@ -156,7 +156,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                       return (
                         <div key={ri} className="contents">
                           {/* Criterion label */}
-                          <div className={`px-6 py-6 bg-white flex items-center ${!isLast ? "border-b border-zinc-200" : ""}`}>
+                          <div className={`px-6 py-6 bg-white flex items-center border-r border-zinc-200 ${!isLast ? "border-b border-zinc-200" : ""}`}>
                             <p className="text-sm font-bold uppercase tracking-wider text-black">
                               {criteria[ri] || `Feature ${ri + 1}`}
                             </p>
@@ -167,7 +167,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                             <p className="text-base text-zinc-500">{row.left}</p>
                           </div>
                           {/* 42 cell — elevated, teal-tinted, bold */}
-                          <div className={`px-6 py-6 flex items-center gap-4 bg-[var(--color-primary)]/5 border-l-4 border-[var(--color-primary)] ${!isLast ? "border-b border-b-zinc-200" : "rounded-b-md"}`}>
+                          <div className={`px-6 py-6 flex items-center gap-4 bg-[var(--color-primary)]/5 border-l-4 border-[var(--color-primary)] ${!isLast ? "border-b border-b-zinc-200" : ""}`}>
                             <i className="fa-solid fa-check text-[var(--color-primary)] text-2xl shrink-0" />
                             <p className="text-base font-bold text-black leading-snug">{row.right}</p>
                           </div>
