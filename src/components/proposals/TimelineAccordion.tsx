@@ -117,14 +117,14 @@ export function TimelineAccordion({ phases }: Props) {
                   </p>
                   <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
                     {phase.items.map((item) => {
-                      const sepIndex = item.indexOf(" - ");
-                      const head = sepIndex >= 0 ? item.slice(0, sepIndex) : item;
-                      const tail = sepIndex >= 0 ? item.slice(sepIndex) : "";
+                      const match = item.match(/^\*\*(.+?)\*\*(.*)$/);
+                      const head = match ? match[1] : null;
+                      const tail = match ? match[2] : item;
                       return (
                         <li key={item} className="flex gap-3 text-sm">
                           <i className="fa-solid fa-chevron-right text-[var(--color-primary)] mt-1 text-xs shrink-0" />
                           <span className="text-zinc-800">
-                            <strong className="font-bold text-black">{head}</strong>
+                            {head && <strong className="font-bold text-black">{head}</strong>}
                             {tail}
                           </span>
                         </li>
