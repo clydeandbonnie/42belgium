@@ -17,6 +17,7 @@ import { YouTubeEmbed } from "./YouTubeEmbed";
 import { TimelineAccordion } from "./TimelineAccordion";
 import { ApplyLink } from "./ApplyLink";
 import { PartnerStrip } from "./PartnerStrip";
+import { LookForTag } from "./LookForTag";
 
 export function ProposalA({ content }: { content: PageContent }) {
   const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
@@ -158,12 +159,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                         </p>
                         <div className="flex flex-wrap gap-2">
                           {cluster.lookFor.map((bullet, bi) => (
-                            <span
-                              key={bi}
-                              className="inline-flex items-center px-4 py-2 border-2 border-[var(--color-secondary)] bg-white text-[var(--color-secondary)] text-sm font-bold uppercase tracking-wider"
-                            >
-                              {bullet}
-                            </span>
+                            <LookForTag key={bi}>{bullet}</LookForTag>
                           ))}
                         </div>
                       </div>
