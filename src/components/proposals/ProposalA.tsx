@@ -182,27 +182,37 @@ export function ProposalA({ content }: { content: PageContent }) {
               })()}
 
               {cluster.bullets && cluster.bullets.length > 0 && cluster.name === "LOW BARRIER TO ENTRY" && (() => {
-                // Thematic FA icons for each barrier-lifted bullet — order matches JSON
-                const icons = [
-                  "fa-solid fa-seedling",          // No technical background
-                  "fa-solid fa-file-circle-xmark", // No diploma / CV / essay
-                  "fa-solid fa-infinity",          // No age limit
-                  "fa-solid fa-brain",             // Online test — potential
-                  "fa-solid fa-route",             // Real career change
-                ];
+                // Split each bullet into an emphasised first token (NO / YES) + rest.
+                const splitBullet = (bullet: string) => {
+                  const match = bullet.match(/^(Yes to|No|Yes)\s+(.+)$/i);
+                  if (match) return { emphasis: match[1].toUpperCase(), rest: match[2] };
+                  return { emphasis: "", rest: bullet };
+                };
                 return (
-                  <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                    {cluster.bullets!.map((bullet, bi) => (
-                      <div
-                        key={bi}
-                        className="group border border-zinc-200 bg-white p-6 flex flex-col gap-4 hover:border-[var(--color-primary)] transition-colors"
-                      >
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-2xl group-hover:bg-[var(--color-primary)] group-hover:text-white transition-colors">
-                          <i className={icons[bi] || "fa-solid fa-check"} />
-                        </span>
-                        <p className="text-base font-bold text-black leading-snug">{bullet}</p>
-                      </div>
-                    ))}
+                  <div className="mt-12">
+                    {cluster.bullets!.map((bullet, bi) => {
+                      const { emphasis, rest } = splitBullet(bullet);
+                      const isYes = emphasis.startsWith("YES");
+                      return (
+                        <div
+                          key={bi}
+                          className="grid grid-cols-[auto_1fr] gap-6 sm:gap-10 items-baseline py-6 border-b border-zinc-300 last:border-b-0"
+                        >
+                          <span
+                            className={`font-bold leading-none shrink-0 tracking-tight ${
+                              isYes
+                                ? "text-[var(--color-primary)] text-5xl sm:text-6xl lg:text-7xl"
+                                : "text-black text-5xl sm:text-6xl lg:text-7xl"
+                            }`}
+                          >
+                            {emphasis}
+                          </span>
+                          <p className="text-lg sm:text-xl font-bold text-black leading-snug">
+                            {rest}
+                          </p>
+                        </div>
+                      );
+                    })}
                   </div>
                 );
               })()}
