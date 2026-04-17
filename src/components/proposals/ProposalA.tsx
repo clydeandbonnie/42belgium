@@ -443,15 +443,15 @@ export function ProposalA({ content }: { content: PageContent }) {
 
       {/* ─── STATS BAR ─── */}
       {stats && stats.length > 0 && (
-        <section className="bg-zinc-950 text-white border-y border-zinc-800">
+        <section className="bg-[var(--color-secondary)] text-white">
           <div className="mx-auto max-w-5xl px-6 py-12">
             <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 text-center">
               {stats.map((stat, i) => (
                 <div key={i}>
-                  <p className="text-4xl font-bold sm:text-5xl text-[var(--color-primary)]">
+                  <p className="text-4xl font-bold sm:text-5xl text-white">
                     {stat.value}
                   </p>
-                  <p className="mt-2 text-xs uppercase tracking-wider text-zinc-400">
+                  <p className="mt-2 text-xs uppercase tracking-wider text-white/80">
                     {stat.label}
                   </p>
                 </div>

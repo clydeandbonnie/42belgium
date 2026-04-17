@@ -9,6 +9,7 @@ interface Props {
 
 export function TimelineAccordion({ phases }: Props) {
   const [openPhase, setOpenPhase] = useState<number>(0);
+  const toggle = (i: number) => setOpenPhase((prev) => (prev === i ? -1 : i));
 
   return (
     <div className="space-y-0">
@@ -20,15 +21,18 @@ export function TimelineAccordion({ phases }: Props) {
           <div key={phase.number} className="flex gap-5">
             {/* Left rail: dot + connector segment */}
             <div className="flex flex-col items-center shrink-0">
-              <span
-                className={`relative z-10 mt-5 flex h-10 w-10 shrink-0 items-center justify-center text-sm font-bold transition-all duration-400 ${
+              <button
+                type="button"
+                onClick={() => toggle(i)}
+                aria-label={`Toggle ${phase.title}`}
+                className={`relative z-10 mt-5 flex h-10 w-10 shrink-0 items-center justify-center text-sm font-bold transition-all duration-400 cursor-pointer hover:brightness-110 ${
                   isReached
                     ? "bg-[var(--color-primary)] text-white"
                     : "bg-white border-2 border-zinc-300 text-zinc-500"
                 }`}
               >
                 {phase.number}
-              </span>
+              </button>
               {isNotLast && (
                 <div
                   className={`w-px flex-1 transition-colors duration-400 ${
@@ -42,7 +46,7 @@ export function TimelineAccordion({ phases }: Props) {
             <div className="flex-1 min-w-0">
               <button
                 type="button"
-                onClick={() => setOpenPhase((prev) => (prev === i ? -1 : i))}
+                onClick={() => toggle(i)}
                 aria-expanded={isOpen}
                 className="w-full flex items-center gap-4 py-5 text-left group"
               >
