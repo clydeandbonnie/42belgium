@@ -166,12 +166,12 @@ export function ProposalA({ content }: { content: PageContent }) {
                           </p>
                         </div>
                         {/* MOOC cell — icon inline with text */}
-                        <div className="px-6 py-6 border-x border-zinc-200 flex items-center justify-center gap-3">
+                        <div className="px-6 py-6 border-x border-zinc-200 flex items-center gap-3">
                           <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-lg shrink-0" />
                           <p className="text-xs text-zinc-500">{row.left}</p>
                         </div>
                         {/* 42 cell — icon inline with text */}
-                        <div className="px-6 py-6 bg-[var(--color-primary)]/5 flex items-center justify-center gap-3">
+                        <div className="px-6 py-6 bg-[var(--color-primary)]/5 flex items-center gap-3">
                           <i className="fa-solid fa-check text-[var(--color-primary)] text-lg shrink-0" />
                           <p className="text-xs font-bold text-black">{row.right}</p>
                         </div>
