@@ -18,6 +18,7 @@ import { TimelineAccordion } from "./TimelineAccordion";
 import { ApplyLink } from "./ApplyLink";
 import { PartnerStrip } from "./PartnerStrip";
 import { LookForTag } from "./LookForTag";
+import { FaqAccordion } from "./FaqAccordion";
 
 export function ProposalA({ content }: { content: PageContent }) {
   const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
@@ -435,16 +436,7 @@ export function ProposalA({ content }: { content: PageContent }) {
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
               Every question. Answered honestly.
             </h2>
-            <div className="grid gap-px bg-zinc-800 sm:grid-cols-2">
-              {faq.map((item, i) => (
-                <div key={i} className="bg-black p-8">
-                  <h3 className="text-base font-bold mb-3 text-[var(--color-primary)]">
-                    {item.question}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-zinc-300">{item.answer}</p>
-                </div>
-              ))}
-            </div>
+            <FaqAccordion items={faq} />
           </div>
         </section>
       )}
