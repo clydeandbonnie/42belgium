@@ -5,34 +5,31 @@ import {
   getFooterColumns,
   getSocialLinks,
   getLegalLinks,
-  getApplyUrl,
-  getApplyLabel,
+  getSocialHeading,
+  getWorkAt42Link,
+  getNewsletterHeading,
+  getNewsletterCta,
+  getLanguageHeading,
 } from "@/lib/navigation";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import styles from "./Footer.module.css";
-
-function ApplyArrow() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 108 108" fill="currentColor" aria-hidden="true">
-      <path d="M16 54L86 54L54 86L57.5 89.5L96 51.3L57.5 13L54 16.5L86 49H16V54Z" />
-    </svg>
-  );
-}
 
 export function Footer({ lang }: { lang: Language }) {
   const locations = getFooterLocations();
   const columns = getFooterColumns(lang);
   const socialLinks = getSocialLinks();
   const legalLinks = getLegalLinks();
-  const applyUrl = getApplyUrl(lang);
-  const applyLabel = getApplyLabel(lang);
-  const contactLabel =
-    lang === "fr" ? "Contactez-nous" : lang === "nl" ? "Contacteer ons" : "Contact us";
+  const socialHeading = getSocialHeading(lang);
+  const workAt42 = getWorkAt42Link(lang);
+  const newsletterHeading = getNewsletterHeading(lang);
+  const newsletterCta = getNewsletterCta(lang);
+  const languageHeading = getLanguageHeading(lang);
 
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Col 1: Logo + locations + socials */}
+          {/* Col 1: Logo + locations */}
           <div>
             <Image
               src="/assets/logo-42-white.svg"
@@ -40,15 +37,26 @@ export function Footer({ lang }: { lang: Language }) {
               width={140}
               height={26}
             />
-            <div className="mt-6 space-y-4">
-              {locations.map((loc) => (
-                <div key={loc.city}>
-                  <p className={styles.cityName}>{loc.city}</p>
-                  <p className={styles.address}>{loc.address}</p>
+            <div className="mt-8 space-y-6">
+              {locations.map((loc, i) => (
+                <div
+                  key={loc.city}
+                  className={i > 0 ? "pt-6 border-t border-zinc-800" : ""}
+                >
+                  {loc.address.split(", ").map((line, j) => (
+                    <p key={j} className={styles.address}>
+                      {line}
+                    </p>
+                  ))}
                 </div>
               ))}
             </div>
-            <div className="mt-6 flex gap-4">
+          </div>
+
+          {/* Col 2: Socials + Work at 42 */}
+          <div>
+            <p className={styles.columnHeading}>{socialHeading}</p>
+            <div className="flex gap-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.platform}
@@ -62,16 +70,30 @@ export function Footer({ lang }: { lang: Language }) {
                 </a>
               ))}
             </div>
+            <p className={`${styles.columnHeading} mt-10`}>{workAt42.heading}</p>
+            <a
+              href={workAt42.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.columnLink}
+            >
+              {workAt42.label}
+            </a>
           </div>
 
-          {/* Nav columns */}
+          {/* Col 3: 42 Belgium nav */}
           {columns.map((col) => (
             <div key={col.heading}>
               <p className={styles.columnHeading}>{col.heading}</p>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <a href={link.href} className={styles.columnLink}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.columnLink}
+                    >
                       {link.label}
                     </a>
                   </li>
@@ -79,20 +101,22 @@ export function Footer({ lang }: { lang: Language }) {
               </ul>
             </div>
           ))}
-        </div>
 
-        {/* CTA row */}
-        <div className={styles.ctaRow}>
-          <a href={applyUrl} className={styles.applyButton}>
-            {applyLabel}
-            <ApplyArrow />
-          </a>
-          <a
-            href={`https://42belgium.be/${lang}/contact/`}
-            className={styles.contactButton}
-          >
-            {contactLabel}
-          </a>
+          {/* Col 4: Newsletter + language */}
+          <div>
+            <p className={styles.columnHeading}>{newsletterHeading}</p>
+            {/* TODO: wire to Mailchimp once credentials are available. For now links to the main site footer which has the subscription popup. */}
+            <a
+              href={`https://42belgium.be/${lang}/#newsletter`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.newsletterButton}
+            >
+              {newsletterCta}
+            </a>
+            <p className={`${styles.columnHeading} mt-10`}>{languageHeading}</p>
+            <LanguageSwitcher current={lang} />
+          </div>
         </div>
       </div>
 

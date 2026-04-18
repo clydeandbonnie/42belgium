@@ -5,6 +5,36 @@
 .footer {
   background-color: #090909;
   font-family: "futura-pt", "Futura", sans-serif;
+  position: relative;
+}
+
+/* Thin pink accent line running along the top of the footer */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ED3491 0%, #ED3491 40%, rgba(237, 52, 145, 0) 100%);
+}
+
+.newsletterButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  color: #ffffff;
+  background-color: #00BABC;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: filter 200ms ease;
+}
+
+.newsletterButton:hover {
+  filter: brightness(1.1);
 }
 
 .container {
