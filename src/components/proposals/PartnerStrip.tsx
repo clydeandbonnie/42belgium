@@ -100,7 +100,7 @@ export function PartnerStrip() {
           {/* Scroller */}
           <div
             ref={scrollerRef}
-            className="flex gap-20 overflow-x-auto scroll-smooth snap-x snap-mandatory px-14 no-scrollbar"
+            className="flex gap-12 overflow-x-auto scroll-smooth snap-x snap-mandatory px-6 no-scrollbar"
           >
             {PARTNERS.map((partner, i) => (
               <div
