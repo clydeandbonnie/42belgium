@@ -403,9 +403,16 @@ export function ProposalA({ content }: { content: PageContent }) {
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {[
               { name: "Brussels", src: "/assets/gallery/OpenDaysBrussels.png" },
-              { name: "Antwerp", src: "/assets/gallery/OpenDaysAntwerp.jpg" },
+              { name: "Antwerp", src: "/assets/gallery/42Belgium-Antwerp1.png" },
             ].map((campus) => (
-              <div key={campus.name} className="relative aspect-[4/3] overflow-hidden group">
+              <a
+                key={campus.name}
+                href="https://www.eventbrite.com/cc/open-days-42-belgium-2935099"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Register for Open Day in ${campus.name}`}
+                className="relative aspect-[4/3] overflow-hidden group block"
+              >
                 <Image
                   src={campus.src}
                   alt={`42 Belgium ${campus.name} campus`}
@@ -417,7 +424,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                 <p className="absolute bottom-5 left-6 text-2xl font-bold text-white tracking-tight">
                   {campus.name}
                 </p>
-              </div>
+              </a>
             ))}
           </div>
           <div className="mt-12 flex justify-center">
@@ -436,7 +443,7 @@ export function ProposalA({ content }: { content: PageContent }) {
 
       {/* ─── HOW TO APPLY ─── */}
       {howToApply && (
-        <section className="bg-white text-black" id="apply">
+        <section className="bg-zinc-100 text-black" id="apply">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
               The path
