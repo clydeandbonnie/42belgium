@@ -445,7 +445,7 @@ export function ProposalA({ content }: { content: PageContent }) {
       {howToApply && (
         <section className="bg-zinc-100 text-black" id="apply">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
               The path
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
@@ -455,7 +455,7 @@ export function ProposalA({ content }: { content: PageContent }) {
               {howToApply.steps.map((step) => (
                 <div
                   key={step.number}
-                  className="grid gap-6 sm:grid-cols-[auto_1fr] items-start border-l-4 border-[var(--color-primary)] pl-8 py-2"
+                  className="grid gap-6 sm:grid-cols-[auto_1fr] items-start border-l-4 border-[var(--color-secondary)] pl-8 py-2"
                 >
                   <span className="text-6xl font-bold text-zinc-200 leading-none sm:w-24">
                     {step.number}
@@ -468,7 +468,7 @@ export function ProposalA({ content }: { content: PageContent }) {
               ))}
             </div>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 items-center">
-              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
+              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-secondary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
                 {howToApply.ctaLabel}
               </ApplyLink>
               {howToApply.microcopy && (

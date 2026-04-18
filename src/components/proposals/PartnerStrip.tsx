@@ -97,6 +97,21 @@ export function PartnerStrip() {
             </button>
           )}
 
+          {/* Right fade mask - hides any partial logo peeking at the right edge (arrow stays above via z-10) */}
+          {canNext && (
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white via-white/90 to-transparent z-[5]"
+            />
+          )}
+          {/* Left fade mask - mirror effect once the user has scrolled past the start */}
+          {!firstVisible && (
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white via-white/90 to-transparent z-[5]"
+            />
+          )}
+
           {/* Scroller */}
           <div
             ref={scrollerRef}
