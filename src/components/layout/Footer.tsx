@@ -7,8 +7,6 @@ import {
   getLegalLinks,
   getSocialHeading,
   getWorkAt42Link,
-  getNewsletterHeading,
-  getNewsletterCta,
   getLanguageHeading,
 } from "@/lib/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -21,8 +19,6 @@ export function Footer({ lang }: { lang: Language }) {
   const legalLinks = getLegalLinks();
   const socialHeading = getSocialHeading(lang);
   const workAt42 = getWorkAt42Link(lang);
-  const newsletterHeading = getNewsletterHeading(lang);
-  const newsletterCta = getNewsletterCta(lang);
   const languageHeading = getLanguageHeading(lang);
 
   return (
@@ -102,19 +98,9 @@ export function Footer({ lang }: { lang: Language }) {
             </div>
           ))}
 
-          {/* Col 4: Newsletter + language */}
+          {/* Col 4: Language switcher */}
           <div>
-            <p className={styles.columnHeading}>{newsletterHeading}</p>
-            {/* TODO: wire to Mailchimp once credentials are available. For now links to the main site footer which has the subscription popup. */}
-            <a
-              href={`https://42belgium.be/${lang}/#newsletter`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.newsletterButton}
-            >
-              {newsletterCta}
-            </a>
-            <p className={`${styles.columnHeading} mt-10`}>{languageHeading}</p>
+            <p className={styles.columnHeading}>{languageHeading}</p>
             <LanguageSwitcher current={lang} />
           </div>
         </div>
