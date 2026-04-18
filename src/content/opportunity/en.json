@@ -96,7 +96,7 @@
     }
   ],
   "afterForty": {
-    "heading": "Life after 42 - 98% employment.",
+    "heading": "Life after 42: 98% employment.",
     "description": "98% of students who complete the advanced curriculum secure a job. Many are recruited during internships or while still working on projects at 42. You graduate with a portfolio, a track record, and a global alumni network in every major tech city.",
     "stat": { "value": "98%", "label": "of advanced grads secure a job" },
     "careers": [

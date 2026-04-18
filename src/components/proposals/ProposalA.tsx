@@ -192,7 +192,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                         alt={cluster.imageAlt || ""}
                         fill
                         sizes="(min-width: 1024px) 440px, 100vw"
-                        className="object-cover brightness-110 contrast-105 saturate-125"
+                        className="object-cover"
                       />
                     </div>
                   </div>
