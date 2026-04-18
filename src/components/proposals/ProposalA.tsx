@@ -30,8 +30,8 @@ export function ProposalA({ content }: { content: PageContent }) {
         {/* Image - absolute, pinned to right half, full section height */}
         <div className="absolute top-0 right-0 bottom-0 w-1/2 hidden sm:block">
           <Image
-            src="/assets/gallery/42Belgium-Antwerp3.png"
-            alt="Students coding at 42 Belgium Antwerp campus"
+            src="/assets/gallery/Skills-42Blegium-1.png"
+            alt="42 Belgium students building tech skills"
             fill
             className="object-cover object-center"
             priority
