@@ -388,6 +388,52 @@ export function ProposalA({ content }: { content: PageContent }) {
         </section>
       )}
 
+      {/* ─── OPEN DAYS ─── */}
+      <section className="bg-white text-black">
+        <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+            Campus visits
+          </p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
+            Come meet us at an Open Day.
+          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-zinc-700 max-w-3xl">
+            No pressure, no commitment. Walk the campus, meet the team, ask every question you have - in Brussels or Antwerp.
+          </p>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            {[
+              { name: "Brussels", src: "/assets/gallery/OpenDaysBrussels.png" },
+              { name: "Antwerp", src: "/assets/gallery/OpenDaysAntwerp.jpg" },
+            ].map((campus) => (
+              <div key={campus.name} className="relative aspect-[4/3] overflow-hidden group">
+                <Image
+                  src={campus.src}
+                  alt={`42 Belgium ${campus.name} campus`}
+                  fill
+                  sizes="(min-width: 640px) 50vw, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <p className="absolute bottom-5 left-6 text-2xl font-bold text-white tracking-tight">
+                  {campus.name}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 flex justify-center">
+            <a
+              href="https://www.eventbrite.com/cc/open-days-42-belgium-2935099"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
+            >
+              See upcoming Open Days
+              <i className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ─── HOW TO APPLY ─── */}
       {howToApply && (
         <section className="bg-white text-black" id="apply">
