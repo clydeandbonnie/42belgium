@@ -8,7 +8,8 @@ import Image from "next/image";
  * - No auto-scroll. User controls via prev/next arrows.
  * - Scroll-snap for a clean snap-to-item experience.
  * - Logos are greyscale by default, full colour on hover.
- * - Arrows disable when at the start/end of the track.
+ * - Prev arrow appears once the FIRST logo has scrolled out of view.
+ * - Next arrow hides when the end of the track is reached.
  */
 
 interface Partner {
@@ -36,43 +37,44 @@ const SCROLL_STEP = 480; // pixels per arrow click
 
 export function PartnerStrip() {
   const scrollerRef = useRef<HTMLDivElement>(null);
-  const [canPrev, setCanPrev] = useState(false);
+  const firstLogoRef = useRef<HTMLDivElement>(null);
   const [canNext, setCanNext] = useState(true);
-  // Suppress the prev arrow until the user has actually scrolled forward at least once.
-  const [hasMoved, setHasMoved] = useState(false);
+  // Prev arrow shows only once the FIRST logo has scrolled out of the viewport.
+  const [firstVisible, setFirstVisible] = useState(true);
 
-  const updateArrows = () => {
+  const updateNext = () => {
     const el = scrollerRef.current;
     if (!el) return;
-    setCanPrev(el.scrollLeft > 4);
     setCanNext(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
   };
 
   useEffect(() => {
-    updateArrows();
+    updateNext();
     const el = scrollerRef.current;
+    const first = firstLogoRef.current;
     if (!el) return;
-    const onScroll = () => {
-      // Only mark as "moved" once the user has actually advanced past the start —
-      // avoids scroll-snap noise or sub-pixel micro-scrolls flipping the flag.
-      if (el.scrollLeft > 4) setHasMoved(true);
-      updateArrows();
-    };
-    el.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", updateArrows);
+
+    el.addEventListener("scroll", updateNext, { passive: true });
+    window.addEventListener("resize", updateNext);
+
+    let observer: IntersectionObserver | undefined;
+    if (first) {
+      observer = new IntersectionObserver(
+        ([entry]) => setFirstVisible(entry.isIntersecting),
+        { root: el, threshold: 0.01 }
+      );
+      observer.observe(first);
+    }
+
     return () => {
-      el.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", updateArrows);
+      el.removeEventListener("scroll", updateNext);
+      window.removeEventListener("resize", updateNext);
+      observer?.disconnect();
     };
   }, []);
 
   const scrollBy = (delta: number) => {
     scrollerRef.current?.scrollBy({ left: delta, behavior: "smooth" });
-  };
-
-  const onNext = () => {
-    setHasMoved(true);
-    scrollBy(SCROLL_STEP);
   };
 
   return (
@@ -83,13 +85,13 @@ export function PartnerStrip() {
         </p>
 
         <div className="relative">
-          {/* Prev arrow - only once the user has actually scrolled forward */}
-          {hasMoved && canPrev && (
+          {/* Prev arrow - only when the first logo is no longer visible */}
+          {!firstVisible && (
             <button
               type="button"
               onClick={() => scrollBy(-SCROLL_STEP)}
               aria-label="Previous partners"
-              className="absolute -left-8 sm:-left-12 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center text-zinc-600 hover:text-[var(--color-primary)] transition-colors"
+              className="absolute -left-8 sm:-left-12 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center text-zinc-500 opacity-40 hover:opacity-100 hover:text-[var(--color-primary)] transition-all"
             >
               <i className="fa-solid fa-chevron-left text-base" />
             </button>
@@ -98,11 +100,12 @@ export function PartnerStrip() {
           {/* Scroller */}
           <div
             ref={scrollerRef}
-            className="flex gap-12 overflow-x-auto scroll-smooth snap-x snap-mandatory px-14 no-scrollbar"
+            className="flex gap-20 overflow-x-auto scroll-smooth snap-x snap-mandatory px-14 no-scrollbar"
           >
-            {PARTNERS.map((partner) => (
+            {PARTNERS.map((partner, i) => (
               <div
                 key={partner.name}
+                ref={i === 0 ? firstLogoRef : undefined}
                 className="shrink-0 flex items-center justify-center w-32 h-20 snap-start"
               >
                 <Image
@@ -120,9 +123,9 @@ export function PartnerStrip() {
           {canNext && (
             <button
               type="button"
-              onClick={onNext}
+              onClick={() => scrollBy(SCROLL_STEP)}
               aria-label="Next partners"
-              className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center text-zinc-600 hover:text-[var(--color-primary)] transition-colors"
+              className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center text-zinc-500 opacity-40 hover:opacity-100 hover:text-[var(--color-primary)] transition-all"
             >
               <i className="fa-solid fa-chevron-right text-base" />
             </button>

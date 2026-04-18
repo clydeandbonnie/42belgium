@@ -451,7 +451,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                   <p className="text-4xl font-bold sm:text-5xl text-white">
                     {stat.value}
                   </p>
-                  <p className="mt-2 text-xs uppercase tracking-wider text-white/80">
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-wider text-white/80">
                     {stat.label}
                   </p>
                 </div>
