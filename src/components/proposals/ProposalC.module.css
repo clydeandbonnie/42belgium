@@ -679,6 +679,7 @@
 .pathStep p {
   font-size: 15px; line-height: 1.65; color: var(--zinc-700);
 }
+.pathStep p + p { margin-top: 12px; }
 .pathCta {
   margin-top: 48px;
   display: flex; gap: 20px; align-items: center; flex-wrap: wrap;

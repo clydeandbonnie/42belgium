@@ -362,7 +362,9 @@ export function ProposalB({ content }: { content: PageContent }) {
                 <div key={step.number} className={styles.pathStep}>
                   <p className={styles.num}>{step.number}</p>
                   <h3>{step.title}</h3>
-                  <p>{step.description}</p>
+                  {step.description.split("\n\n").map((para, pi) => (
+                    <p key={pi}>{para}</p>
+                  ))}
                 </div>
               ))}
             </div>

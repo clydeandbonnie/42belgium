@@ -462,7 +462,14 @@ export function ProposalA({ content }: { content: PageContent }) {
                   </span>
                   <div>
                     <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                    <p className="text-lg text-zinc-700 leading-relaxed">{step.description}</p>
+                    {step.description.split("\n\n").map((para, pi) => (
+                      <p
+                        key={pi}
+                        className={`text-lg text-zinc-700 leading-relaxed${pi > 0 ? " mt-3" : ""}`}
+                      >
+                        {para}
+                      </p>
+                    ))}
                   </div>
                 </div>
               ))}

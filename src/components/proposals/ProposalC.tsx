@@ -233,7 +233,9 @@ export function ProposalC({ content }: { content: PageContent }) {
                   <p className={styles.num}>{step.number}</p>
                   <div>
                     <h3>{step.title}</h3>
-                    <p>{step.description}</p>
+                    {step.description.split("\n\n").map((para, pi) => (
+                      <p key={pi}>{para}</p>
+                    ))}
                   </div>
                 </div>
               ))}
