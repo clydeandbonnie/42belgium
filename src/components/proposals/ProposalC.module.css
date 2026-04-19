@@ -147,6 +147,38 @@
   line-height: 1.05; letter-spacing: -0.025em;
   margin-top: 8px;
 }
+/* Desktop tabs container — hidden under 900px */
+.whyDesktop { display: block; }
+/* Mobile accordion container — hidden on desktop */
+.whyMobile { display: none; }
+@media (max-width: 900px) {
+  .whyDesktop { display: none; }
+  .whyMobile { display: block; margin-top: 32px; }
+}
+
+.whyAcc {
+  border-top: 1px solid var(--zinc-200);
+  padding: 0;
+}
+.whyAcc:last-child { border-bottom: 1px solid var(--zinc-200); }
+.whyAcc summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 24px 0;
+  font-size: 14px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.14em;
+  color: #000;
+}
+.whyAcc summary::-webkit-details-marker { display: none; }
+.whyAcc summary > span:nth-child(2) { flex: 1; }
+.whyAccPlus {
+  flex-shrink: 0; color: var(--c-primary); font-size: 14px;
+  transition: transform .25s;
+}
+.whyAcc[open] .whyAccPlus { transform: rotate(45deg); }
+.whyAccContent { padding: 0 0 32px; }
+
 .whyTabs {
   margin-top: 48px;
   display: flex; gap: 0;
