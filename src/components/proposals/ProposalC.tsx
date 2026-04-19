@@ -1,379 +1,290 @@
 /**
- * PROPOSITION C - Proof-Led / Data design variant
+ * PROPOSITION C - Scroll-driven / App-like
  *
- * Reads the SAME canonical content as Proposals A and B. Design signatures:
- *   - Data-driven visual language, but with PUBLIC stats only
- *     (employment, registrations, campuses, curriculum counts, employer logos)
- *   - Split hero: narrative left, credibility card right
- *   - Employer logo strip for instant trust
- *   - Each section uses numeric framing without ad-campaign data
- *   - Enterprise/credible feel - muted palette with bold stat highlights
- *
- * Explicitly NOT used: internal Ads metrics (CTR, CVR, impression share,
- * keyword converting rates). Those stay in the matrix v3, not on the page.
+ * Ported from the static handoff HTML/CSS (handoff/Opportunity EN - Proposal C.html).
+ * Reads the SAME canonical content as Proposals A and B. Key signatures:
+ *   - Header NOT sticky (scrolled past, dock takes over)
+ *   - Tabs inside "Why 42" (fuses clusters 1, 2, 3)
+ *   - Sticky side-rail program with scroll-spy
+ *   - Alternating full-bleed Open Day blocks
+ *   - Turquoise final CTA with black button
+ *   - Fixed bottom dock nav with active-section highlight
  */
 
-import Link from "next/link";
-import type { PageContent } from "@/lib/i18n";
-import { YouTubeEmbed } from "./YouTubeEmbed";
-import { TimelineAccordion } from "./TimelineAccordion";
+import type { Cluster, PageContent } from "@/lib/i18n";
 import { ApplyLink } from "./ApplyLink";
+import { PartnerStrip } from "./PartnerStrip";
+import { WhyTabsC } from "./WhyTabsC";
+import { ProgramRailC } from "./ProgramRailC";
+import { StoriesCarouselC } from "./StoriesCarouselC";
+import { DockC } from "./DockC";
+import styles from "./ProposalC.module.css";
 
 export function ProposalC({ content }: { content: PageContent }) {
-  const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
+  const {
+    hero,
+    clusters,
+    afterForty,
+    whatYouBuild,
+    realStories,
+    openDays,
+    howToApply,
+    faq,
+    stats,
+    ctaFinal,
+  } = content;
+
+  const whyTuple: [Cluster, Cluster, Cluster] = [
+    clusters[0],
+    clusters[1],
+    clusters[2],
+  ];
 
   return (
-    <>
-      {/* ─── HERO + credibility card ─── */}
-      <section className="relative bg-black text-white overflow-hidden">
-        <div className="mx-auto max-w-5xl px-6 pb-12 pt-28 sm:pt-36">
-          <div className="grid gap-12 sm:grid-cols-2 items-center">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
-                <i className="fa-solid fa-shield-halved mr-2" />
-                Free structured training
-              </p>
-              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-                {hero.headline.split("\n").map((line, i) => (
-                  <span key={i}>{i > 0 && <br />}{line}</span>
-                ))}
-              </h1>
-              <p className="mt-6 text-lg leading-relaxed text-zinc-300">
-                {hero.subheadline}
-              </p>
-              <div className="mt-8">
-                <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
-                {hero.cta}
+    <div className={styles.page}>
+      {/* ─── HERO ─── */}
+      <section className={styles.hero} id="top">
+        <div className={styles.heroGrid}>
+          <div className={styles.heroLeft}>
+            <p className={styles.heroEyebrow}>
+              <i className="fa-solid fa-rocket" />
+              Free structured training
+            </p>
+            <h1 className={styles.heroH1}>
+              {hero.headline.split("\n").map((line, i) => {
+                if (i === 0) return <span key={i}>{line}<br /></span>;
+                const words = line.split(" ");
+                return (
+                  <span key={i}>
+                    <span className={styles.teal}>{words[0]}</span>
+                    {words.length > 1 ? " " + words.slice(1).join(" ") : ""}
+                  </span>
+                );
+              })}
+            </h1>
+            <p className={styles.heroLede}>{hero.subheadline}</p>
+            <div className={styles.heroCtas}>
+              <ApplyLink className={styles.btnPrimary}>
+                {hero.cta.replace("→", "").trim()}{" "}
+                <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
-              </div>
-              {hero.reassurance && (
-                <p className="mt-6 text-[11px] font-bold uppercase tracking-widest text-zinc-400">
-                  {hero.reassurance}
-                </p>
-              )}
+              <a href="#after" className={styles.btnGhost}>
+                See outcomes
+              </a>
             </div>
-            {/* Credibility card - public, prospect-relevant stats */}
-            <div className="bg-zinc-900 border border-zinc-800 p-8">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-400 mb-6">
-                <i className="fa-solid fa-award mr-2 text-[var(--color-primary)]" />
-                By the numbers
-              </p>
-              <div className="space-y-6">
-                {[
-                  { value: "98%", label: "of advanced grads secure a job" },
-                  { value: "100%", label: "free - no tuition, ever" },
-                  { value: "42", label: "campuses across the world" },
-                  { value: "0", label: "prerequisites - no degree, no CV" },
-                ].map((stat, i) => (
-                  <div key={i} className="flex items-center gap-4">
-                    <p className="text-3xl font-bold text-[var(--color-primary)] w-24">
-                      {stat.value}
-                    </p>
-                    <p className="text-xs text-zinc-400">{stat.label}</p>
-                  </div>
+            {hero.reassurance && (
+              <div className={styles.heroReassurance}>
+                {hero.reassurance.split(/\s*·\s*/).map((r) => (
+                  <span key={r}>
+                    <i className="fa-solid fa-check" />
+                    {r}
+                  </span>
                 ))}
               </div>
-            </div>
+            )}
           </div>
+          <div className={styles.heroRight} aria-hidden="true" />
         </div>
-        <div className="h-1 w-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] mt-12" />
+        <div className={styles.heroBar} />
       </section>
 
-      {/* ─── TRUST BAR ─── */}
-      <section className="bg-white border-b border-zinc-200">
-        <div className="mx-auto max-w-5xl px-6 py-12">
-          <p className="text-center text-xs font-bold uppercase tracking-[0.3em] text-zinc-600 mb-8">
-            42 Belgium graduates work at
-          </p>
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-8 items-center">
-            {["Belfius", "Deloitte", "Proximus", "Euroclear", "DPG Media", "Securex"].map((name) => (
-              <div key={name} className="text-center">
-                <p className="text-sm font-bold text-zinc-400">{name}</p>
-              </div>
-            ))}
+      {/* ─── WHY 42 - tabbed composite ─── */}
+      <section id="why" className={styles.why}>
+        <div className={styles.whyInner}>
+          <div className={styles.whyHead}>
+            <p className={styles.secMarker}>Why 42</p>
+            <h2>Three reasons this works.</h2>
           </div>
+          <WhyTabsC clusters={whyTuple} />
         </div>
       </section>
 
-      {/* ─── CLUSTERS - clean two-column with numbered accent ─── */}
-      {clusters.map((cluster, i) => (
-        <section key={cluster.name} className="bg-white border-b border-zinc-200">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <div className="grid gap-12 sm:grid-cols-[auto_1fr] items-start">
-              <div className="sm:pr-6 sm:border-r sm:border-zinc-200 sm:w-32">
-                <p className="text-6xl font-bold text-[var(--color-primary)] leading-none">
-                  {String(i + 1).padStart(2, "0")}
-                </p>
-                <p className="mt-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
-                  {cluster.name}
-                </p>
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black max-w-3xl">
-                  {cluster.heading}
-                </h2>
-                <p className="mt-6 text-base leading-relaxed text-zinc-700 max-w-3xl">
-                  {cluster.body}
-                </p>
-                {cluster.subheading && (
-                  <h3 className="mt-10 text-xl font-bold tracking-tight text-black">
-                    {cluster.subheading}
-                  </h3>
-                )}
-                {cluster.bodyPart2 && (
-                  <p className="mt-4 text-base leading-relaxed text-zinc-700 max-w-3xl">
-                    {cluster.bodyPart2}
-                  </p>
-                )}
-
-                {/* Comparison block - spec sheet / data table */}
-                {cluster.comparison && (
-                  <div className="mt-10 border border-zinc-300 overflow-hidden">
-                    {/* Column headers */}
-                    <div className="grid grid-cols-[160px_1fr_1fr] bg-zinc-50 border-b border-zinc-300">
-                      <div className="p-4 border-r border-zinc-300">
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">
-                          Criterion
-                        </p>
-                      </div>
-                      <div className="p-4 border-r border-zinc-300">
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 mb-1">
-                          <i className="fa-solid fa-xmark mr-2" />
-                          Elsewhere
-                        </p>
-                        <p className="text-sm font-bold text-zinc-700">
-                          {cluster.comparison.leftLabel}
-                        </p>
-                      </div>
-                      <div className="p-4 bg-[var(--color-primary)]/5">
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-primary)] mb-1">
-                          <i className="fa-solid fa-check mr-2" />
-                          Here at
-                        </p>
-                        <p className="text-sm font-bold text-black">
-                          {cluster.comparison.rightLabel}
-                        </p>
-                      </div>
-                    </div>
-                    {/* Rows */}
-                    {cluster.comparison.rows.map((row, ri) => {
-                      const criteria = [
-                        "Structure",
-                        "Certification",
-                        "Feedback",
-                        "Support",
-                        "Retention",
-                      ];
-                      return (
-                        <div
-                          key={ri}
-                          className={`grid grid-cols-[160px_1fr_1fr] ${ri !== cluster.comparison!.rows.length - 1 ? "border-b border-zinc-200" : ""}`}
-                        >
-                          <div className="p-4 bg-zinc-50 border-r border-zinc-200 flex items-center">
-                            <p className="text-[11px] font-bold uppercase tracking-wider text-zinc-600">
-                              {criteria[ri] || `Criterion ${ri + 1}`}
-                            </p>
-                          </div>
-                          <div className="p-4 border-r border-zinc-200 text-sm text-zinc-500 flex items-start gap-3">
-                            <i className="fa-solid fa-xmark text-red-500/70 mt-1 text-xs" />
-                            <span className="line-through decoration-zinc-400">{row.left}</span>
-                          </div>
-                          <div className="p-4 bg-[var(--color-primary)]/5 text-sm text-black font-semibold flex items-start gap-3">
-                            <i className="fa-solid fa-check text-[var(--color-primary)] mt-1 text-xs" />
-                            <span>{row.right}</span>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-
-                {cluster.bullets && cluster.bullets.length > 0 && (
-                  <ul className="mt-8 space-y-3">
-                    {cluster.bullets.map((bullet, bi) => (
-                      <li key={bi} className="flex gap-3 text-sm text-zinc-800">
-                        <i className="fa-solid fa-chevron-right text-[var(--color-primary)] mt-1 text-xs" />
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            </div>
-          </div>
-        </section>
-      ))}
-
-      {/* ─── AFTER 42 - stat hero ─── */}
+      {/* ─── AFTER 42 ─── */}
       {afterForty && (
-        <section className="bg-zinc-950 text-white">
-          <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
-            <div className="grid gap-12 sm:grid-cols-2 items-start">
+        <section id="after" className={styles.after}>
+          <div className={styles.afterInner}>
+            <div className={styles.afterGrid}>
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-                  The outcome
-                </p>
-                <p className="text-8xl font-bold text-[var(--color-primary)] leading-none">
-                  {afterForty.stat.value}
-                </p>
-                <p className="mt-3 text-sm uppercase tracking-wider text-zinc-400">
-                  {afterForty.stat.label}
-                </p>
-                <h2 className="mt-10 text-3xl font-bold tracking-tight sm:text-4xl">
-                  {afterForty.heading}
-                </h2>
-                <p className="mt-6 text-base leading-relaxed text-zinc-300">
-                  {afterForty.description}
-                </p>
+                <p className={styles.afterStat}>{afterForty.stat.value}</p>
+                <p className={styles.afterStatLab}>{afterForty.stat.label}</p>
+                <h2>{afterForty.heading}</h2>
+                <p className={styles.body}>{afterForty.description}</p>
+                {afterForty.communityNote && (
+                  <p className={styles.afterNote}>
+                    {afterForty.communityNote}
+                  </p>
+                )}
               </div>
-              <div className="grid gap-px bg-zinc-800">
+              <div className={styles.afterCareers}>
                 {afterForty.careers.map((career) => (
-                  <div key={career.label} className="bg-zinc-950 p-4 flex items-center gap-4">
-                    <i className={`${career.icon} text-[var(--color-primary)] text-lg w-6`} />
-                    <span className="text-sm">{career.label}</span>
+                  <div key={career.label} className={styles.afterCareer}>
+                    <i className={career.icon} />
+                    <span>{career.label}</span>
                   </div>
                 ))}
               </div>
             </div>
-            {afterForty.communityNote && (
-              <p className="mt-12 text-sm text-zinc-500 italic leading-relaxed max-w-3xl">
-                {afterForty.communityNote}
-              </p>
-            )}
           </div>
         </section>
       )}
 
-      {/* ─── WHAT YOU'LL BUILD - timeline accordion ─── */}
+      {/* ─── PARTNERS (shared) ─── */}
+      <section id="partners">
+        <PartnerStrip />
+      </section>
+
+      {/* ─── PROGRAM - sticky rail ─── */}
       {whatYouBuild && whatYouBuild.phases && (
-        <section className="bg-white">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-              The program
-            </p>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black max-w-3xl">
-              {whatYouBuild.heading}
-            </h2>
-            <p className="mt-6 text-base leading-relaxed text-zinc-700 max-w-3xl">
-              {whatYouBuild.intro}
-            </p>
-            <div className="mt-12">
-              <TimelineAccordion phases={whatYouBuild.phases} />
-            </div>
+        <section id="program" className={styles.prog}>
+          <div className={styles.progInner}>
+            <p className={styles.secMarker}>The program</p>
+            <h2>{whatYouBuild.heading}</h2>
+            <p className={styles.body}>{whatYouBuild.intro}</p>
+            <ProgramRailC phases={whatYouBuild.phases} />
             {whatYouBuild.plusNote && (
-              <p className="mt-8 text-sm text-zinc-600 italic leading-relaxed max-w-3xl">
-                {whatYouBuild.plusNote}
-              </p>
+              <p className={styles.progNote}>{whatYouBuild.plusNote}</p>
             )}
           </div>
         </section>
       )}
 
-      {/* ─── REAL STORIES ─── */}
-      {realStories && (
-        <section className="bg-zinc-50 border-y border-zinc-200">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
-              Real students
-            </p>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black max-w-3xl">
-              {realStories.heading}
-            </h2>
-            <p className="mt-6 text-base leading-relaxed text-zinc-700 max-w-3xl">
-              {realStories.description}
-            </p>
-            <div className="mt-12 grid gap-6 sm:grid-cols-3">
-              {realStories.videos.map((video) => (
-                <div key={video.youtubeId} className="bg-white border border-zinc-200">
-                  <YouTubeEmbed youtubeId={video.youtubeId} title={`${video.name} - ${video.subtitle}`} />
-                  <div className="p-5 flex items-center justify-between">
-                    <div>
-                      <p className="text-base font-bold text-black">{video.name}</p>
-                      <p className="text-xs text-zinc-600">{video.subtitle}</p>
-                    </div>
-                    <i className="fa-solid fa-play text-[var(--color-primary)]" />
-                  </div>
-                </div>
-              ))}
-            </div>
+      {/* ─── STORIES - horizontal carousel ─── */}
+      {realStories && realStories.videos.length > 0 && (
+        <section className={styles.stories}>
+          <div className={styles.storiesInner}>
+            <p className={styles.secMarker}>Real students</p>
+            <h2>{realStories.heading}</h2>
+            <p className={styles.body}>{realStories.description}</p>
+            <StoriesCarouselC videos={realStories.videos} />
           </div>
         </section>
       )}
 
-      {/* ─── HOW TO APPLY - grid with numbers ─── */}
-      {howToApply && (
-        <section className="bg-white" id="apply">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-              The path
-            </p>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black max-w-3xl">
-              {howToApply.heading}
-            </h2>
-            <div className="mt-12 grid gap-6 sm:grid-cols-2">
-              {howToApply.steps.map((step) => (
+      {/* ─── OPEN DAY - alternating full-bleed blocks ─── */}
+      {openDays && (
+        <section id="open-day" className={styles.open}>
+          <div className={styles.openIntro}>
+            <p className={styles.secMarker}>Campus visits</p>
+            <h2>{openDays.heading}</h2>
+            <p className={styles.body}>{openDays.intro}</p>
+          </div>
+
+          {openDays.campuses.map((campus, i) => {
+            const blockClass = [
+              styles.openBlock,
+              i % 2 === 1 ? styles.openBlockReverse : "",
+              i % 2 === 1 ? styles.openBlockDark : "",
+            ]
+              .filter(Boolean)
+              .join(" ");
+            const picClass =
+              campus.name.toLowerCase() === "antwerp"
+                ? styles.antwerp
+                : styles.brussels;
+            return (
+              <div key={campus.name} className={blockClass}>
                 <div
-                  key={step.number}
-                  className="bg-zinc-50 border border-zinc-200 p-8 hover:border-[var(--color-primary)] transition-colors"
-                >
-                  <div className="flex items-baseline justify-between mb-4">
-                    <span className="text-5xl font-bold text-[var(--color-primary)] leading-none">
-                      {step.number}
-                    </span>
+                  className={`${styles.openPic} ${picClass}`}
+                  aria-hidden="true"
+                />
+                <div className={styles.openText}>
+                  <p className={styles.city}>{campus.name}</p>
+                  <h3>
+                    {campus.address}
+                    <br />
+                    {campus.subHeading}
+                  </h3>
+                  <p>{campus.description}</p>
+                  <a
+                    href={openDays.ctaHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.more}
+                  >
+                    See upcoming dates <i className="fa-solid fa-arrow-right" />
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+
+          <div className={styles.openCtaRow}>
+            <a
+              href={openDays.ctaHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.btnPrimary}
+            >
+              {openDays.ctaLabel} <i className="fa-solid fa-arrow-right" />
+            </a>
+          </div>
+        </section>
+      )}
+
+      {/* ─── PATH ─── */}
+      {howToApply && (
+        <section id="apply" className={styles.path}>
+          <div className={styles.pathInner}>
+            <p className={styles.secMarker}>The path</p>
+            <h2>{howToApply.heading}</h2>
+            <div className={styles.pathList}>
+              {howToApply.steps.map((step) => (
+                <div key={step.number} className={styles.pathStep}>
+                  <p className={styles.num}>{step.number}</p>
+                  <div>
+                    <h3>{step.title}</h3>
+                    <p>{step.description}</p>
                   </div>
-                  <h3 className="text-lg font-bold mb-2 text-black">{step.title}</h3>
-                  <p className="text-sm leading-relaxed text-zinc-700">{step.description}</p>
                 </div>
               ))}
             </div>
-            <div className="mt-12 flex flex-col sm:flex-row gap-4 items-center justify-between bg-zinc-950 text-white p-8">
-              <div>
-                <p className="text-lg font-bold">Ready to start?</p>
-                {howToApply.microcopy && (
-                  <p className="text-sm text-zinc-400 mt-1">{howToApply.microcopy}</p>
-                )}
-              </div>
-              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all shrink-0">
-                {howToApply.ctaLabel}
+            <div className={styles.pathCta}>
+              <ApplyLink className={styles.btnPrimary}>
+                {howToApply.ctaLabel.replace("→", "").trim()}{" "}
+                <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
+              {howToApply.microcopy && <p>{howToApply.microcopy}</p>}
             </div>
           </div>
         </section>
       )}
 
-      {/* ─── FAQ - dense 2-col ─── */}
+      {/* ─── FAQ ─── */}
       {faq && faq.length > 0 && (
-        <section className="bg-zinc-50 border-y border-zinc-200">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
-              Every question
-            </p>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black mb-12">
-              Answered honestly.
-            </h2>
-            <div className="grid gap-5 sm:grid-cols-2">
+        <section id="faq" className={styles.faq}>
+          <div className={styles.faqInner}>
+            <p className={styles.secMarker}>Questions</p>
+            <h2>Every question. Answered honestly.</h2>
+            <div className={styles.faqList}>
               {faq.map((item, i) => (
-                <div key={i} className="bg-white border border-zinc-200 p-6">
-                  <h3 className="text-sm font-bold mb-2 text-black">{item.question}</h3>
-                  <p className="text-sm leading-relaxed text-zinc-700">{item.answer}</p>
-                </div>
+                <details
+                  key={item.question}
+                  className={styles.faqItem}
+                  open={i === 0}
+                >
+                  <summary>
+                    <span>{item.question}</span>
+                    <span className={styles.plus}>
+                      <i className="fa-solid fa-plus" />
+                    </span>
+                  </summary>
+                  <p className={styles.a}>{item.answer}</p>
+                </details>
               ))}
             </div>
           </div>
         </section>
       )}
 
-      {/* ─── STATS BAR ─── */}
+      {/* ─── STATS ─── */}
       {stats && stats.length > 0 && (
-        <section className="bg-white border-t border-zinc-200">
-          <div className="mx-auto max-w-5xl px-6 py-16">
-            <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
-              {stats.map((stat, i) => (
-                <div key={i} className="border-l-4 border-[var(--color-primary)] pl-4">
-                  <p className="text-4xl font-bold text-black">{stat.value}</p>
-                  <p className="mt-1 text-xs uppercase tracking-wider text-zinc-600">
-                    {stat.label}
-                  </p>
+        <section className={styles.stats}>
+          <div className={styles.statsInner}>
+            <div className={styles.statsGrid}>
+              {stats.map((s, i) => (
+                <div key={i}>
+                  <p className={styles.val}>{s.value}</p>
+                  <p className={styles.lab}>{s.label}</p>
                 </div>
               ))}
             </div>
@@ -381,40 +292,43 @@ export function ProposalC({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── FINAL CTA - with mini-stats ─── */}
+      {/* ─── FINAL CTA - turquoise ─── */}
       {ctaFinal && (
-        <section className="bg-[var(--color-primary)] text-white">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <div className="grid gap-8 sm:grid-cols-2 items-center">
-              <div>
-                <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                  {ctaFinal.title}
-                </h2>
-                <p className="mt-6 text-lg leading-relaxed text-white">
-                  {ctaFinal.description}
-                </p>
-                <div className="mt-8">
-                  <ApplyLink className="inline-flex items-center justify-center bg-white text-black font-bold uppercase tracking-wider px-10 py-4 text-base hover:bg-zinc-100 transition-all">
-                {ctaFinal.cta}
+        <section className={styles.final}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/3-chevrons-white.svg"
+            alt=""
+            aria-hidden="true"
+            className={`${styles.ch} ${styles.ch1}`}
+          />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/3-chevrons-white.svg"
+            alt=""
+            aria-hidden="true"
+            className={`${styles.ch} ${styles.ch2}`}
+          />
+          <div className={styles.finalInner}>
+            <h2>
+              {ctaFinal.title.split(" ").slice(0, -2).join(" ")}{" "}
+              <span className={styles.black}>
+                {ctaFinal.title.split(" ").slice(-2).join(" ")}
+              </span>
+            </h2>
+            <p>{ctaFinal.description}</p>
+            <div className={styles.finalCta}>
+              <ApplyLink className={styles.big}>
+                {ctaFinal.cta.replace("→", "").trim()}{" "}
+                <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
-                </div>
-              </div>
-              {stats && stats.length > 0 && (
-                <div className="grid grid-cols-2 gap-4">
-                  {stats.map((stat, i) => (
-                    <div key={i} className="bg-white/15 p-6 text-center">
-                      <p className="text-3xl font-bold">{stat.value}</p>
-                      <p className="text-xs uppercase tracking-wider text-white mt-1">
-                        {stat.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
           </div>
         </section>
       )}
-    </>
+
+      {/* ─── FLOATING DOCK ─── */}
+      <DockC />
+    </div>
   );
 }

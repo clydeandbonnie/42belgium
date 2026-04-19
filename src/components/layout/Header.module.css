@@ -42,6 +42,35 @@
   background-color: #ffffff;
 }
 
+/* Static variant (Proposal C): in-flow header so the user scrolls past it
+   and the dock takes over. Keeps the dark semi-translucent styling from the
+   deployed site reference. */
+.header.static {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header.static.scrolled {
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+.header.static .logo,
+.header.static.scrolled .logo {
+  filter: none;
+}
+
+.header.static .navLink,
+.header.static.scrolled .navLink {
+  color: #ffffff;
+}
+
+.header.static .langLink.active,
+.header.static.scrolled .langLink.active {
+  color: #ffffff;
+}
+
 .container {
   max-width: 1470px;
   margin: 0 auto;

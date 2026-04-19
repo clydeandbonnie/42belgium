@@ -215,6 +215,28 @@
     "ctaLabel": "Apply now →",
     "microcopy": "Next Piscine dates on campus - apply anytime."
   },
+  "openDays": {
+    "heading": "Come meet us at an Open Day.",
+    "intro": "No pressure, no commitment. Walk the campus, meet the team, ask every question you have - in Brussels or Antwerp.",
+    "campuses": [
+      {
+        "name": "Brussels",
+        "address": "Canterssteen 12",
+        "subHeading": "Next to Central Station.",
+        "description": "A five-minute walk from Gare Centrale. Visit the campus, meet current students, see how peer-to-peer learning actually looks.",
+        "image": "/assets/gallery/OpenDaysBrussels.png"
+      },
+      {
+        "name": "Antwerp",
+        "address": "Mediaplein 1",
+        "subHeading": "In the heart of the city.",
+        "description": "Our Antwerp campus sits in the thick of the city's creative and media district. Come spend an afternoon with the team.",
+        "image": "/assets/gallery/OpenDaysAntwerp.jpg"
+      }
+    ],
+    "ctaLabel": "See upcoming open days",
+    "ctaHref": "https://www.eventbrite.com/cc/open-days-42-belgium-2935099"
+  },
   "faq": [
     {
       "question": "Is this really free?",

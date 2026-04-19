@@ -140,6 +140,22 @@ export interface HowToApplySection {
   microcopy?: string;
 }
 
+export interface OpenDayCampus {
+  name: string;
+  address: string;
+  subHeading: string;
+  description: string;
+  image: string;
+}
+
+export interface OpenDaysSection {
+  heading: string;
+  intro: string;
+  campuses: OpenDayCampus[];
+  ctaLabel: string;
+  ctaHref: string;
+}
+
 export interface PageContent {
   meta: PageMeta;
   hero: HeroContent;
@@ -148,6 +164,7 @@ export interface PageContent {
   whatYouBuild?: WhatYouBuildSection;
   realStories?: RealStoriesSection;
   howToApply?: HowToApplySection;
+  openDays?: OpenDaysSection;
   faq?: FaqItem[];
   stats?: Stat[];
   ctaFinal?: {

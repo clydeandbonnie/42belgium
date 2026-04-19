@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import type { Language } from "@/lib/themes";
 import { getNavItems, getApplyUrl, getApplyLabel } from "@/lib/navigation";
 import { LANGUAGES } from "@/lib/themes";
@@ -47,15 +48,23 @@ export function Header({ lang }: HeaderProps) {
   const applyUrl = getApplyUrl(lang);
   const applyLabel = getApplyLabel(lang);
 
+  // Derive the variant from the pathname so the shared layout doesn't need
+  // a dedicated prop plumbing — Proposal C uses a non-sticky (static) header,
+  // Proposal B lowers the scroll threshold to 40px for a snappier reveal.
+  const pathname = usePathname() ?? "";
+  const isStatic = /\/proposals\/c\/?$/.test(pathname);
+  const isBVariant = /\/proposals\/b\/?$/.test(pathname);
+  const threshold = isBVariant ? 40 : 80;
+
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80);
+    const onScroll = () => setScrolled(window.scrollY > threshold);
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [threshold]);
 
   return (
-    <header className={cx(styles.header, scrolled && styles.scrolled)}>
+    <header className={cx(styles.header, isStatic && styles.static, scrolled && styles.scrolled)}>
       <div className={styles.container}>
         {/* ── Logo ── */}
         <Link href={`https://42belgium.be/${lang}/`} className={styles.logoLink}>

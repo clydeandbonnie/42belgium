@@ -1,321 +1,407 @@
 /**
- * PROPOSITION B - Classic / Welcoming design variant
+ * PROPOSITION B - Editorial / Magazine
  *
- * Reads the SAME canonical content as Proposals A and C. Design signatures:
- *   - Light dominant palette (white + soft gradient tints)
- *   - Centered layouts, generous whitespace, approachable rhythm
- *   - Cards with soft borders, rounded accents
- *   - FAQ treated as the VISUAL centerpiece - larger, prominent, inviting
- *   - Horizontal timeline for process (less imposing than the left-bar variant)
+ * Ported from the static handoff HTML/CSS (handoff/Opportunity EN - Proposal B.html).
+ * Reads the SAME canonical content as Proposals A and C - only the design differs.
+ * Interactive parts are client components (ProgramTimelineB, StoryThumb).
+ * The shared Header sits above (transparent → white on scroll, threshold 40px
+ * auto-applied on the /proposals/b route).
  */
 
-import Link from "next/link";
 import type { PageContent } from "@/lib/i18n";
-import { YouTubeEmbed } from "./YouTubeEmbed";
-import { TimelineAccordion } from "./TimelineAccordion";
 import { ApplyLink } from "./ApplyLink";
+import { PartnerStrip } from "./PartnerStrip";
+import { ProgramTimelineB } from "./ProgramTimelineB";
+import { StoryThumb } from "./StoryThumb";
+import styles from "./ProposalB.module.css";
 
 export function ProposalB({ content }: { content: PageContent }) {
-  const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
+  const {
+    hero,
+    clusters,
+    afterForty,
+    whatYouBuild,
+    realStories,
+    openDays,
+    howToApply,
+    faq,
+    stats,
+    ctaFinal,
+  } = content;
+
+  const cluster1 = clusters[0];
+  const cluster2 = clusters[1];
+  const cluster3 = clusters[2];
 
   return (
-    <>
-      {/* ─── HERO - black bg, centered, welcoming glow ─── */}
-      <section className="relative bg-black text-white overflow-hidden">
-        {/* Soft radial glow, anchored centre, evokes openness */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse at 50% 40%, rgba(0,186,188,0.18), transparent 55%), radial-gradient(ellipse at 80% 80%, rgba(237,52,145,0.10), transparent 60%)",
-          }}
-        />
-        <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-28 sm:pb-32 sm:pt-36">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 border border-[var(--color-primary)]/40 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-bold uppercase tracking-wider px-4 py-2 mb-8">
-              <i className="fa-solid fa-door-open" />
+    <div className={styles.page}>
+      {/* ─── HERO ─── */}
+      <section className={styles.hero}>
+        <div className={styles.heroImg} aria-hidden="true" />
+        <div className={styles.heroInner}>
+          <div>
+            <p className={styles.heroEyebrow}>
+              <i className="fa-solid fa-rocket" />
               Free structured training
-            </div>
-            <h1 className="text-5xl font-bold leading-[1.1] tracking-tight sm:text-6xl lg:text-7xl">
-              {hero.headline.split("\n").map((line, i) => (
-                <span key={i}>{i > 0 && <br />}{line}</span>
-              ))}
-            </h1>
-            <p className="mt-8 text-xl leading-relaxed text-zinc-300 max-w-2xl mx-auto">
-              {hero.subheadline}
             </p>
-            <div className="mt-10">
-              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
-                {hero.cta}
+            <h1 className={styles.heroH1}>
+              {hero.headline.split("\n").map((line, i) => {
+                if (i === 0) return <span key={i}>{line}<br /></span>;
+                // Second line: colour the first word (Remotely / Remote / ...) pink
+                const words = line.split(" ");
+                return (
+                  <span key={i}>
+                    <span className={styles.pink}>{words[0]}</span>
+                    {words.length > 1 ? " " + words.slice(1).join(" ") : ""}
+                  </span>
+                );
+              })}
+            </h1>
+            <p className={styles.heroLede}>{hero.subheadline}</p>
+            <div className={styles.heroCtas}>
+              <ApplyLink className={styles.btnPrimary}>
+                {hero.cta.replace("→", "").trim()}{" "}
+                <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
+              <a href="#after" className={styles.btnGhost}>
+                See the outcomes
+              </a>
             </div>
-            {hero.reassurance && (
-              <p className="mt-6 text-[11px] font-bold uppercase tracking-widest text-zinc-400">
-                {hero.reassurance}
-              </p>
-            )}
           </div>
+          {hero.reassurance && (
+            <p className={styles.heroReassurance}>{hero.reassurance}</p>
+          )}
         </div>
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-[var(--color-primary)]/40 to-transparent" />
+        <div className={styles.heroBar} />
       </section>
 
-      {/* ─── CLUSTERS ─── */}
-      {clusters.map((cluster, i) => (
-        <section key={cluster.name} className={i % 2 === 0 ? "bg-white" : "bg-zinc-50 border-y border-zinc-200"}>
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <div className="max-w-2xl mx-auto text-center mb-12">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
-                {cluster.name}
+      {/* ─── CLUSTER 01 - FLEXIBILITY & REMOTE WORK ─── */}
+      <section id="why" className={styles.c1}>
+        <div className={styles.c1Inner}>
+          <div className={styles.c1Head}>
+            <div>
+              <p className={styles.secMarker}>
+                <span className={styles.num}>01</span>
+                {cluster1.name}
               </p>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
-                {cluster.heading}
-              </h2>
-              <p className="mt-6 text-base leading-relaxed text-zinc-700">
-                {cluster.body}
-              </p>
-              {cluster.subheading && (
-                <h3 className="mt-8 text-xl font-bold tracking-tight text-black">
-                  {cluster.subheading}
-                </h3>
-              )}
-              {cluster.bodyPart2 && (
-                <p className="mt-4 text-base leading-relaxed text-zinc-700">
-                  {cluster.bodyPart2}
-                </p>
-              )}
+              <h2>{cluster1.heading}</h2>
             </div>
-
-            {/* Comparison block - two facing cards with centered VS badge */}
-            {cluster.comparison && (
-              <div className="relative max-w-4xl mx-auto">
-                <div className="grid gap-6 sm:grid-cols-2">
-                  {/* LEFT - MOOC */}
-                  <div className="bg-white border border-zinc-300 p-8">
-                    <div className="flex items-center gap-3 mb-6 pb-5 border-b border-zinc-200">
-                      <span className="flex h-10 w-10 items-center justify-center bg-zinc-100 text-zinc-500">
-                        <i className="fa-solid fa-xmark text-lg" />
-                      </span>
-                      <div>
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">
-                          Elsewhere
-                        </p>
-                        <p className="text-sm font-bold text-zinc-700">
-                          {cluster.comparison.leftLabel}
-                        </p>
-                      </div>
-                    </div>
-                    <ul className="space-y-4">
-                      {cluster.comparison.rows.map((row, ri) => (
-                        <li key={ri} className="flex gap-3 text-sm text-zinc-500">
-                          <i className="fa-solid fa-minus text-zinc-400 mt-1" />
-                          <span>{row.left}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* RIGHT - 42 */}
-                  <div className="bg-white border-2 border-[var(--color-primary)] p-8 relative">
-                    <div className="flex items-center gap-3 mb-6 pb-5 border-b border-zinc-200">
-                      <span className="flex h-10 w-10 items-center justify-center bg-[var(--color-primary)] text-white">
-                        <i className="fa-solid fa-check text-lg" />
-                      </span>
-                      <div>
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-primary)]">
-                          Here at
-                        </p>
-                        <p className="text-sm font-bold text-black">
-                          {cluster.comparison.rightLabel}
-                        </p>
-                      </div>
-                    </div>
-                    <ul className="space-y-4">
-                      {cluster.comparison.rows.map((row, ri) => (
-                        <li key={ri} className="flex gap-3 text-sm text-zinc-900 font-semibold">
-                          <i className="fa-solid fa-circle-check text-[var(--color-primary)] mt-0.5" />
-                          <span>{row.right}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+            <p className={styles.body}>{cluster1.body}</p>
+          </div>
+          {cluster1.bullets && cluster1.bullets.length > 0 && (
+            <div className={styles.c1Cards}>
+              {cluster1.bullets.map((bullet, i) => (
+                <div key={bullet} className={styles.c1Card}>
+                  <p className={styles.num}>{String(i + 1).padStart(2, "0")}</p>
+                  <p className={styles.txt}>{bullet}</p>
                 </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
 
-                {/* Centered VS badge */}
-                <div className="hidden sm:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                  <span className="flex h-14 w-14 items-center justify-center bg-black text-white text-sm font-bold tracking-wider rounded-full shadow-lg">
-                    VS
-                  </span>
+      {/* ─── CLUSTER 02 - ACCESSIBLE FREE TRAINING ─── */}
+      <section className={styles.c2}>
+        <div className={styles.c2Inner}>
+          <div className={styles.c2Head}>
+            <div className={styles.c2Img}>
+              <div className={styles.bg} aria-hidden="true" />
+              <div
+                className={styles.pic}
+                role="img"
+                aria-label="Students at 42 Belgium Antwerp campus"
+              />
+            </div>
+            <div>
+              <p className={styles.secMarker}>
+                <span className={styles.num}>02</span>
+                {cluster2.name}
+              </p>
+              <h2>{cluster2.heading}</h2>
+              <p className={styles.body}>{cluster2.body}</p>
+            </div>
+          </div>
+
+          {cluster2.subheading && (
+            <div className={styles.c2Divider}>
+              <h3>{cluster2.subheading}</h3>
+              <span className={styles.rule} />
+            </div>
+          )}
+          {cluster2.bodyPart2 && (
+            <p className={styles.c2Copy}>{cluster2.bodyPart2}</p>
+          )}
+
+          {cluster2.comparison && (() => {
+            const criteria = ["Learning", "Proof", "Feedback", "Support", "Motivation"];
+            return (
+              <div className={styles.c2Vs}>
+                <div className={`${styles.c2VsHead} ${styles.c2VsHeadLeft}`}>
+                  {cluster2.comparison.leftLabel}
                 </div>
+                <div className={`${styles.c2VsHead} ${styles.c2VsHeadRight}`}>
+                  {cluster2.comparison.rightLabel}
+                </div>
+                {cluster2.comparison.rows.flatMap((row, ri) => [
+                  <div
+                    key={`l-${ri}`}
+                    className={`${styles.c2VsRow} ${styles.c2VsRowLeft}`}
+                  >
+                    <span className={styles.crit}>{criteria[ri] || `#${ri + 1}`}</span>
+                    <i className="fa-solid fa-xmark" />
+                    <p className={styles.txt}>{row.left}</p>
+                  </div>,
+                  <div
+                    key={`r-${ri}`}
+                    className={`${styles.c2VsRow} ${styles.c2VsRowRight}`}
+                  >
+                    <span className={styles.crit}>{criteria[ri] || `#${ri + 1}`}</span>
+                    <i className="fa-solid fa-check" />
+                    <p className={styles.txt}>{row.right}</p>
+                  </div>,
+                ])}
               </div>
-            )}
+            );
+          })()}
+        </div>
+      </section>
 
-            {cluster.bullets && cluster.bullets.length > 0 && (
-              <div className="grid gap-4 sm:grid-cols-2 max-w-3xl mx-auto">
-                {cluster.bullets.map((bullet, bi) => (
-                  <div key={bi} className="bg-white p-5 border border-zinc-200 flex gap-4">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center bg-[var(--color-primary)]/10 text-[var(--color-primary)]">
-                      <i className="fa-solid fa-check" />
-                    </span>
-                    <p className="text-sm leading-relaxed text-zinc-800">{bullet}</p>
-                  </div>
-                ))}
-              </div>
+      {/* ─── CLUSTER 03 - LOW BARRIER ─── */}
+      <section className={styles.c3}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/3-chevrons-blue.svg"
+          alt=""
+          aria-hidden="true"
+          className={styles.chBlue}
+        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/3-chevrons-pink.svg"
+          alt=""
+          aria-hidden="true"
+          className={styles.chPink}
+        />
+        <div className={styles.c3Inner}>
+          <div className={styles.c3Head}>
+            <p className={styles.secMarker}>
+              <span className={styles.num}>03</span>
+              {cluster3.name}
+            </p>
+            <h2>{cluster3.heading}</h2>
+            <p className={styles.body}>{cluster3.body}</p>
+            {cluster3.subheading && <h3>{cluster3.subheading}</h3>}
+            {cluster3.bodyPart2 && (
+              <p className={styles.body2}>{cluster3.bodyPart2}</p>
             )}
           </div>
-        </section>
-      ))}
+          {(cluster3.dontAsk || cluster3.lookFor) && (
+            <div className={styles.c3Grid}>
+              <div className={`${styles.c3Col} ${styles.c3ColLeft}`}>
+                <h4>What we don&apos;t ask for</h4>
+                <ul>
+                  {(cluster3.dontAsk || []).map((item) => (
+                    <li key={item}>
+                      <span className={styles.strike}>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className={`${styles.c3Col} ${styles.c3ColRight}`}>
+                <h4>What we look for</h4>
+                <div className={styles.tagRow}>
+                  {(cluster3.lookFor || []).map((item) => (
+                    <button key={item} type="button" className={styles.tagBtn}>
+                      {item}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+          <div className={styles.c3Cta}>
+            <ApplyLink className={styles.btnPrimary}>
+              Start your application <i className="fa-solid fa-arrow-right" />
+            </ApplyLink>
+          </div>
+        </div>
+      </section>
 
       {/* ─── AFTER 42 ─── */}
       {afterForty && (
-        <section className="bg-white">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <div className="max-w-2xl mx-auto text-center mb-12">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-                The outcome
-              </p>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
-                {afterForty.heading}
-              </h2>
-              <p className="mt-6 text-base leading-relaxed text-zinc-700">
-                {afterForty.description}
-              </p>
+        <section id="after" className={styles.after}>
+          <div className={styles.afterInner}>
+            <div className={styles.afterHead}>
+              <div>
+                <p className={styles.afterStat}>{afterForty.stat.value}</p>
+                <p className={styles.afterStatLab}>{afterForty.stat.label}</p>
+              </div>
+              <div>
+                <p className={styles.secMarker}>The outcome</p>
+                <h2>{afterForty.heading}</h2>
+                <p className={styles.body}>{afterForty.description}</p>
+              </div>
             </div>
-            <div className="grid gap-4 sm:grid-cols-3 max-w-4xl mx-auto">
+            <div className={styles.afterCareers}>
               {afterForty.careers.map((career) => (
-                <div
-                  key={career.label}
-                  className="bg-gradient-to-br from-[var(--color-primary)]/5 to-[var(--color-secondary)]/5 border border-zinc-200 p-6 text-center hover:border-[var(--color-primary)] transition-colors"
-                >
-                  <i className={`${career.icon} text-[var(--color-primary)] text-2xl mb-3 block`} />
-                  <p className="text-sm font-bold text-black">{career.label}</p>
+                <div key={career.label} className={styles.afterCareer}>
+                  <i className={career.icon} />
+                  <span>{career.label}</span>
                 </div>
               ))}
             </div>
             {afterForty.communityNote && (
-              <p className="mt-10 text-center text-base text-zinc-600 italic leading-relaxed max-w-2xl mx-auto">
-                {afterForty.communityNote}
-              </p>
+              <p className={styles.afterNote}>{afterForty.communityNote}</p>
             )}
           </div>
         </section>
       )}
 
-      {/* ─── WHAT YOU'LL BUILD - timeline accordion ─── */}
+      {/* ─── PARTNERS (shared) ─── */}
+      <PartnerStrip />
+
+      {/* ─── THE PROGRAM - horizontal timeline ─── */}
       {whatYouBuild && whatYouBuild.phases && (
-        <section className="bg-zinc-50 border-y border-zinc-200">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <div className="max-w-2xl mx-auto text-center mb-12">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-                The program
-              </p>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
-                {whatYouBuild.heading}
-              </h2>
-              <p className="mt-6 text-base leading-relaxed text-zinc-700">
-                {whatYouBuild.intro}
-              </p>
-            </div>
-            <div className="max-w-3xl mx-auto">
-              <TimelineAccordion phases={whatYouBuild.phases} />
-            </div>
+        <section className={styles.prog}>
+          <div className={styles.progInner}>
+            <p className={styles.secMarker}>The program</p>
+            <h2>{whatYouBuild.heading}</h2>
+            <p className={styles.body}>{whatYouBuild.intro}</p>
+            <ProgramTimelineB phases={whatYouBuild.phases} />
             {whatYouBuild.plusNote && (
-              <p className="mt-8 text-center text-sm text-zinc-600 italic leading-relaxed max-w-2xl mx-auto">
-                {whatYouBuild.plusNote}
-              </p>
+              <p className={styles.progNote}>{whatYouBuild.plusNote}</p>
             )}
           </div>
         </section>
       )}
 
-      {/* ─── REAL STORIES ─── */}
-      {realStories && (
-        <section className="bg-white">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <div className="max-w-2xl mx-auto text-center mb-12">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
-                Real students
-              </p>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
-                {realStories.heading}
-              </h2>
-              <p className="mt-6 text-base leading-relaxed text-zinc-700">
-                {realStories.description}
-              </p>
-            </div>
-            <div className="grid gap-6 sm:grid-cols-3 max-w-4xl mx-auto">
-              {realStories.videos.map((video) => (
-                <div key={video.youtubeId} className="bg-white border border-zinc-200 overflow-hidden">
-                  <YouTubeEmbed youtubeId={video.youtubeId} title={`${video.name} - ${video.subtitle}`} />
-                  <div className="p-4 text-center">
-                    <p className="text-base font-bold text-black">{video.name}</p>
-                    <p className="text-xs text-zinc-600">{video.subtitle}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ─── HOW TO APPLY ─── horizontal timeline */}
-      {howToApply && (
-        <section className="bg-zinc-50 border-y border-zinc-200" id="apply">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <div className="max-w-2xl mx-auto text-center mb-12">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-                The path
-              </p>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
-                {howToApply.heading}
-              </h2>
-            </div>
-            <div className="grid gap-8 sm:grid-cols-4">
-              {howToApply.steps.map((step) => (
-                <div key={step.number} className="text-center">
-                  <div className="inline-flex h-16 w-16 items-center justify-center bg-[var(--color-primary)] text-white text-2xl font-bold mb-6">
-                    {step.number}
-                  </div>
-                  <h3 className="text-base font-bold mb-3 text-black">{step.title}</h3>
-                  <p className="text-sm leading-relaxed text-zinc-700">{step.description}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-12 text-center">
-              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
-                {howToApply.ctaLabel}
-              </ApplyLink>
-              {howToApply.microcopy && (
-                <p className="mt-4 text-sm text-zinc-600">{howToApply.microcopy}</p>
-              )}
+      {/* ─── REAL STORIES - one big + two small ─── */}
+      {realStories && realStories.videos.length > 0 && (
+        <section className={styles.stories}>
+          <div className={styles.storiesInner}>
+            <p className={styles.secMarker}>Real students</p>
+            <h2>{realStories.heading}</h2>
+            <p className={styles.body}>{realStories.description}</p>
+            <div className={styles.storiesGrid}>
+              <StoryThumb
+                youtubeId={realStories.videos[0].youtubeId}
+                name={realStories.videos[0].name}
+                subtitle={realStories.videos[0].subtitle}
+                big
+                cardClass={`${styles.story} ${styles.storyBig}`}
+                thumbClass={styles.thumb}
+                playClass={styles.play}
+                metaClass={styles.meta}
+                nameClass={styles.name}
+                subClass={styles.sub}
+              />
+              <div className={styles.storiesSub}>
+                {realStories.videos.slice(1, 3).map((v) => (
+                  <StoryThumb
+                    key={v.youtubeId}
+                    youtubeId={v.youtubeId}
+                    name={v.name}
+                    subtitle={v.subtitle}
+                    cardClass={styles.story}
+                    thumbClass={styles.thumb}
+                    playClass={styles.play}
+                    metaClass={styles.meta}
+                    nameClass={styles.name}
+                    subClass={styles.sub}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </section>
       )}
 
-      {/* ─── FAQ - visual centerpiece ─── */}
-      {faq && faq.length > 0 && (
-        <section className="bg-white">
-          <div className="mx-auto max-w-4xl px-6 py-20 sm:py-28">
-            <div className="text-center mb-14">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
-                Every question
-              </p>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-black">
-                Answered honestly.
-              </h2>
-            </div>
-            <div className="space-y-4">
-              {faq.map((item, i) => (
-                <div
-                  key={i}
-                  className="bg-zinc-50 border border-zinc-200 p-8 hover:border-[var(--color-primary)] transition-colors"
+      {/* ─── OPEN DAY ─── */}
+      {openDays && (
+        <section id="open-day" className={styles.open}>
+          <div className={styles.openInner}>
+            <p className={styles.secMarker}>Campus visits</p>
+            <h2>{openDays.heading}</h2>
+            <p className={styles.body}>{openDays.intro}</p>
+            <div className={styles.openGrid}>
+              {openDays.campuses.map((campus) => (
+                <a
+                  key={campus.name}
+                  href={openDays.ctaHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.openCard}
+                  aria-label={`Register for Open Day in ${campus.name}`}
                 >
-                  <h3 className="text-lg font-bold mb-3 text-black">
-                    <i className="fa-solid fa-circle-question text-[var(--color-primary)] mr-3" />
-                    {item.question}
-                  </h3>
-                  <p className="text-base leading-relaxed text-zinc-700 pl-7">{item.answer}</p>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={campus.image}
+                    alt={`42 Belgium ${campus.name} campus`}
+                  />
+                  <span className={styles.label}>{campus.name}</span>
+                </a>
+              ))}
+            </div>
+            <div className={styles.openCta}>
+              <a
+                href={openDays.ctaHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.btnPrimary}
+              >
+                {openDays.ctaLabel} <i className="fa-solid fa-arrow-right" />
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ─── THE PATH ─── */}
+      {howToApply && (
+        <section id="apply" className={styles.path}>
+          <div className={styles.pathInner}>
+            <p className={styles.secMarker}>The path</p>
+            <h2>{howToApply.heading}</h2>
+            <div className={styles.pathSteps}>
+              {howToApply.steps.map((step) => (
+                <div key={step.number} className={styles.pathStep}>
+                  <p className={styles.num}>{step.number}</p>
+                  <h3>{step.title}</h3>
+                  <p>{step.description}</p>
                 </div>
+              ))}
+            </div>
+            <div className={styles.pathCta}>
+              <ApplyLink className={styles.btnPrimary}>
+                {howToApply.ctaLabel.replace("→", "").trim()}{" "}
+                <i className="fa-solid fa-arrow-right" />
+              </ApplyLink>
+              {howToApply.microcopy && <p>{howToApply.microcopy}</p>}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ─── FAQ ─── */}
+      {faq && faq.length > 0 && (
+        <section id="faq" className={styles.faq}>
+          <div className={styles.faqInner}>
+            <p className={styles.secMarker}>Questions</p>
+            <h2>Every question. Answered honestly.</h2>
+            <div className={styles.faqGrid}>
+              {faq.map((item, i) => (
+                <details
+                  key={item.question}
+                  className={styles.faqItem}
+                  open={i === 0}
+                >
+                  <summary>
+                    {item.question}
+                    <i className="fa-solid fa-plus" />
+                  </summary>
+                  <p className={styles.a}>{item.answer}</p>
+                </details>
               ))}
             </div>
           </div>
@@ -324,15 +410,13 @@ export function ProposalB({ content }: { content: PageContent }) {
 
       {/* ─── STATS BAR ─── */}
       {stats && stats.length > 0 && (
-        <section className="bg-zinc-50 border-t border-zinc-200">
-          <div className="mx-auto max-w-5xl px-6 py-16">
-            <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 text-center">
-              {stats.map((stat, i) => (
+        <section className={styles.stats}>
+          <div className={styles.statsInner}>
+            <div className={styles.statsGrid}>
+              {stats.map((s, i) => (
                 <div key={i}>
-                  <p className="text-4xl font-bold text-black">{stat.value}</p>
-                  <p className="mt-1 text-xs uppercase tracking-wider text-zinc-600">
-                    {stat.label}
-                  </p>
+                  <p className={styles.val}>{s.value}</p>
+                  <p className={styles.lab}>{s.label}</p>
                 </div>
               ))}
             </div>
@@ -340,27 +424,40 @@ export function ProposalB({ content }: { content: PageContent }) {
         </section>
       )}
 
-      {/* ─── FINAL CTA - gradient warm ─── */}
+      {/* ─── FINAL CTA ─── */}
       {ctaFinal && (
-        <section className="bg-gradient-to-r from-[var(--color-primary)] to-[#7D8EE9] text-white">
-          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <div className="max-w-2xl mx-auto text-center">
-              <i className="fa-solid fa-heart text-3xl mb-6 block" />
-              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                {ctaFinal.title}
-              </h2>
-              <p className="mt-6 text-lg leading-relaxed text-white max-w-xl mx-auto">
-                {ctaFinal.description}
-              </p>
-              <div className="mt-10">
-                <ApplyLink className="inline-flex items-center justify-center bg-white text-black font-bold uppercase tracking-wider px-10 py-4 text-base hover:bg-zinc-100 transition-all">
-                {ctaFinal.cta}
+        <section className={styles.final}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/3-chevrons-pink.svg"
+            alt=""
+            aria-hidden="true"
+            className={`${styles.ch} ${styles.ch1}`}
+          />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/3-chevrons-pink.svg"
+            alt=""
+            aria-hidden="true"
+            className={`${styles.ch} ${styles.ch2}`}
+          />
+          <div className={styles.finalInner}>
+            <h2>
+              {ctaFinal.title.split(" ").slice(0, -2).join(" ")}{" "}
+              <span className={styles.pink}>
+                {ctaFinal.title.split(" ").slice(-2).join(" ")}
+              </span>
+            </h2>
+            <p>{ctaFinal.description}</p>
+            <div className={styles.finalCta}>
+              <ApplyLink className={styles.btnPrimary}>
+                {ctaFinal.cta.replace("→", "").trim()}{" "}
+                <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
-              </div>
             </div>
           </div>
         </section>
       )}
-    </>
+    </div>
   );
 }
