@@ -80,10 +80,7 @@ export function ProposalB({ content }: { content: PageContent }) {
       <section id="why" className={styles.c1}>
         <div className={styles.c1Inner}>
           <div className={styles.c1Head}>
-            <p className={styles.secMarker}>
-              <span className={styles.num}>01</span>
-              {cluster1.name}
-            </p>
+            <p className={styles.secMarker}>{cluster1.name}</p>
             <div className={styles.c1HeadRow}>
               <h2>{cluster1.heading}</h2>
               <p className={styles.body}>{cluster1.body}</p>
@@ -115,10 +112,7 @@ export function ProposalB({ content }: { content: PageContent }) {
               />
             </div>
             <div>
-              <p className={styles.secMarker}>
-                <span className={styles.num}>02</span>
-                {cluster2.name}
-              </p>
+              <p className={styles.secMarker}>{cluster2.name}</p>
               <h2>{cluster2.heading}</h2>
               <p className={styles.body}>{cluster2.body}</p>
             </div>
@@ -188,10 +182,7 @@ export function ProposalB({ content }: { content: PageContent }) {
         />
         <div className={styles.c3Inner}>
           <div className={styles.c3Head}>
-            <p className={styles.secMarker}>
-              <span className={styles.num}>03</span>
-              {cluster3.name}
-            </p>
+            <p className={styles.secMarker}>{cluster3.name}</p>
             <h2>{cluster3.heading}</h2>
             <p className={styles.body}>{cluster3.body}</p>
             {cluster3.subheading && <h3>{cluster3.subheading}</h3>}

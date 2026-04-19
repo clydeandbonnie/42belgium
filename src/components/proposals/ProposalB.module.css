@@ -664,7 +664,7 @@
   transition: opacity .3s;
 }
 .openCard:hover::after {
-  background: linear-gradient(to top, rgba(237,52,145,.85) 0%, rgba(237,52,145,.2) 55%, transparent 100%);
+  background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.35) 55%, transparent 100%);
 }
 .openCard .label {
   position: absolute; left: 32px; bottom: 28px; z-index: 2;
