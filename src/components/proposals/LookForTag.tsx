@@ -51,7 +51,7 @@ export function LookForTag({ children, className }: Props) {
             type="button"
             aria-label="Close dialog"
             onClick={() => setIsOpen(false)}
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-default"
+            className="absolute inset-0 bg-black/60 cursor-default"
           />
 
           {/* Panel */}
