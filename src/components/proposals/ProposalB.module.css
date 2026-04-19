@@ -64,18 +64,20 @@
 .secMarker {
   font-size: 12px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.3em; color: var(--c-primary);
-  margin-bottom: 16px;
+  margin-bottom: 28px;
 }
 .secMarker .num { color: var(--zinc-400); margin-right: 12px; }
 
-/* ─── HERO ─── */
+/* ─── HERO — fits within a single viewport, no scroll to see CTAs ─── */
 .hero {
   position: relative;
-  min-height: 88vh;
+  min-height: 100vh;
   background: #000;
   color: #fff;
   overflow: hidden;
   isolation: isolate;
+  display: flex;
+  flex-direction: column;
 }
 .heroImg {
   position: absolute; inset: 0;
@@ -94,34 +96,36 @@
   position: relative;
   max-width: var(--container-w);
   margin: 0 auto;
-  padding: clamp(120px, 16vh, 180px) max(24px, calc((100vw - var(--container-w))/2 + 16px))
-           clamp(80px, 14vh, 120px);
+  padding: clamp(100px, 13vh, 140px) max(24px, calc((100vw - var(--container-w))/2 + 16px))
+           clamp(40px, 6vh, 72px);
   display: grid; grid-template-columns: 1fr auto; align-items: end;
   gap: 48px;
+  flex: 1;
+  width: 100%;
 }
 .heroEyebrow {
   font-size: 13px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.32em; color: var(--c-primary);
   display: inline-flex; align-items: center; gap: 12px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 .heroH1 {
-  font-size: clamp(48px, 7.8vw, 116px);
-  line-height: 0.96; letter-spacing: -0.035em;
-  max-width: 1200px;
+  font-size: clamp(40px, 5.5vw, 84px);
+  line-height: 1.0; letter-spacing: -0.03em;
+  max-width: 1100px;
   text-wrap: balance;
   color: #fff;
 }
 .heroH1 .pink { color: var(--c-secondary); }
 .heroLede {
-  margin-top: 32px;
-  font-size: clamp(17px, 1.35vw, 20px);
+  margin-top: 24px;
+  font-size: clamp(16px, 1.1vw, 18px);
   line-height: 1.55;
   color: var(--zinc-200);
-  max-width: 620px;
+  max-width: 560px;
 }
 .heroCtas {
-  margin-top: 44px;
+  margin-top: 32px;
   display: flex; gap: 16px; flex-wrap: wrap;
 }
 .heroReassurance {
@@ -151,7 +155,10 @@
 /* ─── CLUSTER 01 ─── */
 .c1 { background: #fff; color: #000; padding: 128px 0; }
 .c1Inner { max-width: var(--narrow-w); margin: 0 auto; padding: 0 24px; }
-.c1Head { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; }
+/* Eyebrow stays on its own row above the grid so the body aligns with the H2 */
+.c1HeadRow {
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start;
+}
 .c1 h2 {
   font-size: clamp(36px, 4.4vw, 60px);
   line-height: 1.05; letter-spacing: -0.03em;
@@ -183,7 +190,7 @@
 }
 .c1Card:nth-child(even) .num { color: var(--c-secondary); }
 @media (max-width: 1000px) {
-  .c1Head { grid-template-columns: 1fr; gap: 24px; }
+  .c1HeadRow { grid-template-columns: 1fr; gap: 24px; }
   .c1Cards { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 560px) {
@@ -228,7 +235,7 @@
 }
 .c2Copy {
   font-size: 17px; line-height: 1.7; color: var(--zinc-700);
-  max-width: 820px; margin-bottom: 72px;
+  max-width: 820px; margin-bottom: 96px;
 }
 .c2Vs {
   display: grid; grid-template-columns: 1fr 1fr; gap: 0;

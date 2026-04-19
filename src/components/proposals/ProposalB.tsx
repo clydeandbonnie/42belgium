@@ -13,6 +13,7 @@ import { ApplyLink } from "./ApplyLink";
 import { PartnerStrip } from "./PartnerStrip";
 import { ProgramTimelineB } from "./ProgramTimelineB";
 import { StoryThumb } from "./StoryThumb";
+import { LookForTag } from "./LookForTag";
 import styles from "./ProposalB.module.css";
 
 export function ProposalB({ content }: { content: PageContent }) {
@@ -79,14 +80,14 @@ export function ProposalB({ content }: { content: PageContent }) {
       <section id="why" className={styles.c1}>
         <div className={styles.c1Inner}>
           <div className={styles.c1Head}>
-            <div>
-              <p className={styles.secMarker}>
-                <span className={styles.num}>01</span>
-                {cluster1.name}
-              </p>
+            <p className={styles.secMarker}>
+              <span className={styles.num}>01</span>
+              {cluster1.name}
+            </p>
+            <div className={styles.c1HeadRow}>
               <h2>{cluster1.heading}</h2>
+              <p className={styles.body}>{cluster1.body}</p>
             </div>
-            <p className={styles.body}>{cluster1.body}</p>
           </div>
           {cluster1.bullets && cluster1.bullets.length > 0 && (
             <div className={styles.c1Cards}>
@@ -212,9 +213,9 @@ export function ProposalB({ content }: { content: PageContent }) {
                 <h4>What we look for</h4>
                 <div className={styles.tagRow}>
                   {(cluster3.lookFor || []).map((item) => (
-                    <button key={item} type="button" className={styles.tagBtn}>
+                    <LookForTag key={item} className={styles.tagBtn}>
                       {item}
-                    </button>
+                    </LookForTag>
                   ))}
                 </div>
               </div>

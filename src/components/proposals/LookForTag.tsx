@@ -5,9 +5,11 @@ import { ApplyLink } from "./ApplyLink";
 
 interface Props {
   children: React.ReactNode;
+  /** Optional custom button className. When omitted, the A-variant Tailwind styling is used. */
+  className?: string;
 }
 
-export function LookForTag({ children }: Props) {
+export function LookForTag({ children, className }: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -29,7 +31,10 @@ export function LookForTag({ children }: Props) {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="inline-flex items-center px-4 py-2 border-2 border-[var(--color-secondary)] bg-white text-[var(--color-secondary)] text-sm font-bold uppercase tracking-wider hover:bg-[var(--color-secondary)] hover:text-white transition-colors cursor-pointer"
+        className={
+          className ||
+          "inline-flex items-center px-4 py-2 border-2 border-[var(--color-secondary)] bg-white text-[var(--color-secondary)] text-sm font-bold uppercase tracking-wider hover:bg-[var(--color-secondary)] hover:text-white transition-colors cursor-pointer"
+        }
       >
         {children}
       </button>
