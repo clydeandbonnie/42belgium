@@ -368,9 +368,7 @@
   background: var(--zinc-900);
   border: 1px solid var(--zinc-800);
   display: flex; align-items: center; gap: 18px;
-  transition: border-color .2s, background .2s, transform .2s;
 }
-.afterCareer:hover { border-color: var(--c-primary); transform: translateX(4px); }
 .afterCareer i { color: var(--c-primary); font-size: 20px; width: 24px; }
 .afterCareer span { font-size: 15px; }
 .afterNote {
