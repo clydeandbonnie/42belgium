@@ -22,8 +22,6 @@
   --narrow-w:    1120px;
 
   color: #000;
-  /* leave space for the floating dock */
-  padding-bottom: 100px;
 }
 
 /* Reset under :where() so specificity stays at (0,0,1) and any class wins. */
