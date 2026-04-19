@@ -107,7 +107,7 @@
   font-size: 13px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.32em; color: var(--c-primary);
   display: inline-flex; align-items: center; gap: 12px;
-  margin-bottom: clamp(40px, 6vh, 72px);
+  margin-bottom: clamp(56px, 10vh, 120px);
 }
 /* H1 scales with both width and viewport height so the hero stays on one screen */
 .heroH1 {
@@ -119,14 +119,14 @@
 }
 .heroH1 .pink { color: var(--c-secondary); }
 .heroLede {
-  margin-top: clamp(40px, 6vh, 72px);
+  margin-top: clamp(56px, 10vh, 120px);
   font-size: clamp(16px, 1.1vw, 18px);
   line-height: 1.65;
   color: var(--zinc-200);
   max-width: 560px;
 }
 .heroCtas {
-  margin-top: clamp(40px, 6vh, 72px);
+  margin-top: clamp(48px, 8vh, 96px);
   display: flex; gap: 16px; flex-wrap: wrap;
 }
 .heroReassurance {
