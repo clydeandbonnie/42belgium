@@ -449,9 +449,7 @@
   background: var(--zinc-900);
   border: 1px solid var(--zinc-800);
   display: flex; align-items: center; gap: 18px;
-  transition: border-color .2s, background .2s;
 }
-.afterCareer:hover { border-color: var(--c-primary); background: #0e0e0e; }
 .afterCareer i { color: var(--c-primary); font-size: 22px; width: 28px; }
 .afterCareer span { font-size: 15px; }
 .afterNote {
@@ -754,6 +752,13 @@
 .faqGrid {
   margin-top: 64px;
   display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px;
+  align-items: start;
+}
+/* Each column is a flex stack so expanding an item in one column doesn't
+   grow the matching row in the other column. */
+.faqCol {
+  display: flex;
+  flex-direction: column;
 }
 .faqItem {
   border-bottom: 1px solid var(--zinc-800);

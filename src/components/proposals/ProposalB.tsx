@@ -386,19 +386,27 @@ export function ProposalB({ content }: { content: PageContent }) {
             <p className={styles.secMarker}>Questions</p>
             <h2>Every question. Answered honestly.</h2>
             <div className={styles.faqGrid}>
-              {faq.map((item, i) => (
-                <details
-                  key={item.question}
-                  className={styles.faqItem}
-                  open={i === 0}
-                >
-                  <summary>
-                    {item.question}
-                    <i className="fa-solid fa-plus" />
-                  </summary>
-                  <p className={styles.a}>{item.answer}</p>
-                </details>
-              ))}
+              {(() => {
+                const half = Math.ceil(faq.length / 2);
+                const columns = [faq.slice(0, half), faq.slice(half)];
+                return columns.map((col, colIdx) => (
+                  <div key={colIdx} className={styles.faqCol}>
+                    {col.map((item, i) => (
+                      <details
+                        key={item.question}
+                        className={styles.faqItem}
+                        open={colIdx === 0 && i === 0}
+                      >
+                        <summary>
+                          {item.question}
+                          <i className="fa-solid fa-plus" />
+                        </summary>
+                        <p className={styles.a}>{item.answer}</p>
+                      </details>
+                    ))}
+                  </div>
+                ));
+              })()}
             </div>
           </div>
         </section>
