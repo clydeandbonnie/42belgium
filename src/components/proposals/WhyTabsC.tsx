@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Cluster } from "@/lib/i18n";
 import { ApplyLink } from "./ApplyLink";
+import { LookForTag } from "./LookForTag";
 import styles from "./ProposalC.module.css";
 
 interface Props {
@@ -131,9 +132,7 @@ export function WhyTabsC({ clusters }: Props) {
               <h5>What we look for</h5>
               <div className={styles.whyP3Row}>
                 {c3.lookFor.map((l) => (
-                  <button key={l} type="button">
-                    {l}
-                  </button>
+                  <LookForTag key={l}>{l}</LookForTag>
                 ))}
               </div>
             </div>
