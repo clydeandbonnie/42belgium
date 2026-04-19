@@ -96,10 +96,10 @@
   position: relative;
   max-width: var(--container-w);
   margin: 0 auto;
-  padding: clamp(100px, 13vh, 140px) max(24px, calc((100vw - var(--container-w))/2 + 16px))
-           clamp(40px, 6vh, 72px);
+  padding: clamp(120px, 14vh, 160px) max(40px, calc((100vw - var(--container-w))/2 + 24px))
+           clamp(60px, 9vh, 100px);
   display: grid; grid-template-columns: 1fr auto; align-items: end;
-  gap: 48px;
+  gap: 56px;
   flex: 1;
   width: 100%;
 }
@@ -107,7 +107,7 @@
   font-size: 13px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.32em; color: var(--c-primary);
   display: inline-flex; align-items: center; gap: 12px;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
 .heroH1 {
   font-size: clamp(40px, 5.5vw, 84px);
@@ -118,14 +118,14 @@
 }
 .heroH1 .pink { color: var(--c-secondary); }
 .heroLede {
-  margin-top: 24px;
+  margin-top: 40px;
   font-size: clamp(16px, 1.1vw, 18px);
-  line-height: 1.55;
+  line-height: 1.6;
   color: var(--zinc-200);
   max-width: 560px;
 }
 .heroCtas {
-  margin-top: 32px;
+  margin-top: 48px;
   display: flex; gap: 16px; flex-wrap: wrap;
 }
 .heroReassurance {
