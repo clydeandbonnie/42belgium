@@ -253,15 +253,25 @@
 .c2VsRow {
   display: grid;
   grid-template-columns: 160px 1fr 1fr;
-  gap: 40px;
+  gap: 0;
   align-items: baseline;
-  padding: 36px 28px;
+  padding: 36px 0;
   border-bottom: 1px solid var(--zinc-300);
 }
-/* Header row — subtle fill + thicker bottom rule + pill-style 42 label */
+/* Vertical separators between the 3 columns (every child except the first) */
+.c2VsRow > * + * {
+  border-left: 1px solid var(--zinc-200);
+}
+.c2VsRow > * {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.c2VsRow > *:first-child { padding-left: 0; }
+.c2VsRow > *:last-child  { padding-right: 0; }
+/* Header row — subtle fill + same zinc rule + pill-style 42 label */
 .c2VsHeadRow {
-  padding: 22px 28px;
-  border-bottom: 2px solid #000;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--zinc-300);
   background: var(--zinc-50);
   align-items: center;
 }
