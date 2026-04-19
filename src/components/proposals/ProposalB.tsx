@@ -138,6 +138,17 @@ export function ProposalB({ content }: { content: PageContent }) {
             const criteria = ["Learning", "Proof", "Feedback", "Support", "Motivation"];
             return (
               <div className={styles.c2Vs}>
+                {/* Header row — column labels */}
+                <div className={`${styles.c2VsRow} ${styles.c2VsHeadRow}`}>
+                  <div />
+                  <p className={`${styles.c2VsHead} ${styles.c2VsHeadLeft}`}>
+                    {cluster2.comparison.leftLabel}
+                  </p>
+                  <p className={`${styles.c2VsHead} ${styles.c2VsHeadRight}`}>
+                    {cluster2.comparison.rightLabel}
+                  </p>
+                </div>
+                {/* Body rows */}
                 {cluster2.comparison.rows.map((row, ri) => (
                   <div key={ri} className={styles.c2VsRow}>
                     <p className={styles.c2VsCrit}>
