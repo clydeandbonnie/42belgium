@@ -788,10 +788,10 @@
 
 /* ─── STATS BAR ─── */
 .stats {
-  background: var(--zinc-950);
-  color: #fff;
-  border-top: 1px solid var(--zinc-800);
-  border-bottom: 1px solid var(--zinc-800);
+  background: #fff;
+  color: #000;
+  border-top: 1px solid var(--zinc-200);
+  border-bottom: 1px solid var(--zinc-200);
 }
 .statsInner {
   max-width: var(--narrow-w); margin: 0 auto; padding: 56px 24px;
@@ -805,7 +805,7 @@
 }
 .statsGrid > div + div::before {
   content: ""; position: absolute; left: 0; top: 20%; height: 60%;
-  border-left: 1px solid var(--zinc-800);
+  border-left: 1px solid var(--zinc-200);
 }
 .statsGrid .val {
   font-size: clamp(44px, 5.5vw, 72px);
@@ -817,7 +817,7 @@
   margin-top: 12px;
   font-size: 11px; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.22em;
-  color: var(--zinc-400);
+  color: var(--zinc-600);
 }
 @media (max-width: 700px) {
   .statsGrid { grid-template-columns: 1fr 1fr; }
