@@ -242,57 +242,65 @@
   font-size: 17px; line-height: 1.7; color: var(--zinc-700);
   max-width: 820px; margin-bottom: 96px;
 }
-/* Comparison - editorial duel rows, no cell borders, just thin horizontal rules */
+/* Comparison - editorial duel rows on white, emphasized header row */
 .c2Vs {
   margin-top: clamp(56px, 7vh, 88px);
   display: flex;
   flex-direction: column;
-  border-top: 2px solid #000;
+  background: #fff;
 }
 .c2VsRow {
   display: grid;
   grid-template-columns: 160px 1fr 1fr;
   gap: 40px;
   align-items: baseline;
-  padding: 36px 0;
+  padding: 36px 28px;
   border-bottom: 1px solid var(--zinc-300);
 }
-/* Header row uses a slightly different rhythm and no criterion label */
+/* Header row — subtle fill + thicker bottom rule + pill-style 42 label */
 .c2VsHeadRow {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--zinc-300);
+  padding: 22px 28px;
+  border-bottom: 2px solid #000;
+  background: var(--zinc-50);
+  align-items: center;
 }
 .c2VsHead {
-  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  font-size: 13px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.28em;
+  display: inline-flex; align-items: center; gap: 10px;
 }
-.c2VsHeadLeft  { color: var(--zinc-500); }
-.c2VsHeadRight { color: var(--c-primary); }
+.c2VsHeadLeft { color: var(--zinc-500); }
+.c2VsHeadRight {
+  justify-self: start;
+  color: #fff;
+  background: var(--c-primary);
+  padding: 10px 18px;
+}
 .c2VsCrit {
-  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  font-size: 13px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.28em;
   color: var(--c-secondary);
 }
 .c2VsCell {
   display: flex; align-items: flex-start; gap: 14px;
-  font-size: 16px; line-height: 1.5;
+  font-size: 17px; line-height: 1.5;
 }
 .c2VsCell i { flex-shrink: 0; margin-top: 4px; }
 .c2VsCellLeft {
   color: var(--zinc-500);
 }
-.c2VsCellLeft i { color: var(--c-secondary); font-size: 14px; }
+.c2VsCellLeft i { color: var(--c-secondary); font-size: 15px; }
 .c2VsCellRight {
   color: #000;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
 }
-.c2VsCellRight i { color: var(--c-primary); font-size: 18px; }
+.c2VsCellRight i { color: var(--c-primary); font-size: 20px; }
 @media (max-width: 820px) {
   .c2VsRow {
     grid-template-columns: 1fr;
     gap: 16px;
-    padding: 28px 0;
+    padding: 28px 24px;
   }
   .c2VsHeadRow { display: none; }
 }
