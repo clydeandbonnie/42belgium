@@ -44,14 +44,14 @@ export function LookForTag({ children, className }: Props) {
           role="dialog"
           aria-modal="true"
           aria-label="You already have what it takes"
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4"
         >
           {/* Overlay */}
           <button
             type="button"
             aria-label="Close dialog"
             onClick={() => setIsOpen(false)}
-            className="absolute inset-0 bg-black/50 cursor-default"
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-default"
           />
 
           {/* Panel */}
