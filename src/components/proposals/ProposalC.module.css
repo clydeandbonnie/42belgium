@@ -594,8 +594,14 @@
   display: grid; grid-template-columns: 1fr 1fr;
   min-height: 480px;
   position: relative;
+  max-width: 720px;
+  margin: 0 auto;
 }
-.openBlockReverse { grid-template-columns: 1fr 1fr; }
+.openBlockReverse {
+  grid-template-columns: 1fr 1fr;
+  max-width: 720px;
+  margin: 0 auto;
+}
 .openBlockReverse .openPic { order: 2; }
 .openPic { position: relative; background-size: cover; background-position: center; }
 .openPic.brussels { background-image: url('/assets/gallery/OpenDaysBrussels.png'); }
