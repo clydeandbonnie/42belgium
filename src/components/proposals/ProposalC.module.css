@@ -350,7 +350,9 @@
   text-transform: uppercase; letter-spacing: 0.08em;
   color: var(--zinc-600);
 }
-.whyP3TagsLook button {
+/* Direct-child selectors so the LookForTag modal (rendered as DOM sibling
+   of the trigger) doesn't inherit the tag styling. */
+.whyP3TagsLook > .whyP3Row > button {
   padding: 10px 16px;
   border: 2px solid var(--c-secondary);
   background: #fff;
@@ -360,7 +362,7 @@
   transition: background .2s, color .2s;
   cursor: pointer;
 }
-.whyP3TagsLook button:hover { background: var(--c-secondary); color: #fff; }
+.whyP3TagsLook > .whyP3Row > button:hover { background: var(--c-secondary); color: #fff; }
 .whyCta { margin-top: 72px; display: flex; justify-content: center; }
 @media (max-width: 900px) { .whyP3Grid { grid-template-columns: 1fr; } }
 
