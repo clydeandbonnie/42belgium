@@ -274,7 +274,7 @@ export function ProposalB({ content }: { content: PageContent }) {
       {realStories && realStories.videos.length > 0 && (
         <section className={styles.stories}>
           <div className={styles.storiesInner}>
-            <p className={styles.secMarker}>Real students</p>
+            <p className={styles.secMarker}>Testimonials</p>
             <h2>{realStories.heading}</h2>
             <p className={styles.body}>{realStories.description}</p>
             <div className={styles.storiesGrid}>

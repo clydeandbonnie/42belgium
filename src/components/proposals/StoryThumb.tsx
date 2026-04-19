@@ -53,19 +53,48 @@ export function StoryThumb({
     >
       <div className={thumbClass}>
         {playing ? (
-          <iframe
-            src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`}
-            title={`${name} - ${subtitle}`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            style={{
-              width: "100%",
-              height: "100%",
-              border: 0,
-              position: "absolute",
-              inset: 0,
-            }}
-          />
+          <>
+            <iframe
+              src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`}
+              title={`${name} - ${subtitle}`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{
+                width: "100%",
+                height: "100%",
+                border: 0,
+                position: "absolute",
+                inset: 0,
+              }}
+            />
+            {/* Close button — unmounts the iframe and restores the thumb */}
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                setPlaying(false);
+              }}
+              aria-label="Close video"
+              style={{
+                position: "absolute",
+                top: 10,
+                right: 10,
+                width: 40,
+                height: 40,
+                background: "rgba(0, 0, 0, 0.72)",
+                color: "#fff",
+                border: 0,
+                cursor: "pointer",
+                zIndex: 10,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: 16,
+              }}
+            >
+              <i className="fa-solid fa-xmark" />
+            </button>
+          </>
         ) : (
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
