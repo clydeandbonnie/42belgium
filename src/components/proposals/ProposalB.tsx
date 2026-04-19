@@ -136,44 +136,23 @@ export function ProposalB({ content }: { content: PageContent }) {
 
           {cluster2.comparison && (() => {
             const criteria = ["Learning", "Proof", "Feedback", "Support", "Motivation"];
-            const rows = cluster2.comparison.rows;
             return (
               <div className={styles.c2Vs}>
-                {/* Header row */}
-                <div className={styles.c2VsHeadEmpty} />
-                <div className={`${styles.c2VsHead} ${styles.c2VsHeadLeft}`}>
-                  {cluster2.comparison.leftLabel}
-                </div>
-                <div className={`${styles.c2VsHead} ${styles.c2VsHeadRight}`}>
-                  {cluster2.comparison.rightLabel}
-                </div>
-                {/* Body rows */}
-                {rows.flatMap((row, ri) => {
-                  const last = ri === rows.length - 1;
-                  const lastClass = last ? ` ${styles.c2VsLast}` : "";
-                  return [
-                    <div
-                      key={`crit-${ri}`}
-                      className={`${styles.c2VsCrit}${lastClass}`}
-                    >
+                {cluster2.comparison.rows.map((row, ri) => (
+                  <div key={ri} className={styles.c2VsRow}>
+                    <p className={styles.c2VsCrit}>
                       {criteria[ri] || `#${ri + 1}`}
-                    </div>,
-                    <div
-                      key={`left-${ri}`}
-                      className={`${styles.c2VsCell} ${styles.c2VsCellLeft}${lastClass}`}
-                    >
+                    </p>
+                    <div className={`${styles.c2VsCell} ${styles.c2VsCellLeft}`}>
                       <i className="fa-solid fa-xmark" />
                       <span>{row.left}</span>
-                    </div>,
-                    <div
-                      key={`right-${ri}`}
-                      className={`${styles.c2VsCell} ${styles.c2VsCellRight}${lastClass}`}
-                    >
+                    </div>
+                    <div className={`${styles.c2VsCell} ${styles.c2VsCellRight}`}>
                       <i className="fa-solid fa-check" />
                       <span>{row.right}</span>
-                    </div>,
-                  ];
-                })}
+                    </div>
+                  </div>
+                ))}
               </div>
             );
           })()}
