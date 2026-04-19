@@ -136,32 +136,44 @@ export function ProposalB({ content }: { content: PageContent }) {
 
           {cluster2.comparison && (() => {
             const criteria = ["Learning", "Proof", "Feedback", "Support", "Motivation"];
+            const rows = cluster2.comparison.rows;
             return (
               <div className={styles.c2Vs}>
+                {/* Header row */}
+                <div className={styles.c2VsHeadEmpty} />
                 <div className={`${styles.c2VsHead} ${styles.c2VsHeadLeft}`}>
                   {cluster2.comparison.leftLabel}
                 </div>
                 <div className={`${styles.c2VsHead} ${styles.c2VsHeadRight}`}>
                   {cluster2.comparison.rightLabel}
                 </div>
-                {cluster2.comparison.rows.flatMap((row, ri) => [
-                  <div
-                    key={`l-${ri}`}
-                    className={`${styles.c2VsRow} ${styles.c2VsRowLeft}`}
-                  >
-                    <span className={styles.crit}>{criteria[ri] || `#${ri + 1}`}</span>
-                    <i className="fa-solid fa-xmark" />
-                    <p className={styles.txt}>{row.left}</p>
-                  </div>,
-                  <div
-                    key={`r-${ri}`}
-                    className={`${styles.c2VsRow} ${styles.c2VsRowRight}`}
-                  >
-                    <span className={styles.crit}>{criteria[ri] || `#${ri + 1}`}</span>
-                    <i className="fa-solid fa-check" />
-                    <p className={styles.txt}>{row.right}</p>
-                  </div>,
-                ])}
+                {/* Body rows */}
+                {rows.flatMap((row, ri) => {
+                  const last = ri === rows.length - 1;
+                  const lastClass = last ? ` ${styles.c2VsLast}` : "";
+                  return [
+                    <div
+                      key={`crit-${ri}`}
+                      className={`${styles.c2VsCrit}${lastClass}`}
+                    >
+                      {criteria[ri] || `#${ri + 1}`}
+                    </div>,
+                    <div
+                      key={`left-${ri}`}
+                      className={`${styles.c2VsCell} ${styles.c2VsCellLeft}${lastClass}`}
+                    >
+                      <i className="fa-solid fa-xmark" />
+                      <span>{row.left}</span>
+                    </div>,
+                    <div
+                      key={`right-${ri}`}
+                      className={`${styles.c2VsCell} ${styles.c2VsCellRight}${lastClass}`}
+                    >
+                      <i className="fa-solid fa-check" />
+                      <span>{row.right}</span>
+                    </div>,
+                  ];
+                })}
               </div>
             );
           })()}
