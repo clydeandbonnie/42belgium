@@ -254,38 +254,39 @@
   display: grid;
   grid-template-columns: 160px 1fr 1fr;
   gap: 0;
-  align-items: baseline;
-  padding: 36px 0;
+  /* stretch so vertical column hairlines span the full row height */
+  align-items: stretch;
   border-bottom: 1px solid var(--zinc-300);
 }
-/* Vertical separators between the 3 columns (every child except the first) */
-.c2VsRow > * + * {
+/* Every cell shares the same padding rhythm */
+.c2VsRow > * {
+  padding: 36px 32px;
+  display: flex;
+  align-items: center;
+}
+/* Hairline between criterion and MOOC (2nd child) */
+.c2VsRow > *:nth-child(2) {
   border-left: 1px solid var(--zinc-200);
 }
-.c2VsRow > * {
-  padding-left: 32px;
-  padding-right: 32px;
-}
-.c2VsRow > *:first-child { padding-left: 0; }
-.c2VsRow > *:last-child  { padding-right: 0; }
-/* Header row — subtle fill + same zinc rule + pill-style 42 label */
+/* Header row — subtle fill, no big padding override */
 .c2VsHeadRow {
-  padding: 22px 0;
   border-bottom: 1px solid var(--zinc-300);
   background: var(--zinc-50);
-  align-items: center;
+}
+.c2VsHeadRow > * {
+  padding: 22px 32px;
 }
 .c2VsHead {
   font-size: 13px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.28em;
-  display: inline-flex; align-items: center; gap: 10px;
 }
 .c2VsHeadLeft { color: var(--zinc-500); }
+/* 42 Belgium header: full-cell teal bg (not a pill) so the right column is anchored */
 .c2VsHeadRight {
-  justify-self: start;
   color: #fff;
   background: var(--c-primary);
-  padding: 10px 18px;
+  justify-content: flex-start;
+  font-size: 14px;
 }
 .c2VsCrit {
   font-size: 13px; font-weight: 700; text-transform: uppercase;
@@ -293,18 +294,22 @@
   color: var(--c-secondary);
 }
 .c2VsCell {
-  display: flex; align-items: flex-start; gap: 14px;
+  gap: 14px;
   font-size: 17px; line-height: 1.5;
+  align-items: flex-start;
 }
 .c2VsCell i { flex-shrink: 0; margin-top: 4px; }
 .c2VsCellLeft {
   color: var(--zinc-500);
 }
 .c2VsCellLeft i { color: var(--c-secondary); font-size: 15px; }
+/* Keep the teal 3px signature on the 42 body cell (wins over the zinc hairline rule by specificity order) */
 .c2VsCellRight {
   color: #000;
   font-weight: 700;
   font-size: 18px;
+  background: rgba(0, 186, 188, 0.04);
+  border-left: 3px solid var(--c-primary);
 }
 .c2VsCellRight i { color: var(--c-primary); font-size: 20px; }
 @media (max-width: 820px) {
