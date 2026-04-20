@@ -183,9 +183,12 @@ export function ProposalC({ content }: { content: PageContent }) {
                 : styles.brussels;
             return (
               <div key={campus.name} className={blockClass}>
-                <div
+                <a
+                  href={openDays.ctaHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Register for Open Day in ${campus.name}`}
                   className={`${styles.openPic} ${picClass}`}
-                  aria-hidden="true"
                 />
                 <div className={styles.openText}>
                   <p className={styles.city}>{campus.name}</p>
