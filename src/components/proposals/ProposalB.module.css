@@ -112,15 +112,13 @@
   display: inline-flex; align-items: center; gap: 12px;
   margin-bottom: 28px;
 }
-/* H1 scales with both width and viewport height so the hero stays on one screen.
-   padding-block (not margin-block) so the gap around it never collapses with siblings. */
+/* H1 scales with both width and viewport height so the hero stays on one screen. */
 .heroH1 {
   font-size: clamp(36px, min(5.5vw, 10vh), 84px);
   line-height: 1.04; letter-spacing: -0.03em;
   max-width: 1100px;
   text-wrap: balance;
   color: #fff;
-  padding-block: clamp(16px, 3vh, 36px);
 }
 .heroH1 .pink { color: var(--c-secondary); }
 .heroLede {
