@@ -124,14 +124,14 @@
 }
 .heroH1 .pink { color: var(--c-secondary); }
 .heroLede {
-  margin-top: clamp(56px, 10vh, 120px);
+  margin-top: 28px;
   font-size: clamp(16px, 1.1vw, 18px);
   line-height: 1.65;
   color: var(--zinc-200);
   max-width: 560px;
 }
 .heroCtas {
-  margin-top: clamp(48px, 8vh, 96px);
+  margin-top: 28px;
   display: flex; gap: 16px; flex-wrap: wrap;
 }
 .heroReassurance {
