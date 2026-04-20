@@ -101,7 +101,7 @@
   margin: 0 auto;
   padding: clamp(64px, 8vh, 110px) max(40px, calc((100vw - var(--container-w))/2 + 24px))
            clamp(32px, 4vh, 64px);
-  display: grid; grid-template-columns: 1fr auto; align-items: end;
+  display: grid; grid-template-columns: 1fr auto; align-items: center;
   gap: 56px;
   flex: 1;
   width: 100%;
