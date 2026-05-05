@@ -33,6 +33,7 @@ export function ProposalA({ content }: { content: PageContent }) {
             src="/assets/gallery/Skills-42Blegium-1.png"
             alt="42 Belgium students building tech skills"
             fill
+            sizes="(min-width: 640px) 50vw, 100vw"
             className="object-cover object-center"
             priority
             quality={85}
@@ -225,43 +226,79 @@ export function ProposalA({ content }: { content: PageContent }) {
               {cluster.comparison && (() => {
                 const criteria = ["Learning", "Proof of skills", "Feedback", "Support", "Motivation"];
                 return (
-                  <div className="mt-12 grid grid-cols-[160px_1fr_1.1fr]">
-                    {/* Header row */}
-                    <div />
-                    <div className="px-6 py-5 flex items-center justify-center border-l border-t border-b border-zinc-200">
-                      <p className="text-sm font-bold uppercase tracking-[0.25em] text-zinc-400">
-                        {cluster.comparison!.leftLabel}
-                      </p>
-                    </div>
-                    <div className="px-6 py-5 bg-[var(--color-primary)] flex items-center justify-center shadow-[0_-4px_20px_-8px_rgba(0,0,0,0.15)]">
-                      <p className="text-base font-bold uppercase tracking-[0.25em] text-white">
-                        {cluster.comparison!.rightLabel}
-                      </p>
-                    </div>
-                    {/* Feature rows */}
-                    {cluster.comparison!.rows.map((row, ri) => {
-                      const isLast = ri === cluster.comparison!.rows.length - 1;
-                      return (
-                        <div key={ri} className="contents">
-                          {/* Criterion label */}
-                          <div className={`px-6 py-6 bg-white flex items-center border-r border-zinc-200 ${!isLast ? "border-b border-zinc-200" : ""}`}>
-                            <p className="text-sm font-bold uppercase tracking-wider text-black">
-                              {criteria[ri] || `Feature ${ri + 1}`}
-                            </p>
+                  <div className="mt-12">
+                    {/* Desktop: 3-col grid (sm and up) */}
+                    <div className="hidden sm:grid grid-cols-[160px_1fr_1.1fr]">
+                      {/* Header row */}
+                      <div />
+                      <div className="px-6 py-5 flex items-center justify-center border-l border-t border-b border-zinc-200">
+                        <p className="text-sm font-bold uppercase tracking-[0.25em] text-zinc-400">
+                          {cluster.comparison!.leftLabel}
+                        </p>
+                      </div>
+                      <div className="px-6 py-5 bg-[var(--color-primary)] flex items-center justify-center shadow-[0_-4px_20px_-8px_rgba(0,0,0,0.15)]">
+                        <p className="text-base font-bold uppercase tracking-[0.25em] text-white">
+                          {cluster.comparison!.rightLabel}
+                        </p>
+                      </div>
+                      {/* Feature rows */}
+                      {cluster.comparison!.rows.map((row, ri) => {
+                        const isLast = ri === cluster.comparison!.rows.length - 1;
+                        return (
+                          <div key={ri} className="contents">
+                            {/* Criterion label */}
+                            <div className={`px-6 py-6 bg-white flex items-center border-r border-zinc-200 ${!isLast ? "border-b border-zinc-200" : ""}`}>
+                              <p className="text-sm font-bold uppercase tracking-wider text-black">
+                                {criteria[ri] || `Feature ${ri + 1}`}
+                              </p>
+                            </div>
+                            {/* MOOC cell - muted */}
+                            <div className="px-6 py-6 flex items-center gap-4 border-b border-zinc-200">
+                              <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-base shrink-0" />
+                              <p className="text-base text-zinc-500">{row.left}</p>
+                            </div>
+                            {/* 42 cell - elevated, teal-tinted, bold */}
+                            <div className={`px-6 py-6 flex items-center gap-4 bg-[var(--color-primary)]/5 border-l-4 border-[var(--color-primary)] ${!isLast ? "border-b border-b-zinc-200" : ""}`}>
+                              <i className="fa-solid fa-check text-[var(--color-primary)] text-2xl shrink-0" />
+                              <p className="text-base font-bold text-black leading-snug">{row.right}</p>
+                            </div>
                           </div>
-                          {/* MOOC cell - muted */}
-                          <div className="px-6 py-6 flex items-center gap-4 border-b border-zinc-200">
-                            <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-base shrink-0" />
-                            <p className="text-base text-zinc-500">{row.left}</p>
-                          </div>
-                          {/* 42 cell - elevated, teal-tinted, bold */}
-                          <div className={`px-6 py-6 flex items-center gap-4 bg-[var(--color-primary)]/5 border-l-4 border-[var(--color-primary)] ${!isLast ? "border-b border-b-zinc-200" : ""}`}>
-                            <i className="fa-solid fa-check text-[var(--color-primary)] text-2xl shrink-0" />
-                            <p className="text-base font-bold text-black leading-snug">{row.right}</p>
+                        );
+                      })}
+                    </div>
+
+                    {/* Mobile: stacked cards per criterion */}
+                    <div className="sm:hidden space-y-8">
+                      {cluster.comparison!.rows.map((row, ri) => (
+                        <div key={ri}>
+                          <p className="text-sm font-bold uppercase tracking-wider text-black mb-3">
+                            {criteria[ri] || `Feature ${ri + 1}`}
+                          </p>
+                          <div className="space-y-2">
+                            {/* MOOC card */}
+                            <div className="px-5 py-4 border border-zinc-200 bg-white">
+                              <p className="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400 mb-2">
+                                {cluster.comparison!.leftLabel}
+                              </p>
+                              <div className="flex items-start gap-3">
+                                <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-base shrink-0 mt-1" />
+                                <p className="text-base text-zinc-500">{row.left}</p>
+                              </div>
+                            </div>
+                            {/* 42 card */}
+                            <div className="px-5 py-4 bg-[var(--color-primary)]/5 border-l-4 border-[var(--color-primary)]">
+                              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-primary)] mb-2">
+                                {cluster.comparison!.rightLabel}
+                              </p>
+                              <div className="flex items-start gap-3">
+                                <i className="fa-solid fa-check text-[var(--color-primary)] text-xl shrink-0 mt-0.5" />
+                                <p className="text-base font-bold text-black leading-snug">{row.right}</p>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      );
-                    })}
+                      ))}
+                    </div>
                   </div>
                 );
               })()}
@@ -455,9 +492,9 @@ export function ProposalA({ content }: { content: PageContent }) {
               {howToApply.steps.map((step) => (
                 <div
                   key={step.number}
-                  className="grid gap-6 sm:grid-cols-[auto_1fr] items-start border-l-4 border-[var(--color-secondary)] pl-8 py-2"
+                  className="grid gap-3 sm:gap-6 sm:grid-cols-[auto_1fr] items-start border-l-4 border-[var(--color-secondary)] pl-8 py-2"
                 >
-                  <span className="text-6xl font-bold text-zinc-200 leading-none sm:w-24">
+                  <span className="text-4xl sm:text-6xl font-bold text-zinc-200 leading-none sm:w-24">
                     {step.number}
                   </span>
                   <div>

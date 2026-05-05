@@ -75,6 +75,7 @@ export function Header({ lang }: HeaderProps) {
             height={26}
             priority
             className={styles.logo}
+            style={{ height: "auto" }}
           />
         </Link>
 

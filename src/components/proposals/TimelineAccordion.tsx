@@ -50,27 +50,27 @@ export function TimelineAccordion({ phases }: Props) {
                 aria-expanded={isOpen}
                 className="w-full flex items-center gap-4 py-5 text-left group"
               >
-                <div className="flex items-center gap-3 min-w-0 flex-1">
-                  {phase.icon && (
-                    <i
-                      className={`${phase.icon} text-lg shrink-0 transition-colors duration-300 ${
-                        isReached ? "text-[var(--color-primary)]" : "text-zinc-400"
-                      }`}
-                    />
-                  )}
+                {phase.icon && (
+                  <i
+                    className={`${phase.icon} text-lg shrink-0 transition-colors duration-300 ${
+                      isReached ? "text-[var(--color-primary)]" : "text-zinc-400"
+                    }`}
+                  />
+                )}
+                <div className="flex-1 min-w-0 flex flex-col sm:flex-row sm:items-center sm:gap-4">
                   <h3
-                    className={`text-lg font-bold transition-colors duration-300 ${
+                    className={`text-lg font-bold transition-colors duration-300 sm:flex-1 ${
                       isOpen ? "text-black" : "text-zinc-600 group-hover:text-black"
                     }`}
                   >
                     {phase.title}
                   </h3>
+                  <span className="mt-1 sm:mt-0 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] shrink-0">
+                    {phase.duration}
+                  </span>
                 </div>
-                <span className="text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] shrink-0">
-                  {phase.duration}
-                </span>
                 <i
-                  className={`fa-solid fa-chevron-down text-zinc-400 text-sm transition-transform duration-300 ${
+                  className={`fa-solid fa-chevron-down text-zinc-400 text-sm shrink-0 transition-transform duration-300 ${
                     isOpen ? "rotate-180" : ""
                   }`}
                 />

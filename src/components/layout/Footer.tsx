@@ -32,6 +32,7 @@ export function Footer({ lang }: { lang: Language }) {
               alt="42 Belgium"
               width={140}
               height={26}
+              style={{ height: "auto" }}
             />
             <div className="mt-8 space-y-6">
               {locations.map((loc, i) => (
