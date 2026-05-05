@@ -89,3 +89,20 @@ h1, h2, h3, h4, h5, h6 {
     animation: none;
   }
 }
+
+/* ─── Partner strip marquee (continuous left scroll, list doubled in JSX) ─── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 50s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
