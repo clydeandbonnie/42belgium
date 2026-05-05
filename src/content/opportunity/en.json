@@ -43,6 +43,31 @@
       ]
     },
     {
+      "name": "LOW BARRIER TO ENTRY",
+      "heading": "No CV. No degree. No experience required.",
+      "body": "You already know the problem: every tech role asks for two years of experience at least. 42 Belgium is the bridge. We welcome career changers from every possible background - retail, hospitality, teaching, administration, music, parenting.",
+      "subheading": "The only requirement is motivation.",
+      "bodyPart2": "No coding knowledge assumed. No diploma to file. No CV to polish. No age limit. Our entry process measures potential, not past. You take a short online logic test, then discover peer-to-peer learning in our Piscine. You decide together with us if this path is right for you.",
+      "keywords": [
+        "online jobs no experience",
+        "no experience required",
+        "career change"
+      ],
+      "dontAsk": [
+        "No technical background expected",
+        "No diploma required",
+        "No CV",
+        "No admission essay",
+        "No age limit",
+        "No prior experience needed"
+      ],
+      "lookFor": [
+        "Potential",
+        "Career-change drive",
+        "Willingness to start"
+      ]
+    },
+    {
       "name": "ACCESSIBLE FREE TRAINING",
       "heading": "Free structured training. Not a MOOC.",
       "body": "Let's be clear. This is not a free online course you scroll through at midnight and forget by morning. Unlike free online courses, online classes free, or free online courses with certificates that everyone starts and nobody finishes, 42 Belgium is a complete peer-to-peer program with physical campuses, shared projects, and real feedback.",
@@ -68,31 +93,6 @@
           { "left": "Most people lose motivation and drop out.", "right": "Cohorts that ship together, stay together." }
         ]
       }
-    },
-    {
-      "name": "LOW BARRIER TO ENTRY",
-      "heading": "No CV. No degree. No experience required.",
-      "body": "You already know the problem: every tech role asks for two years of experience at least. 42 Belgium is the bridge. We welcome career changers from every possible background - retail, hospitality, teaching, administration, music, parenting.",
-      "subheading": "The only requirement is motivation.",
-      "bodyPart2": "No coding knowledge assumed. No diploma to file. No CV to polish. No age limit. Our entry process measures potential, not past. You take a short online logic test, then discover peer-to-peer learning in our Piscine. You decide together with us if this path is right for you.",
-      "keywords": [
-        "online jobs no experience",
-        "no experience required",
-        "career change"
-      ],
-      "dontAsk": [
-        "No technical background expected",
-        "No diploma required",
-        "No CV",
-        "No admission essay",
-        "No age limit",
-        "No prior experience needed"
-      ],
-      "lookFor": [
-        "Potential",
-        "Career-change drive",
-        "Willingness to start"
-      ]
     }
   ],
   "afterForty": {
