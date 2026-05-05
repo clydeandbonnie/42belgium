@@ -491,10 +491,10 @@ export function ProposalA({ content }: { content: PageContent }) {
         <section className="bg-black text-white">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
             <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-              Questions
+              FAQ
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
-              Every question. Answered honestly.
+              Questions
             </h2>
             <FaqAccordion items={faq} />
           </div>
