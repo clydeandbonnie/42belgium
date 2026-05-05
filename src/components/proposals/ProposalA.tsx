@@ -107,7 +107,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                 <div className="grid gap-12 lg:grid-cols-2 items-start">
                   {/* LEFT - text content */}
                   <div>
-                    <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+                    <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
                       {String(i + 1).padStart(2, "0")} · {cluster.name}
                     </p>
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -170,7 +170,7 @@ export function ProposalA({ content }: { content: PageContent }) {
               ) : cluster.image ? (
                 <div className="grid gap-12 lg:grid-cols-[1fr_440px] items-stretch">
                   <div>
-                    <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+                    <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
                       {String(i + 1).padStart(2, "0")} · {cluster.name}
                     </p>
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -199,7 +199,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                 </div>
               ) : (
                 <>
-                  <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+                  <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
                     {String(i + 1).padStart(2, "0")} · {cluster.name}
                   </p>
                   <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
@@ -295,7 +295,7 @@ export function ProposalA({ content }: { content: PageContent }) {
       {afterForty && (
         <section id="after" className="bg-black text-white">
           <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+            <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
               The outcome
             </p>
             <div className="grid gap-12 sm:grid-cols-2 items-start">
@@ -341,7 +341,7 @@ export function ProposalA({ content }: { content: PageContent }) {
       {whatYouBuild && whatYouBuild.phases && (
         <section className="bg-white text-black">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+            <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
               The program
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
@@ -366,7 +366,7 @@ export function ProposalA({ content }: { content: PageContent }) {
       {realStories && (
         <section className="bg-zinc-100">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
+            <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
               Real students
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl text-black">
@@ -391,7 +391,7 @@ export function ProposalA({ content }: { content: PageContent }) {
       {/* ─── OPEN DAYS ─── */}
       <section className="bg-white text-black">
         <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-          <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+          <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
             Campus visits
           </p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
@@ -445,7 +445,7 @@ export function ProposalA({ content }: { content: PageContent }) {
       {howToApply && (
         <section className="bg-zinc-100 text-black" id="apply">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
+            <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
               The path
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
@@ -490,7 +490,7 @@ export function ProposalA({ content }: { content: PageContent }) {
       {faq && faq.length > 0 && (
         <section className="bg-black text-white">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+            <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
               Questions
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
