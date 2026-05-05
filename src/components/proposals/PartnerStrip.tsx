@@ -34,7 +34,7 @@ export function PartnerStrip() {
     <section className="bg-white border-y border-zinc-200">
       <div className="mx-auto max-w-6xl px-6 pt-12 pb-8">
         <p className="text-center text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-8">
-          They work with us
+          Our partners and sponsors
         </p>
 
         <div className="relative overflow-hidden">
