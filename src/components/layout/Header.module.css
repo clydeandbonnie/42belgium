@@ -35,11 +35,15 @@
   height: 100px;
   z-index: 999;
   background-color: transparent;
-  transition: background-color 500ms ease-in-out;
+  /* Bottom border lives on the full-width shell so it spans the viewport
+     even though the inner .container is capped at 1470px. */
+  border-bottom: 1px solid rgba(163, 173, 179, 0.5);
+  transition: background-color 500ms ease-in-out, border-color 500ms ease-in-out;
 }
 
 .header.scrolled {
   background-color: #ffffff;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Static variant (Proposal C): in-flow header so the user scrolls past it
@@ -79,12 +83,6 @@
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
-  border-bottom: 1px solid rgba(163, 173, 179, 0.5);
-  transition: border-color 500ms ease-in-out;
-}
-
-.header.scrolled .container {
-  border-bottom-color: rgba(0, 0, 0, 0.1);
 }
 
 /* ─── Logo ─── */
