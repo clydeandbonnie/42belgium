@@ -233,14 +233,26 @@ export async function getPageContent(
 
   const merged: PageContent = { ...cluster.default };
   for (const section of SHARED_SECTIONS) {
-    if (merged[section] === undefined && common[section] !== undefined) {
-      // Type-checked field assignment from the same key on both sides.
-      (merged as Record<string, unknown>)[section] = common[section];
-    }
+    applyFallback(merged, common, section);
   }
 
   contentCache[key] = merged;
   return merged;
+}
+
+/**
+ * If `target[key]` is undefined but `source[key]` is set, copy it across.
+ * Generic over `K extends keyof PageContent` so the assignment stays type-safe
+ * — both sides of the `=` resolve to `PageContent[K]`.
+ */
+function applyFallback<K extends keyof PageContent>(
+  target: PageContent,
+  source: Partial<PageContent>,
+  key: K
+): void {
+  if (target[key] === undefined && source[key] !== undefined) {
+    target[key] = source[key];
+  }
 }
 
 export const languageNames: Record<Language, string> = {
