@@ -30,6 +30,28 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR = path.join(__dirname, "..", "src", "content");
 const PUBLIC_DIR = path.join(__dirname, "..", "public");
+const STATUS_PATH = path.join(CONTENT_DIR, "_status.json");
+
+// Per-LP status drives gating: drafts are reported as skipped, ready/approved
+// run the full checklist.
+const statusMap = (() => {
+  try {
+    return JSON.parse(fs.readFileSync(STATUS_PATH, "utf-8"));
+  } catch {
+    return {};
+  }
+})();
+
+function statusFor(filePath) {
+  const rel = path.relative(CONTENT_DIR, filePath);
+  // rel looks like "cyber/fr.json" — convert to "cyber-fr"
+  const m = rel.match(/^([^/\\]+)[/\\]([a-z]+)\.json$/);
+  if (!m) return null;
+  const key = `${m[1]}-${m[2]}`;
+  const v = statusMap[key];
+  if (v === "ready" || v === "approved") return v;
+  return "draft";
+}
 
 const c = {
   reset: "\x1b[0m",
@@ -86,7 +108,7 @@ function extractBody(content) {
   return parts.join(" ");
 }
 
-const results = { errors: 0, warnings: 0, ok: 0, stubs: 0 };
+const results = { errors: 0, warnings: 0, ok: 0, stubs: 0, drafts: 0 };
 
 function log(level, page, msg) {
   const color = level === "ERROR" ? c.red : level === "WARN" ? c.yellow : c.gray;
@@ -101,13 +123,23 @@ function validate(filePath) {
   const content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
   const issues = [];
 
-  // Detect stub pages — skip detailed validation, just count them.
+  // Status from _status.json gates the checks. Drafts skip detailed checks
+  // (Bonnie graduates a page to "ready" when it's done, then the validator
+  // runs the full briefing checklist).
+  const status = statusFor(filePath);
+  if (status === "draft") {
+    results.drafts++;
+    console.log(`  ${c.gray}[DRAFT] ${rel} — status=draft in _status.json, skipping checks${c.reset}`);
+    return;
+  }
+
+  // Legacy stub detection — kept for theoretical edge cases.
   const isStub =
     content.clusters?.length === 1 &&
     content.clusters[0].name === "PLACEHOLDER";
   if (isStub) {
     results.stubs++;
-    console.log(`  ${c.gray}[STUB]  ${rel} — placeholder, skipping checks${c.reset}`);
+    console.log(`  ${c.gray}[STUB]  ${rel} — placeholder cluster, skipping checks${c.reset}`);
     return;
   }
 
@@ -296,7 +328,7 @@ console.log(`\n${c.bold}SEO validation — brief v2 checklist${c.reset}\n`);
 walk(CONTENT_DIR);
 
 console.log(
-  `\n${c.bold}Summary${c.reset}: ${c.green}${results.ok} OK${c.reset}, ${c.yellow}${results.warnings} warnings${c.reset}, ${c.red}${results.errors} errors${c.reset}, ${c.gray}${results.stubs} stubs${c.reset}\n`
+  `\n${c.bold}Summary${c.reset}: ${c.green}${results.ok} OK${c.reset}, ${c.yellow}${results.warnings} warnings${c.reset}, ${c.red}${results.errors} errors${c.reset}, ${c.gray}${results.drafts} drafts${c.reset}${results.stubs ? `, ${c.gray}${results.stubs} stubs${c.reset}` : ""}\n`
 );
 
 process.exit(results.errors > 0 ? 1 : 0);
