@@ -1,26 +1,90 @@
 {
+  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
+  "_matrixAnalyse": "Les données sont limitées mais révèlent un signal fort d'intention professionnelle. 'Prompt engineer formation' (23 clk, CVR 8.7%) est le terme convertisseur principal. Pattern B critique : 'formation prompt engineering' (13 clk, CTR 23.2%, CVR 0%) — un CTR extrêmement élevé (23.2%) suivi de zéro conversions est le signal classique d'une promesse non tenue sur la page d'atterrissage. La page doit immédiatement signaler un niveau professionnel et non une introduction grand public. ChatGPT débutant, IA magique ou outil gratuit sont des signaux à éviter absolument dans le copy.",
   "meta": {
-    "title": "Generative AI - 42 Belgium",
-    "description": "Generative AI at 42 Belgium. Placeholder content - Phase 2 will populate this from the lexical matrix v3.",
+    "title": "TODO: 50-60 chars, includes Primary Query \"prompt engineer formation\" + \"| 42 Belgium\"",
+    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (prompt engineer formation, formation prompt engineering)",
     "slug": "formation-prompt-engineering-ia",
-    "primaryQuery": "formation prompt engineering",
+    "primaryQuery": "prompt engineer formation / formation IA générative",
     "convertingKeywords": [
-      "formation prompt engineering"
-    ]
+      "prompt engineer formation"
+    ],
+    "lpAngle": "bold"
   },
   "hero": {
-    "headline": "Generative AI",
-    "subheadline": "Coming soon - full copy from matrix v3 in Phase 2.",
-    "cta": "Commence ta formation →"
+    "headline": "TODO: H1 must contain Primary Query \"prompt engineer formation\" literally (briefing §4.4)",
+    "subheadline": "TODO: subline = LP Angle (matrix says \"Les LLMs ne sont pas de la magie. Apprenez à les programmer.\")",
+    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "cta": "Deviens Prompt Engineer →"
   },
   "clusters": [
     {
-      "name": "PLACEHOLDER",
-      "heading": "Content coming soon",
-      "body": "This page is a placeholder. Phase 2 will populate it with copy aligned on the lexical matrix v3 for genai / fr.",
+      "name": "PROMPT ENGINEERING",
+      "heading": "TODO: H2 reformulating \"PROMPT ENGINEERING\" in copywriting (briefing §4.6)",
+      "body": "TODO: 100-150 words integrating ALL keywords below naturally — prompt engineer formation, formation prompt engineering, formation prompt engineer",
       "keywords": [
-        "formation prompt engineering"
+        "prompt engineer formation",
+        "formation prompt engineering",
+        "formation prompt engineer"
+      ]
+    },
+    {
+      "name": "IA GÉNÉRATIVE & LLMs",
+      "heading": "TODO: H2 reformulating \"IA GÉNÉRATIVE & LLMs\" in copywriting (briefing §4.6)",
+      "body": "TODO: 100-150 words integrating ALL keywords below naturally — formation IA générative, LLM cours, ChatGPT avancé, IA au travail",
+      "keywords": [
+        "formation IA générative",
+        "LLM cours",
+        "ChatGPT avancé",
+        "IA au travail"
       ]
     }
-  ]
+  ],
+  "faq": [
+    {
+      "question": "TODO: question 1 (cluster-specific or general)",
+      "answer": "TODO: answer"
+    },
+    {
+      "question": "TODO: question 2",
+      "answer": "TODO: answer"
+    },
+    {
+      "question": "TODO: question 3",
+      "answer": "TODO: answer"
+    }
+  ],
+  "stats": [
+    {
+      "value": "98%",
+      "label": "des diplômés du cursus avancé décrochent un job"
+    },
+    {
+      "value": "100%",
+      "label": "Gratuit - aucune frais"
+    },
+    {
+      "value": "42",
+      "label": "Campus dans le monde"
+    },
+    {
+      "value": "0",
+      "label": "Prérequis"
+    }
+  ],
+  "ctaFinal": {
+    "title": "TODO: closing headline",
+    "description": "TODO: closing pitch (1-2 sentences)",
+    "cta": "Deviens Prompt Engineer →"
+  },
+  "schemaOrg": {
+    "course": {
+      "name": "TODO: short course name (e.g. \"42 Belgium - genai\")",
+      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "provider": "42 Belgium",
+      "url": "https://42belgium.be/fr/formation-prompt-engineering-ia",
+      "courseMode": "blended",
+      "educationalLevel": "beginner"
+    }
+  }
 }

@@ -1,26 +1,96 @@
 {
+  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
+  "_matrixAnalyse": "Two distinct conversion signals drive this ad group. First, the bootcamp itself : 'coding bootcamp' (251 clk, CVR 6.9%) and 'coding bootcamp Belgium' (114 clk, CVR 9.0%) are the volume anchors. Second, the employment outcome : 'ICT jobs' (178 clk, CVR 4.2%) converts solidly — these users want a job as much as training. 'IT traineeship' (11 clk, CVR 18.2%) and 'learn to code' (11 clk, CVR 18.2%) show the highest CVR, signalling strong purchase intent when the practical outcome is clear. The page must explicitly bridge training and ICT employment — not just sell a course.",
   "meta": {
-    "title": "General IT Training - 42 Belgium",
-    "description": "General IT Training at 42 Belgium. Placeholder content - Phase 2 will populate this from the lexical matrix v3.",
+    "title": "TODO: 50-60 chars, includes Primary Query \"coding bootcamp Belgium\" + \"| 42 Belgium\"",
+    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (coding bootcamp, coding bootcamp Belgium)",
     "slug": "coding-bootcamp-belgium",
-    "primaryQuery": "coding bootcamp belgium",
+    "primaryQuery": "coding bootcamp Belgium / ICT jobs",
     "convertingKeywords": [
-      "coding bootcamp belgium"
-    ]
+      "coding bootcamp",
+      "coding bootcamp belgium",
+      "ict jobs",
+      "it traineeship",
+      "learn to code",
+      "coding",
+      "learn coding for free"
+    ],
+    "lpAngle": "classic"
   },
   "hero": {
-    "headline": "General IT Training",
-    "subheadline": "Coming soon - full copy from matrix v3 in Phase 2.",
-    "cta": "Find your training →"
+    "headline": "TODO: H1 must contain Primary Query \"coding bootcamp Belgium\" literally (briefing §4.4)",
+    "subheadline": "TODO: subline = LP Angle (matrix says \"The coding bootcamp that gets you into ICT.\")",
+    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "cta": "Apply to the bootcamp →"
   },
   "clusters": [
     {
-      "name": "PLACEHOLDER",
-      "heading": "Content coming soon",
-      "body": "This page is a placeholder. Phase 2 will populate it with copy aligned on the lexical matrix v3 for itgen / en.",
+      "name": "CODING BOOTCAMP",
+      "heading": "TODO: H2 reformulating \"CODING BOOTCAMP\" in copywriting (briefing §4.6)",
+      "body": "TODO: 100-150 words integrating ALL keywords below naturally — coding bootcamp, coding bootcamp Belgium, learn to code, coding",
       "keywords": [
-        "coding bootcamp belgium"
+        "coding bootcamp",
+        "coding bootcamp Belgium",
+        "learn to code",
+        "coding"
+      ]
+    },
+    {
+      "name": "ICT JOBS & TRAINEESHIP",
+      "heading": "TODO: H2 reformulating \"ICT JOBS & TRAINEESHIP\" in copywriting (briefing §4.6)",
+      "body": "TODO: 100-150 words integrating ALL keywords below naturally — ICT jobs, IT traineeship, learn coding for free",
+      "keywords": [
+        "ICT jobs",
+        "IT traineeship",
+        "learn coding for free"
       ]
     }
-  ]
+  ],
+  "faq": [
+    {
+      "question": "TODO: question 1 (cluster-specific or general)",
+      "answer": "TODO: answer"
+    },
+    {
+      "question": "TODO: question 2",
+      "answer": "TODO: answer"
+    },
+    {
+      "question": "TODO: question 3",
+      "answer": "TODO: answer"
+    }
+  ],
+  "stats": [
+    {
+      "value": "98%",
+      "label": "of advanced grads secure a job"
+    },
+    {
+      "value": "100%",
+      "label": "Free - no tuition"
+    },
+    {
+      "value": "42",
+      "label": "Campuses worldwide"
+    },
+    {
+      "value": "0",
+      "label": "Prerequisites"
+    }
+  ],
+  "ctaFinal": {
+    "title": "TODO: closing headline",
+    "description": "TODO: closing pitch (1-2 sentences)",
+    "cta": "Apply to the bootcamp →"
+  },
+  "schemaOrg": {
+    "course": {
+      "name": "TODO: short course name (e.g. \"42 Belgium - itgen\")",
+      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "provider": "42 Belgium",
+      "url": "https://42belgium.be/en/coding-bootcamp-belgium",
+      "courseMode": "blended",
+      "educationalLevel": "beginner"
+    }
+  }
 }

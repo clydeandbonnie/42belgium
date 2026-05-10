@@ -1,26 +1,90 @@
 {
+  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
+  "_matrixAnalyse": "Het dataprofiel is beperkt : 'data scientist opleiding' (19 clk, CVR 5.3%) en 'opleiding data scientist' (2 clk, CVR 50.0%) zijn de enige converters met volume. Het NL-volume voor dit thema is laag, consistent met een kleinere doelgroep voor postgraduaat-niveau opleidingen in het Nederlands. Het profiel is identiek aan EN : technisch, wiskundig, hoog ambitieniveau. De pagina mag niet lijken op een data analist cursus — de differentiatie met AnalystBI NL moet duidelijk zijn in toon en inhoud.",
   "meta": {
-    "title": "Data Science - 42 Belgium",
-    "description": "Data Science at 42 Belgium. Placeholder content - Phase 2 will populate this from the lexical matrix v3.",
+    "title": "TODO: 50-60 chars, includes Primary Query \"data scientist opleiding\" + \"| 42 Belgium\"",
+    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (data scientist opleiding, opleiding data scientist)",
     "slug": "data-scientist-opleiding",
     "primaryQuery": "data scientist opleiding",
     "convertingKeywords": [
-      "data scientist opleiding"
-    ]
+      "data scientist opleiding",
+      "opleiding data scientist"
+    ],
+    "lpAngle": "classic"
   },
   "hero": {
-    "headline": "Data Science",
-    "subheadline": "Coming soon - full copy from matrix v3 in Phase 2.",
-    "cta": "Ontdek je opleiding →"
+    "headline": "TODO: H1 must contain Primary Query \"data scientist opleiding\" literally (briefing §4.4)",
+    "subheadline": "TODO: subline = LP Angle (matrix says \"Word Data Scientist. Stats, ML en Python op masterniveau.\")",
+    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "cta": "Start het Data Science programma →"
   },
   "clusters": [
     {
-      "name": "PLACEHOLDER",
-      "heading": "Content coming soon",
-      "body": "This page is a placeholder. Phase 2 will populate it with copy aligned on the lexical matrix v3 for scienceeng / nl.",
+      "name": "DATA SCIENTIST OPLEIDING",
+      "heading": "TODO: H2 reformulating \"DATA SCIENTIST OPLEIDING\" in copywriting (briefing §4.6)",
+      "body": "TODO: 100-150 words integrating ALL keywords below naturally — data scientist opleiding, opleiding data scientist, data science cursus, machine learning opleiding",
       "keywords": [
-        "data scientist opleiding"
+        "data scientist opleiding",
+        "opleiding data scientist",
+        "data science cursus",
+        "machine learning opleiding"
+      ]
+    },
+    {
+      "name": "PYTHON & ML",
+      "heading": "TODO: H2 reformulating \"PYTHON & ML\" in copywriting (briefing §4.6)",
+      "body": "TODO: 100-150 words integrating ALL keywords below naturally — Python data science, deep learning België",
+      "keywords": [
+        "Python data science",
+        "deep learning België"
       ]
     }
-  ]
+  ],
+  "faq": [
+    {
+      "question": "TODO: question 1 (cluster-specific or general)",
+      "answer": "TODO: answer"
+    },
+    {
+      "question": "TODO: question 2",
+      "answer": "TODO: answer"
+    },
+    {
+      "question": "TODO: question 3",
+      "answer": "TODO: answer"
+    }
+  ],
+  "stats": [
+    {
+      "value": "98%",
+      "label": "van de gevorderde afgestudeerden vindt een baan"
+    },
+    {
+      "value": "100%",
+      "label": "Gratis - geen lesgeld"
+    },
+    {
+      "value": "42",
+      "label": "Campussen wereldwijd"
+    },
+    {
+      "value": "0",
+      "label": "Vereisten"
+    }
+  ],
+  "ctaFinal": {
+    "title": "TODO: closing headline",
+    "description": "TODO: closing pitch (1-2 sentences)",
+    "cta": "Start het Data Science programma →"
+  },
+  "schemaOrg": {
+    "course": {
+      "name": "TODO: short course name (e.g. \"42 Belgium - scienceeng\")",
+      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "provider": "42 Belgium",
+      "url": "https://42belgium.be/nl/data-scientist-opleiding",
+      "courseMode": "blended",
+      "educationalLevel": "beginner"
+    }
+  }
 }

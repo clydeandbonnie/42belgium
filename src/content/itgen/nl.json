@@ -1,26 +1,114 @@
 {
+  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
+  "_matrixAnalyse": "Dit adgroup combineert twee sterke signalen : opleiding en werk. 'ICT opleiding' (283 clk, CVR 5.4%) en 'IT opleidingen' (58 clk, CVR 12.4%) zijn de kern. Maar 'ICT vacatures' (199 clk, CVR 4.5%) en 'werken in de IT' (20 clk, CVR 5.0%) tonen aan dat deze bezoekers een job willen, niet alleen een diploma. 'Opleiding IT' (15 clk, CVR 26.7%) heeft de hoogste CVR — sterk aankoopsignaal. Patroon B : 'leren coderen' (38 clk, CVR 0%) en 'gratis leren programmeren' (7 clk, CVR 0%) converteren niet — de gratis/hobbyistische framing werkt niet voor dit publiek. De pagina moet de brug training → ICT-jobmarkt expliciet maken.",
   "meta": {
-    "title": "General IT Training - 42 Belgium",
-    "description": "General IT Training at 42 Belgium. Placeholder content - Phase 2 will populate this from the lexical matrix v3.",
+    "title": "TODO: 50-60 chars, includes Primary Query \"ICT opleiding\" + \"| 42 Belgium\"",
+    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (ICT opleiding, IT opleidingen)",
     "slug": "ict-opleiding-brussel",
-    "primaryQuery": "ICT opleiding Brussel",
+    "primaryQuery": "ICT opleiding / ICT vacatures",
     "convertingKeywords": [
-      "ICT opleiding Brussel"
-    ]
+      "ict opleiding",
+      "ict vacatures",
+      "it opleidingen",
+      "opleiding it",
+      "werken in de it",
+      "studiekeuze kiezen",
+      "code programmer",
+      "programmeur opleiding",
+      "cursus programmeren",
+      "it-opleiding",
+      "leren programmeren",
+      "it opleiding",
+      "opleiding ict"
+    ],
+    "lpAngle": "classic"
   },
   "hero": {
-    "headline": "General IT Training",
-    "subheadline": "Coming soon - full copy from matrix v3 in Phase 2.",
-    "cta": "Ontdek je opleiding →"
+    "headline": "TODO: H1 must contain Primary Query \"ICT opleiding\" literally (briefing §4.4)",
+    "subheadline": "TODO: subline = LP Angle (matrix says \"De IT-opleiding die je klaarstoomt voor de ICT-jobmarkt.\")",
+    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "cta": "Start je ICT-carrière →"
   },
   "clusters": [
     {
-      "name": "PLACEHOLDER",
-      "heading": "Content coming soon",
-      "body": "This page is a placeholder. Phase 2 will populate it with copy aligned on the lexical matrix v3 for itgen / nl.",
+      "name": "ICT OPLEIDING",
+      "heading": "TODO: H2 reformulating \"ICT OPLEIDING\" in copywriting (briefing §4.6)",
+      "body": "TODO: 100-150 words integrating ALL keywords below naturally — ICT opleiding, IT opleidingen, opleiding IT, programmeur opleiding, IT opleiding",
       "keywords": [
-        "ICT opleiding Brussel"
+        "ICT opleiding",
+        "IT opleidingen",
+        "opleiding IT",
+        "programmeur opleiding",
+        "IT opleiding"
+      ]
+    },
+    {
+      "name": "ICT JOBS & WERK",
+      "heading": "TODO: H2 reformulating \"ICT JOBS & WERK\" in copywriting (briefing §4.6)",
+      "body": "TODO: 100-150 words integrating ALL keywords below naturally — ICT vacatures, werken in de IT, studiekeuze kiezen",
+      "keywords": [
+        "ICT vacatures",
+        "werken in de IT",
+        "studiekeuze kiezen"
+      ]
+    },
+    {
+      "name": "LEREN PROGRAMMEREN",
+      "heading": "TODO: H2 reformulating \"LEREN PROGRAMMEREN\" in copywriting (briefing §4.6)",
+      "body": "TODO: 100-150 words integrating ALL keywords below naturally — leren programmeren, cursus programmeren, code programmer, programmeren voor beginners",
+      "keywords": [
+        "leren programmeren",
+        "cursus programmeren",
+        "code programmer",
+        "programmeren voor beginners"
       ]
     }
-  ]
+  ],
+  "faq": [
+    {
+      "question": "TODO: question 1 (cluster-specific or general)",
+      "answer": "TODO: answer"
+    },
+    {
+      "question": "TODO: question 2",
+      "answer": "TODO: answer"
+    },
+    {
+      "question": "TODO: question 3",
+      "answer": "TODO: answer"
+    }
+  ],
+  "stats": [
+    {
+      "value": "98%",
+      "label": "van de gevorderde afgestudeerden vindt een baan"
+    },
+    {
+      "value": "100%",
+      "label": "Gratis - geen lesgeld"
+    },
+    {
+      "value": "42",
+      "label": "Campussen wereldwijd"
+    },
+    {
+      "value": "0",
+      "label": "Vereisten"
+    }
+  ],
+  "ctaFinal": {
+    "title": "TODO: closing headline",
+    "description": "TODO: closing pitch (1-2 sentences)",
+    "cta": "Start je ICT-carrière →"
+  },
+  "schemaOrg": {
+    "course": {
+      "name": "TODO: short course name (e.g. \"42 Belgium - itgen\")",
+      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "provider": "42 Belgium",
+      "url": "https://42belgium.be/nl/ict-opleiding-brussel",
+      "courseMode": "blended",
+      "educationalLevel": "beginner"
+    }
+  }
 }

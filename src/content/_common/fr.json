@@ -1,3 +1,159 @@
 {
-  "_comment": "Sections partagées par toutes les landing pages françaises. Toute page cluster (ex. opportunity/fr.json) peut surcharger une section en la définissant. À compléter par l'équipe de contenu : afterForty, whatYouBuild, realStories, howToApply, openDays."
+  "_comment": "À remplir : sections partagées par toutes les LPs FR (afterForty, whatYouBuild, realStories, howToApply, openDays). Voir _common/en.json comme référence de structure.",
+  "afterForty": {
+    "heading": "TODO",
+    "description": "TODO",
+    "stat": {
+      "value": "98%",
+      "label": "TODO"
+    },
+    "careers": [
+      {
+        "icon": "fa-solid fa-code",
+        "label": "TODO"
+      },
+      {
+        "icon": "fa-solid fa-chart-line",
+        "label": "TODO"
+      },
+      {
+        "icon": "fa-solid fa-shield-halved",
+        "label": "TODO"
+      },
+      {
+        "icon": "fa-solid fa-server",
+        "label": "TODO"
+      },
+      {
+        "icon": "fa-solid fa-mobile-screen",
+        "label": "TODO"
+      },
+      {
+        "icon": "fa-solid fa-rocket",
+        "label": "TODO"
+      }
+    ],
+    "communityNote": "TODO"
+  },
+  "whatYouBuild": {
+    "heading": "TODO",
+    "intro": "TODO",
+    "phases": [
+      {
+        "number": "01",
+        "title": "TODO",
+        "duration": "TODO",
+        "icon": "fa-solid fa-code",
+        "description": "TODO",
+        "items": [
+          "TODO"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "TODO",
+        "duration": "TODO",
+        "icon": "fa-solid fa-briefcase",
+        "description": "TODO",
+        "items": [
+          "TODO"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "TODO",
+        "duration": "TODO",
+        "icon": "fa-solid fa-layer-group",
+        "description": "TODO",
+        "items": [
+          "TODO"
+        ],
+        "flexibility": [
+          "TODO"
+        ],
+        "globalMobility": "TODO"
+      },
+      {
+        "number": "04",
+        "title": "TODO",
+        "duration": "TODO",
+        "icon": "fa-solid fa-rocket",
+        "description": "TODO",
+        "items": [
+          "TODO"
+        ]
+      }
+    ],
+    "plusNote": "TODO"
+  },
+  "realStories": {
+    "heading": "TODO",
+    "description": "TODO",
+    "videos": [
+      {
+        "name": "Kevin",
+        "subtitle": "TODO",
+        "youtubeId": "OO_dbpwed3s"
+      },
+      {
+        "name": "Morgane",
+        "subtitle": "TODO",
+        "youtubeId": "DGQnrVNZRZ0"
+      },
+      {
+        "name": "Sam",
+        "subtitle": "TODO",
+        "youtubeId": "sDcqpzBtjtM"
+      }
+    ]
+  },
+  "howToApply": {
+    "heading": "TODO",
+    "steps": [
+      {
+        "number": "01",
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "number": "02",
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "number": "03",
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "number": "04",
+        "title": "TODO",
+        "description": "TODO"
+      }
+    ],
+    "ctaLabel": "TODO",
+    "microcopy": "TODO"
+  },
+  "openDays": {
+    "heading": "TODO",
+    "intro": "TODO",
+    "campuses": [
+      {
+        "name": "Brussels",
+        "address": "Canterssteen 12",
+        "subHeading": "TODO",
+        "description": "TODO",
+        "image": "/assets/gallery/OpenDaysBrussels.png"
+      },
+      {
+        "name": "Antwerp",
+        "address": "Mediaplein 1",
+        "subHeading": "TODO",
+        "description": "TODO",
+        "image": "/assets/gallery/42Belgium-Antwerp1.png"
+      }
+    ],
+    "ctaLabel": "TODO",
+    "ctaHref": "https://www.eventbrite.com/cc/open-days-42-belgium-2935099"
+  }
 }
