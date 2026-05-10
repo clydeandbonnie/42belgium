@@ -175,6 +175,7 @@ function validate(filePath) {
 
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name.startsWith("_")) continue; // skip _status.json and other meta files
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) walk(full);
     else if (entry.isFile() && full.endsWith(".json")) validate(full);
