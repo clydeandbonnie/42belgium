@@ -6,8 +6,38 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import type { Language } from "@/lib/themes";
 import { getNavItems, getApplyUrl, getApplyLabel } from "@/lib/navigation";
-import { LANGUAGES } from "@/lib/themes";
+import { LANGUAGES, getSlug, getThemeFromSlug } from "@/lib/themes";
 import styles from "./Header.module.css";
+
+/**
+ * Resolve where the language-switcher link should point, based on the current
+ * pathname. We stay inside the app and keep the user on the equivalent page
+ * in the target language. Three route shapes today:
+ *   - /[lang]/[slug]              → /[target]/[slugForTarget]
+ *   - /[lang]/proposals/[variant] → /[target]/proposals/[variant]
+ *   - /[lang]                     → /[target] (dashboard)
+ *   - anything else               → /[target] (safe fallback)
+ *
+ * For the LP case, slug A in language X maps to its theme via getThemeFromSlug,
+ * and the theme maps back to slug B in language Y via getSlug. If the slug
+ * isn't recognised (e.g. typo URL), we fall back to the target dashboard.
+ */
+function getLangSwitchHref(
+  pathname: string,
+  currentLang: Language,
+  target: Language
+): string {
+  const propMatch = pathname.match(/^\/[a-z]+\/proposals\/([a-c])\/?$/);
+  if (propMatch) return `/${target}/proposals/${propMatch[1]}`;
+
+  const lpMatch = pathname.match(/^\/[a-z]+\/([a-z0-9-]+)\/?$/);
+  if (lpMatch) {
+    const theme = getThemeFromSlug(currentLang, lpMatch[1]);
+    if (theme) return `/${target}/${getSlug(theme, target)}`;
+  }
+
+  return `/${target}`;
+}
 
 interface HeaderProps {
   lang: Language;
@@ -114,13 +144,13 @@ export function Header({ lang }: HeaderProps) {
         <div className={styles.rightCluster}>
           <div className={styles.langSwitcher}>
             {LANGUAGES.map((l) => (
-              <a
+              <Link
                 key={l}
-                href={`https://42belgium.be/${l}/`}
+                href={getLangSwitchHref(pathname, lang, l)}
                 className={cx(styles.langLink, l === lang && styles.active)}
               >
                 {l}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -169,13 +199,13 @@ export function Header({ lang }: HeaderProps) {
             </a>
             <div className={styles.mobileLangRow}>
               {LANGUAGES.map((l) => (
-                <a
+                <Link
                   key={l}
-                  href={`https://42belgium.be/${l}/`}
+                  href={getLangSwitchHref(pathname, lang, l)}
                   className={cx(styles.mobileLangLink, l === lang && styles.active)}
                 >
                   {l}
-                </a>
+                </Link>
               ))}
             </div>
           </nav>
