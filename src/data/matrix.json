@@ -1,0 +1,3220 @@
+{
+  "_source": "260415_42Belgium_LexicalMatrix_v3.xlsx",
+  "_generatedBy": "scripts/sync-matrix.py",
+  "_count": 30,
+  "entries": {
+    "opportunity-fr": {
+      "theme": "opportunity",
+      "lang": "fr",
+      "primaryQuery": "formation professionnelle Bruxelles",
+      "profile": "Adulte en reconversion, sans diplôme supérieur, cherche une formation accessible et ancrée à Bruxelles.",
+      "clusters": [
+        {
+          "name": "ACCESSIBILITÉ & BRUXELLES",
+          "keywords": [
+            "formation professionnelle Bruxelles",
+            "formation pour adultes Bruxelles",
+            "formation en ligne Bruxelles",
+            "formations à Bruxelles"
+          ]
+        },
+        {
+          "name": "GRATUITÉ",
+          "keywords": [
+            "formation gratuite",
+            "formation gratuite Bruxelles",
+            "formation en ligne gratuite",
+            "formations gratuites"
+          ]
+        },
+        {
+          "name": "SANS BARRIÈRE DE DIPLÔME",
+          "keywords": [
+            "formation sans CESS",
+            "formation sans diplôme Belgique",
+            "reconversion professionnelle",
+            "se reconvertir dans l'IT"
+          ]
+        }
+      ],
+      "lpAngleClassic": "La porte d'entrée vers la tech. Quel que soit ton parcours.",
+      "lpAngleBold": "Ta reconversion commence ici. Sans diplôme requis.",
+      "cta": "Commence ta reconversion →",
+      "convertingKeywords": [
+        {
+          "keyword": "formation professionnelle Bruxelles",
+          "raw": "formation professionnelle Bruxelles | 880 clk | CTR:9.5% | CVR:6.6% | 58 conv"
+        },
+        {
+          "keyword": "formation pour adultes Bruxelles",
+          "raw": "formation pour adultes Bruxelles | 399 clk | CTR:9.8% | CVR:9.9% | 39.5 conv"
+        },
+        {
+          "keyword": "formation gratuite",
+          "raw": "formation gratuite | 316 clk | CTR:10.8% | CVR:7.1% | 22.5 conv"
+        },
+        {
+          "keyword": "formation en ligne Bruxelles",
+          "raw": "formation en ligne Bruxelles | 158 clk | CTR:11.0% | CVR:13.9% | 22 conv"
+        },
+        {
+          "keyword": "formation gratuite bruxelles",
+          "raw": "formation gratuite bruxelles | 65 clk | CTR:11.0% | CVR:12.3% | 8 conv"
+        },
+        {
+          "keyword": "école de formation Bruxelles",
+          "raw": "école de formation Bruxelles | 62 clk | CTR:7.0% | CVR:12.9% | 8 conv"
+        },
+        {
+          "keyword": "formations à Bruxelles",
+          "raw": "formations à Bruxelles | 87 clk | CTR:10.5% | CVR:6.9% | 6 conv"
+        },
+        {
+          "keyword": "formations gratuites",
+          "raw": "formations gratuites | 43 clk | CTR:10.0% | CVR:4.7% | 2 conv"
+        },
+        {
+          "keyword": "formation Bruxelles sans CESS",
+          "raw": "formation Bruxelles sans CESS | 51 clk | CTR:10.8% | CVR:3.9% | 2 conv"
+        },
+        {
+          "keyword": "école de formation à Bruxelles",
+          "raw": "école de formation à Bruxelles | 30 clk | CTR:8.8% | CVR:3.3% | 1 conv"
+        },
+        {
+          "keyword": "formations gratuites Bruxelles",
+          "raw": "formations gratuites Bruxelles | 2 clk | CTR:3.2% | CVR:50.0% | 1 conv"
+        },
+        {
+          "keyword": "formation en ligne gratuite avec certificat 2024",
+          "raw": "formation en ligne gratuite avec certificat 2024 | 2 clk | CTR:9.5% | CVR:50.0% | 1 conv"
+        },
+        {
+          "keyword": "formation en ligne gratuite",
+          "raw": "formation en ligne gratuite | 27 clk | CTR:11.1% | CVR:3.7% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "formations professionnelles Bruxelles",
+          "raw": "formations professionnelles Bruxelles | 19 clk | CTR:10.3%"
+        },
+        {
+          "keyword": "formation gratuite en ligne",
+          "raw": "formation gratuite en ligne | 15 clk | CTR:7.5%"
+        },
+        {
+          "keyword": "formation adulte Bruxelles",
+          "raw": "formation adulte Bruxelles | 13 clk | CTR:9.9%"
+        },
+        {
+          "keyword": "formation en ligne gratuit",
+          "raw": "formation en ligne gratuit | 13 clk | CTR:8.0%"
+        },
+        {
+          "keyword": "formations gratuites en ligne",
+          "raw": "formations gratuites en ligne | 8 clk | CTR:7.1%"
+        },
+        {
+          "keyword": "formation certifiante gratuite",
+          "raw": "formation certifiante gratuite | 6 clk | CTR:8.1%"
+        },
+        {
+          "keyword": "formation en ligne gratuite avec certificat",
+          "raw": "formation en ligne gratuite avec certificat | 5 clk | CTR:9.6%"
+        },
+        {
+          "keyword": "cours gratuits en ligne",
+          "raw": "cours gratuits en ligne | 4 clk | CTR:4.5%"
+        },
+        {
+          "keyword": "formation sans diplôme belgique",
+          "raw": "formation sans diplôme belgique | 3 clk | CTR:6.8%"
+        },
+        {
+          "keyword": "certification gratuite en ligne",
+          "raw": "certification gratuite en ligne | 3 clk | CTR:13.0%"
+        },
+        {
+          "keyword": "formation gratuite en ligne avec certificat",
+          "raw": "formation gratuite en ligne avec certificat | 2 clk | CTR:7.1%"
+        }
+      ],
+      "analyse": "Cette audience cherche une formation accessible, ancrée à Bruxelles, et sans barrière de diplôme. 'Formation professionnelle Bruxelles' (880 clk, CVR 6.6%) est le terme dominant. 'Formation pour adultes Bruxelles' (399 clk, CVR 9.9%) confirme que le profil adulte en reconversion est central. La gratuité convertit massivement : 'formation gratuite' (316 clk, CVR 7.1%) et 'formation en ligne Bruxelles' (158 clk, CVR 13.9%) — ce n'est pas un bonus, c'est un prérequis perçu. Le signal 'formation Bruxelles sans CESS' (51 clk, CVR 3.9%) est révélateur : ces personnes se demandent si elles ont le droit de se reconvertir sans diplôme. La page doit répondre à deux craintes implicites : 'Est-ce vraiment gratuit ?' et 'Est-ce fait pour moi ?'",
+      "lpAngleSuggested": "bold"
+    },
+    "opportunity-en": {
+      "theme": "opportunity",
+      "lang": "en",
+      "primaryQuery": "remote jobs / work from home / free online courses",
+      "profile": "Opportunity seeker — wants a flexible tech job; open to training if presented as accessible and concrete.",
+      "clusters": [
+        {
+          "name": "FLEXIBILITY & REMOTE WORK",
+          "keywords": [
+            "remote jobs",
+            "online work",
+            "work from home",
+            "online jobs work from home"
+          ]
+        },
+        {
+          "name": "ACCESSIBLE FREE TRAINING",
+          "keywords": [
+            "free online courses",
+            "online classes free",
+            "free online course",
+            "free online courses with certificates"
+          ]
+        },
+        {
+          "name": "LOW BARRIER TO ENTRY",
+          "keywords": [
+            "online jobs no experience",
+            "no experience required",
+            "career change"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Free digital skills training. Get the tech job you actually want.",
+      "lpAngleBold": "Build the tech skills that get you hired. Remotely or anywhere.",
+      "cta": "Find your training →",
+      "convertingKeywords": [
+        {
+          "keyword": "remote jobs",
+          "raw": "remote jobs | 880 clk | CTR:16.4% | CVR:6.7% | 58.8 conv"
+        },
+        {
+          "keyword": "remote jobs",
+          "raw": "remote jobs | 112 clk | CTR:14.7% | CVR:10.7% | 12 conv"
+        },
+        {
+          "keyword": "online work",
+          "raw": "online work | 147 clk | CTR:16.4% | CVR:5.4% | 8 conv"
+        },
+        {
+          "keyword": "online jobs work from home",
+          "raw": "online jobs work from home | 110 clk | CTR:15.0% | CVR:6.4% | 7 conv"
+        },
+        {
+          "keyword": "free online courses",
+          "raw": "free online courses | 66 clk | CTR:8.6% | CVR:9.1% | 6 conv"
+        },
+        {
+          "keyword": "free online course",
+          "raw": "free online course | 46 clk | CTR:7.9% | CVR:10.9% | 5 conv"
+        },
+        {
+          "keyword": "free online courses",
+          "raw": "free online courses | 134 clk | CTR:7.9% | CVR:3.0% | 4 conv"
+        },
+        {
+          "keyword": "online classes free",
+          "raw": "online classes free | 26 clk | CTR:8.0% | CVR:11.5% | 3 conv"
+        },
+        {
+          "keyword": "online jobs work from home",
+          "raw": "online jobs work from home | 21 clk | CTR:11.1% | CVR:11.9% | 2.5 conv"
+        },
+        {
+          "keyword": "online work",
+          "raw": "online work | 38 clk | CTR:19.4% | CVR:5.3% | 2 conv"
+        },
+        {
+          "keyword": "online jobs no experience",
+          "raw": "online jobs no experience | 10 clk | CTR:12.0% | CVR:10.0% | 1 conv"
+        },
+        {
+          "keyword": "free online courses with free certificates",
+          "raw": "free online courses with free certificates | 0 clk | CTR:0.0% | CVR:0.0% | 1 conv"
+        },
+        {
+          "keyword": "free online courses with free certificates",
+          "raw": "free online courses with free certificates | 5 clk | CTR:6.3% | CVR:20.0% | 1 conv"
+        },
+        {
+          "keyword": "free online courses with certificates",
+          "raw": "free online courses with certificates | 32 clk | CTR:6.9% | CVR:3.1% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "free course",
+          "raw": "free course | 44 clk | CTR:9.4%"
+        },
+        {
+          "keyword": "online classes for free",
+          "raw": "online classes for free | 11 clk | CTR:6.6%"
+        },
+        {
+          "keyword": "career quiz",
+          "raw": "career quiz | 8 clk | CTR:6.8%"
+        },
+        {
+          "keyword": "free online certificate courses",
+          "raw": "free online certificate courses | 8 clk | CTR:7.3%"
+        },
+        {
+          "keyword": "free online courses with certificates",
+          "raw": "free online courses with certificates | 7 clk | CTR:8.9%"
+        },
+        {
+          "keyword": "free course",
+          "raw": "free course | 5 clk | CTR:3.8%"
+        },
+        {
+          "keyword": "free online classes with certificate",
+          "raw": "free online classes with certificate | 1 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "cover letter for an internship",
+          "raw": "cover letter for an internship | 1 clk | CTR:9.1%"
+        }
+      ],
+      "analyse": "These visitors are looking for a flexible tech job — not necessarily a training programme. 'Remote jobs' (880 clk, CVR 6.7%) is the dominant term, followed by 'online work' (147 clk, CVR 5.4%) and 'online jobs work from home' (110 clk, CVR 6.4%): the same desire for flexibility from three angles. Crucially, 'free online courses' (134 clk, CVR 3.0%) also converts — they are open to training as long as it feels accessible. 'Online jobs no experience' (10 clk, CVR 10.0%) confirms the barrier to entry is a real concern. By contrast, 'free course' (44 clk, CVR 0%) does not convert — a MOOC with no employment outcome is the wrong frame entirely. The page must bridge training and employment in one clear message.",
+      "lpAngleSuggested": "bold"
+    },
+    "opportunity-nl": {
+      "theme": "opportunity",
+      "lang": "nl",
+      "primaryQuery": "omscholing / welke opleiding past bij mij / studiekeuze",
+      "profile": "Audience in active orientation — not ready to enrol yet, looking for guidance on which path fits them.",
+      "clusters": [
+        {
+          "name": "ORIËNTATIE & STUDIEKEUZE",
+          "keywords": [
+            "welke opleiding past bij mij",
+            "studiekeuze",
+            "studiekeuze belgie",
+            "welke studie past bij mij"
+          ]
+        },
+        {
+          "name": "OMSCHOLING",
+          "keywords": [
+            "omscholing",
+            "hoe omscholen",
+            "omscholingstraject",
+            "loopbaanomschakeling"
+          ]
+        },
+        {
+          "name": "JOB + OPLEIDING",
+          "keywords": [
+            "vacature met interne opleiding",
+            "cursus gratis",
+            "loopbaanadvies"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Vind de opleiding die past bij jouw volgende carrière. Wij begeleiden je.",
+      "lpAngleBold": "Niet zeker welk pad je moet kiezen? Wij helpen je het te vinden.",
+      "cta": "Ontdek je opleiding →",
+      "convertingKeywords": [
+        {
+          "keyword": "welke opleiding past bij mij",
+          "raw": "welke opleiding past bij mij | 54 clk | CTR:7.2% | CVR:5.6% | 3 conv"
+        },
+        {
+          "keyword": "omscholing",
+          "raw": "omscholing | 153 clk | CTR:6.4% | CVR:2.0% | 3 conv"
+        },
+        {
+          "keyword": "studiekeuze belgie",
+          "raw": "studiekeuze belgie | 19 clk | CTR:3.7% | CVR:8.8% | 1.7 conv"
+        },
+        {
+          "keyword": "vacature met interne opleiding",
+          "raw": "vacature met interne opleiding | 66 clk | CTR:10.2% | CVR:1.5% | 1 conv"
+        },
+        {
+          "keyword": "cursus gratis",
+          "raw": "cursus gratis | 20 clk | CTR:6.1% | CVR:5.0% | 1 conv"
+        },
+        {
+          "keyword": "studiekeuze",
+          "raw": "studiekeuze | 33 clk | CTR:3.4% | CVR:3.0% | 1 conv"
+        },
+        {
+          "keyword": "hoe omscholen",
+          "raw": "hoe omscholen | 12 clk | CTR:8.6% | CVR:2.3% | 0.3 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "gratis online cursus met certificaat",
+          "raw": "gratis online cursus met certificaat | 24 clk | CTR:9.2%"
+        },
+        {
+          "keyword": "Betaald omscholen",
+          "raw": "Betaald omscholen | 22 clk | CTR:9.2%"
+        },
+        {
+          "keyword": "hbo opleidingen",
+          "raw": "hbo opleidingen | 19 clk | CTR:3.6%"
+        },
+        {
+          "keyword": "omscholing zonder diploma",
+          "raw": "omscholing zonder diploma | 11 clk | CTR:12.9%"
+        },
+        {
+          "keyword": "omscholingstraject",
+          "raw": "omscholingstraject | 11 clk | CTR:4.7%"
+        },
+        {
+          "keyword": "opleiding en baangarantie",
+          "raw": "opleiding en baangarantie | 11 clk | CTR:6.2%"
+        },
+        {
+          "keyword": "studiekeuzes",
+          "raw": "studiekeuzes | 10 clk | CTR:2.6%"
+        },
+        {
+          "keyword": "opleiding gratis",
+          "raw": "opleiding gratis | 7 clk | CTR:4.4%"
+        },
+        {
+          "keyword": "studiekeuze hoger onderwijs",
+          "raw": "studiekeuze hoger onderwijs | 6 clk | CTR:4.3%"
+        },
+        {
+          "keyword": "welke studie past bij mij",
+          "raw": "welke studie past bij mij | 5 clk | CTR:4.2%"
+        },
+        {
+          "keyword": "dagopleidingen volwassenen",
+          "raw": "dagopleidingen volwassenen | 3 clk | CTR:3.3%"
+        },
+        {
+          "keyword": "Omscholen",
+          "raw": "Omscholen | 2 clk | CTR:5.7%"
+        },
+        {
+          "keyword": "Hulp bij studiekeuze",
+          "raw": "Hulp bij studiekeuze | 2 clk | CTR:3.8%"
+        },
+        {
+          "keyword": "welke studierichting past bij mij",
+          "raw": "welke studierichting past bij mij | 2 clk | CTR:3.2%"
+        },
+        {
+          "keyword": "Omscholing volwassenen",
+          "raw": "Omscholing volwassenen | 2 clk | CTR:5.9%"
+        }
+      ],
+      "analyse": "Dit publiek is actief aan het oriënteren — nog niet klaar om in te schrijven. 'Omscholing' (153 clk, CVR 2.0%) is de meest gezochte term, maar 'welke opleiding past bij mij' (54 clk, CVR 5.6%) converteert beter : een signaal van begeleide oriëntatie, geen impulsieve aankoop. 'Studiekeuze belgie' (19 clk, CVR 8.8%) en 'studiekeuze' (33 clk, CVR 3.0%) bevestigen deze logica. Opvallend : 'vacature met interne opleiding' (66 clk, CVR 1.5%) converteert — deze mensen willen een job die hen opleidt, niet alleen een school. Patroon B : 'opleiding en baangarantie' (11 clk, CVR 0%) — ze klikken op jobgarantie maar converteren niet, waarschijnlijk omdat 42 Belgium dit niet expliciet aanbiedt. De pagina moet begeleiden, niet verkopen.",
+      "lpAngleSuggested": "bold"
+    },
+    "itgen-fr": {
+      "theme": "itgen",
+      "lang": "fr",
+      "primaryQuery": "formation informatique Bruxelles",
+      "profile": "Débutant cherchant une formation IT généraliste à Bruxelles — coding bootcamp ou reconversion tech.",
+      "clusters": [
+        {
+          "name": "FORMATION IT À BRUXELLES",
+          "keywords": [
+            "formation informatique Bruxelles",
+            "formation informatique Belgique",
+            "formation IT Bruxelles",
+            "formation digitale Bruxelles"
+          ]
+        },
+        {
+          "name": "GRATUITÉ & ACCESSIBILITÉ",
+          "keywords": [
+            "formation informatique gratuite",
+            "formation en ligne informatique",
+            "google ateliers numérique",
+            "formation en informatique"
+          ]
+        },
+        {
+          "name": "APPRENDRE À CODER",
+          "keywords": [
+            "apprendre à coder",
+            "cours informatique Bruxelles",
+            "formation développeur",
+            "formation it"
+          ]
+        }
+      ],
+      "lpAngleClassic": "La formation IT complète. De zéro à prêt pour l'emploi.",
+      "lpAngleBold": "Zéro en informatique aujourd'hui. Développeur demain.",
+      "cta": "Rejoins le bootcamp →",
+      "convertingKeywords": [
+        {
+          "keyword": "formation informatique",
+          "raw": "formation informatique | 771 clk | CTR:13.2% | CVR:4.7% | 35.8 conv"
+        },
+        {
+          "keyword": "formation informatique gratuite",
+          "raw": "formation informatique gratuite | 95 clk | CTR:6.0% | CVR:7.4% | 7 conv"
+        },
+        {
+          "keyword": "formation informatique bruxelles",
+          "raw": "formation informatique bruxelles | 84 clk | CTR:13.8% | CVR:5.4% | 4.5 conv"
+        },
+        {
+          "keyword": "formation informatique belgique",
+          "raw": "formation informatique belgique | 20 clk | CTR:9.3% | CVR:20.0% | 4 conv"
+        },
+        {
+          "keyword": "formation en informatique",
+          "raw": "formation en informatique | 29 clk | CTR:10.8% | CVR:10.3% | 3 conv"
+        },
+        {
+          "keyword": "google ateliers numérique",
+          "raw": "google ateliers numérique | 16 clk | CTR:9.9% | CVR:12.5% | 2 conv"
+        },
+        {
+          "keyword": "formation d informatique",
+          "raw": "formation d informatique | 3 clk | CTR:7.3% | CVR:66.7% | 2 conv"
+        },
+        {
+          "keyword": "formation it bruxelles",
+          "raw": "formation it bruxelles | 24 clk | CTR:20.2% | CVR:8.3% | 2 conv"
+        },
+        {
+          "keyword": "apprendre a coder",
+          "raw": "apprendre a coder | 34 clk | CTR:3.9% | CVR:5.9% | 2 conv"
+        },
+        {
+          "keyword": "formation en ligne informatique",
+          "raw": "formation en ligne informatique | 4 clk | CTR:16.0% | CVR:25.0% | 1 conv"
+        },
+        {
+          "keyword": "formation it",
+          "raw": "formation it | 12 clk | CTR:9.8% | CVR:8.3% | 1 conv"
+        },
+        {
+          "keyword": "cours informatique bruxelles",
+          "raw": "cours informatique bruxelles | 7 clk | CTR:14.9% | CVR:14.3% | 1 conv"
+        },
+        {
+          "keyword": "cours informatique",
+          "raw": "cours informatique | 25 clk | CTR:5.4% | CVR:4.0% | 1 conv"
+        },
+        {
+          "keyword": "site de codage gratuit",
+          "raw": "site de codage gratuit | 1 clk | CTR:50.0% | CVR:100.0% | 1 conv"
+        },
+        {
+          "keyword": "apprendre l informatique",
+          "raw": "apprendre l informatique | 6 clk | CTR:10.0% | CVR:16.7% | 1 conv"
+        },
+        {
+          "keyword": "formation digitale Bruxelles",
+          "raw": "formation digitale Bruxelles | 26 clk | CTR:12.8% | CVR:3.9% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "apprendre à coder",
+          "raw": "apprendre à coder | 13 clk | CTR:6.7%"
+        },
+        {
+          "keyword": "programmation informatique",
+          "raw": "programmation informatique | 8 clk | CTR:10.8%"
+        },
+        {
+          "keyword": "formation codage",
+          "raw": "formation codage | 7 clk | CTR:10.0%"
+        },
+        {
+          "keyword": "formation developpeur bruxelles",
+          "raw": "formation developpeur bruxelles | 7 clk | CTR:23.3%"
+        },
+        {
+          "keyword": "formation codage informatique",
+          "raw": "formation codage informatique | 6 clk | CTR:15.8%"
+        },
+        {
+          "keyword": "codage informatique",
+          "raw": "codage informatique | 5 clk | CTR:13.9%"
+        },
+        {
+          "keyword": "formation codage bruxelles",
+          "raw": "formation codage bruxelles | 5 clk | CTR:13.5%"
+        },
+        {
+          "keyword": "cours d'informatique bruxelles",
+          "raw": "cours d'informatique bruxelles | 4 clk | CTR:14.3%"
+        },
+        {
+          "keyword": "cours d'informatique",
+          "raw": "cours d'informatique | 4 clk | CTR:16.7%"
+        },
+        {
+          "keyword": "formation informatique à distance",
+          "raw": "formation informatique à distance | 4 clk | CTR:12.5%"
+        },
+        {
+          "keyword": "cours de codage",
+          "raw": "cours de codage | 3 clk | CTR:15.0%"
+        },
+        {
+          "keyword": "formation programmation bruxelles",
+          "raw": "formation programmation bruxelles | 3 clk | CTR:11.1%"
+        },
+        {
+          "keyword": "formation gratuite informatique",
+          "raw": "formation gratuite informatique | 2 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "formation developpeur belgique",
+          "raw": "formation developpeur belgique | 2 clk | CTR:28.6%"
+        },
+        {
+          "keyword": "formations informatique",
+          "raw": "formations informatique | 2 clk | CTR:9.5%"
+        },
+        {
+          "keyword": "cours programmation",
+          "raw": "cours programmation | 2 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "apprendre le codage",
+          "raw": "apprendre le codage | 2 clk | CTR:4.0%"
+        },
+        {
+          "keyword": "apprendre a coder gratuit",
+          "raw": "apprendre a coder gratuit | 2 clk | CTR:13.3%"
+        },
+        {
+          "keyword": "Cours de programmation informatique",
+          "raw": "Cours de programmation informatique | 2 clk | CTR:18.2%"
+        },
+        {
+          "keyword": "informatique formation en ligne",
+          "raw": "informatique formation en ligne | 2 clk | CTR:22.2%"
+        },
+        {
+          "keyword": "formation informatique en ligne belgique",
+          "raw": "formation informatique en ligne belgique | 2 clk | CTR:7.7%"
+        },
+        {
+          "keyword": "formation informatique en ligne gratuite avec certificat",
+          "raw": "formation informatique en ligne gratuite avec certificat | 2 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "cours informatique reseau",
+          "raw": "cours informatique reseau | 1 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "bootcamp code",
+          "raw": "bootcamp code | 1 clk | CTR:16.7%"
+        },
+        {
+          "keyword": "formation en codage informatique",
+          "raw": "formation en codage informatique | 1 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "bootcamp informatique",
+          "raw": "bootcamp informatique | 1 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "formation code",
+          "raw": "formation code | 1 clk | CTR:25.0%"
+        },
+        {
+          "keyword": "apprendre à coder gratuit",
+          "raw": "apprendre à coder gratuit | 1 clk | CTR:12.5%"
+        },
+        {
+          "keyword": "Cours it en ligne",
+          "raw": "Cours it en ligne | 1 clk | CTR:25.0%"
+        },
+        {
+          "keyword": "Formation en programmation informatique",
+          "raw": "Formation en programmation informatique | 1 clk | CTR:25.0%"
+        },
+        {
+          "keyword": "cours de programmation",
+          "raw": "cours de programmation | 1 clk | CTR:25.0%"
+        },
+        {
+          "keyword": "comment coder",
+          "raw": "comment coder | 1 clk | CTR:2.7%"
+        },
+        {
+          "keyword": "etude en informatique",
+          "raw": "etude en informatique | 1 clk | CTR:12.5%"
+        }
+      ],
+      "analyse": "La formation informatique généraliste à Bruxelles convertit massivement. 'Formation informatique' (771 clk, CVR 4.7%) est le terme central, renforcé par 'formation informatique Bruxelles' (84 clk, CVR 5.4%) et 'formation informatique Belgique' (20 clk, CVR 20.0%). La gratuité est un prérequis fort : 'formation informatique gratuite' (95 clk, CVR 7.4%) convertit bien. Signal notable : 'google ateliers numérique' (16 clk, CVR 12.5%) — l'audience connaît et valide les formats de formation courte et certifiante. 'Apprendre à coder' (34 clk, CVR 5.9%) confirme l'intention débutant. Pattern B : 'formation développeur Bruxelles' (7 clk, CTR 23.3%, CVR 0%) — fort intérêt mais la page ne convertit pas sur ce terme précis.",
+      "lpAngleSuggested": "classic"
+    },
+    "itgen-en": {
+      "theme": "itgen",
+      "lang": "en",
+      "primaryQuery": "coding bootcamp Belgium / ICT jobs",
+      "profile": "Career changer or beginner — wants IT training AND an ICT job outcome. Employment is the primary driver.",
+      "clusters": [
+        {
+          "name": "CODING BOOTCAMP",
+          "keywords": [
+            "coding bootcamp",
+            "coding bootcamp Belgium",
+            "learn to code",
+            "coding"
+          ]
+        },
+        {
+          "name": "ICT JOBS & TRAINEESHIP",
+          "keywords": [
+            "ICT jobs",
+            "IT traineeship",
+            "learn coding for free"
+          ]
+        }
+      ],
+      "lpAngleClassic": "The coding bootcamp that gets you into ICT.",
+      "lpAngleBold": "Learn to code. Land an ICT job. That's the plan.",
+      "cta": "Apply to the bootcamp →",
+      "convertingKeywords": [
+        {
+          "keyword": "coding bootcamp",
+          "raw": "coding bootcamp | 251 clk | CTR:10.7% | CVR:6.9% | 17.2 conv"
+        },
+        {
+          "keyword": "coding bootcamp belgium",
+          "raw": "coding bootcamp belgium | 114 clk | CTR:8.8% | CVR:9.0% | 10.2 conv"
+        },
+        {
+          "keyword": "ict jobs",
+          "raw": "ict jobs | 178 clk | CTR:12.4% | CVR:4.2% | 7.5 conv"
+        },
+        {
+          "keyword": "coding bootcamp",
+          "raw": "coding bootcamp | 21 clk | CTR:7.8% | CVR:9.5% | 2 conv"
+        },
+        {
+          "keyword": "it traineeship",
+          "raw": "it traineeship | 11 clk | CTR:12.0% | CVR:18.2% | 2 conv"
+        },
+        {
+          "keyword": "learn to code",
+          "raw": "learn to code | 11 clk | CTR:3.4% | CVR:18.2% | 2 conv"
+        },
+        {
+          "keyword": "coding",
+          "raw": "coding | 21 clk | CTR:2.8% | CVR:4.8% | 1 conv"
+        },
+        {
+          "keyword": "it traineeship",
+          "raw": "it traineeship | 5 clk | CTR:5.1% | CVR:20.0% | 1 conv"
+        },
+        {
+          "keyword": "coding",
+          "raw": "coding | 29 clk | CTR:5.7% | CVR:3.5% | 1 conv"
+        },
+        {
+          "keyword": "learn coding for free",
+          "raw": "learn coding for free | 5 clk | CTR:5.6% | CVR:20.0% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "coding academy",
+          "raw": "coding academy | 10 clk | CTR:12.3%"
+        },
+        {
+          "keyword": "free french language course",
+          "raw": "free french language course | 9 clk | CTR:3.0%"
+        },
+        {
+          "keyword": "information and technology communication",
+          "raw": "information and technology communication | 4 clk | CTR:2.8%"
+        },
+        {
+          "keyword": "programming learning",
+          "raw": "programming learning | 4 clk | CTR:4.5%"
+        },
+        {
+          "keyword": "learn programming",
+          "raw": "learn programming | 3 clk | CTR:4.6%"
+        },
+        {
+          "keyword": "how to code",
+          "raw": "how to code | 3 clk | CTR:3.9%"
+        },
+        {
+          "keyword": "how to learn programming",
+          "raw": "how to learn programming | 3 clk | CTR:6.4%"
+        },
+        {
+          "keyword": "learn coding",
+          "raw": "learn coding | 2 clk | CTR:7.1%"
+        },
+        {
+          "keyword": "coding for beginners",
+          "raw": "coding for beginners | 2 clk | CTR:2.9%"
+        },
+        {
+          "keyword": "learn how to code",
+          "raw": "learn how to code | 2 clk | CTR:28.6%"
+        },
+        {
+          "keyword": "learn programming free",
+          "raw": "learn programming free | 2 clk | CTR:5.9%"
+        },
+        {
+          "keyword": "it trainee",
+          "raw": "it trainee | 2 clk | CTR:3.1%"
+        },
+        {
+          "keyword": "learning how to learn",
+          "raw": "learning how to learn | 1 clk | CTR:8.3%"
+        },
+        {
+          "keyword": "coding for beginners",
+          "raw": "coding for beginners | 1 clk | CTR:2.4%"
+        },
+        {
+          "keyword": "learn coding for free",
+          "raw": "learn coding for free | 1 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "coding training",
+          "raw": "coding training | 1 clk | CTR:6.2%"
+        },
+        {
+          "keyword": "best programming courses",
+          "raw": "best programming courses | 1 clk | CTR:16.7%"
+        },
+        {
+          "keyword": "how do i use github",
+          "raw": "how do i use github | 1 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "free french language course",
+          "raw": "free french language course | 1 clk | CTR:2.9%"
+        },
+        {
+          "keyword": "coding bootcamp belgium",
+          "raw": "coding bootcamp belgium | 1 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "coding academy",
+          "raw": "coding academy | 1 clk | CTR:6.2%"
+        },
+        {
+          "keyword": "coding games",
+          "raw": "coding games | 1 clk | CTR:3.0%"
+        }
+      ],
+      "analyse": "Two distinct conversion signals drive this ad group. First, the bootcamp itself : 'coding bootcamp' (251 clk, CVR 6.9%) and 'coding bootcamp Belgium' (114 clk, CVR 9.0%) are the volume anchors. Second, the employment outcome : 'ICT jobs' (178 clk, CVR 4.2%) converts solidly — these users want a job as much as training. 'IT traineeship' (11 clk, CVR 18.2%) and 'learn to code' (11 clk, CVR 18.2%) show the highest CVR, signalling strong purchase intent when the practical outcome is clear. The page must explicitly bridge training and ICT employment — not just sell a course.",
+      "lpAngleSuggested": "classic"
+    },
+    "itgen-nl": {
+      "theme": "itgen",
+      "lang": "nl",
+      "primaryQuery": "ICT opleiding / ICT vacatures",
+      "profile": "Jobzoeker evenzeer als leerling — inzetbaarheid op de ICT-markt is de primaire drijfveer.",
+      "clusters": [
+        {
+          "name": "ICT OPLEIDING",
+          "keywords": [
+            "ICT opleiding",
+            "IT opleidingen",
+            "opleiding IT",
+            "programmeur opleiding",
+            "IT opleiding"
+          ]
+        },
+        {
+          "name": "ICT JOBS & WERK",
+          "keywords": [
+            "ICT vacatures",
+            "werken in de IT",
+            "studiekeuze kiezen"
+          ]
+        },
+        {
+          "name": "LEREN PROGRAMMEREN",
+          "keywords": [
+            "leren programmeren",
+            "cursus programmeren",
+            "code programmer",
+            "programmeren voor beginners"
+          ]
+        }
+      ],
+      "lpAngleClassic": "De IT-opleiding die je klaarstoomt voor de ICT-jobmarkt.",
+      "lpAngleBold": "Van nul naar ICT-job. Één opleiding.",
+      "cta": "Start je ICT-carrière →",
+      "convertingKeywords": [
+        {
+          "keyword": "ict opleiding",
+          "raw": "ict opleiding | 283 clk | CTR:6.3% | CVR:5.4% | 15.3 conv"
+        },
+        {
+          "keyword": "ict vacatures",
+          "raw": "ict vacatures | 199 clk | CTR:8.8% | CVR:4.5% | 9 conv"
+        },
+        {
+          "keyword": "it opleidingen",
+          "raw": "it opleidingen | 58 clk | CTR:9.3% | CVR:12.4% | 7.2 conv"
+        },
+        {
+          "keyword": "opleiding it",
+          "raw": "opleiding it | 15 clk | CTR:10.4% | CVR:26.7% | 4 conv"
+        },
+        {
+          "keyword": "werken in de it",
+          "raw": "werken in de it | 20 clk | CTR:8.3% | CVR:5.0% | 1 conv"
+        },
+        {
+          "keyword": "studiekeuze kiezen",
+          "raw": "studiekeuze kiezen | 22 clk | CTR:3.5% | CVR:4.5% | 1 conv"
+        },
+        {
+          "keyword": "code programmer",
+          "raw": "code programmer | 4 clk | CTR:5.0% | CVR:25.0% | 1 conv"
+        },
+        {
+          "keyword": "programmeur opleiding",
+          "raw": "programmeur opleiding | 18 clk | CTR:21.7% | CVR:5.6% | 1 conv"
+        },
+        {
+          "keyword": "cursus programmeren",
+          "raw": "cursus programmeren | 77 clk | CTR:5.9% | CVR:1.3% | 1 conv"
+        },
+        {
+          "keyword": "it-opleiding",
+          "raw": "it-opleiding | 3 clk | CTR:10.3% | CVR:33.3% | 1 conv"
+        },
+        {
+          "keyword": "leren programmeren",
+          "raw": "leren programmeren | 54 clk | CTR:14.5% | CVR:1.8% | 1 conv"
+        },
+        {
+          "keyword": "it opleiding",
+          "raw": "it opleiding | 19 clk | CTR:8.6% | CVR:5.3% | 1 conv"
+        },
+        {
+          "keyword": "opleiding ict",
+          "raw": "opleiding ict | 23 clk | CTR:6.1% | CVR:0.9% | 0.2 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "leren coderen",
+          "raw": "leren coderen | 38 clk | CTR:5.2%"
+        },
+        {
+          "keyword": "opleidingen mbo",
+          "raw": "opleidingen mbo | 24 clk | CTR:8.4%"
+        },
+        {
+          "keyword": "programmeren voor beginners",
+          "raw": "programmeren voor beginners | 14 clk | CTR:3.1%"
+        },
+        {
+          "keyword": "programmeren",
+          "raw": "programmeren | 14 clk | CTR:2.2%"
+        },
+        {
+          "keyword": "programmeren opleiding",
+          "raw": "programmeren opleiding | 13 clk | CTR:5.5%"
+        },
+        {
+          "keyword": "computer cursus voor beginners",
+          "raw": "computer cursus voor beginners | 10 clk | CTR:6.4%"
+        },
+        {
+          "keyword": "opleiding programmeren",
+          "raw": "opleiding programmeren | 8 clk | CTR:2.6%"
+        },
+        {
+          "keyword": "it cursus",
+          "raw": "it cursus | 8 clk | CTR:3.9%"
+        },
+        {
+          "keyword": "gratis leren programmeren",
+          "raw": "gratis leren programmeren | 7 clk | CTR:10.0%"
+        },
+        {
+          "keyword": "online leren programmeren",
+          "raw": "online leren programmeren | 7 clk | CTR:2.1%"
+        },
+        {
+          "keyword": "ict cursus",
+          "raw": "ict cursus | 4 clk | CTR:7.5%"
+        },
+        {
+          "keyword": "ict traineeship",
+          "raw": "ict traineeship | 4 clk | CTR:5.3%"
+        },
+        {
+          "keyword": "it zonder diploma",
+          "raw": "it zonder diploma | 3 clk | CTR:27.3%"
+        },
+        {
+          "keyword": "ict opleidingen",
+          "raw": "ict opleidingen | 3 clk | CTR:13.6%"
+        },
+        {
+          "keyword": "cursus coderen",
+          "raw": "cursus coderen | 3 clk | CTR:4.4%"
+        },
+        {
+          "keyword": "coderen leren",
+          "raw": "coderen leren | 3 clk | CTR:3.2%"
+        },
+        {
+          "keyword": "betaalde ict opleiding",
+          "raw": "betaalde ict opleiding | 3 clk | CTR:12.5%"
+        },
+        {
+          "keyword": "avondonderwijs programmeren",
+          "raw": "avondonderwijs programmeren | 2 clk | CTR:4.5%"
+        },
+        {
+          "keyword": "it opleiding antwerpen",
+          "raw": "it opleiding antwerpen | 2 clk | CTR:9.5%"
+        },
+        {
+          "keyword": "kunstmatige intelligentie studeren",
+          "raw": "kunstmatige intelligentie studeren | 2 clk | CTR:3.9%"
+        },
+        {
+          "keyword": "graduaat programmeren vdab",
+          "raw": "graduaat programmeren vdab | 2 clk | CTR:200.0%"
+        },
+        {
+          "keyword": "graduaat programmeren",
+          "raw": "graduaat programmeren | 2 clk | CTR:3.5%"
+        },
+        {
+          "keyword": "ict zonder diploma",
+          "raw": "ict zonder diploma | 2 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "it traineeship zonder diploma",
+          "raw": "it traineeship zonder diploma | 2 clk | CTR:8.0%"
+        },
+        {
+          "keyword": "opleiding informatica",
+          "raw": "opleiding informatica | 2 clk | CTR:5.4%"
+        },
+        {
+          "keyword": "it job met opleiding",
+          "raw": "it job met opleiding | 2 clk | CTR:28.6%"
+        },
+        {
+          "keyword": "werken in de it zonder ervaring",
+          "raw": "werken in de it zonder ervaring | 2 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "informatica opleiding",
+          "raw": "informatica opleiding | 2 clk | CTR:5.3%"
+        },
+        {
+          "keyword": "it opleiding en werken",
+          "raw": "it opleiding en werken | 2 clk | CTR:9.5%"
+        },
+        {
+          "keyword": "computer opleiding",
+          "raw": "computer opleiding | 1 clk | CTR:0.8%"
+        },
+        {
+          "keyword": "bachelor informatica",
+          "raw": "bachelor informatica | 1 clk | CTR:12.5%"
+        },
+        {
+          "keyword": "omscholen naar it",
+          "raw": "omscholen naar it | 1 clk | CTR:14.3%"
+        },
+        {
+          "keyword": "programmeren cursus",
+          "raw": "programmeren cursus | 1 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "ict werken en leren",
+          "raw": "ict werken en leren | 1 clk | CTR:3.9%"
+        },
+        {
+          "keyword": "basis programmeren cursus",
+          "raw": "basis programmeren cursus | 1 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "it job met interne opleiding",
+          "raw": "it job met interne opleiding | 1 clk | CTR:8.3%"
+        },
+        {
+          "keyword": "coderen opleiding",
+          "raw": "coderen opleiding | 1 clk | CTR:25.0%"
+        },
+        {
+          "keyword": "ict opleiding gent",
+          "raw": "ict opleiding gent | 1 clk | CTR:11.1%"
+        },
+        {
+          "keyword": "werken in de ict zonder opleiding",
+          "raw": "werken in de ict zonder opleiding | 1 clk | CTR:50.0%"
+        }
+      ],
+      "analyse": "Dit adgroup combineert twee sterke signalen : opleiding en werk. 'ICT opleiding' (283 clk, CVR 5.4%) en 'IT opleidingen' (58 clk, CVR 12.4%) zijn de kern. Maar 'ICT vacatures' (199 clk, CVR 4.5%) en 'werken in de IT' (20 clk, CVR 5.0%) tonen aan dat deze bezoekers een job willen, niet alleen een diploma. 'Opleiding IT' (15 clk, CVR 26.7%) heeft de hoogste CVR — sterk aankoopsignaal. Patroon B : 'leren coderen' (38 clk, CVR 0%) en 'gratis leren programmeren' (7 clk, CVR 0%) converteren niet — de gratis/hobbyistische framing werkt niet voor dit publiek. De pagina moet de brug training → ICT-jobmarkt expliciet maken.",
+      "lpAngleSuggested": "classic"
+    },
+    "cyber-fr": {
+      "theme": "cyber",
+      "lang": "fr",
+      "primaryQuery": "formation cybersécurité",
+      "profile": "Professionnel IT ou étudiant cherchant une spécialisation en sécurité — certifications reconnues.",
+      "clusters": [
+        {
+          "name": "FORMATION CYBERSÉCURITÉ",
+          "keywords": [
+            "formation cybersécurité",
+            "cybersécurité Belgique",
+            "sécurité informatique"
+          ]
+        },
+        {
+          "name": "SPÉCIALISATIONS TECHNIQUES",
+          "keywords": [
+            "hacking éthique",
+            "formation pentest",
+            "sécurité réseau"
+          ]
+        },
+        {
+          "name": "CERTIFICATIONS",
+          "keywords": [
+            "certifications cybersécurité",
+            "formation sécurité informatique"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Devenez expert en cybersécurité. Certifications reconnues par l'industrie.",
+      "lpAngleBold": "Les hackers n'attendent pas. Vous non plus.",
+      "cta": "Lance ta carrière en cybersécurité →",
+      "convertingKeywords": [
+        {
+          "keyword": "formation cybersécurité",
+          "raw": "formation cybersécurité | 392 clk | CTR:16.2% | CVR:7.0% | 27.5 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "cybersécurité formation",
+          "raw": "cybersécurité formation | 7 clk | CTR:8.2%"
+        },
+        {
+          "keyword": "cybersécurité",
+          "raw": "cybersécurité | 4 clk | CTR:2.8%"
+        }
+      ],
+      "analyse": "Les données sont concentrées sur un seul terme dominant : 'formation cybersécurité' (392 clk, CVR 7.0%) représente l'essentiel des conversions de ce groupe. C'est un signal fort d'intentionnalité : l'audience sait exactement ce qu'elle cherche. Pattern B : 'cybersécurité formation' (7 clk, CVR 0%) — légère variation de formulation, mais la page ne convertit pas sur ce terme. Les clusters spécialisations et certifications sont construits sur le champ sémantique du thème plutôt que sur des données de conversion directes, le volume étant trop limité. La page doit légitimer la formation avec des références aux certifications industrie.",
+      "lpAngleSuggested": "classic"
+    },
+    "cyber-en": {
+      "theme": "cyber",
+      "lang": "en",
+      "primaryQuery": "cyber security course / bachelor cyber security",
+      "profile": "Credential-seeking IT professional or student — formal qualification and certification matter.",
+      "clusters": [
+        {
+          "name": "CYBER SECURITY TRAINING",
+          "keywords": [
+            "cyber security",
+            "cyber security courses",
+            "cyber security training",
+            "cybersecurity courses"
+          ]
+        },
+        {
+          "name": "ETHICAL HACKING",
+          "keywords": [
+            "ethical hacking",
+            "ethical hacking course",
+            "hacking course"
+          ]
+        },
+        {
+          "name": "CREDENTIALS & CERTIFICATIONS",
+          "keywords": [
+            "bachelor cyber security",
+            "cybersecurity bachelor's",
+            "cyber security certifications",
+            "AWS security certification"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Build cybersecurity expertise. From fundamentals to certifications.",
+      "lpAngleBold": "The certification that makes you hireable in cybersecurity.",
+      "cta": "Start your cybersecurity path →",
+      "convertingKeywords": [
+        {
+          "keyword": "cyber security",
+          "raw": "cyber security | 122 clk | CTR:5.8% | CVR:9.0% | 11 conv"
+        },
+        {
+          "keyword": "cyber security",
+          "raw": "cyber security | 54 clk | CTR:5.0% | CVR:9.3% | 5 conv"
+        },
+        {
+          "keyword": "ethical hacking",
+          "raw": "ethical hacking | 4 clk | CTR:7.8% | CVR:50.0% | 2 conv"
+        },
+        {
+          "keyword": "bachelor cyber security",
+          "raw": "bachelor cyber security | 16 clk | CTR:5.9% | CVR:12.5% | 2 conv"
+        },
+        {
+          "keyword": "cyber security courses",
+          "raw": "cyber security courses | 15 clk | CTR:7.2% | CVR:6.7% | 1 conv"
+        },
+        {
+          "keyword": "ethical hacking",
+          "raw": "ethical hacking | 2 clk | CTR:4.1% | CVR:50.0% | 1 conv"
+        },
+        {
+          "keyword": "cybersecurity bachelor's",
+          "raw": "cybersecurity bachelor's | 7 clk | CTR:9.9% | CVR:14.3% | 1 conv"
+        },
+        {
+          "keyword": "cyber security training",
+          "raw": "cyber security training | 1 clk | CTR:6.2% | CVR:100.0% | 1 conv"
+        },
+        {
+          "keyword": "aws security certification",
+          "raw": "aws security certification | 1 clk | CTR:10.0% | CVR:100.0% | 1 conv"
+        },
+        {
+          "keyword": "ethical hacking course",
+          "raw": "ethical hacking course | 3 clk | CTR:5.2% | CVR:33.3% | 1 conv"
+        },
+        {
+          "keyword": "hacking course",
+          "raw": "hacking course | 10 clk | CTR:4.1% | CVR:10.0% | 1 conv"
+        },
+        {
+          "keyword": "cyber security courses",
+          "raw": "cyber security courses | 15 clk | CTR:7.5% | CVR:6.7% | 1 conv"
+        },
+        {
+          "keyword": "cyber security certifications",
+          "raw": "cyber security certifications | 20 clk | CTR:5.6% | CVR:2.0% | 0.4 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "it security internship",
+          "raw": "it security internship | 17 clk | CTR:7.8%"
+        },
+        {
+          "keyword": "cyber security certifications",
+          "raw": "cyber security certifications | 13 clk | CTR:7.1%"
+        },
+        {
+          "keyword": "cybersecurity courses",
+          "raw": "cybersecurity courses | 10 clk | CTR:13.3%"
+        },
+        {
+          "keyword": "cybersecurity bachelor's",
+          "raw": "cybersecurity bachelor's | 8 clk | CTR:7.3%"
+        },
+        {
+          "keyword": "master cybersecurity",
+          "raw": "master cybersecurity | 7 clk | CTR:8.6%"
+        },
+        {
+          "keyword": "ceh certification",
+          "raw": "ceh certification | 4 clk | CTR:22.2%"
+        },
+        {
+          "keyword": "cism",
+          "raw": "cism | 3 clk | CTR:17.6%"
+        },
+        {
+          "keyword": "cyber security certification",
+          "raw": "cyber security certification | 3 clk | CTR:15.8%"
+        },
+        {
+          "keyword": "cissp certification",
+          "raw": "cissp certification | 2 clk | CTR:66.7%"
+        },
+        {
+          "keyword": "google cybersecurity certificate",
+          "raw": "google cybersecurity certificate | 2 clk | CTR:6.2%"
+        },
+        {
+          "keyword": "hacking course",
+          "raw": "hacking course | 2 clk | CTR:2.0%"
+        },
+        {
+          "keyword": "cybersecurity certification",
+          "raw": "cybersecurity certification | 2 clk | CTR:4.5%"
+        },
+        {
+          "keyword": "formation cybersécurité en ligne",
+          "raw": "formation cybersécurité en ligne | 2 clk | CTR:10.0%"
+        },
+        {
+          "keyword": "security it certifications",
+          "raw": "security it certifications | 1 clk | CTR:2.9%"
+        },
+        {
+          "keyword": "how can you hack",
+          "raw": "how can you hack | 1 clk | CTR:25.0%"
+        },
+        {
+          "keyword": "learn cyber security",
+          "raw": "learn cyber security | 1 clk | CTR:5.0%"
+        },
+        {
+          "keyword": "ethical hacking certification",
+          "raw": "ethical hacking certification | 1 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "master cybersecurity",
+          "raw": "master cybersecurity | 1 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "cyber security certification",
+          "raw": "cyber security certification | 1 clk | CTR:4.8%"
+        },
+        {
+          "keyword": "cybersecurity cyber security",
+          "raw": "cybersecurity cyber security | 1 clk | CTR:16.7%"
+        },
+        {
+          "keyword": "google cybersecurity professional certificate",
+          "raw": "google cybersecurity professional certificate | 1 clk | CTR:1.3%"
+        },
+        {
+          "keyword": "cybersecurity courses",
+          "raw": "cybersecurity courses | 1 clk | CTR:5.3%"
+        },
+        {
+          "keyword": "learn hacking",
+          "raw": "learn hacking | 1 clk | CTR:1.8%"
+        },
+        {
+          "keyword": "cybersecurity analyst",
+          "raw": "cybersecurity analyst | 1 clk | CTR:2.5%"
+        },
+        {
+          "keyword": "free cyber security training",
+          "raw": "free cyber security training | 1 clk | CTR:1.1%"
+        }
+      ],
+      "analyse": "This ad group has a clear credential-seeking profile. 'Cyber security' (122 clk, CVR 9.0%) is the volume anchor, but the highest converters reveal the real intent : 'ethical hacking' (4 clk, CVR 50.0%), 'bachelor cyber security' (16 clk, CVR 12.5%), and 'cybersecurity bachelor's' (7 clk, CVR 14.3%) all signal that formal qualification matters. 'AWS security certification' (1 clk, CVR 100%) and 'hacking course' (10 clk, CVR 10.0%) confirm the technical specialisation angle. Pattern B : 'it security internship' (17 clk, CVR 0%) — they want work experience, not just training. The page must feel professional-grade, not like a casual bootcamp.",
+      "lpAngleSuggested": "classic"
+    },
+    "cyber-nl": {
+      "theme": "cyber",
+      "lang": "nl",
+      "primaryQuery": "cyber security opleiding / beveiliging opleidingen",
+      "profile": "IT-professional of student die wil specialiseren in beveiliging — erkende certificaten zijn essentieel.",
+      "clusters": [
+        {
+          "name": "CYBER SECURITY OPLEIDING",
+          "keywords": [
+            "cyber security opleiding",
+            "beveiliging opleidingen",
+            "cybersecurity opleiding",
+            "opleiding cybersecurity"
+          ]
+        },
+        {
+          "name": "ETHISCH HACKEN",
+          "keywords": [
+            "cursus hacken",
+            "ethical hacking opleiding"
+          ]
+        },
+        {
+          "name": "JOBS & MARKT",
+          "keywords": [
+            "cyber security banen"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Word cybersecurity specialist met erkende certificaten.",
+      "lpAngleBold": "Word de expert die bedrijven zoeken om hen te beschermen.",
+      "cta": "Start je cybersecurity opleiding →",
+      "convertingKeywords": [
+        {
+          "keyword": "beveiliging opleidingen",
+          "raw": "beveiliging opleidingen | 51 clk | CTR:11.8% | CVR:9.8% | 5 conv"
+        },
+        {
+          "keyword": "cyber security opleiding",
+          "raw": "cyber security opleiding | 85 clk | CTR:7.8% | CVR:3.5% | 3 conv"
+        },
+        {
+          "keyword": "cursus hacken",
+          "raw": "cursus hacken | 11 clk | CTR:5.5% | CVR:9.1% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "cybersecurity opleiding",
+          "raw": "cybersecurity opleiding | 30 clk | CTR:11.5%"
+        },
+        {
+          "keyword": "opleiding cyber security",
+          "raw": "opleiding cyber security | 10 clk | CTR:10.3%"
+        },
+        {
+          "keyword": "cyber security banen",
+          "raw": "cyber security banen | 8 clk | CTR:5.6%"
+        },
+        {
+          "keyword": "ethical hacking opleiding",
+          "raw": "ethical hacking opleiding | 6 clk | CTR:5.7%"
+        },
+        {
+          "keyword": "opleiding cybersecurity",
+          "raw": "opleiding cybersecurity | 5 clk | CTR:7.6%"
+        },
+        {
+          "keyword": "ethisch hacken",
+          "raw": "ethisch hacken | 2 clk | CTR:5.6%"
+        }
+      ],
+      "analyse": "Drie conversiebronnen structureren dit adgroup. 'Beveiliging opleidingen' (51 clk, CVR 9.8%) heeft de beste CVR — de generieke beveiligingsterm converteert beter dan de specifieke 'cyber security opleiding' (85 clk, CVR 3.5%), wat suggereert dat de pagina nog niet volledig op de specifieke intentie is afgestemd. 'Cursus hacken' (11 clk, CVR 9.1%) bevestigt dat ethisch hacken een concrete conversiedrijver is. Patroon B : 'cyber security banen' (8 clk, CVR 0%) — ze zoeken werk, niet enkel een opleiding. De pagina moet de brug leggen tussen opleiding en carrière in beveiliging.",
+      "lpAngleSuggested": "classic"
+    },
+    "aiengineering-fr": {
+      "theme": "aiengineering",
+      "lang": "fr",
+      "primaryQuery": "formation intelligence artificielle",
+      "profile": "Développeur ou étudiant technique cherchant une spécialisation IA/ML — pas un débutant.",
+      "clusters": [
+        {
+          "name": "FORMATION IA",
+          "keywords": [
+            "formation intelligence artificielle",
+            "formation IA",
+            "formation en intelligence artificielle",
+            "cours IA"
+          ]
+        },
+        {
+          "name": "MACHINE LEARNING & DEEP LEARNING",
+          "keywords": [
+            "machine learning",
+            "deep learning",
+            "formation ML"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Maîtrisez l'IA et le Machine Learning. Du code aux modèles en production.",
+      "lpAngleBold": "Construisez de l'IA qui tourne en production. Pas juste en théorie.",
+      "cta": "Deviens ingénieur IA →",
+      "convertingKeywords": [
+        {
+          "keyword": "formation intelligence artificielle",
+          "raw": "formation intelligence artificielle | 351 clk | CTR:15.5% | CVR:4.8% | 17 conv"
+        },
+        {
+          "keyword": "cours ia",
+          "raw": "cours ia | 2 clk | CTR:6.9% | CVR:50.0% | 1 conv"
+        },
+        {
+          "keyword": "formation ia",
+          "raw": "formation ia | 16 clk | CTR:6.9% | CVR:6.2% | 1 conv"
+        },
+        {
+          "keyword": "formation en intelligence artificielle",
+          "raw": "formation en intelligence artificielle | 7 clk | CTR:12.5% | CVR:14.3% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "apprendre l'ia",
+          "raw": "apprendre l'ia | 11 clk | CTR:4.9%"
+        },
+        {
+          "keyword": "cours intelligence artificielle",
+          "raw": "cours intelligence artificielle | 6 clk | CTR:3.7%"
+        },
+        {
+          "keyword": "formation en ia",
+          "raw": "formation en ia | 4 clk | CTR:14.8%"
+        },
+        {
+          "keyword": "formations en intelligence artificielle",
+          "raw": "formations en intelligence artificielle | 4 clk | CTR:14.8%"
+        },
+        {
+          "keyword": "meilleure formation ia",
+          "raw": "meilleure formation ia | 3 clk | CTR:11.5%"
+        },
+        {
+          "keyword": "formations ia",
+          "raw": "formations ia | 3 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "formation intelligence artificielle gratuite",
+          "raw": "formation intelligence artificielle gratuite | 2 clk | CTR:6.9%"
+        },
+        {
+          "keyword": "certificat ia",
+          "raw": "certificat ia | 2 clk | CTR:200.0%"
+        },
+        {
+          "keyword": "formation developpeur ia",
+          "raw": "formation developpeur ia | 2 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "cours intelligence artificielle gratuit",
+          "raw": "cours intelligence artificielle gratuit | 2 clk | CTR:40.0%"
+        },
+        {
+          "keyword": "intelligence artificiel en ligne",
+          "raw": "intelligence artificiel en ligne | 1 clk | CTR:1.6%"
+        },
+        {
+          "keyword": "formation sur l ia",
+          "raw": "formation sur l ia | 1 clk | CTR:10.0%"
+        },
+        {
+          "keyword": "formation ia gratuite",
+          "raw": "formation ia gratuite | 1 clk | CTR:2.6%"
+        },
+        {
+          "keyword": "formation sur l'intelligence artificielle",
+          "raw": "formation sur l'intelligence artificielle | 1 clk | CTR:7.7%"
+        },
+        {
+          "keyword": "intelligence artificielle cours",
+          "raw": "intelligence artificielle cours | 1 clk | CTR:6.2%"
+        }
+      ],
+      "analyse": "Un seul terme domine massivement : 'formation intelligence artificielle' (351 clk, CVR 4.8%). Les autres converters — 'formation IA' (16 clk, CVR 6.2%) et 'formation en intelligence artificielle' (7 clk, CVR 14.3%) — confirment l'intention claire. Pattern B : 'apprendre l'IA' (11 clk, CVR 0%) et 'cours intelligence artificielle' (6 clk, CVR 0%) — la formulation 'apprendre' attire des curieux, pas des candidats à une formation structurée. Le cluster ML/Deep Learning est construit sur le champ sémantique du thème car les données de conversion sont insuffisantes pour le valider directement. La page doit clairement se différencier de l'usage grand public de l'IA.",
+      "lpAngleSuggested": "classic"
+    },
+    "aiengineering-en": {
+      "theme": "aiengineering",
+      "lang": "en",
+      "primaryQuery": "masters in artificial intelligence / AI engineering",
+      "profile": "Graduate or engineer-level — expects a postgraduate-level AI programme, not a beginner course.",
+      "clusters": [
+        {
+          "name": "MASTER-LEVEL AI PROGRAMS",
+          "keywords": [
+            "masters in artificial intelligence",
+            "AI master",
+            "study AI",
+            "master data sciences"
+          ]
+        },
+        {
+          "name": "AI ENGINEERING & COURSES",
+          "keywords": [
+            "artificial intelligence course",
+            "AI course",
+            "AI engineer",
+            "learning AI",
+            "learn AI"
+          ]
+        },
+        {
+          "name": "FREE / INTRO (Pattern B — does not convert)",
+          "keywords": [
+            "AI bootcamp",
+            "artificial intelligence free online"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Engineer-level AI expertise. From ML fundamentals to production deployment.",
+      "lpAngleBold": "Train models. Ship systems. Build the AI career you want.",
+      "cta": "Apply to the AI program →",
+      "convertingKeywords": [
+        {
+          "keyword": "masters in artificial intelligence",
+          "raw": "masters in artificial intelligence | 55 clk | CTR:9.9% | CVR:17.3% | 9.5 conv"
+        },
+        {
+          "keyword": "artificial intelligence course",
+          "raw": "artificial intelligence course | 59 clk | CTR:7.0% | CVR:12.7% | 7.5 conv"
+        },
+        {
+          "keyword": "masters in artificial intelligence",
+          "raw": "masters in artificial intelligence | 32 clk | CTR:5.6% | CVR:6.2% | 2 conv"
+        },
+        {
+          "keyword": "ai course",
+          "raw": "ai course | 8 clk | CTR:3.2% | CVR:25.0% | 2 conv"
+        },
+        {
+          "keyword": "study ai",
+          "raw": "study ai | 6 clk | CTR:4.1% | CVR:25.0% | 1.5 conv"
+        },
+        {
+          "keyword": "define artificial intelligence",
+          "raw": "define artificial intelligence | 1 clk | CTR:5.0% | CVR:100.0% | 1 conv"
+        },
+        {
+          "keyword": "artificial intelligence course",
+          "raw": "artificial intelligence course | 28 clk | CTR:5.9% | CVR:3.6% | 1 conv"
+        },
+        {
+          "keyword": "ai course",
+          "raw": "ai course | 8 clk | CTR:7.4% | CVR:12.5% | 1 conv"
+        },
+        {
+          "keyword": "learning ai",
+          "raw": "learning ai | 10 clk | CTR:6.4% | CVR:10.0% | 1 conv"
+        },
+        {
+          "keyword": "free ai course",
+          "raw": "free ai course | 4 clk | CTR:13.8% | CVR:25.0% | 1 conv"
+        },
+        {
+          "keyword": "ai engineer",
+          "raw": "ai engineer | 22 clk | CTR:9.2% | CVR:4.5% | 1 conv"
+        },
+        {
+          "keyword": "learn ai",
+          "raw": "learn ai | 8 clk | CTR:1.9% | CVR:12.5% | 1 conv"
+        },
+        {
+          "keyword": "ai master",
+          "raw": "ai master | 9 clk | CTR:13.0% | CVR:11.1% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "ai bootcamp",
+          "raw": "ai bootcamp | 5 clk | CTR:11.9%"
+        },
+        {
+          "keyword": "learn ai",
+          "raw": "learn ai | 4 clk | CTR:1.4%"
+        },
+        {
+          "keyword": "ai engineer",
+          "raw": "ai engineer | 3 clk | CTR:3.1%"
+        },
+        {
+          "keyword": "artificial intelligence free online",
+          "raw": "artificial intelligence free online | 3 clk | CTR:13.6%"
+        },
+        {
+          "keyword": "ai bootcamp",
+          "raw": "ai bootcamp | 2 clk | CTR:66.7%"
+        },
+        {
+          "keyword": "ai training",
+          "raw": "ai training | 2 clk | CTR:4.4%"
+        },
+        {
+          "keyword": "ai certification",
+          "raw": "ai certification | 2 clk | CTR:8.7%"
+        },
+        {
+          "keyword": "ai learning",
+          "raw": "ai learning | 2 clk | CTR:3.5%"
+        },
+        {
+          "keyword": "artificial intelligence free online",
+          "raw": "artificial intelligence free online | 1 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "ai training",
+          "raw": "ai training | 1 clk | CTR:2.2%"
+        },
+        {
+          "keyword": "ai master",
+          "raw": "ai master | 1 clk | CTR:25.0%"
+        },
+        {
+          "keyword": "learn artificial intelligence",
+          "raw": "learn artificial intelligence | 1 clk | CTR:7.1%"
+        },
+        {
+          "keyword": "ai classes",
+          "raw": "ai classes | 1 clk | CTR:7.7%"
+        },
+        {
+          "keyword": "ai architecture",
+          "raw": "ai architecture | 1 clk | CTR:4.5%"
+        }
+      ],
+      "analyse": "This ad group has the clearest graduate-level signal of any in the account. 'Masters in artificial intelligence' (55 clk, CVR 17.3%) is the top converter — the highest CVR in this theme, confirming the audience expects a postgraduate-level programme. 'Artificial intelligence course' (59 clk, CVR 12.7%) and 'AI course' (8 clk, CVR 25.0%) are strong secondary converters. 'AI engineer' (22 clk, CVR 4.5%) confirms the career angle. Pattern B : 'AI bootcamp' (5 clk, CVR 0%) and 'artificial intelligence free online' (3 clk, CVR 0%) do not convert — this audience is not looking for a casual intro. The page must match the ambition of the audience : real ML engineering, production deployment, not AI tools for non-techies.",
+      "lpAngleSuggested": "classic"
+    },
+    "aiengineering-nl": {
+      "theme": "aiengineering",
+      "lang": "nl",
+      "primaryQuery": "opleiding AI / artificial intelligence studeren",
+      "profile": "Ontwikkelaar of student die wil specialiseren in AI/ML — gevorderd profiel, geen beginner.",
+      "clusters": [
+        {
+          "name": "OPLEIDING AI",
+          "keywords": [
+            "opleiding AI",
+            "AI opleiding",
+            "artificial intelligence studeren",
+            "artificiële intelligentie opleiding"
+          ]
+        },
+        {
+          "name": "AI SPECIALIST",
+          "keywords": [
+            "opleiding AI specialist"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Word AI-ingenieur. Van theorie naar productie.",
+      "lpAngleBold": "Van theorie naar productie. Dit is echte AI-engineering.",
+      "cta": "Start je AI-opleiding →",
+      "convertingKeywords": [
+        {
+          "keyword": "opleiding ai",
+          "raw": "opleiding ai | 135 clk | CTR:9.7% | CVR:5.9% | 8 conv"
+        },
+        {
+          "keyword": "artificial intelligence studeren",
+          "raw": "artificial intelligence studeren | 3 clk | CTR:9.7% | CVR:66.7% | 2 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "ai opleiding",
+          "raw": "ai opleiding | 11 clk | CTR:20.4%"
+        },
+        {
+          "keyword": "opleiding ai specialist",
+          "raw": "opleiding ai specialist | 4 clk | CTR:10.5%"
+        },
+        {
+          "keyword": "artificiële intelligentie opleiding",
+          "raw": "artificiële intelligentie opleiding | 3 clk | CTR:16.7%"
+        }
+      ],
+      "analyse": "Het dataprofiel is beperkt maar duidelijk. 'Opleiding AI' (135 clk, CVR 5.9%) is de dominante term. 'Artificial intelligence studeren' (3 clk, CVR 66.7%) heeft een extreem hoge CVR — klein volume, maar sterk aankoopsignaal bij wie specifiek 'studeren' zoekt. Patroon B : 'AI opleiding' (11 clk, CVR 0%) en 'opleiding AI specialist' (4 clk, CVR 0%) converteren niet — de pagina sluit nog niet volledig aan bij deze zoektermen. Het NL-volume voor AI-engineering is lager dan FR en EN, maar het profiel is identiek : gevorderd, technisch, niet op zoek naar een intro.",
+      "lpAngleSuggested": "classic"
+    },
+    "analystbi-fr": {
+      "theme": "analystbi",
+      "lang": "fr",
+      "primaryQuery": "formation data analyst",
+      "profile": "Profil analytique cherchant une reconversion vers la data / BI — les outils concrets sont déterminants.",
+      "clusters": [
+        {
+          "name": "DATA ANALYTICS",
+          "keywords": [
+            "data analytics courses",
+            "formation data analyst",
+            "data analyst formation",
+            "data analyste formation"
+          ]
+        },
+        {
+          "name": "SQL & OUTILS",
+          "keywords": [
+            "formation SQL",
+            "SQL certification",
+            "Power BI",
+            "Tableau"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Devenez Data Analyst. Power BI, SQL, Tableau : les outils qui font décrocher un job.",
+      "lpAngleBold": "Les outils que les entreprises recrutent. Tu vas tous les maîtriser.",
+      "cta": "Lance ta carrière data →",
+      "convertingKeywords": [
+        {
+          "keyword": "data analytics courses",
+          "raw": "data analytics courses | 84 clk | CTR:12.6% | CVR:4.8% | 4 conv"
+        },
+        {
+          "keyword": "formation data analyst",
+          "raw": "formation data analyst | 48 clk | CTR:15.7% | CVR:4.2% | 2 conv"
+        },
+        {
+          "keyword": "data analyst formation",
+          "raw": "data analyst formation | 12 clk | CTR:11.4% | CVR:8.3% | 1 conv"
+        },
+        {
+          "keyword": "formation sql",
+          "raw": "formation sql | 8 clk | CTR:7.2% | CVR:12.5% | 1 conv"
+        },
+        {
+          "keyword": "data analyste formation",
+          "raw": "data analyste formation | 2 clk | CTR:25.0% | CVR:50.0% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "sql certification",
+          "raw": "sql certification | 19 clk | CTR:6.8%"
+        },
+        {
+          "keyword": "data analyste",
+          "raw": "data analyste | 3 clk | CTR:7.9%"
+        },
+        {
+          "keyword": "formation data analyst gratuit",
+          "raw": "formation data analyst gratuit | 2 clk | CTR:4.4%"
+        },
+        {
+          "keyword": "formation data",
+          "raw": "formation data | 2 clk | CTR:16.7%"
+        },
+        {
+          "keyword": "formation power bi",
+          "raw": "formation power bi | 1 clk | CTR:5.3%"
+        },
+        {
+          "keyword": "data analyst formation gratuite",
+          "raw": "data analyst formation gratuite | 1 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "formation data analyste",
+          "raw": "formation data analyste | 1 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "formation sql gratuite",
+          "raw": "formation sql gratuite | 1 clk | CTR:7.1%"
+        },
+        {
+          "keyword": "formation en data analyst",
+          "raw": "formation en data analyst | 1 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "formation data analyst à distance",
+          "raw": "formation data analyst à distance | 1 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "master en business analytics",
+          "raw": "master en business analytics | 1 clk | CTR:5.6%"
+        },
+        {
+          "keyword": "formation gratuite power bi",
+          "raw": "formation gratuite power bi | 1 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "sql formation",
+          "raw": "sql formation | 1 clk | CTR:4.3%"
+        },
+        {
+          "keyword": "apprendre sql",
+          "raw": "apprendre sql | 1 clk | CTR:5.3%"
+        }
+      ],
+      "analyse": "L'audience converge sur deux types de requêtes. 'Data analytics courses' (84 clk, CVR 4.8%) et 'formation data analyst' (48 clk, CVR 4.2%) sont les termes d'entrée principaux. 'Formation SQL' (8 clk, CVR 12.5%) a la meilleure CVR — les personnes qui cherchent un outil précis sont les plus proches de s'inscrire. Pattern B : 'SQL certification' (19 clk, CVR 0%) — fort intérêt pour la certification mais la page ne le valorise pas suffisamment. Le cluster SQL/Outils est un levier sous-exploité : nommer explicitement Power BI, SQL et Tableau dans le corps de la page peut significativement améliorer la conversion.",
+      "lpAngleSuggested": "classic"
+    },
+    "analystbi-en": {
+      "theme": "analystbi",
+      "lang": "en",
+      "primaryQuery": "data analyst bootcamp / data analyst course",
+      "profile": "Career changer or graduate targeting data/analytics roles — actively comparing training options.",
+      "clusters": [
+        {
+          "name": "DATA ANALYST TRAINING",
+          "keywords": [
+            "data analyst",
+            "data analyst bootcamp",
+            "data analysis course",
+            "bootcamp data analyst",
+            "data analyst course"
+          ]
+        },
+        {
+          "name": "BI TOOLS",
+          "keywords": [
+            "Power BI",
+            "SQL training",
+            "business intelligence",
+            "business analysis certification"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Become a data analyst. Master the tools employers actually use.",
+      "lpAngleBold": "Power BI. SQL. Tableau. Your new skill set.",
+      "cta": "Start your data career →",
+      "convertingKeywords": [
+        {
+          "keyword": "data analyst",
+          "raw": "data analyst | 74 clk | CTR:6.3% | CVR:2.8% | 2.1 conv"
+        },
+        {
+          "keyword": "data analyst bootcamp",
+          "raw": "data analyst bootcamp | 5 clk | CTR:15.6% | CVR:20.0% | 1 conv"
+        },
+        {
+          "keyword": "data analysis course",
+          "raw": "data analysis course | 2 clk | CTR:18.2% | CVR:50.0% | 1 conv"
+        },
+        {
+          "keyword": "bootcamp data analyst",
+          "raw": "bootcamp data analyst | 2 clk | CTR:33.3% | CVR:50.0% | 1 conv"
+        },
+        {
+          "keyword": "data analysis course",
+          "raw": "data analysis course | 6 clk | CTR:10.9% | CVR:16.7% | 1 conv"
+        },
+        {
+          "keyword": "data analyst course",
+          "raw": "data analyst course | 10 clk | CTR:8.3% | CVR:4.0% | 0.4 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "data analyst",
+          "raw": "data analyst | 36 clk | CTR:6.6%"
+        },
+        {
+          "keyword": "business analysis certification",
+          "raw": "business analysis certification | 3 clk | CTR:7.5%"
+        },
+        {
+          "keyword": "free sql course",
+          "raw": "free sql course | 2 clk | CTR:6.7%"
+        },
+        {
+          "keyword": "sql practice",
+          "raw": "sql practice | 2 clk | CTR:40.0%"
+        },
+        {
+          "keyword": "junior data analyst",
+          "raw": "junior data analyst | 2 clk | CTR:25.0%"
+        },
+        {
+          "keyword": "learn sql free",
+          "raw": "learn sql free | 2 clk | CTR:13.3%"
+        },
+        {
+          "keyword": "data analysis",
+          "raw": "data analysis | 2 clk | CTR:2.3%"
+        },
+        {
+          "keyword": "free sql course",
+          "raw": "free sql course | 2 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "data analyst course",
+          "raw": "data analyst course | 1 clk | CTR:1.0%"
+        },
+        {
+          "keyword": "data analytics course",
+          "raw": "data analytics course | 1 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "data analyst junior",
+          "raw": "data analyst junior | 1 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "data analytics certification",
+          "raw": "data analytics certification | 1 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "data analysis",
+          "raw": "data analysis | 1 clk | CTR:1.4%"
+        },
+        {
+          "keyword": "power bi tutorial",
+          "raw": "power bi tutorial | 1 clk | CTR:6.7%"
+        },
+        {
+          "keyword": "google data analytics professional certificate",
+          "raw": "google data analytics professional certificate | 1 clk | CTR:9.1%"
+        },
+        {
+          "keyword": "data analyst certification",
+          "raw": "data analyst certification | 1 clk | CTR:9.1%"
+        },
+        {
+          "keyword": "google data analytics professional certificate",
+          "raw": "google data analytics professional certificate | 1 clk | CTR:11.1%"
+        }
+      ],
+      "analyse": "Conversion is concentrated on the training intent. 'Data analyst' (74 clk, CVR 2.8%) drives volume, but the bootcamp format converts better : 'data analyst bootcamp' (5 clk, CVR 20.0%) and 'bootcamp data analyst' (2 clk, CVR 50.0%) show that structured, intensive programmes are what this audience actually wants. 'Data analysis course' (2 clk + 6 clk, CVR 50.0% + 16.7%) confirms programme-based intent. Pattern B : 'business analysis certification' (3 clk, CVR 0%) — certification is on the radar but the page does not address it. Naming tools explicitly (Power BI, SQL, Tableau) in the page is critical — these users are comparison-shopping bootcamps.",
+      "lpAngleSuggested": "classic"
+    },
+    "analystbi-nl": {
+      "theme": "analystbi",
+      "lang": "nl",
+      "primaryQuery": "data analist opleiding",
+      "profile": "Carrièrewisselaar of student gericht op data/BI-rollen — tools zijn de doorslaggevende factor.",
+      "clusters": [
+        {
+          "name": "DATA ANALIST OPLEIDING",
+          "keywords": [
+            "data analist",
+            "data analist opleiding",
+            "opleiding data analist",
+            "data analyst opleiding"
+          ]
+        },
+        {
+          "name": "SQL & DATA TOOLS",
+          "keywords": [
+            "SQL programming training",
+            "Power BI opleiding",
+            "cursus data analyse",
+            "data analyse opleiding"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Word data analist. Leer de tools waar bedrijven nu op zoeken.",
+      "lpAngleBold": "Power BI. SQL. Tableau. Jouw nieuwe vaardigheden.",
+      "cta": "Start je datacarrière →",
+      "convertingKeywords": [
+        {
+          "keyword": "data analist",
+          "raw": "data analist | 74 clk | CTR:9.9% | CVR:5.4% | 4 conv"
+        },
+        {
+          "keyword": "opleiding data analist",
+          "raw": "opleiding data analist | 8 clk | CTR:7.0% | CVR:15.0% | 1.2 conv"
+        },
+        {
+          "keyword": "sql programming training",
+          "raw": "sql programming training | 14 clk | CTR:6.8% | CVR:7.1% | 1 conv"
+        },
+        {
+          "keyword": "data analist opleiding",
+          "raw": "data analist opleiding | 9 clk | CTR:4.8% | CVR:11.1% | 1 conv"
+        },
+        {
+          "keyword": "data analyst opleiding",
+          "raw": "data analyst opleiding | 6 clk | CTR:21.4% | CVR:16.7% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "power bi opleiding",
+          "raw": "power bi opleiding | 10 clk | CTR:6.8%"
+        },
+        {
+          "keyword": "learn r programming",
+          "raw": "learn r programming | 5 clk | CTR:15.6%"
+        },
+        {
+          "keyword": "cursus data analyse",
+          "raw": "cursus data analyse | 5 clk | CTR:16.1%"
+        },
+        {
+          "keyword": "data analyse opleiding",
+          "raw": "data analyse opleiding | 4 clk | CTR:9.3%"
+        },
+        {
+          "keyword": "data analist vacature",
+          "raw": "data analist vacature | 4 clk | CTR:10.0%"
+        },
+        {
+          "keyword": "dataanalist",
+          "raw": "dataanalist | 1 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "data analyse",
+          "raw": "data analyse | 1 clk | CTR:1.6%"
+        },
+        {
+          "keyword": "cursus programmeren in excel",
+          "raw": "cursus programmeren in excel | 1 clk | CTR:7.1%"
+        }
+      ],
+      "analyse": "Sterke conversiedata voor een relatief klein adgroup. 'Data analist' (74 clk, CVR 5.4%) is de basis. 'Opleiding data analist' (8 clk, CVR 15.0%) en 'data analist opleiding' (9 clk, CVR 11.1%) tonen hoge CVR bij wie specifiek naar een opleiding zoekt. 'SQL programming training' (14 clk, CVR 7.1%) converteert goed — tool-specifiek zoekgedrag leidt tot hogere intentie. Patroon B : 'Power BI opleiding' (10 clk, CVR 0%) en 'cursus data analyse' (5 clk, CVR 0%) — hoog klikvolume op tools maar de pagina converteert er niet op. Power BI, SQL en Tableau expliciet benoemen in de paginatekst is essentieel.",
+      "lpAngleSuggested": "classic"
+    },
+    "python-fr": {
+      "theme": "python",
+      "lang": "fr",
+      "primaryQuery": "apprendre Python / formation Python",
+      "profile": "Débutant ou développeur junior cherchant à maîtriser Python — souvent premier langage.",
+      "clusters": [
+        {
+          "name": "APPRENDRE PYTHON",
+          "keywords": [
+            "apprendre Python",
+            "formation Python",
+            "cours Python débutant",
+            "Python programmation"
+          ]
+        },
+        {
+          "name": "PYTHON POUR LA DATA & LE WEB",
+          "keywords": [
+            "Python data science",
+            "Python web development",
+            "Python Bruxelles"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Apprenez Python de zéro. Le langage le plus demandé en Belgique.",
+      "lpAngleBold": "Python change les carrières. Laissez-le changer la vôtre.",
+      "cta": "Commence Python aujourd'hui →",
+      "convertingKeywords": [
+        {
+          "keyword": "apprendre python",
+          "raw": "apprendre python | 101 clk | CTR:5.4% | CVR:5.9% | 6 conv"
+        },
+        {
+          "keyword": "formation python",
+          "raw": "formation python | 8 clk | CTR:13.8% | CVR:12.5% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "cours python",
+          "raw": "cours python | 2 clk | CTR:5.6%"
+        },
+        {
+          "keyword": "formation python gratuite",
+          "raw": "formation python gratuite | 2 clk | CTR:4.9%"
+        },
+        {
+          "keyword": "python formation",
+          "raw": "python formation | 1 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "formation python certifiante",
+          "raw": "formation python certifiante | 1 clk | CTR:4.2%"
+        },
+        {
+          "keyword": "programmation python",
+          "raw": "programmation python | 1 clk | CTR:2.2%"
+        },
+        {
+          "keyword": "cours python gratuit",
+          "raw": "cours python gratuit | 1 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "base de python",
+          "raw": "base de python | 1 clk | CTR:100.0%"
+        }
+      ],
+      "analyse": "Les données de conversion sont limitées mais claires. 'Apprendre Python' (101 clk, CVR 5.9%) est le terme dominant et principal convertisseur. 'Formation Python' (8 clk, CVR 12.5%) a la meilleure CVR — la formulation 'formation' signale une intention structurée plutôt qu'autodidacte. Le volume global de ce groupe est faible comparé aux autres thèmes, ce qui suggère que Python est souvent une recherche secondaire, associée à la data science ou au web. La page doit positionner Python comme un outil d'employabilité, pas juste un langage à apprendre.",
+      "lpAngleSuggested": "classic"
+    },
+    "python-en": {
+      "theme": "python",
+      "lang": "en",
+      "primaryQuery": "Python course / Python certification / learn Python",
+      "profile": "Beginner or junior dev seeking Python skills — certification signal validates the structured programme.",
+      "clusters": [
+        {
+          "name": "LEARN PYTHON",
+          "keywords": [
+            "Python",
+            "learn Python",
+            "learn Python free",
+            "learning Python",
+            "coding Python"
+          ]
+        },
+        {
+          "name": "PYTHON CERTIFICATION",
+          "keywords": [
+            "Python certification",
+            "Python course"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Learn Python. The number one in-demand programming language.",
+      "lpAngleBold": "The one language every tech company wants. Start here.",
+      "cta": "Start coding in Python →",
+      "convertingKeywords": [
+        {
+          "keyword": "python",
+          "raw": "python | 21 clk | CTR:1.8% | CVR:9.5% | 2 conv"
+        },
+        {
+          "keyword": "python",
+          "raw": "python | 17 clk | CTR:1.9% | CVR:11.8% | 2 conv"
+        },
+        {
+          "keyword": "python certification",
+          "raw": "python certification | 6 clk | CTR:1.2% | CVR:16.7% | 1 conv"
+        },
+        {
+          "keyword": "learning python",
+          "raw": "learning python | 1 clk | CTR:6.7% | CVR:100.0% | 1 conv"
+        },
+        {
+          "keyword": "coding python",
+          "raw": "coding python | 2 clk | CTR:66.7% | CVR:50.0% | 1 conv"
+        },
+        {
+          "keyword": "python certification",
+          "raw": "python certification | 19 clk | CTR:5.5% | CVR:5.3% | 1 conv"
+        },
+        {
+          "keyword": "learn python",
+          "raw": "learn python | 5 clk | CTR:5.2% | CVR:20.0% | 1 conv"
+        },
+        {
+          "keyword": "learn python free",
+          "raw": "learn python free | 13 clk | CTR:5.1% | CVR:7.7% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "python for beginners",
+          "raw": "python for beginners | 9 clk | CTR:1.2%"
+        },
+        {
+          "keyword": "python for beginners",
+          "raw": "python for beginners | 7 clk | CTR:0.8%"
+        },
+        {
+          "keyword": "learn python free",
+          "raw": "learn python free | 4 clk | CTR:2.8%"
+        },
+        {
+          "keyword": "python course free",
+          "raw": "python course free | 3 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "python course",
+          "raw": "python course | 3 clk | CTR:13.6%"
+        },
+        {
+          "keyword": "python courses",
+          "raw": "python courses | 2 clk | CTR:11.1%"
+        },
+        {
+          "keyword": "freecodecamp python",
+          "raw": "freecodecamp python | 2 clk | CTR:6.2%"
+        },
+        {
+          "keyword": "codecademy python",
+          "raw": "codecademy python | 2 clk | CTR:40.0%"
+        },
+        {
+          "keyword": "learn python",
+          "raw": "learn python | 2 clk | CTR:1.8%"
+        },
+        {
+          "keyword": "free python course",
+          "raw": "free python course | 2 clk | CTR:4.3%"
+        },
+        {
+          "keyword": "python programming",
+          "raw": "python programming | 2 clk | CTR:3.6%"
+        },
+        {
+          "keyword": "python course",
+          "raw": "python course | 1 clk | CTR:1.7%"
+        },
+        {
+          "keyword": "python online course",
+          "raw": "python online course | 1 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "coding python",
+          "raw": "coding python | 1 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "how to learn python",
+          "raw": "how to learn python | 1 clk | CTR:4.8%"
+        },
+        {
+          "keyword": "python free course",
+          "raw": "python free course | 1 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "python course for free",
+          "raw": "python course for free | 1 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "learning python",
+          "raw": "learning python | 1 clk | CTR:5.3%"
+        },
+        {
+          "keyword": "best python course",
+          "raw": "best python course | 1 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "freecodecamp python",
+          "raw": "freecodecamp python | 1 clk | CTR:3.1%"
+        },
+        {
+          "keyword": "free python courses",
+          "raw": "free python courses | 1 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "python exercises",
+          "raw": "python exercises | 1 clk | CTR:25.0%"
+        },
+        {
+          "keyword": "free python course",
+          "raw": "free python course | 1 clk | CTR:6.2%"
+        },
+        {
+          "keyword": "python online",
+          "raw": "python online | 1 clk | CTR:16.7%"
+        }
+      ],
+      "analyse": "Python conversion data is scattered across small volumes but consistent in direction. 'Python' itself (21 clk, CVR 9.5% and 17 clk, CVR 11.8%) converts well — broad intent with a good match to the page. 'Python certification' (6 clk, CVR 16.7% and 19 clk, CVR 5.3%) is a strong signal : the audience wants a recognised output, not just knowledge. 'Learn Python free' (13 clk, CVR 7.7%) converts — surprisingly, the 'free' qualifier does not repel conversions here, suggesting the page successfully redirects the intent. Pattern B : 'Python for beginners' (9 clk + 7 clk, CVR 0%) — the beginner label attracts clicks but not conversions. The page should lead with outcomes, not difficulty level.",
+      "lpAngleSuggested": "classic"
+    },
+    "python-nl": {
+      "theme": "python",
+      "lang": "nl",
+      "primaryQuery": "Python cursus / Python leren / Python voor beginners",
+      "profile": "Beginner of junior developer die Python wil leren — praktische projecten zijn een belangrijke trigger.",
+      "clusters": [
+        {
+          "name": "PYTHON LEREN",
+          "keywords": [
+            "Python leren",
+            "Python cursus",
+            "online cursus Python",
+            "Python programmeren"
+          ]
+        },
+        {
+          "name": "PYTHON VOOR BEGINNERS & PROJECTEN",
+          "keywords": [
+            "Python programming for beginners",
+            "Python projects for beginners",
+            "Python programmeren cursus"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Leer Python. De meest gevraagde programmeertaal.",
+      "lpAngleBold": "Één taal. Eindeloze mogelijkheden. Begin met Python.",
+      "cta": "Start met Python →",
+      "convertingKeywords": [
+        {
+          "keyword": "online cursus python",
+          "raw": "online cursus python | 2 clk | CTR:100.0% | CVR:100.0% | 2 conv"
+        },
+        {
+          "keyword": "python programming for beginners",
+          "raw": "python programming for beginners | 35 clk | CTR:6.5% | CVR:5.7% | 2 conv"
+        },
+        {
+          "keyword": "python cursus",
+          "raw": "python cursus | 17 clk | CTR:16.4% | CVR:5.9% | 1 conv"
+        },
+        {
+          "keyword": "python leren",
+          "raw": "python leren | 8 clk | CTR:14.3% | CVR:12.5% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "python projects for beginners",
+          "raw": "python projects for beginners | 42 clk | CTR:5.8%"
+        },
+        {
+          "keyword": "python programmeren",
+          "raw": "python programmeren | 8 clk | CTR:3.2%"
+        },
+        {
+          "keyword": "python opleiding",
+          "raw": "python opleiding | 7 clk | CTR:9.5%"
+        },
+        {
+          "keyword": "python programmeren cursus",
+          "raw": "python programmeren cursus | 4 clk | CTR:40.0%"
+        },
+        {
+          "keyword": "python leren gratis",
+          "raw": "python leren gratis | 2 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "opleiding python",
+          "raw": "opleiding python | 2 clk | CTR:8.3%"
+        },
+        {
+          "keyword": "cursus python programmeren",
+          "raw": "cursus python programmeren | 2 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "opleiding python programmeren",
+          "raw": "opleiding python programmeren | 1 clk | CTR:16.7%"
+        },
+        {
+          "keyword": "cursus programmeren python",
+          "raw": "cursus programmeren python | 1 clk | CTR:20.0%"
+        }
+      ],
+      "analyse": "De conversiedata is beperkt maar de patronen zijn duidelijk. 'Python programming for beginners' (35 clk, CVR 5.7%) is het sterkste converterende volume-term. 'Python leren' (8 clk, CVR 12.5%) en 'Python cursus' (17 clk, CVR 5.9%) bevestigen de intentie. Opvallend patroon B : 'Python projects for beginners' (42 clk, CVR 0%) — het hoogste klikvolume van dit groepje, maar nul conversies. Deze gebruikers zoeken concrete projecten om van te leren, geen cursus om te kopen. De pagina kan hierop inspelen door praktijkprojecten te benadrukken als onderdeel van de opleiding.",
+      "lpAngleSuggested": "classic"
+    },
+    "webfullstack-fr": {
+      "theme": "webfullstack",
+      "lang": "fr",
+      "primaryQuery": "formation développeur web Bruxelles",
+      "profile": "Reconvertion vers le développement web — cherche une formation fullstack concrète et localisée.",
+      "clusters": [
+        {
+          "name": "FORMATION DÉVELOPPEUR WEB",
+          "keywords": [
+            "formation développeur web",
+            "formation web developer Bruxelles",
+            "formation web",
+            "formation développement web"
+          ]
+        },
+        {
+          "name": "SPÉCIALISATIONS FRONT/BACK",
+          "keywords": [
+            "formation JavaScript",
+            "formation React",
+            "formation HTML CSS",
+            "développeur web formation"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Devenez développeur web fullstack. Front, back, déploiement.",
+      "lpAngleBold": "Construisez des apps dès le premier jour. Du front au back.",
+      "cta": "Lance ta carrière web →",
+      "convertingKeywords": [
+        {
+          "keyword": "formation developpeur web",
+          "raw": "formation developpeur web | 185 clk | CTR:10.2% | CVR:4.6% | 8.4 conv"
+        },
+        {
+          "keyword": "formation web developer bruxelles",
+          "raw": "formation web developer bruxelles | 14 clk | CTR:16.1% | CVR:8.9% | 1.2 conv"
+        },
+        {
+          "keyword": "formation web",
+          "raw": "formation web | 5 clk | CTR:6.3% | CVR:20.0% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "développeur web formation",
+          "raw": "développeur web formation | 16 clk | CTR:14.5%"
+        },
+        {
+          "keyword": "formation developpeur web bruxelles",
+          "raw": "formation developpeur web bruxelles | 8 clk | CTR:7.4%"
+        },
+        {
+          "keyword": "developpeur formation",
+          "raw": "developpeur formation | 6 clk | CTR:9.7%"
+        },
+        {
+          "keyword": "formation développeur web bruxelles",
+          "raw": "formation développeur web bruxelles | 5 clk | CTR:17.9%"
+        },
+        {
+          "keyword": "développeur web",
+          "raw": "développeur web | 4 clk | CTR:3.9%"
+        },
+        {
+          "keyword": "webdesigner formation",
+          "raw": "webdesigner formation | 4 clk | CTR:9.1%"
+        },
+        {
+          "keyword": "formation développement web",
+          "raw": "formation développement web | 3 clk | CTR:18.8%"
+        },
+        {
+          "keyword": "développement web formation",
+          "raw": "développement web formation | 2 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "formation developpeur",
+          "raw": "formation developpeur | 2 clk | CTR:5.7%"
+        },
+        {
+          "keyword": "formation webdesigner bruxelles",
+          "raw": "formation webdesigner bruxelles | 1 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "javascript apprendre",
+          "raw": "javascript apprendre | 1 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "devenir développeur web",
+          "raw": "devenir développeur web | 1 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "formation web developer",
+          "raw": "formation web developer | 1 clk | CTR:3.7%"
+        },
+        {
+          "keyword": "formation dev web",
+          "raw": "formation dev web | 1 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "formation webdesign",
+          "raw": "formation webdesign | 1 clk | CTR:4.3%"
+        }
+      ],
+      "analyse": "'Formation développeur web' (185 clk, CVR 4.6%) est le terme central et dominant. 'Formation web developer Bruxelles' (14 clk, CVR 8.9%) a une meilleure CVR — la localisation Bruxelles est un facteur de conversion important. 'Formation web' (5 clk, CVR 20.0%) confirme l'intention d'apprentissage structuré. Pattern B : 'développeur web formation' (16 clk, CVR 0%) et 'webdesigner formation' (4 clk, CVR 0%) — légère variation de formulation ou intention webdesign vs webdev qui ne correspond pas à l'offre. La page doit nommer les technologies (JavaScript, React, HTML/CSS) pour ancrer la crédibilité technique.",
+      "lpAngleSuggested": "classic"
+    },
+    "webfullstack-en": {
+      "theme": "webfullstack",
+      "lang": "en",
+      "primaryQuery": "web developer / full stack developer",
+      "profile": "Career changer targeting fullstack web development roles — wants real projects, not theory.",
+      "clusters": [
+        {
+          "name": "WEB DEVELOPER & FULLSTACK",
+          "keywords": [
+            "web developer",
+            "full stack developer",
+            "web development classes"
+          ]
+        },
+        {
+          "name": "TECHNOLOGIES",
+          "keywords": [
+            "JavaScript",
+            "React",
+            "front end developer"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Become a full stack developer. Build real apps from day one.",
+      "lpAngleBold": "Front end. Back end. Full stack. Your first real app ships on week one.",
+      "cta": "Start building web apps →",
+      "convertingKeywords": [
+        {
+          "keyword": "web developer",
+          "raw": "web developer | 19 clk | CTR:5.0% | CVR:10.5% | 2 conv"
+        },
+        {
+          "keyword": "web development classes",
+          "raw": "web development classes | 16 clk | CTR:8.4% | CVR:12.5% | 2 conv"
+        },
+        {
+          "keyword": "full stack developer",
+          "raw": "full stack developer | 6 clk | CTR:12.0% | CVR:16.7% | 1 conv"
+        },
+        {
+          "keyword": "web developer",
+          "raw": "web developer | 12 clk | CTR:4.1% | CVR:8.3% | 1 conv"
+        },
+        {
+          "keyword": "full stack developer",
+          "raw": "full stack developer | 2 clk | CTR:4.3% | CVR:25.0% | 0.5 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "javascript",
+          "raw": "javascript | 4 clk | CTR:3.4%"
+        },
+        {
+          "keyword": "javascript",
+          "raw": "javascript | 2 clk | CTR:1.0%"
+        },
+        {
+          "keyword": "front end developer",
+          "raw": "front end developer | 2 clk | CTR:11.8%"
+        },
+        {
+          "keyword": "back-end developer",
+          "raw": "back-end developer | 2 clk | CTR:28.6%"
+        },
+        {
+          "keyword": "vibe coding",
+          "raw": "vibe coding | 1 clk | CTR:2.8%"
+        },
+        {
+          "keyword": "learn javascript",
+          "raw": "learn javascript | 1 clk | CTR:0.5%"
+        },
+        {
+          "keyword": "junior web developer",
+          "raw": "junior web developer | 1 clk | CTR:10.0%"
+        },
+        {
+          "keyword": "how to create site",
+          "raw": "how to create site | 1 clk | CTR:14.3%"
+        },
+        {
+          "keyword": "javascript coding",
+          "raw": "javascript coding | 1 clk | CTR:10.0%"
+        },
+        {
+          "keyword": "learning javascript",
+          "raw": "learning javascript | 1 clk | CTR:12.5%"
+        },
+        {
+          "keyword": "coding websites",
+          "raw": "coding websites | 1 clk | CTR:11.1%"
+        },
+        {
+          "keyword": "flutter",
+          "raw": "flutter | 1 clk | CTR:11.1%"
+        }
+      ],
+      "analyse": "The data volume is limited but the conversion signal is clear and consistent. 'Web developer' (19 clk, CVR 10.5% and 12 clk, CVR 8.3%) and 'full stack developer' (6 clk, CVR 16.7% and 2 clk, CVR 25.0%) are the core converters. 'Web development classes' (16 clk, CVR 12.5%) confirms the structured training intent. Pattern B : 'javascript' (4 clk, CVR 0%) — technology-first searches do not convert, suggesting the audience starts with the role (web developer) not the stack. The page should lead with the career outcome and introduce technologies as the path, not the headline.",
+      "lpAngleSuggested": "classic"
+    },
+    "webfullstack-nl": {
+      "theme": "webfullstack",
+      "lang": "nl",
+      "primaryQuery": "front end developer opleiding / full stack developer opleiding",
+      "profile": "Carrièrewisselaar gericht op webontwikkeling — wil een concrete, project-gebaseerde opleiding.",
+      "clusters": [
+        {
+          "name": "WEB DEVELOPMENT OPLEIDING",
+          "keywords": [
+            "front end developer opleiding",
+            "full stack developer opleiding",
+            "web developer opleiding",
+            "web development opleiding"
+          ]
+        },
+        {
+          "name": "ORIËNTATIE",
+          "keywords": [
+            "welke studiekeuze past bij mij"
+          ]
+        },
+        {
+          "name": "TECHNOLOGIEËN",
+          "keywords": [
+            "HTML cursus",
+            "JavaScript leren",
+            "web development courses"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Word fullstack developer. Van front-end tot back-end.",
+      "lpAngleBold": "Van front-end naar back-end. Bouw echte apps.",
+      "cta": "Start je webdev opleiding →",
+      "convertingKeywords": [
+        {
+          "keyword": "front end developer opleiding",
+          "raw": "front end developer opleiding | 12 clk | CTR:22.2% | CVR:8.3% | 1 conv"
+        },
+        {
+          "keyword": "welke studiekeuze past bij mij",
+          "raw": "welke studiekeuze past bij mij | 11 clk | CTR:5.3% | CVR:9.1% | 1 conv"
+        },
+        {
+          "keyword": "full stack developer opleiding",
+          "raw": "full stack developer opleiding | 12 clk | CTR:11.7% | CVR:8.3% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "web development courses",
+          "raw": "web development courses | 21 clk | CTR:6.3%"
+        },
+        {
+          "keyword": "html cursus",
+          "raw": "html cursus | 9 clk | CTR:8.4%"
+        },
+        {
+          "keyword": "web developer opleiding",
+          "raw": "web developer opleiding | 7 clk | CTR:11.7%"
+        },
+        {
+          "keyword": "webdesigner opleiding",
+          "raw": "webdesigner opleiding | 6 clk | CTR:5.1%"
+        },
+        {
+          "keyword": "web development opleiding",
+          "raw": "web development opleiding | 4 clk | CTR:11.8%"
+        },
+        {
+          "keyword": "javascript leren",
+          "raw": "javascript leren | 3 clk | CTR:2.2%"
+        },
+        {
+          "keyword": "opleiding full stack developer",
+          "raw": "opleiding full stack developer | 2 clk | CTR:10.5%"
+        },
+        {
+          "keyword": "c# cursus",
+          "raw": "c# cursus | 1 clk | CTR:4.0%"
+        },
+        {
+          "keyword": "full stack developer cursus",
+          "raw": "full stack developer cursus | 1 clk | CTR:50.0%"
+        },
+        {
+          "keyword": "html css online",
+          "raw": "html css online | 1 clk | CTR:7.7%"
+        },
+        {
+          "keyword": "php cursus",
+          "raw": "php cursus | 1 clk | CTR:14.3%"
+        },
+        {
+          "keyword": "full stack developer avondopleiding",
+          "raw": "full stack developer avondopleiding | 1 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "html leren",
+          "raw": "html leren | 1 clk | CTR:2.3%"
+        }
+      ],
+      "analyse": "Drie gelijkwaardige conversiebronnen : 'front end developer opleiding' (12 clk, CVR 8.3%), 'full stack developer opleiding' (12 clk, CVR 8.3%) en — opvallend — 'welke studiekeuze past bij mij' (11 clk, CVR 9.1%). Dit laatste signaal, identiek aan Opportunity NL, toont dat een deel van het publiek nog aan het oriënteren is, zelfs in een technisch specifiek adgroup. Patroon B : 'web development courses' (21 clk, CVR 0%) en 'html cursus' (9 clk, CVR 0%) — technologiegericht zoeken converteert niet. De pagina moet starten met het carrièredoel (web developer), niet met de technologiestack.",
+      "lpAngleSuggested": "classic"
+    },
+    "scienceeng-fr": {
+      "theme": "scienceeng",
+      "lang": "fr",
+      "primaryQuery": "formation data scientist",
+      "profile": "Profil technique (ingénieur, mathématicien) visant la data science ou le ML — niveau master attendu.",
+      "clusters": [
+        {
+          "name": "FORMATION DATA SCIENTIST",
+          "keywords": [
+            "formation data scientist",
+            "formation data scientist en ligne",
+            "data science Bruxelles"
+          ]
+        },
+        {
+          "name": "MACHINE LEARNING & STATS",
+          "keywords": [
+            "machine learning formation",
+            "statistiques appliquées",
+            "deep learning",
+            "Python data science"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Devenez Data Scientist. Stats, ML, Python : le programme le plus exigeant.",
+      "lpAngleBold": "Là où les statistiques, le code et le business se rencontrent. Bienvenue en Data Science.",
+      "cta": "Rejoins le programme Data Science →",
+      "convertingKeywords": [
+        {
+          "keyword": "formation data scientist",
+          "raw": "formation data scientist | 28 clk | CTR:10.1% | CVR:3.6% | 1 conv"
+        },
+        {
+          "keyword": "formation data scientist en ligne",
+          "raw": "formation data scientist en ligne | 1 clk | CTR:100.0% | CVR:100.0% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "formation data science",
+          "raw": "formation data science | 2 clk | CTR:11.8%"
+        },
+        {
+          "keyword": "data scientist formation",
+          "raw": "data scientist formation | 1 clk | CTR:7.7%"
+        },
+        {
+          "keyword": "formation data engineer",
+          "raw": "formation data engineer | 1 clk | CTR:5.9%"
+        }
+      ],
+      "analyse": "Les données de conversion sont très limitées pour ce groupe en FR : 'formation data scientist' (28 clk, CVR 3.6%) est le seul terme avec volume significatif. Cela peut indiquer que l'audience FR cherchant un niveau data scientist est plus restreinte, ou que le budget d'enchères sur ce groupe est insuffisant. Le cluster ML/Stats est construit sur le champ sémantique du thème plutôt que sur des données directes. La page doit clairement se différencier de la formation data analyst : plus mathématique, plus ML, plus exigeant — pour ne pas attirer le mauvais profil.",
+      "lpAngleSuggested": "classic"
+    },
+    "scienceeng-en": {
+      "theme": "scienceeng",
+      "lang": "en",
+      "primaryQuery": "data science master / master data sciences",
+      "profile": "Technical graduate or engineer — expects postgraduate-level rigour in statistics, ML and Python.",
+      "clusters": [
+        {
+          "name": "MASTER-LEVEL PROGRAMS",
+          "keywords": [
+            "data science master",
+            "master data sciences",
+            "data science bootcamp"
+          ]
+        },
+        {
+          "name": "DATA SCIENCE TRAINING",
+          "keywords": [
+            "data science course",
+            "deep learning",
+            "machine learning program"
+          ]
+        },
+        {
+          "name": "ADJACENT (Pattern B)",
+          "keywords": [
+            "data engineer"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Master data science. From statistical foundations to production ML.",
+      "lpAngleBold": "Statistics meets code meets business impact. This is Data Science.",
+      "cta": "Apply to the Data Science program →",
+      "convertingKeywords": [
+        {
+          "keyword": "data science master",
+          "raw": "data science master | 60 clk | CTR:15.6% | CVR:15.0% | 9 conv"
+        },
+        {
+          "keyword": "master data sciences",
+          "raw": "master data sciences | 14 clk | CTR:9.5% | CVR:17.9% | 2.5 conv"
+        },
+        {
+          "keyword": "data science course",
+          "raw": "data science course | 14 clk | CTR:4.2% | CVR:9.5% | 1.3 conv"
+        },
+        {
+          "keyword": "data science course",
+          "raw": "data science course | 16 clk | CTR:4.9% | CVR:6.2% | 1 conv"
+        },
+        {
+          "keyword": "deep learning",
+          "raw": "deep learning | 1 clk | CTR:100.0% | CVR:100.0% | 1 conv"
+        },
+        {
+          "keyword": "data science bootcamp",
+          "raw": "data science bootcamp | 7 clk | CTR:8.5% | CVR:14.3% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "data engineer",
+          "raw": "data engineer | 8 clk | CTR:8.8%"
+        },
+        {
+          "keyword": "data science",
+          "raw": "data science | 3 clk | CTR:1.9%"
+        },
+        {
+          "keyword": "machine learning book",
+          "raw": "machine learning book | 2 clk | CTR:100.0%"
+        },
+        {
+          "keyword": "data engineer course",
+          "raw": "data engineer course | 1 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "data engineering courses",
+          "raw": "data engineering courses | 1 clk | CTR:25.0%"
+        },
+        {
+          "keyword": "data science",
+          "raw": "data science | 1 clk | CTR:1.2%"
+        },
+        {
+          "keyword": "datascience",
+          "raw": "datascience | 1 clk | CTR:12.5%"
+        },
+        {
+          "keyword": "data scientist",
+          "raw": "data scientist | 1 clk | CTR:2.5%"
+        },
+        {
+          "keyword": "data engineer roadmap",
+          "raw": "data engineer roadmap | 1 clk | CTR:12.5%"
+        },
+        {
+          "keyword": "machine learning",
+          "raw": "machine learning | 1 clk | CTR:0.5%"
+        },
+        {
+          "keyword": "statistics for data science",
+          "raw": "statistics for data science | 1 clk | CTR:50.0%"
+        }
+      ],
+      "analyse": "This ad group has exceptionally strong master-level conversion signals. 'Data science master' (60 clk, CVR 15.0%) and 'master data sciences' (14 clk, CVR 17.9%) are the dominant converters — the highest CVRs of any non-niche terms in the full account. 'Data science bootcamp' (7 clk, CVR 14.3%) also converts strongly. 'Data science course' (14 clk, CVR 9.5% and 16 clk, CVR 6.2%) provides volume. Pattern B : 'data engineer' (8 clk, CVR 0%) — adjacent role, different career track, the page does not address data engineering specifically. The page must project postgraduate-level credibility : statistics, ML, Python at depth.",
+      "lpAngleSuggested": "classic"
+    },
+    "scienceeng-nl": {
+      "theme": "scienceeng",
+      "lang": "nl",
+      "primaryQuery": "data scientist opleiding",
+      "profile": "Technisch profiel (ingenieur, wiskundige) gericht op data science — masterniveau verwacht.",
+      "clusters": [
+        {
+          "name": "DATA SCIENTIST OPLEIDING",
+          "keywords": [
+            "data scientist opleiding",
+            "opleiding data scientist",
+            "data science cursus",
+            "machine learning opleiding"
+          ]
+        },
+        {
+          "name": "PYTHON & ML",
+          "keywords": [
+            "Python data science",
+            "deep learning België"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Word Data Scientist. Stats, ML en Python op masterniveau.",
+      "lpAngleBold": "Wiskunde. Code. Businessimpact. Dit is Data Science.",
+      "cta": "Start het Data Science programma →",
+      "convertingKeywords": [
+        {
+          "keyword": "data scientist opleiding",
+          "raw": "data scientist opleiding | 19 clk | CTR:5.1% | CVR:5.3% | 1 conv"
+        },
+        {
+          "keyword": "opleiding data scientist",
+          "raw": "opleiding data scientist | 2 clk | CTR:16.7% | CVR:50.0% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "opleiding data engineer",
+          "raw": "opleiding data engineer | 2 clk | CTR:15.4%"
+        }
+      ],
+      "analyse": "Het dataprofiel is beperkt : 'data scientist opleiding' (19 clk, CVR 5.3%) en 'opleiding data scientist' (2 clk, CVR 50.0%) zijn de enige converters met volume. Het NL-volume voor dit thema is laag, consistent met een kleinere doelgroep voor postgraduaat-niveau opleidingen in het Nederlands. Het profiel is identiek aan EN : technisch, wiskundig, hoog ambitieniveau. De pagina mag niet lijken op een data analist cursus — de differentiatie met AnalystBI NL moet duidelijk zijn in toon en inhoud.",
+      "lpAngleSuggested": "classic"
+    },
+    "infra-fr": {
+      "theme": "infra",
+      "lang": "fr",
+      "primaryQuery": "formation DevOps / formation administrateur système",
+      "profile": "Technicien IT ou sysadmin cherchant à évoluer vers DevOps ou le Cloud — large spectre de profils.",
+      "clusters": [
+        {
+          "name": "DEVOPS & CLOUD",
+          "keywords": [
+            "formation DevOps",
+            "devops course",
+            "Cloud AWS formation"
+          ]
+        },
+        {
+          "name": "ADMIN SYSTÈME & RÉSEAU",
+          "keywords": [
+            "formation administrateur système",
+            "formation administrateur système et réseau",
+            "formation réseau informatique"
+          ]
+        },
+        {
+          "name": "TECHNICIEN IT",
+          "keywords": [
+            "formation technicien informatique",
+            "Linux formation"
+          ]
+        }
+      ],
+      "lpAngleClassic": "De sysadmin à DevOps. Maîtrisez l'infrastructure moderne.",
+      "lpAngleBold": "Tes compétences sysadmin sont la fondation. DevOps est la destination.",
+      "cta": "Lance ta carrière Infra/DevOps →",
+      "convertingKeywords": [
+        {
+          "keyword": "formation devops",
+          "raw": "formation devops | 16 clk | CTR:20.2% | CVR:12.5% | 2 conv"
+        },
+        {
+          "keyword": "formation administrateur systeme et reseau",
+          "raw": "formation administrateur systeme et reseau | 7 clk | CTR:17.5% | CVR:14.3% | 1 conv"
+        },
+        {
+          "keyword": "formation technicien informatique",
+          "raw": "formation technicien informatique | 55 clk | CTR:11.0% | CVR:1.8% | 1 conv"
+        },
+        {
+          "keyword": "formation administrateur systeme",
+          "raw": "formation administrateur systeme | 7 clk | CTR:11.7% | CVR:14.3% | 1 conv"
+        },
+        {
+          "keyword": "formation reseau informatique",
+          "raw": "formation reseau informatique | 16 clk | CTR:10.5% | CVR:6.2% | 1 conv"
+        },
+        {
+          "keyword": "devops course",
+          "raw": "devops course | 20 clk | CTR:10.6% | CVR:5.0% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "technicien informatique formation",
+          "raw": "technicien informatique formation | 11 clk | CTR:12.2%"
+        },
+        {
+          "keyword": "technicien informatique",
+          "raw": "technicien informatique | 10 clk | CTR:11.4%"
+        },
+        {
+          "keyword": "formation reseaux informatique",
+          "raw": "formation reseaux informatique | 7 clk | CTR:20.0%"
+        },
+        {
+          "keyword": "devops formation",
+          "raw": "devops formation | 3 clk | CTR:30.0%"
+        },
+        {
+          "keyword": "cisco formation",
+          "raw": "cisco formation | 1 clk | CTR:12.5%"
+        },
+        {
+          "keyword": "formation technicien en informatique",
+          "raw": "formation technicien en informatique | 1 clk | CTR:20.0%"
+        }
+      ],
+      "analyse": "Ce groupe couvre un spectre large allant du technicien IT au sysadmin ciblant DevOps. 'Formation technicien informatique' (55 clk, CVR 1.8%) a le plus grand volume mais la plus faible CVR — l'intention est générique. À l'inverse, 'formation DevOps' (16 clk, CVR 12.5%) et 'formation administrateur système' (7 clk, CVR 14.3%) ont des CVR nettement supérieures — l'audience qui sait ce qu'elle veut convertit mieux. 'Formation réseau informatique' (16 clk, CVR 6.2%) est un signal intermédiaire solide. Pattern B : 'formation reseaux informatique' (7 clk, CVR 0%) et 'technicien informatique' (10 clk, CVR 0%) — la page ne convertit pas sur les termes généralistes. La page doit parler à deux profils à la fois : le technicien qui veut monter en compétences et le sysadmin qui veut basculer vers DevOps.",
+      "lpAngleSuggested": "classic"
+    },
+    "infra-en": {
+      "theme": "infra",
+      "lang": "en",
+      "primaryQuery": "DevOps course / cloud computing training / network engineer",
+      "profile": "IT technician or sysadmin targeting DevOps, Cloud or network engineering roles.",
+      "clusters": [
+        {
+          "name": "DEVOPS & CLOUD",
+          "keywords": [
+            "DevOps course",
+            "cloud computing training",
+            "AWS certification"
+          ]
+        },
+        {
+          "name": "NETWORKING & SYSTEMS",
+          "keywords": [
+            "network engineer",
+            "Linux administration",
+            "system administrator course"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Build modern infrastructure skills. DevOps, Cloud, Networking.",
+      "lpAngleBold": "Linux. AWS. Docker. The infrastructure skills that get you hired.",
+      "cta": "Start your DevOps journey →",
+      "convertingKeywords": [
+        {
+          "keyword": "— no conversion data",
+          "raw": "— no conversion data"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "comptia a+",
+          "raw": "comptia a+ | 2 clk | CTR:9.5%"
+        },
+        {
+          "keyword": "comptia a+",
+          "raw": "comptia a+ | 2 clk | CTR:15.4%"
+        },
+        {
+          "keyword": "cloud engineer",
+          "raw": "cloud engineer | 2 clk | CTR:3.2%"
+        },
+        {
+          "keyword": "learn operating system with linux",
+          "raw": "learn operating system with linux | 1 clk | CTR:2.1%"
+        },
+        {
+          "keyword": "comptia a",
+          "raw": "comptia a | 1 clk | CTR:33.3%"
+        },
+        {
+          "keyword": "comptia a",
+          "raw": "comptia a | 1 clk | CTR:9.1%"
+        }
+      ],
+      "analyse": "This ad group has no conversion data — 0 conversions on 6 clicks total. The keywords that received clicks include 'CompTIA A+' (2 clk) and 'cloud engineer' (2 clk), both with 0 conversions. This is most likely an underfunded ad group rather than a demand problem : the FR equivalent (same theme) converts at CVR 6–14%. The clusters are built on semantic intent rather than conversion data. The page angle and copy direction should mirror Infra FR — sysadmin-to-DevOps career upgrade — and be validated once the ad group receives sufficient budget and traffic.",
+      "lpAngleSuggested": "classic"
+    },
+    "infra-nl": {
+      "theme": "infra",
+      "lang": "nl",
+      "primaryQuery": "DevOps opleiding / systeembeheer opleiding",
+      "profile": "IT-technicien of systeembeheerder gericht op DevOps of Cloud — loopbaanupgrade.",
+      "clusters": [
+        {
+          "name": "DEVOPS & CLOUD",
+          "keywords": [
+            "DevOps opleiding",
+            "cloud engineer opleiding",
+            "AWS certificering"
+          ]
+        },
+        {
+          "name": "NETWERK & SYSTEEMBEHEER",
+          "keywords": [
+            "systeembeheer opleiding",
+            "netwerk beheerder opleiding",
+            "opleiding netwerkbeheerder",
+            "Linux cursus"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Word DevOps engineer. Infrastructuur, Cloud en netwerken.",
+      "lpAngleBold": "Van systeembeheer naar DevOps. Jouw volgende stap.",
+      "cta": "Start je Infra/DevOps opleiding →",
+      "convertingKeywords": [
+        {
+          "keyword": "— no conversion data",
+          "raw": "— no conversion data"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "opleiding netwerkbeheerder",
+          "raw": "opleiding netwerkbeheerder | 7 clk | CTR:6.7%"
+        },
+        {
+          "keyword": "cloud engineer opleiding",
+          "raw": "cloud engineer opleiding | 5 clk | CTR:7.6%"
+        },
+        {
+          "keyword": "devops engineer opleiding",
+          "raw": "devops engineer opleiding | 2 clk | CTR:3.8%"
+        },
+        {
+          "keyword": "systeembeheerder opleiding",
+          "raw": "systeembeheerder opleiding | 2 clk | CTR:1.6%"
+        }
+      ],
+      "analyse": "Geen conversiedata beschikbaar voor dit adgroup — enkel klikdata zonder conversies : 'opleiding netwerkbeheerder' (7 clk, CVR 0%) en 'cloud engineer opleiding' (5 clk, CVR 0%). De NL-markt voor DevOps/Infra is kleiner dan FR en EN, maar de intentie is aanwezig. De clusters zijn gebaseerd op de semantische structuur van het thema. Zodra het adgroup voldoende budget krijgt, moet de pagina dezelfde logica volgen als Infra FR : systeembeheerder als startpunt, DevOps/Cloud als bestemming.",
+      "lpAngleSuggested": "classic"
+    },
+    "genai-fr": {
+      "theme": "genai",
+      "lang": "fr",
+      "primaryQuery": "prompt engineer formation / formation IA générative",
+      "profile": "Professionnel ou développeur cherchant des compétences GenAI concrètes — pas un usage grand public.",
+      "clusters": [
+        {
+          "name": "PROMPT ENGINEERING",
+          "keywords": [
+            "prompt engineer formation",
+            "formation prompt engineering",
+            "formation prompt engineer"
+          ]
+        },
+        {
+          "name": "IA GÉNÉRATIVE & LLMs",
+          "keywords": [
+            "formation IA générative",
+            "LLM cours",
+            "ChatGPT avancé",
+            "IA au travail"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Maîtrisez l'IA générative. Prompt engineering, LLMs, automatisation.",
+      "lpAngleBold": "Les LLMs ne sont pas de la magie. Apprenez à les programmer.",
+      "cta": "Deviens Prompt Engineer →",
+      "convertingKeywords": [
+        {
+          "keyword": "prompt engineer formation",
+          "raw": "prompt engineer formation | 23 clk | CTR:19.2% | CVR:8.7% | 2 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "formation prompt engineering",
+          "raw": "formation prompt engineering | 13 clk | CTR:23.2%"
+        },
+        {
+          "keyword": "formation prompt engineer",
+          "raw": "formation prompt engineer | 4 clk | CTR:44.4%"
+        }
+      ],
+      "analyse": "Les données sont limitées mais révèlent un signal fort d'intention professionnelle. 'Prompt engineer formation' (23 clk, CVR 8.7%) est le terme convertisseur principal. Pattern B critique : 'formation prompt engineering' (13 clk, CTR 23.2%, CVR 0%) — un CTR extrêmement élevé (23.2%) suivi de zéro conversions est le signal classique d'une promesse non tenue sur la page d'atterrissage. La page doit immédiatement signaler un niveau professionnel et non une introduction grand public. ChatGPT débutant, IA magique ou outil gratuit sont des signaux à éviter absolument dans le copy.",
+      "lpAngleSuggested": "bold"
+    },
+    "genai-en": {
+      "theme": "genai",
+      "lang": "en",
+      "primaryQuery": "prompt engineering course / AI prompt engineer",
+      "profile": "Professional or developer wanting production-grade GenAI skills — not a basic ChatGPT tutorial.",
+      "clusters": [
+        {
+          "name": "PROMPT ENGINEERING",
+          "keywords": [
+            "prompt engineering course",
+            "AI prompt engineer",
+            "prompt engineering"
+          ]
+        },
+        {
+          "name": "GENERATIVE AI & LLMs",
+          "keywords": [
+            "generative AI course",
+            "AI automation course",
+            "LLM training",
+            "ChatGPT advanced"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Master generative AI. LLMs, prompt engineering and AI automation.",
+      "lpAngleBold": "LLMs are not magic. Learn to build with them.",
+      "cta": "Start your GenAI journey →",
+      "convertingKeywords": [
+        {
+          "keyword": "prompt engineering course",
+          "raw": "prompt engineering course | 22 clk | CTR:8.2% | CVR:11.4% | 2.5 conv"
+        },
+        {
+          "keyword": "ai prompt engineer",
+          "raw": "ai prompt engineer | 19 clk | CTR:12.5% | CVR:5.3% | 1 conv"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "prompt engineering course",
+          "raw": "prompt engineering course | 13 clk | CTR:6.0%"
+        },
+        {
+          "keyword": "prompt engineering",
+          "raw": "prompt engineering | 13 clk | CTR:10.2%"
+        },
+        {
+          "keyword": "prompt engineering",
+          "raw": "prompt engineering | 5 clk | CTR:6.2%"
+        },
+        {
+          "keyword": "prompt engineering chatgpt",
+          "raw": "prompt engineering chatgpt | 2 clk | CTR:9.5%"
+        },
+        {
+          "keyword": "prompt engineering cursus",
+          "raw": "prompt engineering cursus | 1 clk | CTR:4.8%"
+        },
+        {
+          "keyword": "ai prompt engineer",
+          "raw": "ai prompt engineer | 1 clk | CTR:1.8%"
+        },
+        {
+          "keyword": "prompt engineering courses",
+          "raw": "prompt engineering courses | 1 clk | CTR:8.3%"
+        }
+      ],
+      "analyse": "The conversion data is limited but structurally revealing. 'Prompt engineering course' (22 clk, CVR 11.4%) and 'AI prompt engineer' (19 clk, CVR 5.3%) are the two converters. Pattern B : 'prompt engineering course' appears again (13 clk, CVR 0%) and 'prompt engineering' (13 clk + 5 clk, CVR 0%) — likely the same audience bouncing on a different campaign instance, confirming that search intent is there but LP execution is inconsistent. The page must immediately signal professional-grade GenAI — not a beginner intro. Body copy must include : LLM APIs, RAG pipelines, prompt chaining, AI automation workflows.",
+      "lpAngleSuggested": "bold"
+    },
+    "genai-nl": {
+      "theme": "genai",
+      "lang": "nl",
+      "primaryQuery": "prompt engineering cursus / generatieve AI opleiding",
+      "profile": "Professional of ontwikkelaar — prospectief publiek, laag NL-zoekvolume voor GenAI bevestigd.",
+      "clusters": [
+        {
+          "name": "PROMPT ENGINEERING",
+          "keywords": [
+            "prompt engineering cursus",
+            "prompt engineer opleiding"
+          ]
+        },
+        {
+          "name": "GENERATIEVE AI & LLMs",
+          "keywords": [
+            "generatieve AI opleiding",
+            "LLM training",
+            "AI automatisering",
+            "ChatGPT gevorderd"
+          ]
+        }
+      ],
+      "lpAngleClassic": "Beheers generatieve AI. Prompt engineering, LLMs en automatisering.",
+      "lpAngleBold": "Generatieve AI is geen magie. Leer ermee bouwen.",
+      "cta": "Start je GenAI opleiding →",
+      "convertingKeywords": [
+        {
+          "keyword": "— no conversion data",
+          "raw": "— no conversion data"
+        }
+      ],
+      "patternBKeywords": [
+        {
+          "keyword": "— none",
+          "raw": "— none"
+        }
+      ],
+      "analyse": "Geen AG_GenAI_NL_Broad aanwezig in de accountdata — bevestigt het lage NL-zoekvolume voor GenAI. De clusters zijn prospectief opgebouwd op basis van het semantische veld van het thema en de FR/EN-patronen. De paginahoek moet identiek zijn aan FR en EN : professionele GenAI-vaardigheden, geen introductie tot ChatGPT voor het grote publiek. Het NL-adgroup kan worden geactiveerd zodra het volume rechtvaardigt.",
+      "lpAngleSuggested": "bold"
+    }
+  }
+}
