@@ -1,0 +1,3 @@
+{
+  "_comment": "Gedeelde secties voor alle Nederlandse landing pages. Elke clusterpagina (bijv. opportunity/nl.json) kan een sectie overschrijven door deze te definiëren. Door content team in te vullen: afterForty, whatYouBuild, realStories, howToApply, openDays."
+}

@@ -13,6 +13,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { PageContent } from "@/lib/i18n";
+import { proposalUiStrings } from "@/lib/i18n";
+import type { Language } from "@/lib/themes";
 import { YouTubeEmbed } from "./YouTubeEmbed";
 import { TimelineAccordion } from "./TimelineAccordion";
 import { ApplyLink } from "./ApplyLink";
@@ -20,8 +22,9 @@ import { PartnerStrip } from "./PartnerStrip";
 import { LookForTag } from "./LookForTag";
 import { FaqAccordion } from "./FaqAccordion";
 
-export function ProposalA({ content }: { content: PageContent }) {
-  const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, faq, stats, ctaFinal } = content;
+export function ProposalA({ content, lang }: { content: PageContent; lang: Language }) {
+  const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, openDays, faq, stats, ctaFinal } = content;
+  const t = proposalUiStrings[lang];
 
   return (
     <>
@@ -44,7 +47,7 @@ export function ProposalA({ content }: { content: PageContent }) {
           <div className="sm:w-1/2 sm:pr-24 lg:pr-32">
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
               <i className="fa-solid fa-rocket mr-2" />
-              Free structured training
+              {t.hero.eyebrow}
             </p>
             <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
               {hero.headline.split("\n").map((line, i) => (
@@ -62,7 +65,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                 href="#after"
                 className="inline-flex items-center justify-center border-2 border-zinc-400 text-zinc-300 font-bold uppercase tracking-wider px-10 py-4 text-base hover:border-white hover:text-white transition-all"
               >
-                See the outcomes
+                {t.hero.secondaryCta}
               </Link>
             </div>
             {hero.reassurance && (
@@ -140,7 +143,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                     {cluster.dontAsk && cluster.dontAsk.length > 0 && (
                       <div>
                         <p className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-5">
-                          What we don&apos;t ask for
+                          {t.cluster.dontAskLabel}
                         </p>
                         <div className="flex flex-wrap gap-2">
                           {cluster.dontAsk.map((bullet, bi) => (
@@ -157,7 +160,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                     {cluster.lookFor && cluster.lookFor.length > 0 && (
                       <div>
                         <p className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-5">
-                          What we look for
+                          {t.cluster.lookForLabel}
                         </p>
                         <div className="flex flex-wrap gap-2">
                           {cluster.lookFor.map((bullet, bi) => (
@@ -224,7 +227,9 @@ export function ProposalA({ content }: { content: PageContent }) {
 
               {/* Comparison block - asymmetric (42 column elevated) */}
               {cluster.comparison && (() => {
-                const criteria = ["Learning", "Proof of skills", "Feedback", "Support", "Motivation"];
+                const criteria = cluster.comparison.criteria || [];
+                const labelFor = (ri: number) =>
+                  criteria[ri] || t.cluster.comparisonCriteriaFallback.replace("{n}", String(ri + 1));
                 return (
                   <div className="mt-12">
                     {/* Desktop: 3-col grid (sm and up) */}
@@ -249,7 +254,7 @@ export function ProposalA({ content }: { content: PageContent }) {
                             {/* Criterion label */}
                             <div className={`px-6 py-6 bg-white flex items-center border-r border-zinc-200 ${!isLast ? "border-b border-zinc-200" : ""}`}>
                               <p className="text-sm font-bold uppercase tracking-wider text-black">
-                                {criteria[ri] || `Feature ${ri + 1}`}
+                                {labelFor(ri)}
                               </p>
                             </div>
                             {/* MOOC cell - muted */}
@@ -306,7 +311,7 @@ export function ProposalA({ content }: { content: PageContent }) {
               {isLowBarrier && (
                 <div className="mt-14 flex justify-center">
                   <ApplyLink className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
-                    Start your application
+                    {t.cluster.applyCta}
                     <i className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
                   </ApplyLink>
                 </div>
@@ -333,7 +338,7 @@ export function ProposalA({ content }: { content: PageContent }) {
         <section id="after" className="bg-black text-white">
           <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
             <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-              The outcome
+              {t.afterForty.eyebrow}
             </p>
             <div className="grid gap-12 sm:grid-cols-2 items-start">
               <div>
@@ -379,7 +384,7 @@ export function ProposalA({ content }: { content: PageContent }) {
         <section className="bg-white text-black">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
             <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-              The program
+              {t.whatYouBuild.eyebrow}
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
               {whatYouBuild.heading}
@@ -404,7 +409,7 @@ export function ProposalA({ content }: { content: PageContent }) {
         <section className="bg-zinc-100">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
             <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
-              Real students
+              {t.realStories.eyebrow}
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl text-black">
               {realStories.heading}
@@ -426,64 +431,63 @@ export function ProposalA({ content }: { content: PageContent }) {
       )}
 
       {/* ─── OPEN DAYS ─── */}
-      <section className="bg-white text-black">
-        <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-          <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-            Campus visits
-          </p>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
-            Come meet us at an Open Day.
-          </h2>
-          <p className="mt-6 text-lg leading-relaxed text-zinc-700 max-w-3xl">
-            No pressure, no commitment. Walk the campus, meet the team, ask every question you have - in Brussels or Antwerp.
-          </p>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2">
-            {[
-              { name: "Brussels", src: "/assets/gallery/OpenDaysBrussels.png" },
-              { name: "Antwerp", src: "/assets/gallery/42Belgium-Antwerp1.png" },
-            ].map((campus) => (
+      {openDays && openDays.campuses && openDays.campuses.length > 0 && (
+        <section className="bg-white text-black">
+          <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+            <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
+              {t.openDays.eyebrow}
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
+              {openDays.heading}
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-zinc-700 max-w-3xl">
+              {openDays.intro}
+            </p>
+            <div className="mt-12 grid gap-6 sm:grid-cols-2">
+              {openDays.campuses.map((campus) => (
+                <a
+                  key={campus.name}
+                  href={openDays.ctaHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Register for Open Day in ${campus.name}`}
+                  className="relative aspect-[4/3] overflow-hidden group block"
+                >
+                  <Image
+                    src={campus.image}
+                    alt={`42 Belgium ${campus.name} campus`}
+                    fill
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <p className="absolute bottom-5 left-6 text-2xl font-bold text-white tracking-tight">
+                    {campus.name}
+                  </p>
+                </a>
+              ))}
+            </div>
+            <div className="mt-12 flex justify-center">
               <a
-                key={campus.name}
-                href="https://www.eventbrite.com/cc/open-days-42-belgium-2935099"
+                href={openDays.ctaHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Register for Open Day in ${campus.name}`}
-                className="relative aspect-[4/3] overflow-hidden group block"
+                className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
               >
-                <Image
-                  src={campus.src}
-                  alt={`42 Belgium ${campus.name} campus`}
-                  fill
-                  sizes="(min-width: 640px) 50vw, 100vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <p className="absolute bottom-5 left-6 text-2xl font-bold text-white tracking-tight">
-                  {campus.name}
-                </p>
+                {openDays.ctaLabel}
+                <i className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
               </a>
-            ))}
+            </div>
           </div>
-          <div className="mt-12 flex justify-center">
-            <a
-              href="https://www.eventbrite.com/cc/open-days-42-belgium-2935099"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
-            >
-              See upcoming Open Days
-              <i className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ─── HOW TO APPLY ─── */}
       {howToApply && (
         <section className="bg-zinc-100 text-black" id="apply">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
             <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-secondary)] mb-4">
-              The path
+              {t.howToApply.eyebrow}
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl max-w-3xl">
               {howToApply.heading}
@@ -528,10 +532,10 @@ export function ProposalA({ content }: { content: PageContent }) {
         <section className="bg-black text-white">
           <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
             <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
-              FAQ
+              {t.faq.eyebrow}
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
-              Questions
+              {t.faq.heading}
             </h2>
             <FaqAccordion items={faq} />
           </div>

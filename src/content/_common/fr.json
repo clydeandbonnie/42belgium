@@ -1,0 +1,3 @@
+{
+  "_comment": "Sections partagées par toutes les landing pages françaises. Toute page cluster (ex. opportunity/fr.json) peut surcharger une section en la définissant. À compléter par l'équipe de contenu : afterForty, whatYouBuild, realStories, howToApply, openDays."
+}

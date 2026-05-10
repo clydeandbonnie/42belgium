@@ -17,6 +17,14 @@ export interface PageMeta {
   primaryQuery: string;
   /** All converting keywords from the matrix — each MUST appear in body. */
   convertingKeywords: string[];
+  /**
+   * LP Angle from the matrix (briefing v2 §4.4):
+   * - "classic" — sober, decision-stage audiences (default if omitted)
+   * - "bold"    — emotional/narrative, reconversion or orientation audiences
+   *               (e.g. Opportunity, GenAI)
+   * Currently informational; future hero variants may key off this.
+   */
+  lpAngle?: "classic" | "bold";
 }
 
 export interface HeroContent {
@@ -40,6 +48,12 @@ export interface ComparisonRow {
 export interface ClusterComparison {
   leftLabel: string;
   rightLabel: string;
+  /**
+   * Optional row-aligned criterion labels (1 per row). Rendered as the leftmost
+   * column of the desktop comparison table and as section headings on mobile.
+   * If omitted or shorter than rows, missing entries fall back to "Feature N".
+   */
+  criteria?: string[];
   rows: ComparisonRow[];
 }
 
@@ -179,6 +193,20 @@ export interface PageContent {
 
 const contentCache: Partial<Record<string, PageContent>> = {};
 
+/**
+ * Sections that live in `_common/{lang}.json` and are inherited by every
+ * cluster of that language unless the cluster file defines its own override.
+ * Cluster-specific sections (meta/hero/clusters/faq/stats/ctaFinal/schemaOrg)
+ * are NOT in this list — they're always per-cluster.
+ */
+const SHARED_SECTIONS = [
+  "afterForty",
+  "whatYouBuild",
+  "realStories",
+  "howToApply",
+  "openDays",
+] as const;
+
 export async function getPageContent(
   theme: Theme,
   lang: Language
@@ -186,11 +214,33 @@ export async function getPageContent(
   const key = `${theme}-${lang}`;
   if (contentCache[key]) return contentCache[key];
 
-  const content = (await import(`@/content/${theme}/${lang}.json`)) as {
+  const cluster = (await import(`@/content/${theme}/${lang}.json`)) as {
     default: PageContent;
   };
-  contentCache[key] = content.default;
-  return content.default;
+
+  // Try to load the per-language common content. Missing file = no shared
+  // sections for this language, which is fine (clusters can still define
+  // their own).
+  let common: Partial<PageContent> = {};
+  try {
+    const c = (await import(`@/content/_common/${lang}.json`)) as {
+      default: Partial<PageContent>;
+    };
+    common = c.default;
+  } catch {
+    // No _common file for this language yet — keep going.
+  }
+
+  const merged: PageContent = { ...cluster.default };
+  for (const section of SHARED_SECTIONS) {
+    if (merged[section] === undefined && common[section] !== undefined) {
+      // Type-checked field assignment from the same key on both sides.
+      (merged as Record<string, unknown>)[section] = common[section];
+    }
+  }
+
+  contentCache[key] = merged;
+  return merged;
 }
 
 export const languageNames: Record<Language, string> = {
@@ -203,6 +253,81 @@ export const uiStrings: Record<Language, { learnMore: string; nav: { home: strin
   en: { learnMore: "Learn more", nav: { home: "Home" } },
   fr: { learnMore: "En savoir plus", nav: { home: "Accueil" } },
   nl: { learnMore: "Meer informatie", nav: { home: "Home" } },
+};
+
+/**
+ * Localized UI labels rendered by ProposalA. Anything that is not pulled from
+ * the cluster JSON (eyebrows above section H2s, button labels for non-content
+ * buttons, generic comparison fallbacks, etc.) lives here.
+ *
+ * Cluster-specific copy (H2s, body, CTAs that map to a real action) stays in
+ * the per-cluster JSON. These strings are the chrome that wraps that copy.
+ */
+export interface ProposalUiStrings {
+  hero: {
+    eyebrow: string;
+    secondaryCta: string;
+  };
+  cluster: {
+    dontAskLabel: string;
+    lookForLabel: string;
+    applyCta: string;
+    comparisonCriteriaFallback: string; // "Feature {n}" — uses {n} placeholder
+  };
+  afterForty: { eyebrow: string };
+  whatYouBuild: { eyebrow: string };
+  realStories: { eyebrow: string };
+  openDays: { eyebrow: string };
+  howToApply: { eyebrow: string };
+  faq: { eyebrow: string; heading: string };
+}
+
+export const proposalUiStrings: Record<Language, ProposalUiStrings> = {
+  en: {
+    hero: { eyebrow: "Free structured training", secondaryCta: "See the outcomes" },
+    cluster: {
+      dontAskLabel: "What we don't ask for",
+      lookForLabel: "What we look for",
+      applyCta: "Start your application",
+      comparisonCriteriaFallback: "Feature {n}",
+    },
+    afterForty: { eyebrow: "The outcome" },
+    whatYouBuild: { eyebrow: "The program" },
+    realStories: { eyebrow: "Real students" },
+    openDays: { eyebrow: "Campus visits" },
+    howToApply: { eyebrow: "The path" },
+    faq: { eyebrow: "FAQ", heading: "Questions" },
+  },
+  fr: {
+    hero: { eyebrow: "Formation structurée gratuite", secondaryCta: "Voir les résultats" },
+    cluster: {
+      dontAskLabel: "Ce qu'on ne te demande pas",
+      lookForLabel: "Ce qu'on cherche",
+      applyCta: "Démarre ta candidature",
+      comparisonCriteriaFallback: "Critère {n}",
+    },
+    afterForty: { eyebrow: "Le résultat" },
+    whatYouBuild: { eyebrow: "Le programme" },
+    realStories: { eyebrow: "Vrais étudiants" },
+    openDays: { eyebrow: "Visites de campus" },
+    howToApply: { eyebrow: "Le parcours" },
+    faq: { eyebrow: "FAQ", heading: "Questions" },
+  },
+  nl: {
+    hero: { eyebrow: "Gratis gestructureerde opleiding", secondaryCta: "Bekijk de resultaten" },
+    cluster: {
+      dontAskLabel: "Wat we niet vragen",
+      lookForLabel: "Wat we zoeken",
+      applyCta: "Start je aanvraag",
+      comparisonCriteriaFallback: "Criterium {n}",
+    },
+    afterForty: { eyebrow: "Het resultaat" },
+    whatYouBuild: { eyebrow: "Het programma" },
+    realStories: { eyebrow: "Echte studenten" },
+    openDays: { eyebrow: "Campusbezoeken" },
+    howToApply: { eyebrow: "Het traject" },
+    faq: { eyebrow: "FAQ", heading: "Vragen" },
+  },
 };
 
 /**
