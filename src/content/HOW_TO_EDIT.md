@@ -66,6 +66,34 @@ If for one specific page you want a different version of, say, `afterForty`
 (maybe with a cybersecurity-specific stat), just add the `afterForty` key to
 that theme's JSON file. The theme file always wins over `_common`.
 
+### Disabling a shared section on one specific LP
+
+Sometimes a shared section doesn't make sense for a particular page — e.g.
+the MOOC-vs-42 comparison only fits the Opportunity audience, or you might
+want to skip `howToApply` on the GenAI page because the audience is already
+qualified.
+
+Set the section to `null` in that LP's JSON file. The section will not render
+on that page only — every other LP keeps inheriting it from `_common`.
+
+```json
+{
+  "meta": { ... },
+  "hero": { ... },
+  "clusters": [ ... ],
+  "howToApply": null,
+  "faq": [ ... ]
+}
+```
+
+Two important notes:
+- `null` means **explicitly disabled**. Just leaving the key out (or
+  forgetting it) means **inherit from `_common`** — that's a different
+  behaviour. Be deliberate.
+- The MOOC-vs-42 comparison block lives **inside a cluster** (the
+  `comparison` key on a cluster object), not at the top level. To skip it,
+  simply omit `comparison` from the cluster — no need to use `null`.
+
 ---
 
 ## What you can safely change
