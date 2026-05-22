@@ -1,9 +1,7 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "Dit adgroup combineert twee sterke signalen : opleiding en werk. 'ICT opleiding' (283 clk, CVR 5.4%) en 'IT opleidingen' (58 clk, CVR 12.4%) zijn de kern. Maar 'ICT vacatures' (199 clk, CVR 4.5%) en 'werken in de IT' (20 clk, CVR 5.0%) tonen aan dat deze bezoekers een job willen, niet alleen een diploma. 'Opleiding IT' (15 clk, CVR 26.7%) heeft de hoogste CVR — sterk aankoopsignaal. Patroon B : 'leren coderen' (38 clk, CVR 0%) en 'gratis leren programmeren' (7 clk, CVR 0%) converteren niet — de gratis/hobbyistische framing werkt niet voor dit publiek. De pagina moet de brug training → ICT-jobmarkt expliciet maken.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"ICT opleiding\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (ICT opleiding, IT opleidingen)",
+    "title": "ICT-opleiding Brussel - Gratis naar werk in IT | 42 Belgium",
+    "description": "Gratis ICT-opleiding in Brussel en Antwerpen. Leer programmeren via echte projecten, zonder diploma of ervaring, en groei door naar een ICT-job.",
     "slug": "ict-opleiding-brussel",
     "primaryQuery": "ICT opleiding / ICT vacatures",
     "convertingKeywords": [
@@ -24,16 +22,16 @@
     "lpAngle": "classic"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"ICT opleiding\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"De IT-opleiding die je klaarstoomt voor de ICT-jobmarkt.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "headline": "De ICT-opleiding die je klaarstoomt voor een job in IT.",
+    "subheadline": "Gratis en projectgebaseerd, in Brussel en Antwerpen. Je leert programmeren met andere studenten, bouwt een portfolio op en groeit door naar jobs waarvoor werkgevers mensen zoeken.",
+    "reassurance": "100% gratis · Geen diploma vereist · Geen voorkennis nodig · Brussel & Antwerpen",
     "cta": "Start je ICT-carrière →"
   },
   "clusters": [
     {
       "name": "ICT OPLEIDING",
-      "heading": "TODO: H2 reformulating \"ICT OPLEIDING\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — ICT opleiding, IT opleidingen, opleiding IT, programmeur opleiding, IT opleiding",
+      "heading": "Een ICT-opleiding die meetelt op de arbeidsmarkt.",
+      "body": "Bij 42 Belgium volg je een ICT-opleiding die anders werkt dan een klassieke school. Je leert door aan projecten te werken, niet door les te volgen. De campus is 24/7 open in Brussel en Antwerpen. Of je nu zoekt naar IT-opleidingen, een IT-opleiding, een ICT-opleiding of een programmeursopleiding: het programma blijft hetzelfde. Het is gestructureerd, peer-to-peer en gericht op de praktijk. Tijdens de IT-opleiding werk je rond systemen, algoritmen, databases en webtechnologieën. Daarna kies je zelf wanneer je je specialiseert. Geen lesgeld, geen diploma vereist, geen tijdslimiet: je gaat door tot je klaar bent voor de arbeidsmarkt.",
       "keywords": [
         "ICT opleiding",
         "IT opleidingen",
@@ -44,8 +42,8 @@
     },
     {
       "name": "ICT JOBS & WERK",
-      "heading": "TODO: H2 reformulating \"ICT JOBS & WERK\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — ICT vacatures, werken in de IT, studiekeuze kiezen",
+      "heading": "Van ICT-opleiding naar je eerste ICT-job.",
+      "body": "Een opleiding telt pas als die ergens toe leidt. Bij 42 Belgium is dat de Belgische ICT-arbeidsmarkt: een van de drukste in Europa, met meer ICT-vacatures dan er gekwalificeerde mensen zijn om ze in te vullen. Veel studenten starten al tijdens hun traject met een stage bij een van onze partnerbedrijven. Anderen gaan na de Common Core rechtstreeks aan de slag in IT. Voor wie nog een studiekeuze moet maken: 42 is geen traditioneel diploma. Je rondt het traject af met een portfolio en een netwerk dat al actief is in de sector. Onze partners rekruteren elk jaar uit elke lichting studenten.",
       "keywords": [
         "ICT vacatures",
         "werken in de IT",
@@ -54,8 +52,8 @@
     },
     {
       "name": "LEREN PROGRAMMEREN",
-      "heading": "TODO: H2 reformulating \"LEREN PROGRAMMEREN\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — leren programmeren, cursus programmeren, code programmer, programmeren voor beginners",
+      "heading": "Leren programmeren, stap voor stap, in de praktijk.",
+      "body": "Nog nooit geprogrammeerd? Ongeveer de helft van onze studenten zat in hetzelfde schuitje bij hun start. Leren programmeren bij 42 begint met de Piscine: vier weken intensieve onderdompeling waarin je vanaf dag één C-code schrijft, zonder voorafgaande uitleg. Dat is bewust zo. Het programma dat daarna volgt, werkt op dezelfde manier: je leert door het zelf te doen. Zoek je op 'leren programmeren' of 'programmeren voor beginners', dan vind je tutorials en filmpjes. Handig om te starten, maar ze brengen je niet automatisch dichter bij een job. Bij 42 wel: vanaf de eerste week werk je aan projecten die in de praktijk meetellen.",
       "keywords": [
         "leren programmeren",
         "cursus programmeren",
@@ -66,45 +64,45 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "Is deze ICT-opleiding echt gratis?",
+      "answer": "Ja. 42 Belgium is volledig gratis: geen inschrijfgeld, geen verborgen kosten. De school wordt ondersteund door partnerbedrijven, dus studenten betalen nooit. Je leert programmeren van de Piscine tot het einde van de Common Core, op onze campussen in Brussel en Antwerpen."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "Kan ik me inschrijven zonder diploma of ervaring?",
+      "answer": "Ja. Ongeveer de helft van onze studenten had nog nooit een regel code geschreven voor ze begonnen. Er is geen diploma vereist. Je moet alleen gemotiveerd zijn, minstens 18 jaar zijn en het recht hebben om te werken of te studeren in de EU. De selectie verloopt via de Piscine: vier weken voltijdse programmeeronderdompeling waarin je probeert, faalt, leert en opnieuw begint. Slaag je, dan start je met de Common Core."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "Welke job kan ik doen na de opleiding?",
+      "answer": "Onze afgestudeerden gaan aan de slag in ICT: als developer, sysadmin, DevOps-profiel, data specialist, cybersecurity specialist of in meer gespecialiseerde rollen rond AI en systemen. 98% van wie het gevorderde traject afmaakt, vindt werk. Velen worden al tijdens hun stage bij onze partners gerekruteerd, nog voor het einde van het traject."
     }
   ],
   "stats": [
     {
       "value": "98%",
-      "label": "van de gevorderde afgestudeerden vindt een baan"
+      "label": "van de gevorderde afgestudeerden vindt een job"
     },
     {
       "value": "100%",
-      "label": "Gratis - geen lesgeld"
+      "label": "gratis, zonder lesgeld"
     },
     {
       "value": "42",
-      "label": "Campussen wereldwijd"
+      "label": "campussen wereldwijd"
     },
     {
       "value": "0",
-      "label": "Vereisten"
+      "label": "diploma's of voorkennis vereist"
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
+    "title": "Een ICT-opleiding die echt naar een job in IT leidt.",
+    "description": "Geen lesgeld, geen diploma vereist. Alleen de Piscine en de wil om door te bijten. Schrijf je in en ontdek of 42 Belgium bij je past.",
     "cta": "Start je ICT-carrière →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - itgen\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - ICT-opleiding",
+      "description": "Gratis ICT-opleiding in Brussel en Antwerpen. Peer-to-peer en projectgebaseerd leren, zonder vereisten, van de Common Core tot specialisaties in development, data, cyber en AI.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/nl/ict-opleiding-brussel",
       "courseMode": "blended",
