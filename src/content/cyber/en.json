@@ -1,9 +1,7 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "This ad group has a clear credential-seeking profile. 'Cyber security' (122 clk, CVR 9.0%) is the volume anchor, but the highest converters reveal the real intent : 'ethical hacking' (4 clk, CVR 50.0%), 'bachelor cyber security' (16 clk, CVR 12.5%), and 'cybersecurity bachelor's' (7 clk, CVR 14.3%) all signal that formal qualification matters. 'AWS security certification' (1 clk, CVR 100%) and 'hacking course' (10 clk, CVR 10.0%) confirm the technical specialisation angle. Pattern B : 'it security internship' (17 clk, CVR 0%) — they want work experience, not just training. The page must feel professional-grade, not like a casual bootcamp.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"cyber security course\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (cyber security, cyber security courses)",
+    "title": "Cyber Security Course - Bachelor Path | 42 Belgium",
+    "description": "Free cyber security training in Belgium - from fundamentals to specialisation. Prepare for industry-recognised certifications, including AWS and RNCP 6 & 7.",
     "slug": "cyber-security-course",
     "primaryQuery": "cyber security course / bachelor cyber security",
     "convertingKeywords": [
@@ -21,16 +19,16 @@
     "lpAngle": "classic"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"cyber security course\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"Build cybersecurity expertise. From fundamentals to certifications.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "headline": "The cyber security course that takes you from fundamentals to certifications.",
+    "subheadline": "Specialise in cybersecurity within the Phase 3 curriculum. Prepare for AWS and other industry-recognised certifications, and reach RNCP 6 & 7 - a professional diploma recognised across Europe.",
+    "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 6 & 7 path available",
     "cta": "Start your cybersecurity path →"
   },
   "clusters": [
     {
       "name": "CYBER SECURITY TRAINING",
-      "heading": "TODO: H2 reformulating \"CYBER SECURITY TRAINING\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — cyber security, cyber security courses, cyber security training, cybersecurity courses",
+      "heading": "Cyber security training that mirrors how attacks actually work.",
+      "body": "Cyber security training only matters when you can apply it under pressure. At 42 Belgium, the cyber security courses live inside the Phase 3 advanced curriculum, after the Common Core has built the foundations: C, systems, networking, databases. From there, you specialise. Our cybersecurity courses aren't lectures - they're project workflows where you exploit, harden, audit, and rebuild real systems. You face challenges that mirror the SOC, the red team room, and the incident response cycle. The cyber security part of your portfolio includes work that recruiters can actually evaluate, not just a list of topics covered. That's the difference between completing a course and being employable in the field.",
       "keywords": [
         "cyber security",
         "cyber security courses",
@@ -40,8 +38,8 @@
     },
     {
       "name": "ETHICAL HACKING",
-      "heading": "TODO: H2 reformulating \"ETHICAL HACKING\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — ethical hacking, ethical hacking course, hacking course",
+      "heading": "Ethical hacking: built into the cyber curriculum, not bolted on.",
+      "body": "Ethical hacking isn't a separate ethical hacking course at 42 - it's woven into the cyber security specialisation. You learn to read code with adversarial intent: where would I attack this? What does the developer assume that I can break? You write exploits in lab environments, build CTF-style challenges, and reverse engineer binaries. Any hacking course worth its name forces you to defend something you've actually attacked, not just read about. That's the workflow here. By the time you graduate, you've earned the right to call yourself a hacker - in the original, technical sense of the word - because you've done the work. And because you've done it inside a curriculum that takes ethics as seriously as technique.",
       "keywords": [
         "ethical hacking",
         "ethical hacking course",
@@ -50,8 +48,8 @@
     },
     {
       "name": "CREDENTIALS & CERTIFICATIONS",
-      "heading": "TODO: H2 reformulating \"CREDENTIALS & CERTIFICATIONS\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — bachelor cyber security, cybersecurity bachelor's, cyber security certifications, AWS security certification",
+      "heading": "Cyber security certifications: what 42 prepares you for.",
+      "body": "42 Belgium doesn't issue its own cyber security certifications - but the curriculum is built to prepare you for the ones the industry already recognises. The cyber specialisation maps onto AWS security certification tracks and similar cloud and infrastructure exams, with the underlying knowledge built through hands-on projects. If you came here looking for a bachelor cyber security path, the RNCP framework offers exactly that: by passing the RNCP 6 examination, you earn a professional diploma recognised across Europe - the equivalent of a cybersecurity bachelor's degree. RNCP 7 extends to master-level. So the answer to 'where are the cyber security certifications?' is: they're after the work, certified by external bodies, and now within reach because you've earned them.",
       "keywords": [
         "bachelor cyber security",
         "cybersecurity bachelor's",
@@ -62,16 +60,16 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "What certifications can I actually walk away with?",
+      "answer": "42 Belgium itself doesn't issue cyber-specific certifications - the diploma equivalence comes through the RNCP framework. Passing RNCP 6 gives you a professional diploma recognised across Europe at bachelor level; RNCP 7 reaches master level. Beyond that, the curriculum prepares you for industry exams like AWS security certification, and the practical work you've done becomes evidence in itself when you sit them."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "How much prior IT experience do I need to specialise in cyber?",
+      "answer": "None to enter 42, but the cyber specialisation sits in Phase 3 - after the Common Core. That means you'll have shipped C, systems, networking, and database projects before you specialise. Most students reach this stage 12 to 18 months in. If you're already an IT professional reconverting, you may move faster, but the curriculum doesn't skip foundations."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "Is there an IT security internship as part of the program?",
+      "answer": "Yes - internships are a recommended part of Phase 2 and Phase 4. For cyber security students, that often means a SOC analyst, junior pentester, or security engineer placement with one of our partner companies. The internship isn't separate from the specialisation; it's where the work you've done on campus meets the conditions of a real security team."
     }
   ],
   "stats": [
@@ -93,14 +91,14 @@
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
+    "title": "The cyber security course that earns its keep.",
+    "description": "Phase 3 specialisation, AWS prep, RNCP 6 & 7 pathway. All free, no tuition, no degree required. Apply year-round.",
     "cta": "Start your cybersecurity path →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - cyber\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - Cyber Security Course",
+      "description": "Free cyber security course in Brussels and Antwerp, delivered as a Phase 3 specialisation in the 42 curriculum. Prepares for industry certifications including AWS, and the RNCP 6 & 7 framework for European bachelor- and master-level recognition.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/en/cyber-security-course",
       "courseMode": "blended",
