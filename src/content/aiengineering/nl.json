@@ -1,9 +1,7 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "Het dataprofiel is beperkt maar duidelijk. 'Opleiding AI' (135 clk, CVR 5.9%) is de dominante term. 'Artificial intelligence studeren' (3 clk, CVR 66.7%) heeft een extreem hoge CVR — klein volume, maar sterk aankoopsignaal bij wie specifiek 'studeren' zoekt. Patroon B : 'AI opleiding' (11 clk, CVR 0%) en 'opleiding AI specialist' (4 clk, CVR 0%) converteren niet — de pagina sluit nog niet volledig aan bij deze zoektermen. Het NL-volume voor AI-engineering is lager dan FR en EN, maar het profiel is identiek : gevorderd, technisch, niet op zoek naar een intro.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"opleiding AI\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (opleiding AI, AI opleiding)",
+    "title": "AI-opleiding - Van code tot productie | 42 Belgium",
+    "description": "Gratis AI-opleiding in Brussel en Antwerpen. Specialisatie in machine learning en deep learning, van datapipelines tot productie. Phase 3 van het 42-curriculum.",
     "slug": "opleiding-artificial-intelligence",
     "primaryQuery": "opleiding AI / artificial intelligence studeren",
     "convertingKeywords": [
@@ -13,16 +11,16 @@
     "lpAngle": "classic"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"opleiding AI\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"Word AI-ingenieur. Van theorie naar productie.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "headline": "De AI-opleiding die ML-engineers vormt, geen API-gebruikers.",
+    "subheadline": "Phase 3-specialisatie binnen het 42-curriculum, na de Common Core. Je werkt aan de volledige ML-cyclus: datapipelines, modeltraining, evaluatie en deployment in productie. Met een RNCP 7-pad richting erkenning op masterniveau.",
+    "reassurance": "100% gratis · Geen diploma vereist · Brussel & Antwerpen · RNCP 7 mogelijk",
     "cta": "Start je AI-opleiding →"
   },
   "clusters": [
     {
       "name": "OPLEIDING AI",
-      "heading": "TODO: H2 reformulating \"OPLEIDING AI\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — opleiding AI, AI opleiding, artificial intelligence studeren, artificiële intelligentie opleiding",
+      "heading": "Een AI-opleiding die de volledige cyclus afdekt, van code tot productie.",
+      "body": "De AI-opleiding bij 42 Belgium is een Phase 3-specialisatie binnen het 42-curriculum. Voor je hieraan begint, heb je al gewerkt met C, systemen, algoritmen en databases — de fundamenten waarop alle serieuze AI-projecten rusten. Je verdiept je hier in artificial intelligence op specialistenniveau, niet als losse module. De AI-opleiding dekt de volledige cyclus af: dataverzameling, voorbewerking, modeltraining, evaluatie, deployment en monitoring. Een AI-opleiding zonder die productiekant blijft theorie zonder echte impact. Hier werk je projectmatig aan de problemen die echte ML-teams tegenkomen: ontbrekende data, drift en latentie-eisen. Dat is wat een AI-opleiding op gevorderd niveau onderscheidt van een MOOC of een bootcamp.",
       "keywords": [
         "opleiding AI",
         "AI opleiding",
@@ -32,8 +30,8 @@
     },
     {
       "name": "AI SPECIALIST",
-      "heading": "TODO: H2 reformulating \"AI SPECIALIST\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — opleiding AI specialist",
+      "heading": "Word AI-specialist, geen AI-gebruiker.",
+      "body": "Een opleiding tot AI-specialist betekent meer dan tools leren gebruiken. Het betekent het verschil begrijpen tussen een model dat werkt op een trainingsset en een model dat overleeft in productie. Bij 42 Belgium leer je dat verschil door het zelf te ervaren: je traint modellen, je breekt ze, je optimaliseert ze, je deployt ze. Het machine learning-deel en het deep learning-deel gaan hand in hand. Tegen het einde van de specialisatie ken je niet alleen scikit-learn en PyTorch — je weet wanneer een aanpak verkeerd zit, wanneer een dataset niet representatief is, en wanneer je beter een simpeler model neemt. Dat is wat werkgevers van een AI-specialist verwachten, en dat is waar deze opleiding naartoe werkt.",
       "keywords": [
         "opleiding AI specialist"
       ]
@@ -41,45 +39,45 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "Geeft 42 een masterdiploma in AI?",
+      "answer": "42 Belgium geeft zelf geen masterdiploma uit, maar de AI-specialisatie sluit aan op het RNCP 7-kader — dat is het Europese referentiekader voor erkenning op masterniveau. Door het RNCP 7-niveau te behalen krijg je een professioneel diploma dat in heel Europa op masterniveau erkend is. Daarnaast telt voor ML-recruiters vooral het concrete werk dat je hebt afgeleverd."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "Welk technisch niveau heb je nodig voor de AI-specialisatie?",
+      "answer": "Geen, om bij 42 te starten. Maar de AI-specialisatie zit in Phase 3, na de Common Core. Concreet: je hebt al C, systemen, algoritmen en databaseprojecten afgewerkt voor je je specialiseert. Wiskunde komt aan bod — lineaire algebra, differentiaalrekening, kansrekening — geïntegreerd in de ML-projecten. Geen vooropleiding vereist, maar Phase 3 is bewust op ingenieursniveau."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "Welke jobs kun je doen na de AI-opleiding?",
+      "answer": "AI engineer, ML engineer, data scientist, MLOps engineer en rollen in applied research. De Belgische en Europese arbeidsmarkt kampt met een tekort aan mensen die echt productie-ML kunnen bouwen en onderhouden — niet alleen onderzoekers of prompt engineers — en de specialisatie richt zich op die kloof. Veel afgestudeerden krijgen al een aanbieding tijdens hun stage."
     }
   ],
   "stats": [
     {
       "value": "98%",
-      "label": "van de gevorderde afgestudeerden vindt een baan"
+      "label": "van de gevorderde afgestudeerden vindt een job"
     },
     {
       "value": "100%",
-      "label": "Gratis - geen lesgeld"
+      "label": "gratis, zonder lesgeld"
     },
     {
       "value": "42",
-      "label": "Campussen wereldwijd"
+      "label": "campussen wereldwijd"
     },
     {
       "value": "0",
-      "label": "Vereisten"
+      "label": "diploma's of voorkennis vereist"
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
+    "title": "Een AI-opleiding waarmee je modellen bouwt die in productie draaien.",
+    "description": "Phase 3-specialisatie, van code tot productie-ML, RNCP 7-pad. Volledig gratis, geen diploma vereist. Inschrijvingen het hele jaar door open.",
     "cta": "Start je AI-opleiding →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - aiengineering\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - AI-opleiding",
+      "description": "Gratis AI-opleiding in Brussel en Antwerpen, als Phase 3-specialisatie binnen het 42-curriculum. Dekt de volledige ML-cyclus van data tot productie-deployment, met een RNCP 7-pad voor erkenning op masterniveau in Europa.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/nl/opleiding-artificial-intelligence",
       "courseMode": "blended",
