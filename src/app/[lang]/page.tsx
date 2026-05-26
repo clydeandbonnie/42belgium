@@ -9,23 +9,23 @@ type Status = "draft" | "ready" | "approved";
 const homepageText: Record<Language, { banner: string; title: string; subtitle: string; cta: string; statusLabels: Record<Status, string> }> = {
   en: {
     banner: "Internal review · 42 Belgium landing pages",
-    title: "Choose your path",
-    subtitle: "42 Belgium offers free, peer-to-peer tech training across 10 specialisations. Find the one that matches your ambition.",
-    cta: "Explore →",
+    title: "Landing pages awaiting your approval",
+    subtitle: "Each card below is a landing page ready for client review. Click through to read the page; flag any changes back to the team.",
+    cta: "Open →",
     statusLabels: { draft: "Draft", ready: "Ready for review", approved: "Approved" },
   },
   fr: {
     banner: "Revue interne · Landing pages 42 Belgium",
-    title: "Choisissez votre parcours",
-    subtitle: "42 Belgium propose des formations tech gratuites en peer-to-peer dans 10 spécialisations. Trouvez celle qui correspond à votre ambition.",
-    cta: "Explorer →",
+    title: "Landing pages à valider",
+    subtitle: "Chaque carte ci-dessous est une landing page prête pour la revue. Clique pour lire la page ; remonte les changements souhaités à l'équipe.",
+    cta: "Ouvrir →",
     statusLabels: { draft: "Brouillon", ready: "À relire", approved: "Validé" },
   },
   nl: {
     banner: "Interne review · 42 Belgium landing pages",
-    title: "Kies je pad",
-    subtitle: "42 Belgium biedt gratis peer-to-peer tech opleidingen in 10 specialisaties. Vind degene die past bij jouw ambitie.",
-    cta: "Ontdekken →",
+    title: "Landing pages te valideren",
+    subtitle: "Elke kaart hieronder is een landing page klaar voor jouw beoordeling. Klik om de pagina te lezen; bezorg eventuele aanpassingen aan het team.",
+    cta: "Openen →",
     statusLabels: { draft: "Concept", ready: "Te beoordelen", approved: "Goedgekeurd" },
   },
 };
@@ -106,19 +106,27 @@ export default async function LangHomePage({
                     >
                       {t.statusLabels[status]}
                       {status === "ready" && (
-                        <span className="ml-1.5 font-normal opacity-80">
+                        <span className="ml-1.5 inline-flex items-center gap-1 font-normal opacity-80">
                           ({(["en", "nl", "fr"] as const).map((l, i) => (
-                            <span key={l}>
-                              {i > 0 && " - "}
-                              <span
-                                className={
-                                  theme === "opportunity" && l === "en"
-                                    ? "line-through opacity-60"
-                                    : ""
-                                }
-                              >
-                                {l.toUpperCase()}
-                              </span>
+                            <span key={l} className="inline-flex items-center gap-0.5">
+                              {i > 0 && <span className="mx-0.5">-</span>}
+                              <span>{l.toUpperCase()}</span>
+                              {theme === "opportunity" && l === "en" && (
+                                <svg
+                                  width="11"
+                                  height="11"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="3"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  className="text-emerald-400"
+                                  aria-label="Client-validated"
+                                >
+                                  <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                              )}
                             </span>
                           ))})
                         </span>
