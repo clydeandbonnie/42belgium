@@ -40,8 +40,8 @@
       ]
     },
     {
-      "name": "ADJACENT (Pattern B)",
-      "heading": "What about data engineering? Different track — here's the honest take.",
+      "name": "DATA ENGINEERING",
+      "heading": "Looking for data engineering? It's a different track.",
       "body": "A data engineer's job overlaps with data science but isn't the same: data pipelines, ETL, warehousing, infrastructure for ML — engineering-heavy, less statistics-heavy. The 42 Belgium curriculum does cover the foundations a data engineer needs (databases, distributed systems, cloud, pipelines), but the data science specialisation focuses on the modelling side. If you're sure you want pure data engineering, look at the infrastructure specialisation instead — it maps more closely. If you want the option of either or both, the 42 curriculum's breadth means you can specialise late, and many graduates work across the data engineer / data scientist boundary in their first roles. The honest part: this page is built for the data science track.",
       "keywords": [
         "data engineer"
