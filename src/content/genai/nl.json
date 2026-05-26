@@ -1,27 +1,26 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "Geen AG_GenAI_NL_Broad aanwezig in de accountdata — bevestigt het lage NL-zoekvolume voor GenAI. De clusters zijn prospectief opgebouwd op basis van het semantische veld van het thema en de FR/EN-patronen. De paginahoek moet identiek zijn aan FR en EN : professionele GenAI-vaardigheden, geen introductie tot ChatGPT voor het grote publiek. Het NL-adgroup kan worden geactiveerd zodra het volume rechtvaardigt.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"prompt engineering cursus\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (prompt engineering cursus, prompt engineer opleiding)",
+    "title": "Prompt engineering cursus - LLMs & RAG | 42 Belgium",
+    "description": "Prompt engineering cursus binnen de AI-specialisatie van 42 Belgium: gratis, op campus. LLM-API's, RAG en AI-automatisering. Fase 3 van het curriculum.",
     "slug": "prompt-engineering-cursus",
     "primaryQuery": "prompt engineering cursus / generatieve AI opleiding",
     "convertingKeywords": [
-      "— no conversion data"
+      "prompt engineering cursus",
+      "prompt engineer opleiding"
     ],
     "lpAngle": "bold"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"prompt engineering cursus\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"Generatieve AI is geen magie. Leer ermee bouwen.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
-    "cta": "Start je GenAI opleiding →"
+    "headline": "De prompt engineering cursus die je van prompt naar productie brengt.",
+    "subheadline": "42 Belgium is een software engineering-school. De AI-specialisatie in fase 3 behandelt LLM-API's, RAG-pipelines, prompt chaining en AI-automatisering — alles wat van een LLM een echt systeem maakt. Zoek je een snel prompt-engineeringcertificaat, dan ben je hier verkeerd. Zoek je echt engineeringswerk, dan zit je hier goed.",
+    "reassurance": "100% gratis · Geen diploma vereist · Brussel & Antwerpen · RNCP 7 mogelijk",
+    "cta": "Start je GenAI-opleiding →"
   },
   "clusters": [
     {
       "name": "PROMPT ENGINEERING",
-      "heading": "TODO: H2 reformulating \"PROMPT ENGINEERING\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — prompt engineering cursus, prompt engineer opleiding",
+      "heading": "Waarom er bij 42 geen losse prompt engineering cursus bestaat.",
+      "body": "De meeste content rond een prompt engineering cursus leert je templates aan: \"gebruik deze zin, structureer je prompt zo\". Twee uur lang nuttig, maar daarna begint het echte werk. Het werk van een prompt engineer in een bedrijf dat effectief GenAI-producten bouwt, is niet \"betere prompts in ChatGPT typen\". Het is prompt chains ontwerpen die edge cases overleven, prompt-assets in version control beheren, evaluatiepipelines bouwen en weten wanneer prompting moet plaatsmaken voor fine-tuning of RAG. Dat is engineering. Daarom biedt 42 geen losse prompt-engineeringopleiding aan. Prompt engineering zit ingebed in de AI-specialisatie in fase 3, waar systeemdenken het pas écht nuttig maakt. Voor een snel certificaat zijn er genoeg platformen. Voor de rol waarin bedrijven jou de architectuur van een GenAI-feature toevertrouwen, ben je hier op je plaats.",
       "keywords": [
         "prompt engineering cursus",
         "prompt engineer opleiding"
@@ -29,8 +28,8 @@
     },
     {
       "name": "GENERATIEVE AI & LLMs",
-      "heading": "TODO: H2 reformulating \"GENERATIEVE AI & LLMs\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — generatieve AI opleiding, LLM training, AI automatisering, ChatGPT gevorderd",
+      "heading": "Wat de generatieve AI opleiding écht omvat: API's, RAG en automatisering.",
+      "body": "Een generatieve AI opleiding die stopt bij \"geavanceerd werken met ChatGPT\" is een tutorial, geen curriculum. Bij 42 Belgium behandelt het GenAI-deel van de AI-specialisatie de laag die LLMs bruikbaar maakt in productie: LLM-API-integratie, bijvoorbeeld met OpenAI, Anthropic of open-sourcemodellen, RAG-pipelines om outputs te onderbouwen met echte data, vector-databases en orchestratieframeworks. AI-automatisering betekent hier: agents bouwen, tool calls aan elkaar koppelen en fallbackgedrag ontwerpen voor wanneer modellen driften of falen. Echte LLM-training — fine-tuning, distillatie en parameter-efficiënte methodes — is beschikbaar voor wie diep wil gaan, ook al stopt het meeste productiewerk vandaag op API- en RAG-niveau. Het punt: je verlaat het traject als iemand die een GenAI-feature kan architecteren, niet alleen demonstreren.",
       "keywords": [
         "generatieve AI opleiding",
         "LLM training",
@@ -41,16 +40,16 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "Geeft 42 Belgium een losstaand prompt engineering certificaat?",
+      "answer": "Nee. 42 Belgium geeft geen losstaand prompt-engineeringcertificaat. Prompt engineering zit geïntegreerd in de bredere AI-specialisatie in fase 3, naast machine learning en het werk rond LLM-systemen. Voor een kort certificaat zijn er platformen zoals Coursera, DeepLearning.AI of vendor-cursussen van bijvoorbeeld OpenAI en Anthropic. Voor de rol van engineer aan wie bedrijven de architectuur van GenAI-features toevertrouwen, past het traject bij 42 beter."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "Hoeveel programmeerervaring heb je nodig voor de GenAI-specialisatie?",
+      "answer": "Veel. Iedereen begint bij 42 met de Common Core. Er is geen rechtstreekse toegang tot de AI-specialisatie, ongeacht je achtergrond. De Common Core behandelt C, systemen, algoritmen en netwerken: de basis waarop de GenAI-specialisatie verder bouwt. Ontwikkelaars en technische professionals in omscholing gaan vaak sneller door de Common Core, maar niemand slaat de basis over. De AI-specialisatie volgt daarna, in fase 3."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "Met welke stack werken afgestudeerden in de praktijk?",
+      "answer": "OpenAI- en Anthropic-API's, open-source LLMs zoals Llama, Mistral en Qwen, vector-databases zoals Pinecone, Weaviate en pgvector, orchestratieframeworks zoals LangChain, LlamaIndex of gewoon Python, evaluatietools en standaard cloud-infrastructuur zoals AWS en GCP. De exacte tools veranderen elk kwartaal. De engineering-denkwijze niet."
     }
   ],
   "stats": [
@@ -60,7 +59,7 @@
     },
     {
       "value": "100%",
-      "label": "Gratis - geen lesgeld"
+      "label": "Gratis, geen lesgeld"
     },
     {
       "value": "42",
@@ -72,14 +71,14 @@
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
-    "cta": "Start je GenAI opleiding →"
+    "title": "Geen snel prompt-cursusje. Wel de engineering-school achter productie-GenAI.",
+    "description": "AI-specialisatie in fase 3, LLM-API's, RAG, automatisering en een traject naar RNCP 7-erkenning. Volledig gratis, geen diploma vereist. Inschrijven kan het hele jaar door.",
+    "cta": "Start je GenAI-opleiding →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - genai\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - AI- & prompt-engineeringspecialisatie",
+      "description": "Gratis AI-specialisatie bij 42 Belgium met prompt engineering, LLM-API's, RAG-pipelines en AI-automatisering. Onderdeel van het software engineering-curriculum, met RNCP 7-erkenning op masterniveau in Europa.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/nl/prompt-engineering-cursus",
       "courseMode": "blended",
