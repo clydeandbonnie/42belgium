@@ -1,9 +1,7 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "The data volume is limited but the conversion signal is clear and consistent. 'Web developer' (19 clk, CVR 10.5% and 12 clk, CVR 8.3%) and 'full stack developer' (6 clk, CVR 16.7% and 2 clk, CVR 25.0%) are the core converters. 'Web development classes' (16 clk, CVR 12.5%) confirms the structured training intent. Pattern B : 'javascript' (4 clk, CVR 0%) — technology-first searches do not convert, suggesting the audience starts with the role (web developer) not the stack. The page should lead with the career outcome and introduce technologies as the path, not the headline.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"web developer\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (web developer, full stack developer)",
+    "title": "Web Developer & Full Stack Course - Free | 42 Belgium",
+    "description": "A free full stack developer course at 42 Belgium - learn to build and ship real web apps, not toy projects. Career-driven, RNCP 6 path, no tuition.",
     "slug": "full-stack-developer-course",
     "primaryQuery": "web developer / full stack developer",
     "convertingKeywords": [
@@ -14,16 +12,16 @@
     "lpAngle": "classic"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"web developer\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"Become a full stack developer. Build real apps from day one.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "headline": "Become a full stack web developer through real apps, not slides.",
+    "subheadline": "100% free at 42 Belgium, in Brussels and Antwerp. Web work lives inside a full software engineering curriculum — JavaScript, React, Node, and the systems foundations underneath. Real apps shipped, peer reviewed. RNCP 6 path available.",
+    "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 6 path available",
     "cta": "Start building web apps →"
   },
   "clusters": [
     {
       "name": "WEB DEVELOPER & FULLSTACK",
-      "heading": "TODO: H2 reformulating \"WEB DEVELOPER & FULLSTACK\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — web developer, full stack developer, web development classes",
+      "heading": "A full stack developer track built around shipping apps, not classroom hours.",
+      "body": "Most web development classes optimise for completion: ten modules, a final project, a certificate. Useful for finding your footing. The full stack developer work at 42 Belgium optimises for something else — being able to walk into a junior dev role and not slow the team down. You don't \"take\" a web developer course here; you ship apps as part of the broader curriculum. Real apps, with real bugs, reviewed by real peers. By the time you graduate, the question \"have you built something\" has a clear answer — and a repo to point at. That's what hiring managers in Brussels and Antwerp actually look at, regardless of whether you came through a bootcamp, a degree, or 42.",
       "keywords": [
         "web developer",
         "full stack developer",
@@ -32,8 +30,8 @@
     },
     {
       "name": "TECHNOLOGIES",
-      "heading": "TODO: H2 reformulating \"TECHNOLOGIES\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — JavaScript, React, front end developer",
+      "heading": "The technologies that show up in the projects.",
+      "body": "You don't enrol at 42 to learn JavaScript — you enrol to become a developer. But JavaScript shows up everywhere along the way. Modern web work means JS in the browser, JS on the server (Node), and the frameworks that have become the default. React is one of those frameworks: not the only one, but the one most Belgian employers ask about. A front end developer at 42 graduates having built real UIs, debugged real state management, and dealt with real performance constraints. The deeper layer — HTTP, REST APIs, databases, deployment — runs through the curriculum from the start. What matters isn't which technology you know on graduation day; it's how fast you can learn the next one. That's the engineering literacy this place trains.",
       "keywords": [
         "JavaScript",
         "React",
@@ -43,16 +41,16 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "How is this different from a web dev bootcamp?",
+      "answer": "Three things. First, scope: web work at 42 sits inside a full software engineering curriculum (C, systems, algorithms, databases — then web), so you understand what's below the abstractions you use. Second, format: project-based, peer-reviewed, in person on campus — not video modules. Third, cost: 100% free, no tuition, no income share. The trade-off: it takes longer than 12-week bootcamps. Most students reach the web specialisation 12 to 18 months in."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "Which technologies will I actually use?",
+      "answer": "HTML, CSS, JavaScript, TypeScript, React (and other JS frameworks as needed), Node.js, Express, REST and GraphQL APIs, SQL and NoSQL databases, Docker, Git, and basic cloud deployment. The exact mix shifts every year as the industry shifts. The constant: you ship real apps, not exercises."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "What jobs do graduates take?",
+      "answer": "Junior full stack developer, front end developer, back end developer, web engineer at startups, agencies, and tech teams in established companies. Many graduates are recruited during their internships with partner companies, before they finish the program."
     }
   ],
   "stats": [
@@ -74,14 +72,14 @@
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
+    "title": "The full stack developer course where you build the portfolio that gets you hired.",
+    "description": "Web work inside the Common Core, real apps shipped, RNCP 6 path. All free, no tuition, no degree required. Apply year-round.",
     "cta": "Start building web apps →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - webfullstack\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - Full Stack Web Developer Course",
+      "description": "A free full stack web developer course at 42 Belgium, in Brussels and Antwerp. JavaScript, React, Node, and the systems foundations underneath, all through real projects. RNCP 6 framework available for European bachelor-level recognition.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/en/full-stack-developer-course",
       "courseMode": "blended",
