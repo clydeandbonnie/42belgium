@@ -105,6 +105,24 @@ export default async function LangHomePage({
                       className={`rounded-full px-2 py-0.5 text-xs font-bold ${statusStyles[status]}`}
                     >
                       {t.statusLabels[status]}
+                      {status === "ready" && (
+                        <span className="ml-1.5 font-normal opacity-80">
+                          ({(["en", "nl", "fr"] as const).map((l, i) => (
+                            <span key={l}>
+                              {i > 0 && " - "}
+                              <span
+                                className={
+                                  theme === "opportunity" && l === "en"
+                                    ? "line-through opacity-60"
+                                    : ""
+                                }
+                              >
+                                {l.toUpperCase()}
+                              </span>
+                            </span>
+                          ))})
+                        </span>
+                      )}
                     </span>
                   </div>
                   <p className="mt-1 text-sm text-zinc-400">
