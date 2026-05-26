@@ -1,9 +1,7 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "Python conversion data is scattered across small volumes but consistent in direction. 'Python' itself (21 clk, CVR 9.5% and 17 clk, CVR 11.8%) converts well — broad intent with a good match to the page. 'Python certification' (6 clk, CVR 16.7% and 19 clk, CVR 5.3%) is a strong signal : the audience wants a recognised output, not just knowledge. 'Learn Python free' (13 clk, CVR 7.7%) converts — surprisingly, the 'free' qualifier does not repel conversions here, suggesting the page successfully redirects the intent. Pattern B : 'Python for beginners' (9 clk + 7 clk, CVR 0%) — the beginner label attracts clicks but not conversions. The page should lead with outcomes, not difficulty level.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"Python course\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (Python, learn Python)",
+    "title": "Python Course & Certification - 100% Free | 42 Belgium",
+    "description": "A free Python course at 42 Belgium - learn Python by building real systems, not toy tutorials. Path to RNCP 6 European bachelor-level recognition.",
     "slug": "python-course-certification",
     "primaryQuery": "Python course / Python certification / learn Python",
     "convertingKeywords": [
@@ -17,16 +15,16 @@
     "lpAngle": "classic"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"Python course\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"Learn Python. The number one in-demand programming language.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "headline": "A Python course that turns syntax into systems.",
+    "subheadline": "100% free at 42 Belgium, in Brussels and Antwerp. Python is part of the Common Core curriculum — you start with C, then move into Python, algorithms, and the systems work that real engineers do. RNCP 6 path available for formal recognition.",
+    "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 6 path available",
     "cta": "Start coding in Python →"
   },
   "clusters": [
     {
       "name": "LEARN PYTHON",
-      "heading": "TODO: H2 reformulating \"LEARN PYTHON\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — Python, learn Python, learn Python free, learning Python, coding Python",
+      "heading": "Learn Python by building, not by watching tutorials.",
+      "body": "Most ways to learn Python lead through tutorials: type this into the console, copy that into a notebook, repeat. Useful for a week. At 42 Belgium, learning Python happens differently. The Common Core treats Python as a working tool: you write scripts that solve real problems, you debug your own code, you read other people's code in peer reviews. Coding Python well isn't about syntax — it's about thinking in functions, knowing when to use a list vs a generator, building things that don't break in three months. You can learn Python free elsewhere — YouTube, Coursera, freeCodeCamp. What you can't get there is the engineering rhythm: real projects, peer feedback, code review, and a campus full of people learning Python alongside you.",
       "keywords": [
         "Python",
         "learn Python",
@@ -37,8 +35,8 @@
     },
     {
       "name": "PYTHON CERTIFICATION",
-      "heading": "TODO: H2 reformulating \"PYTHON CERTIFICATION\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — Python certification, Python course",
+      "heading": "Python certification: what 42 actually offers.",
+      "body": "42 Belgium doesn't issue a Python certification of its own — Python is a tool inside the broader curriculum, not a separate course you pass with a stamp. If you came looking for a Python certification specifically, the honest answer is: most aren't worth as much as the work they signal. What 42 offers is different: a Python course inside the full Common Core, where the work itself becomes evidence. For formal European recognition, the RNCP 6 framework gives you a professional diploma at bachelor level — earned by passing the broader curriculum, not by typing through a 40-question multiple choice. If you want a vendor certification (PCEP, PCAP), the Python work here prepares you to pass them on the side.",
       "keywords": [
         "Python certification",
         "Python course"
@@ -47,16 +45,16 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "Is this a standalone Python course?",
+      "answer": "No — Python at 42 Belgium is part of the Common Core curriculum, not a course you sign up for separately. You start with C in your first weeks, then Python comes in alongside algorithms, systems and data work. By the time you've shipped a few projects, Python is no longer a \"language you're learning\" — it's a tool you use."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "How long until I can actually code in Python?",
+      "answer": "A few weeks. The Common Core takes 12 to 18 months end-to-end, but Python work starts early. The deeper question is when you can build production-ready Python: that's a function of how many projects you ship, which depends on you."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "Will I get a Python certification?",
+      "answer": "Not directly from 42. We don't issue Python-specific certifications — the curriculum produces engineers, not certificate-holders. If you complete the broader curriculum, the RNCP 6 framework gives you a professional diploma recognised across Europe at bachelor level. For vendor certifications like PCEP or PCAP, the Python work here prepares you to take them on your own."
     }
   ],
   "stats": [
@@ -78,14 +76,14 @@
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
+    "title": "The Python course that produces engineers, not certificate-holders.",
+    "description": "Python inside the Common Core, RNCP 6 path, real projects. All free, no tuition, no degree required. Apply year-round.",
     "cta": "Start coding in Python →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - python\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - Python Course & Certification Path",
+      "description": "A free Python course at 42 Belgium, in Brussels and Antwerp. Python is part of the Common Core curriculum, taught through real projects rather than tutorials. RNCP 6 framework available for European bachelor-level recognition.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/en/python-course-certification",
       "courseMode": "blended",
