@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Prompt Engineering Course - LLMs & RAG | 42 Belgium",
-    "description": "42 doesn't sell a standalone prompt engineering course - we train the engineers who build production GenAI: LLM APIs, RAG, automation. Free, in Belgium.",
+    "description": "A free prompt engineering course inside 42 Belgium's AI specialisation. LLM APIs, RAG, automation workflows, prompt chaining. On campus, project-based.",
     "slug": "prompt-engineering-course",
     "primaryQuery": "prompt engineering course / AI prompt engineer",
     "convertingKeywords": [
@@ -11,7 +11,7 @@
     "lpAngle": "bold"
   },
   "hero": {
-    "headline": "We don't sell a prompt engineering course. We train the engineers building production GenAI.",
+    "headline": "The prompt engineering course that takes you from prompt to production.",
     "subheadline": "42 Belgium is a software engineering school. The AI specialisation in Phase 3 covers LLM APIs, RAG pipelines, prompt chaining, and AI automation — the stuff that turns LLMs into systems. If you came for a fast prompt engineering certificate, this isn't that. If you came to build, it is.",
     "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 7 path available",
     "cta": "Start your GenAI journey →"
