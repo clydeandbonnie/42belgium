@@ -1,9 +1,7 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "Les données sont limitées mais révèlent un signal fort d'intention professionnelle. 'Prompt engineer formation' (23 clk, CVR 8.7%) est le terme convertisseur principal. Pattern B critique : 'formation prompt engineering' (13 clk, CTR 23.2%, CVR 0%) — un CTR extrêmement élevé (23.2%) suivi de zéro conversions est le signal classique d'une promesse non tenue sur la page d'atterrissage. La page doit immédiatement signaler un niveau professionnel et non une introduction grand public. ChatGPT débutant, IA magique ou outil gratuit sont des signaux à éviter absolument dans le copy.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"prompt engineer formation\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (prompt engineer formation, formation prompt engineering)",
+    "title": "Formation Prompt Engineering - IA générative | 42 Belgium",
+    "description": "Formation prompt engineering chez 42 Belgium : intégrée à la spé IA, gratuite, en présentiel. APIs LLM, RAG, automatisation. Phase 3 du cursus.",
     "slug": "formation-prompt-engineering-ia",
     "primaryQuery": "prompt engineer formation / formation IA générative",
     "convertingKeywords": [
@@ -12,16 +10,16 @@
     "lpAngle": "bold"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"prompt engineer formation\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"Les LLMs ne sont pas de la magie. Apprenez à les programmer.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "headline": "La formation prompt engineer qui te fait passer du prompt au système.",
+    "subheadline": "42 Belgium est une école d'ingénierie logicielle. La spécialisation IA (Phase 3) couvre les APIs LLM, les pipelines RAG, le prompt chaining et l'automatisation IA — ce qui transforme un LLM en système. Si tu cherches un certificat rapide en prompt engineering, ce n'est pas ça. Si tu veux construire, c'est ici.",
+    "reassurance": "100% gratuit · Sans diplôme requis · Bruxelles & Anvers · Voie RNCP 7",
     "cta": "Deviens Prompt Engineer →"
   },
   "clusters": [
     {
       "name": "PROMPT ENGINEERING",
-      "heading": "TODO: H2 reformulating \"PROMPT ENGINEERING\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — prompt engineer formation, formation prompt engineering, formation prompt engineer",
+      "heading": "Pourquoi il n'y a pas de formation prompt engineering en kit chez 42.",
+      "body": "La plupart des contenus \"formation prompt engineering\" apprennent des templates : \"utilise telle phrase, structure ton prompt comme ceci\". Utile pendant deux heures. Le rôle de prompt engineer dans une boîte qui livre du GenAI en production n'est pas de taper de meilleurs prompts dans ChatGPT — c'est concevoir des chaînes de prompts qui survivent aux edge cases, versionner les assets de prompts, construire des pipelines d'évaluation, et décider quand le prompting doit céder la place au fine-tuning ou au RAG. C'est de l'ingénierie. C'est pourquoi notre formation prompt engineer ne se présente pas comme un cours isolé : elle s'intègre à la spécialisation IA en Phase 3, là où la pensée système rend le prompt engineering utile. Si tu veux un certificat rapide, des plateformes en vendent. Si tu veux que les entreprises te confient l'architecture d'une feature GenAI, c'est ici.",
       "keywords": [
         "prompt engineer formation",
         "formation prompt engineering",
@@ -30,8 +28,8 @@
     },
     {
       "name": "IA GÉNÉRATIVE & LLMs",
-      "heading": "TODO: H2 reformulating \"IA GÉNÉRATIVE & LLMs\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — formation IA générative, LLM cours, ChatGPT avancé, IA au travail",
+      "heading": "Ce que couvre vraiment la formation IA générative : APIs, RAG, automatisation.",
+      "body": "Une formation IA générative qui s'arrête au \"tape dans ChatGPT avancé\" est un tutoriel, pas un cursus. Chez 42 Belgium, la partie GenAI de la spécialisation IA couvre la couche qui rend les LLMs utilisables en production : intégration d'APIs LLM (OpenAI, Anthropic, modèles open-source), pipelines RAG pour ancrer les sorties dans des données réelles, bases vectorielles, et frameworks d'orchestration. Le LLM cours qu'on attend dans une vraie formation inclut le fine-tuning, la distillation, les méthodes parameter-efficient — disponibles pour ceux qui vont loin, même si la majorité du travail en production s'arrête au niveau API et RAG. C'est cette compétence — déployer de l'IA au travail comme un système, pas comme un gadget — qui distingue un prompt engineer professionnel d'un curieux.",
       "keywords": [
         "formation IA générative",
         "LLM cours",
@@ -42,16 +40,16 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "Est-ce que 42 Belgium délivre un certificat de prompt engineering autonome ?",
+      "answer": "Non — 42 Belgium ne délivre pas de certificat prompt engineering autonome. Le prompt engineering est intégré à la spécialisation IA en Phase 3, avec le ML et le travail sur les systèmes LLM. Si c'est un certificat court qu'il te faut, des plateformes comme Coursera, DeepLearning.AI ou les cursus éditeurs (OpenAI, Anthropic) en proposent. Si tu veux être l'ingénieur à qui les boîtes confient l'architecture d'une feature GenAI, c'est la voie 42."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "Quel niveau de code faut-il avant la spé GenAI ?",
+      "answer": "Important. Tout le monde commence à 42 par le tronc commun — pas d'accès direct à la spécialisation IA, peu importe le profil. Le tronc commun couvre C, systèmes, algorithmes, réseaux — les fondations sur lesquelles la spé GenAI s'appuie. Les développeurs et profils techniques en reconversion avancent souvent plus vite, mais personne ne saute le tronc commun. La spécialisation IA arrive ensuite, en Phase 3."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "Avec quelle stack les diplômés travaillent vraiment ?",
+      "answer": "APIs OpenAI et Anthropic, LLMs open-source (Llama, Mistral, Qwen), bases vectorielles (Pinecone, Weaviate, pgvector), frameworks d'orchestration (LangChain, LlamaIndex, Python brut), outils d'évaluation, et infrastructure cloud (AWS, GCP). Les outils précis changent tous les trimestres — la pensée d'ingénierie qui les sous-tend, non."
     }
   ],
   "stats": [
@@ -61,7 +59,7 @@
     },
     {
       "value": "100%",
-      "label": "Gratuit - aucune frais"
+      "label": "Gratuit - aucun frais"
     },
     {
       "value": "42",
@@ -73,14 +71,14 @@
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
+    "title": "Pas un cours rapide de prompt. L'école d'ingénierie qui forme les architectes de la GenAI.",
+    "description": "Spécialisation IA en Phase 3, APIs LLM, RAG, automatisation, voie RNCP 7. 100% gratuit, sans diplôme exigé. Candidature toute l'année.",
     "cta": "Deviens Prompt Engineer →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - genai\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - Spécialisation IA & Prompt Engineering",
+      "description": "Spécialisation IA gratuite à 42 Belgium incluant le prompt engineering, les APIs LLM, les pipelines RAG et les workflows d'automatisation. Intégrée au cursus complet en software engineering, avec reconnaissance RNCP 7 niveau master européen.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/fr/formation-prompt-engineering-ia",
       "courseMode": "blended",
