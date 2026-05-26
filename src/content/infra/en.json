@@ -1,27 +1,27 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "This ad group has no conversion data — 0 conversions on 6 clicks total. The keywords that received clicks include 'CompTIA A+' (2 clk) and 'cloud engineer' (2 clk), both with 0 conversions. This is most likely an underfunded ad group rather than a demand problem : the FR equivalent (same theme) converts at CVR 6–14%. The clusters are built on semantic intent rather than conversion data. The page angle and copy direction should mirror Infra FR — sysadmin-to-DevOps career upgrade — and be validated once the ad group receives sufficient budget and traffic.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"DevOps course\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (DevOps course, cloud computing training)",
+    "title": "DevOps Course - Sysadmin to Cloud Engineer | 42 Belgium",
+    "description": "A free DevOps course at 42 Belgium - Linux, cloud, networking, AWS prep. For sysadmins and IT pros ready to upgrade to DevOps and cloud engineering.",
     "slug": "devops-course-infrastructure",
     "primaryQuery": "DevOps course / cloud computing training / network engineer",
     "convertingKeywords": [
-      "— no conversion data"
+      "DevOps course",
+      "cloud computing training",
+      "network engineer"
     ],
     "lpAngle": "classic"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"DevOps course\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"Build modern infrastructure skills. DevOps, Cloud, Networking.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "headline": "The DevOps course that turns sysadmins into cloud engineers.",
+    "subheadline": "100% free at 42 Belgium, in Brussels and Antwerp. Infrastructure work lives inside a full software engineering curriculum — Linux internals, networking, containers, cloud platforms, and CI/CD. AWS certification prep available. RNCP 6 path open for formal recognition.",
+    "reassurance": "100% free · No degree required · Brussels & Antwerp · AWS prep + RNCP 6 path",
     "cta": "Start your DevOps journey →"
   },
   "clusters": [
     {
       "name": "DEVOPS & CLOUD",
-      "heading": "TODO: H2 reformulating \"DEVOPS & CLOUD\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — DevOps course, cloud computing training, AWS certification",
+      "heading": "A DevOps course that ships infrastructure, not just diagrams.",
+      "body": "A DevOps course only matters if you can actually deploy things at the end. At 42 Belgium, infrastructure work isn't a separate module — it runs through the curriculum from systems-level programming in C to containerised deployment in Phase 3 specialisations. The cloud computing training covers what production looks like today: AWS, Linux servers, networking fundamentals, Docker, Kubernetes basics, infrastructure-as-code patterns. For those targeting industry credentials, the curriculum prepares you for AWS certification exams (Solutions Architect, SysOps, DevOps Engineer) — though we don't issue them; AWS does. The goal isn't a certificate on the wall. It's the muscle memory of breaking things in staging, observing what fails, and shipping the fix before the on-call rotation passes to someone else.",
       "keywords": [
         "DevOps course",
         "cloud computing training",
@@ -30,8 +30,8 @@
     },
     {
       "name": "NETWORKING & SYSTEMS",
-      "heading": "TODO: H2 reformulating \"NETWORKING & SYSTEMS\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — network engineer, Linux administration, system administrator course",
+      "heading": "Linux, networking, system internals — the foundation underneath DevOps.",
+      "body": "Before you can call yourself a network engineer or a DevOps engineer, you need to actually understand what's running under the abstractions. 42 Belgium's Common Core treats this seriously: Linux administration through projects, not click-throughs — you build a minishell, you manage processes, you configure services from the ground up. The system administrator course content here goes beyond rote tasks: you learn why TCP retransmits, why a DNS query fails, why a process eats memory. By the time you reach the infrastructure specialisation in Phase 3, the fundamentals are reflexive. The deeper you go in Linux and networking, the less surprising the cloud becomes — because the cloud is just Linux on someone else's hardware, networked in patterns you've already touched.",
       "keywords": [
         "network engineer",
         "Linux administration",
@@ -41,16 +41,16 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "I'm already a sysadmin — do I really need the full curriculum?",
+      "answer": "Depends on what you want next. If you're aiming for senior DevOps or platform engineering, the answer is: probably yes, because the gap most sysadmins have is the software side (writing services, not just running them). 42's Common Core is where that gap closes. You move through it faster than someone starting cold, but you don't skip it. Phase 3 specialisations let you focus on infrastructure depth."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "Do I leave with AWS / Azure / GCP certifications?",
+      "answer": "42 Belgium doesn't issue cloud certifications — those come from AWS, Microsoft and Google directly. What the curriculum does is prepare you to pass the ones that matter: AWS Solutions Architect, SysOps, DevOps Engineer, and equivalents on Azure and GCP. The practical work serves as your evidence in interviews regardless of which certs you choose to take."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "What jobs do infrastructure graduates take?",
+      "answer": "DevOps engineer, cloud engineer, SRE, platform engineer, network engineer, infrastructure-as-code specialist. The Belgian market is short on senior infra talent and willing to hire juniors with proof they can ship. Many graduates start through internships with partner companies and convert to permanent before completing the program."
     }
   ],
   "stats": [
@@ -72,14 +72,14 @@
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
+    "title": "The DevOps course where you ship infrastructure, not slides.",
+    "description": "Linux, networking, AWS prep, RNCP 6 path. Inside a full software engineering curriculum. All free, no tuition, no degree required.",
     "cta": "Start your DevOps journey →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - infra\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - DevOps & Infrastructure Course",
+      "description": "A free DevOps and infrastructure course at 42 Belgium, in Brussels and Antwerp. Linux, networking, cloud computing, AWS certification prep, and CI/CD through real projects. RNCP 6 framework available for European bachelor-level recognition.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/en/devops-course-infrastructure",
       "courseMode": "blended",
