@@ -65,7 +65,7 @@
     },
     {
       "question": "How technical does it get? What math/CS background do I need?",
-      "answer": "The Common Core gets you to a solid CS engineering baseline — C, systems, algorithms, networks. By the time you reach the AI specialisation in Phase 3, you have the foundations. Math comes back: linear algebra, calculus, probability — covered in context as you need them for ML projects. You don't need a prior CS degree to enter, but Phase 3 is intentionally engineer-level. Most students reach it 12 to 18 months in."
+      "answer": "Everyone at 42 starts with the Common Core — no one goes straight to the AI specialisation. The Common Core covers C, systems, algorithms and networks: the foundations Phase 3 builds on. Math comes back in context — linear algebra, calculus, probability — as you need them for ML projects. Most students reach Phase 3 between 12 and 18 months in. Experienced developers may move faster, but no one skips the foundations."
     },
     {
       "question": "What jobs do graduates take after the AI specialisation?",

@@ -1,9 +1,7 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "The conversion data is limited but structurally revealing. 'Prompt engineering course' (22 clk, CVR 11.4%) and 'AI prompt engineer' (19 clk, CVR 5.3%) are the two converters. Pattern B : 'prompt engineering course' appears again (13 clk, CVR 0%) and 'prompt engineering' (13 clk + 5 clk, CVR 0%) — likely the same audience bouncing on a different campaign instance, confirming that search intent is there but LP execution is inconsistent. The page must immediately signal professional-grade GenAI — not a beginner intro. Body copy must include : LLM APIs, RAG pipelines, prompt chaining, AI automation workflows.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"prompt engineering course\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (prompt engineering course, AI prompt engineer)",
+    "title": "Prompt Engineering Course - LLMs & RAG | 42 Belgium",
+    "description": "42 doesn't sell a standalone prompt engineering course - we train the engineers who build production GenAI: LLM APIs, RAG, automation. Free, in Belgium.",
     "slug": "prompt-engineering-course",
     "primaryQuery": "prompt engineering course / AI prompt engineer",
     "convertingKeywords": [
@@ -13,16 +11,16 @@
     "lpAngle": "bold"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"prompt engineering course\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"LLMs are not magic. Learn to build with them.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "headline": "We don't sell a prompt engineering course. We train the engineers building production GenAI.",
+    "subheadline": "42 Belgium is a software engineering school. The AI specialisation in Phase 3 covers LLM APIs, RAG pipelines, prompt chaining, and AI automation — the stuff that turns LLMs into systems. If you came for a fast prompt engineering certificate, this isn't that. If you came to build, it is.",
+    "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 7 path available",
     "cta": "Start your GenAI journey →"
   },
   "clusters": [
     {
       "name": "PROMPT ENGINEERING",
-      "heading": "TODO: H2 reformulating \"PROMPT ENGINEERING\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — prompt engineering course, AI prompt engineer, prompt engineering",
+      "heading": "Why there's no standalone prompt engineering course here.",
+      "body": "Most prompt engineering course content teaches templates: \"use this phrase, structure your prompt like that.\" Useful for an afternoon. The role of AI prompt engineer in any company that ships real GenAI isn't typing better prompts into ChatGPT — it's designing prompt chains that survive edge cases, version-controlling prompt assets, building evals, and deciding when prompts should give way to fine-tuning or RAG. That work is engineering. So we don't carve prompt engineering out as a separate course; we teach it inside the broader AI specialisation in Phase 3, alongside the systems thinking that makes it useful. If you want a quick prompt engineering certificate, plenty of platforms sell those. If you want to be the person companies trust to architect a GenAI feature, this is the path.",
       "keywords": [
         "prompt engineering course",
         "AI prompt engineer",
@@ -31,8 +29,8 @@
     },
     {
       "name": "GENERATIVE AI & LLMs",
-      "heading": "TODO: H2 reformulating \"GENERATIVE AI & LLMs\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — generative AI course, AI automation course, LLM training, ChatGPT advanced",
+      "heading": "What the GenAI work actually covers: APIs, RAG, automation.",
+      "body": "A generative AI course that stops at typing into ChatGPT advanced is a tutorial. At 42 Belgium, the GenAI portion of the AI specialisation covers the layer that makes LLMs useful in production: LLM API integration (OpenAI, Anthropic, open models), RAG pipelines for grounding outputs in real data, vector databases, and orchestration frameworks. The AI automation course content here means building agents, chaining tool calls, and designing fallback behaviours when models drift or fail. Serious LLM training in the deep sense — fine-tuning, distillation, parameter-efficient methods — is available for those who go deep, though most production work stops at the API and RAG level. The point: you leave able to architect a GenAI feature, not just demo one.",
       "keywords": [
         "generative AI course",
         "AI automation course",
@@ -43,16 +41,16 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "Does 42 Belgium offer a standalone prompt engineering certificate?",
+      "answer": "No — 42 Belgium doesn't offer a standalone prompt engineering certificate. Prompt engineering is integrated into the broader AI specialisation in Phase 3, alongside ML and LLM systems work. If a short certificate is what you need, platforms like Coursera, DeepLearning.AI, or vendor courses (OpenAI, Anthropic) offer those. If you want to be the engineer companies trust to architect GenAI features, the 42 path is here."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "How much coding background do I need?",
+      "answer": "Significant. Everyone at 42 starts with the Common Core — regardless of prior experience. That's where you build C, systems, networking, algorithms and the foundations the GenAI specialisation depends on. Developers and technical professionals often move through the Common Core faster than newcomers, but no one skips it. The AI specialisation (where the GenAI work lives) comes after, in Phase 3."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "What stack do graduates actually work with?",
+      "answer": "OpenAI and Anthropic APIs, open-source LLMs (Llama, Mistral, Qwen), vector databases (Pinecone, Weaviate, pgvector), orchestration frameworks (LangChain, LlamaIndex, plain Python), eval tools, and standard cloud infrastructure (AWS, GCP). The exact tools change every quarter — the engineering thinking doesn't."
     }
   ],
   "stats": [
@@ -74,14 +72,14 @@
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
+    "title": "Not a quick prompt course. The engineering school behind production GenAI.",
+    "description": "AI specialisation in Phase 3, LLM APIs, RAG, automation, RNCP 7 path. All free, no tuition, no degree required. Apply year-round.",
     "cta": "Start your GenAI journey →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - genai\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - AI & Prompt Engineering Specialisation",
+      "description": "A free AI specialisation at 42 Belgium that includes prompt engineering, LLM APIs, RAG pipelines and automation workflows. Part of the broader software engineering curriculum, with RNCP 7 European master-level recognition.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/en/prompt-engineering-course",
       "courseMode": "blended",
