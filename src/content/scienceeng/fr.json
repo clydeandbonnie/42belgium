@@ -1,9 +1,7 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "Les données de conversion sont très limitées pour ce groupe en FR : 'formation data scientist' (28 clk, CVR 3.6%) est le seul terme avec volume significatif. Cela peut indiquer que l'audience FR cherchant un niveau data scientist est plus restreinte, ou que le budget d'enchères sur ce groupe est insuffisant. Le cluster ML/Stats est construit sur le champ sémantique du thème plutôt que sur des données directes. La page doit clairement se différencier de la formation data analyst : plus mathématique, plus ML, plus exigeant — pour ne pas attirer le mauvais profil.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"formation data scientist\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (formation data scientist, formation data scientist en ligne)",
+    "title": "Formation Data Scientist - Stats, ML, Python | 42 Belgium",
+    "description": "Formation data scientist gratuite à Bruxelles et Anvers - statistiques, ML, Python et deep learning au niveau master. Voie RNCP 7 reconnue en Europe.",
     "slug": "formation-data-scientist",
     "primaryQuery": "formation data scientist",
     "convertingKeywords": [
@@ -13,16 +11,16 @@
     "lpAngle": "classic"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"formation data scientist\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"Devenez Data Scientist. Stats, ML, Python : le programme le plus exigeant.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "headline": "La formation data scientist construite autour des stats, du ML et de Python — en profondeur.",
+    "subheadline": "Pour ingénieurs et profils techniques, chez 42 Belgium à Bruxelles et Anvers. Le travail data scientist s'inscrit dans la spécialisation IA en Phase 3 — statistiques, algorithmes ML, deep learning, Python en production. 100% gratuit. Voie RNCP 7 ouverte pour la reconnaissance niveau master.",
+    "reassurance": "100% gratuit · Sans frais · Bruxelles & Anvers · Voie RNCP 7",
     "cta": "Rejoins le programme Data Science →"
   },
   "clusters": [
     {
       "name": "FORMATION DATA SCIENTIST",
-      "heading": "TODO: H2 reformulating \"FORMATION DATA SCIENTIST\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — formation data scientist, formation data scientist en ligne, data science Bruxelles",
+      "heading": "Une formation data scientist qui ne triche pas sur les math.",
+      "body": "Si tu cherches une formation data scientist, tu es probablement déjà à l'aise avec les math. La formation data scientist chez 42 Belgium prend ça au sérieux : pas de stats survolées, pas de ML décoratif. Une formation data scientist en ligne, sur une plateforme MOOC, t'apprendra à lancer scikit-learn ; ici, tu apprends pourquoi tel modèle fonctionne, à quel moment il casse, et comment l'implémenter from scratch quand il le faut. Notre formation data science à Bruxelles s'inscrit dans la spécialisation IA Phase 3 du cursus 42, après que le tronc commun ait posé les fondations engineering. À la sortie, ton portfolio ne contient pas un certificat — il contient du code que des ingénieurs ML peuvent lire et juger.",
       "keywords": [
         "formation data scientist",
         "formation data scientist en ligne",
@@ -31,8 +29,8 @@
     },
     {
       "name": "MACHINE LEARNING & STATS",
-      "heading": "TODO: H2 reformulating \"MACHINE LEARNING & STATS\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — machine learning formation, statistiques appliquées, deep learning, Python data science",
+      "heading": "Machine learning, stats, deep learning, Python : la matière technique.",
+      "body": "La machine learning formation à 42 Belgium ne s'arrête pas à scikit-learn. Tu implémentes les algorithmes — régression, classification, clustering, méthodes d'ensemble — avant de comprendre pourquoi ils convergent ou non. Les statistiques appliquées sont explicites : distributions, tests d'hypothèses, biais-variance, régularisation — le pourquoi sous chaque technique. Le deep learning couvre les réseaux convolutifs, recurrents, attention, transformers, et l'ingénierie d'entraînement à l'échelle : optimisation par gradient, hyperparameter search, distribution. Python data science va au-delà du notebook : pandas, NumPy, scikit-learn, PyTorch — utilisés sur de vrais pipelines, pas sur des Kaggle stretchés. C'est ce niveau de profondeur qui sépare un data scientist qui peut juste invoquer un modèle d'un data scientist qui peut le diagnostiquer quand il dérive en production.",
       "keywords": [
         "machine learning formation",
         "statistiques appliquées",
@@ -43,16 +41,16 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "Est-ce que c'est un vrai master ?",
+      "answer": "42 Belgium ne délivre pas son propre diplôme de master. La spécialisation data science s'inscrit dans le cadre RNCP 7 - le référentiel européen qui reconnaît les qualifications niveau master. En réussissant le RNCP 7, tu obtiens un diplôme professionnel reconnu au niveau master dans toute l'Europe. Le travail lui-même - modélisation, stats, ML en production - est ce que les recruteurs ingénieurs ML évaluent."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "Quel niveau math et CS pour entrer ?",
+      "answer": "Aucun pour entrer - tout le monde commence par le tronc commun, peu importe le niveau préalable. Mais la spé data science en Phase 3 est de niveau ingénieur, et les math reviennent : algèbre linéaire, calcul différentiel multivariable, théorie des probabilités, optimisation. Arriver avec des fondations math solides te permet de te concentrer sur le ML plutôt que sur les prérequis. Arriver sans, tu les construis en chemin."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "Quels métiers visent les diplômés ?",
+      "answer": "Data scientist, ML engineer, ingénieur recherche appliquée, MLOps engineer, quant - et parfois data engineer, même si c'est adjacent à la voie principale. Le marché belge et européen manque de profils capables de mettre du ML en production avec rigueur, et la spécialisation 42 cible cet écart."
     }
   ],
   "stats": [
@@ -62,7 +60,7 @@
     },
     {
       "value": "100%",
-      "label": "Gratuit - aucune frais"
+      "label": "Gratuit - aucun frais"
     },
     {
       "value": "42",
@@ -74,14 +72,14 @@
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
+    "title": "La formation data scientist qui forme des builders, pas des présentateurs PowerPoint.",
+    "description": "Spé IA en Phase 3, stats + ML + Python en profondeur, voie RNCP 7. 100% gratuit, sans diplôme exigé. Candidature toute l'année.",
     "cta": "Rejoins le programme Data Science →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - scienceeng\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - Formation Data Scientist",
+      "description": "Formation data scientist gratuite à Bruxelles et Anvers, intégrée à la spécialisation IA du cursus 42. Statistiques, machine learning, deep learning et Python en production, avec voie RNCP 7 pour la reconnaissance européenne niveau master.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/fr/formation-data-scientist",
       "courseMode": "blended",
