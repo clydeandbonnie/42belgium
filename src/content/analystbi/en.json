@@ -1,9 +1,7 @@
 {
-  "_comment": "Scaffolded from matrix.json. Replace every \"TODO: …\" before merging. See HOW_TO_EDIT.md and lexical matrix v3.",
-  "_matrixAnalyse": "Conversion is concentrated on the training intent. 'Data analyst' (74 clk, CVR 2.8%) drives volume, but the bootcamp format converts better : 'data analyst bootcamp' (5 clk, CVR 20.0%) and 'bootcamp data analyst' (2 clk, CVR 50.0%) show that structured, intensive programmes are what this audience actually wants. 'Data analysis course' (2 clk + 6 clk, CVR 50.0% + 16.7%) confirms programme-based intent. Pattern B : 'business analysis certification' (3 clk, CVR 0%) — certification is on the radar but the page does not address it. Naming tools explicitly (Power BI, SQL, Tableau) in the page is critical — these users are comparison-shopping bootcamps.",
   "meta": {
-    "title": "TODO: 50-60 chars, includes Primary Query \"data analyst bootcamp\" + \"| 42 Belgium\"",
-    "description": "TODO: 140-160 chars, integrates 1-2 keywords from cluster 1 (data analyst, data analyst bootcamp)",
+    "title": "Data Analyst Bootcamp - Power BI, SQL, Python | 42 Belgium",
+    "description": "A free data analyst bootcamp in Belgium. Learn Power BI, SQL, Python pandas, and Tableau through real projects. From beginner to portfolio-ready, no tuition.",
     "slug": "data-analyst-bootcamp",
     "primaryQuery": "data analyst bootcamp / data analyst course",
     "convertingKeywords": [
@@ -16,16 +14,16 @@
     "lpAngle": "classic"
   },
   "hero": {
-    "headline": "TODO: H1 must contain Primary Query \"data analyst bootcamp\" literally (briefing §4.4)",
-    "subheadline": "TODO: subline = LP Angle (matrix says \"Become a data analyst. Master the tools employers actually use.\")",
-    "reassurance": "TODO: optional microcopy, e.g. '100% free · No degree required · Brussels & Antwerp'",
+    "headline": "A data analyst bootcamp built around Power BI, SQL, and real data.",
+    "subheadline": "100% free in Brussels and Antwerp. You work with the tool stack analysts actually ship with - SQL, Power BI, Python, Tableau - on real datasets, not slides. RNCP 6 path available for formal recognition.",
+    "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 6 path available",
     "cta": "Start your data career →"
   },
   "clusters": [
     {
       "name": "DATA ANALYST TRAINING",
-      "heading": "TODO: H2 reformulating \"DATA ANALYST TRAINING\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — data analyst, data analyst bootcamp, data analysis course, bootcamp data analyst, data analyst course",
+      "heading": "A data analyst bootcamp built on real datasets, not toy examples.",
+      "body": "Most data analyst bootcamp content stops at the basics - SQL syntax, a Power BI dashboard, a tutorial-grade pandas notebook. The 42 Belgium bootcamp data analyst track goes further. Through the data analysis course, you work on real datasets with messy joins, missing values, and competing definitions - the situations actual analysts face. The data analyst course covers the full workflow: extracting data from production systems, cleaning it, modelling it, presenting findings stakeholders can act on. You don't just learn what a data analyst does - you do it. Each project ties to a concrete business question, and your portfolio shows real outputs: queries you wrote, dashboards you built, decisions you helped inform. That's what makes the difference when a hiring manager opens your CV.",
       "keywords": [
         "data analyst",
         "data analyst bootcamp",
@@ -36,8 +34,8 @@
     },
     {
       "name": "BI TOOLS",
-      "heading": "TODO: H2 reformulating \"BI TOOLS\" in copywriting (briefing §4.6)",
-      "body": "TODO: 100-150 words integrating ALL keywords below naturally — Power BI, SQL training, business intelligence, business analysis certification",
+      "heading": "The BI toolkit, used in production: Power BI, SQL, and beyond.",
+      "body": "A modern data analyst lives in three or four tools simultaneously. The 42 Belgium bootcamp gives you working command of the stack analysts actually use. Power BI for dashboards and reporting that stakeholders can read at a glance. SQL training that goes past SELECT statements: window functions, CTEs, query optimisation, working across schemas. The business intelligence layer is where most analysts add the most value, and we treat it as engineering - version-controlled queries, clean naming, reproducible reports. If you've been searching for a business analysis certification, the RNCP 6 path here gives you a professional diploma recognised across Europe at bachelor level. The tools are the surface; the deeper skill is structuring problems so the data can actually answer them.",
       "keywords": [
         "Power BI",
         "SQL training",
@@ -48,16 +46,16 @@
   ],
   "faq": [
     {
-      "question": "TODO: question 1 (cluster-specific or general)",
-      "answer": "TODO: answer"
+      "question": "How is this different from a Coursera data analyst course?",
+      "answer": "Two things. First, scope: the 42 Belgium track sits inside a full software engineering curriculum, so you don't just learn analytics — you learn how data flows through real systems. Second, format: you work on projects with peers, in person on campus, through code reviews — not alone with video. Your portfolio shows work hiring managers can evaluate, not certificates everyone has."
     },
     {
-      "question": "TODO: question 2",
-      "answer": "TODO: answer"
+      "question": "What tools and languages will I actually learn?",
+      "answer": "SQL across multiple dialects, Python (pandas, NumPy, basic scikit-learn), Power BI for dashboards, Tableau, and the data pipeline tools that surround them. You also gain the engineering foundation that lets you pick up new tools fast: git, working in teams on shared codebases, understanding what's happening below the abstractions."
     },
     {
-      "question": "TODO: question 3",
-      "answer": "TODO: answer"
+      "question": "Can I get a recognised qualification at the end?",
+      "answer": "Yes — through the RNCP 6 framework. Pass the RNCP 6 examination and you hold a professional diploma recognised at bachelor level across Europe. 42 itself doesn't issue a data-analyst-specific certificate, but the work you produce serves as evidence stronger than most certifications."
     }
   ],
   "stats": [
@@ -79,14 +77,14 @@
     }
   ],
   "ctaFinal": {
-    "title": "TODO: closing headline",
-    "description": "TODO: closing pitch (1-2 sentences)",
+    "title": "The data analyst bootcamp where the work follows you out.",
+    "description": "Power BI, SQL, Python, real projects, RNCP 6 path. All free, no tuition, no degree required. Apply year-round.",
     "cta": "Start your data career →"
   },
   "schemaOrg": {
     "course": {
-      "name": "TODO: short course name (e.g. \"42 Belgium - analystbi\")",
-      "description": "TODO: course description for rich snippet (1-2 sentences)",
+      "name": "42 Belgium - Data Analyst Bootcamp",
+      "description": "A free data analyst bootcamp at 42 Belgium, in Brussels and Antwerp. Covers SQL, Power BI, Python data tooling, and business intelligence through real projects, with the RNCP 6 framework providing bachelor-level European recognition.",
       "provider": "42 Belgium",
       "url": "https://42belgium.be/en/data-analyst-bootcamp",
       "courseMode": "blended",
