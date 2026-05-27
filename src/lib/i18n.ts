@@ -296,7 +296,7 @@ export interface ProposalUiStrings {
 
 export const proposalUiStrings: Record<Language, ProposalUiStrings> = {
   en: {
-    hero: { eyebrow: "Free structured training", secondaryCta: "See the outcomes" },
+    hero: { eyebrow: "Free, project-based training", secondaryCta: "See the outcomes" },
     cluster: {
       dontAskLabel: "What we don't ask for",
       lookForLabel: "What we look for",
@@ -311,7 +311,7 @@ export const proposalUiStrings: Record<Language, ProposalUiStrings> = {
     faq: { eyebrow: "FAQ", heading: "Questions" },
   },
   fr: {
-    hero: { eyebrow: "Formation structurée gratuite", secondaryCta: "Voir les résultats" },
+    hero: { eyebrow: "Formation par projets, gratuite", secondaryCta: "Voir les résultats" },
     cluster: {
       dontAskLabel: "Ce qu'on ne te demande pas",
       lookForLabel: "Ce qu'on cherche",
@@ -326,7 +326,7 @@ export const proposalUiStrings: Record<Language, ProposalUiStrings> = {
     faq: { eyebrow: "FAQ", heading: "Questions" },
   },
   nl: {
-    hero: { eyebrow: "Gratis gestructureerde opleiding", secondaryCta: "Bekijk de resultaten" },
+    hero: { eyebrow: "Gratis projectgebaseerde opleiding", secondaryCta: "Bekijk de resultaten" },
     cluster: {
       dontAskLabel: "Wat we niet vragen",
       lookForLabel: "Wat we zoeken",
