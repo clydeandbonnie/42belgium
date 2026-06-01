@@ -21,7 +21,7 @@
     {
       "name": "DEVOPS & CLOUD",
       "heading": "Een DevOps opleiding waarin je infrastructuur opzet, niet alleen schema's tekent.",
-      "body": "Een DevOps opleiding telt pas als je achteraf echt iets kunt deployen. Bij 42 Belgium is infrastructuurwerk geen aparte module. Het loopt door het curriculum, van systeemniveau en C-programmering tot containerized deployment in de specialisaties van fase 3. Een serieuze cloud engineer opleiding behandelt wat productie vandaag betekent: AWS, Linux-servers, netwerkfundamenten, Docker, basis Kubernetes en infrastructure-as-codepatronen. Voor wie industriële credentials wil, bereidt het curriculum je voor op AWS-certificeringsexamens zoals Solutions Architect, SysOps en DevOps Engineer. 42 reikt die certificaten niet zelf uit; AWS doet dat. Het doel is niet een certificaat aan de muur. Het doel is dat je de reflex ontwikkelt om dingen in staging te breken, te observeren wat faalt en een fix uit te rollen voor de wachtdienst het probleem voelt.",
+      "body": "Een DevOps opleiding telt pas als je achteraf echt iets kunt lanceren. Bij 42 Belgium is infrastructuurwerk geen aparte module. Het loopt door het curriculum, van systeemniveau en C-programmering tot containerized deployments in de specialisaties van fase 3. Een serieuze cloud engineer opleiding behandelt wat productie vandaag betekent: AWS, Linux-servers, netwerkfundamenten, Docker, basis Kubernetes en infrastructure-as-code patronen. Voor wie industriecertificeringen wil, bereidt het curriculum je voor op AWS-certificeringsexamens zoals Solutions Architect, SysOps en DevOps Engineer. 42 reikt die certificaten niet zelf uit; onze partner AWS doet dat. Het doel is niet een certificaat aan de muur. Het doel is dat je de reflex ontwikkelt om systemen veilig te testen: observeren wat faalt en een oplossing uitrollen voor de wachtdienst het probleem voelt.",
       "keywords": [
         "DevOps opleiding",
         "cloud engineer opleiding",
@@ -30,8 +30,8 @@
     },
     {
       "name": "NETWERK & SYSTEEMBEHEER",
-      "heading": "Linux, netwerken, systeeminternals: het fundament onder DevOps.",
-      "body": "Voor je jezelf netwerkbeheerder of DevOps engineer kunt noemen, moet je begrijpen wat er onder de abstractielaag gebeurt. De Common Core bij 42 Belgium pakt dat serieus aan. De systeembeheeropleiding loopt via projecten, niet via klikhandleidingen. Je bouwt een minishell, beheert processen en configureert services van nul. Opleidingen tot netwerkbeheerder die op de markt circuleren, stoppen vaak bij routinetaken. Hier ga je dieper: je leert waarom TCP retransmits doet, waarom een DNS-query faalt en waarom een proces geheugen opvreet. De Linux cursus is geen aparte unit. Linux loopt door alles wat je in de Common Core schrijft. Hoe dieper je in Linux en netwerken gaat, hoe minder verrassend de cloud wordt.",
+      "heading": "Linux, netwerken, system internals: het fundament onder DevOps.",
+      "body": "Voor je jezelf netwerkbeheerder of DevOps engineer kunt noemen, moet je begrijpen wat er onder de abstractielaag gebeurt. De Common Core bij 42 Belgium pakt dat serieus aan. De systeembeheer opleiding loopt via projecten, niet via klik handleidingen. Je bouwt een mini shell, beheert processen en configureert services van nul. Opleidingen tot netwerkbeheerder die op de markt circuleren, stoppen vaak bij routinetaken. Hier ga je dieper: je leert waarom TCP retransmits doet, waarom een DNS-query faalt en waarom een proces geheugen opvreet. De Linux cursus is geen aparte unit. Linux loopt door alles wat je in de Common Core schrijft. Hoe dieper je in Linux en netwerken gaat, hoe minder verrassend de cloud wordt.",
       "keywords": [
         "systeembeheer opleiding",
         "netwerk beheerder opleiding",
@@ -50,14 +50,14 @@
       "answer": "42 Belgium geeft zelf geen cloudcertificaten uit. Die komen rechtstreeks van AWS, Microsoft en Google. Wat het curriculum wel doet: je voorbereiden op certificaten die ertoe doen, zoals AWS Solutions Architect, SysOps en DevOps Engineer, plus de equivalenten op Azure en GCP. Het praktische werk dat je oplevert, is je bewijs in gesprekken — los van de certificaten die je beslist te behalen."
     },
     {
-      "question": "Welke jobs nemen infra-afgestudeerden op?",
+      "question": "In welke functies komen infra-afgestudeerden terecht?",
       "answer": "Afgestudeerden starten vaak als DevOps engineer, cloud engineer, SRE, platform engineer, netwerkengineer of infrastructure-as-code-specialist. De Belgische markt heeft een tekort aan senior infratalent en neemt graag juniors aan met bewijs dat ze kunnen deployen. Veel afgestudeerden starten via een stage bij onze partners en gaan nog voor het einde van het traject over naar een vast contract."
     }
   ],
   "stats": [
     {
       "value": "98%",
-      "label": "van de gevorderde afgestudeerden vindt een baan"
+      "label": "van de gevorderde afgestudeerden vindt een job"
     },
     {
       "value": "100%",

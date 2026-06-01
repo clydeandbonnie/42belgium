@@ -12,6 +12,7 @@
  */
 
 import type { Cluster, PageContent } from "@/lib/i18n";
+import type { Language } from "@/lib/themes";
 import { ApplyLink } from "./ApplyLink";
 import { PartnerStrip } from "./PartnerStrip";
 import { WhyTabsC } from "./WhyTabsC";
@@ -20,7 +21,7 @@ import { StoriesCarouselC } from "./StoriesCarouselC";
 import { DockC } from "./DockC";
 import styles from "./ProposalC.module.css";
 
-export function ProposalC({ content }: { content: PageContent }) {
+export function ProposalC({ content, lang }: { content: PageContent; lang: Language }) {
   const {
     hero,
     clusters,
@@ -140,7 +141,7 @@ export function ProposalC({ content }: { content: PageContent }) {
             <p className={styles.secMarker}>The program</p>
             <h2>{whatYouBuild.heading}</h2>
             <p className={styles.body}>{whatYouBuild.intro}</p>
-            <ProgramRailC phases={whatYouBuild.phases} />
+            <ProgramRailC phases={whatYouBuild.phases} lang={lang} />
             {whatYouBuild.plusNote && (
               <p className={styles.progNote}>{whatYouBuild.plusNote}</p>
             )}

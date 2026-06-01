@@ -49,13 +49,13 @@
     },
     {
       "question": "Welke rollen nemen afgestudeerden op?",
-      "answer": "Afgestudeerden starten vaak als data scientist, ML engineer, applied research engineer, MLOps engineer of quantitative analyst. In sommige gevallen ook als data engineer, al is dat eerder aangrenzend dan het hoofdtraject. De Belgische en Europese arbeidsmarkt heeft een tekort aan mensen die productie-ML op diepteniveau kunnen leveren. De 42-specialisatie richt zich precies op die kloof."
+      "answer": "Afgestudeerden starten vaak als data scientist, ML engineer, applied research engineer, MLOps engineer of quantitative analist. In sommige gevallen ook als data engineer, al is dat eerder aangrenzend dan het hoofdtraject. De Belgische en Europese arbeidsmarkt heeft een tekort aan mensen die productie-ML op diepteniveau kunnen leveren. De 42-specialisatie richt zich precies op die kloof."
     }
   ],
   "stats": [
     {
       "value": "98%",
-      "label": "van de gevorderde afgestudeerden vindt een baan"
+      "label": "van de gevorderde afgestudeerden vindt een job"
     },
     {
       "value": "100%",

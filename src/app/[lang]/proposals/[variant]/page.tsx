@@ -51,8 +51,8 @@ export default async function ProposalPage({
   return (
     <>
       {variant === "a" && <ProposalA content={content} lang={lang as Language} />}
-      {variant === "b" && <ProposalB content={content} />}
-      {variant === "c" && <ProposalC content={content} />}
+      {variant === "b" && <ProposalB content={content} lang={lang as Language} />}
+      {variant === "c" && <ProposalC content={content} lang={lang as Language} />}
     </>
   );
 }

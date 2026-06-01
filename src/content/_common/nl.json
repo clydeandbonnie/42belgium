@@ -2,10 +2,10 @@
   "_comment": "In te vullen: gedeelde secties voor alle NL LPs (afterForty, whatYouBuild, realStories, howToApply, openDays). Zie _common/en.json als referentie voor de structuur.",
   "afterForty": {
     "heading": "Het leven na 42: 98% aan het werk.",
-    "description": "98% van de studenten die het gevorderde curriculum afronden vindt een baan. Velen worden aangeworven tijdens een stage of terwijl ze nog aan hun 42-projecten werken. Je studeert af met een portfolio, concrete ervaring, en een wereldwijd alumninetwerk in elke grote tech-stad.",
+    "description": "98% van de studenten die het gevorderde curriculum afronden vindt een job. Velen worden aangeworven tijdens een stage of terwijl ze nog aan hun 42-projecten werken. Je studeert af met een portfolio, concrete ervaring, en een wereldwijd alumninetwerk in elke grote tech-stad.",
     "stat": {
       "value": "98%",
-      "label": "van de gevorderde afgestudeerden vindt een baan"
+      "label": "van de gevorderde afgestudeerden vindt een job"
     },
     "careers": [
       {
@@ -50,12 +50,12 @@
           "**Algoritmes & datastructuren** - de logica achter elke codebase",
           "**UNIX, bestandssystemen, processen** - hoe software echt draait",
           "**Netwerkprogrammering** - de architectuur achter moderne apps",
-          "**Object-georiënteerd programmeren** - code schrijven dat op grote schaal kan draaien",
+          "**Object-georiënteerd programmeren** - code schrijven die schaalbaar is",
           "**Client-server projecten** - de backend van echte systemen bouwen",
           "**Webprogrammering** - van HTML tot full-stack deployment",
           "**Grafische programmering** - visuele rendering, interfaces creëren",
           "**Artificiële intelligentie** - de fundamenten van moderne systemen",
-          "**Concurrent programming** - multi-threading en parallelisme"
+          "**Gelijktijdige programmering** - multi-threading en parallelisme"
         ]
       },
       {
@@ -63,7 +63,7 @@
         "title": "Eerste werkervaring",
         "duration": "Aanbevolen",
         "icon": "fa-solid fa-briefcase",
-        "description": "Na de core gaan veel studenten op stage of nemen een eerste tech-job aan. Niet verplicht, maar sterk aanbevolen. Deze fase helpt vaak om je interesses te bevestigen en met scherpere doelen terug te keren naar 42.",
+        "description": "Na de Common Core gaan veel studenten op stage of nemen een eerste tech-job aan. Niet verplicht, maar sterk aanbevolen. Deze fase helpt vaak om je interesses te bevestigen en met scherpere doelen terug te keren naar 42.",
         "items": [
           "**Pas je vaardigheden toe** in echte omstandigheden",
           "**Begrijp professionele workflows**, tools, en teamdynamiek",
@@ -131,8 +131,8 @@
     "steps": [
       {
         "number": "01",
-        "title": "Online logische test (~1u)",
-        "description": "Geen code nodig, het is gewoon logica. Kies een rustige plek, je kan niet pauzeren of opnieuw beginnen. Blijf gefocust en ga door — je kan dit!"
+        "title": "Online logica spel (~1u)",
+        "description": "Geen code nodig, het is gewoon logisch denken. Kies een rustige plek, je kan niet pauzeren of opnieuw beginnen. Blijf gefocust en ga door — je kan dit!"
       },
       {
         "number": "02",
@@ -146,33 +146,33 @@
       },
       {
         "number": "04",
-        "title": "Start de Core",
-        "description": "Na het slagen voor de Piscine kan je officieel het Core Program starten.\n\nJe krijgt 24/7 toegang tot de campus, werkt aan echte projecten, en ontdekt een hele community van mede-ontwikkelaars."
+        "title": "Start de Common Core",
+        "description": "Na het slagen voor de Piscine kan je officieel het Core Programma starten.\n\nJe krijgt 24/7 toegang tot de campus, werkt aan echte projecten, en ontdekt een hele community van mede-ontwikkelaars."
       }
     ],
     "ctaLabel": "Schrijf je nu in →",
-    "microcopy": "Volgende Piscine-data op campus - je kan je op elk moment inschrijven."
+    "microcopy": "Volgende Piscines op campus - je kan je op elk moment inschrijven."
   },
   "openDays": {
-    "heading": "Kom ons ontmoeten op een Open Day.",
+    "heading": "Ontmoet ons tijdens een opendeurdag.",
     "intro": "Geen druk, geen verplichting. Bezoek de campus, ontmoet het team, stel al je vragen — in Brussel of Antwerpen.",
     "campuses": [
       {
         "name": "Brussel",
         "address": "Cantersteen 12",
-        "subHeading": "Vlakbij het Centraal Station.",
-        "description": "Op vijf minuten wandelen van het Centraal Station. Bezoek de campus, ontmoet huidige studenten, ontdek hoe peer-to-peer learning er echt uitziet.",
+        "subHeading": "Naast het Centraal Station.",
+        "description": "Op twee minuten wandelen van het Centraal Station. Bezoek de campus, ontmoet huidige studenten, ontdek hoe peer-to-peer learning er echt uitziet.",
         "image": "/assets/gallery/OpenDaysBrussels.png"
       },
       {
         "name": "Antwerpen",
         "address": "Mediaplein 1",
-        "subHeading": "In het hart van de stad.",
-        "description": "Onze Antwerpen-campus ligt midden in het creatieve en media-district van de stad. Kom een middag doorbrengen met het team.",
+        "subHeading": "In het hart van de stad, naast het station.",
+        "description": "Onze Antwerpen-campus ligt midden in het creatieve en media-district van de stad, in het DPG gebouw. Kom een middag doorbrengen met het team.",
         "image": "/assets/gallery/42Belgium-Antwerp1.png"
       }
     ],
-    "ctaLabel": "Bekijk komende Open Days",
+    "ctaLabel": "Bekijk komende opendeurdagen",
     "ctaHref": "https://www.eventbrite.com/cc/open-days-42-belgium-2935099"
   }
 }

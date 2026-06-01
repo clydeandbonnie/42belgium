@@ -52,13 +52,13 @@
     },
     {
       "question": "Krijg ik een Python-certificaat?",
-      "answer": "Niet rechtstreeks van 42. We geven geen Python-specifieke certificaten. Het curriculum vormt engineers, geen certificaathouders. Als je het volledige curriculum afmaakt, geeft het RNCP 6-kader je een professioneel diploma dat in Europa erkend wordt op bachelorniveau. Voor vendor-certificaten zoals PCEP of PCAP bereidt het Python-werk je wel voor om die ernaast te behalen."
+      "answer": "Niet rechtstreeks van 42. We geven geen Python-specifieke certificaten, het curriculum vormt engineers. Als je het volledige curriculum afmaakt, geeft het RNCP 6-kader je een professioneel diploma dat in Europa erkend wordt op bachelorniveau. Voor vendor-certificaten zoals PCEP of PCAP bereidt het Python-werk je wel voor om die ernaast te behalen."
     }
   ],
   "stats": [
     {
       "value": "98%",
-      "label": "van de gevorderde afgestudeerden vindt een baan"
+      "label": "van de gevorderde afgestudeerden vindt een job"
     },
     {
       "value": "100%",

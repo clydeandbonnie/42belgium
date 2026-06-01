@@ -288,6 +288,9 @@ export interface ProposalUiStrings {
   };
   afterForty: { eyebrow: string };
   whatYouBuild: { eyebrow: string };
+  /** Labels rendered inside the program timeline (phase header + the two
+   * inline section labels). Localized so NL/FR pages don't show English. */
+  timeline: { phase: string; flexibility: string; globalMobility: string };
   realStories: { eyebrow: string };
   openDays: { eyebrow: string };
   howToApply: { eyebrow: string };
@@ -305,6 +308,7 @@ export const proposalUiStrings: Record<Language, ProposalUiStrings> = {
     },
     afterForty: { eyebrow: "The outcome" },
     whatYouBuild: { eyebrow: "The program" },
+    timeline: { phase: "Phase", flexibility: "Flexibility", globalMobility: "Global mobility" },
     realStories: { eyebrow: "Real students" },
     openDays: { eyebrow: "Campus visits" },
     howToApply: { eyebrow: "The path" },
@@ -320,6 +324,7 @@ export const proposalUiStrings: Record<Language, ProposalUiStrings> = {
     },
     afterForty: { eyebrow: "Le résultat" },
     whatYouBuild: { eyebrow: "Le programme" },
+    timeline: { phase: "Phase", flexibility: "Flexibilité", globalMobility: "Mobilité internationale" },
     realStories: { eyebrow: "Vrais étudiants" },
     openDays: { eyebrow: "Visites de campus" },
     howToApply: { eyebrow: "Le parcours" },
@@ -335,6 +340,7 @@ export const proposalUiStrings: Record<Language, ProposalUiStrings> = {
     },
     afterForty: { eyebrow: "Het resultaat" },
     whatYouBuild: { eyebrow: "Het programma" },
+    timeline: { phase: "Fase", flexibility: "Flexibiliteit", globalMobility: "Wereldwijde mobiliteit" },
     realStories: { eyebrow: "Echte studenten" },
     openDays: { eyebrow: "Campusbezoeken" },
     howToApply: { eyebrow: "Het traject" },

@@ -2,10 +2,13 @@
 
 import { useState } from "react";
 import type { CurriculumPhase } from "@/lib/i18n";
+import type { Language } from "@/lib/themes";
+import { proposalUiStrings } from "@/lib/i18n";
 import styles from "./ProposalB.module.css";
 
 interface Props {
   phases: CurriculumPhase[];
+  lang: Language;
 }
 
 // Split an item string on " - " (our convention) OR on a leading **head**
@@ -18,7 +21,8 @@ function splitItem(item: string): [string, string] {
   return [item, ""];
 }
 
-export function ProgramTimelineB({ phases }: Props) {
+export function ProgramTimelineB({ phases, lang }: Props) {
+  const t = proposalUiStrings[lang].timeline;
   const [active, setActive] = useState(0);
   const phase = phases[active];
   const paragraphs = phase.description.split("\n\n");
@@ -80,13 +84,13 @@ export function ProgramTimelineB({ phases }: Props) {
         </ul>
         {phase.flexibility && phase.flexibility.length > 0 && (
           <p className={styles.extra}>
-            <strong>Flexibility: </strong>
+            <strong>{t.flexibility}: </strong>
             {phase.flexibility.join(" · ")}
           </p>
         )}
         {phase.globalMobility && (
           <p className={styles.extra}>
-            <strong>Global mobility: </strong>
+            <strong>{t.globalMobility}: </strong>
             {phase.globalMobility}
           </p>
         )}

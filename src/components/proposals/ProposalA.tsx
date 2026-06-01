@@ -393,7 +393,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
               {whatYouBuild.intro}
             </p>
             <div className="mt-12">
-              <TimelineAccordion phases={whatYouBuild.phases} />
+              <TimelineAccordion phases={whatYouBuild.phases} lang={lang} />
             </div>
             {whatYouBuild.plusNote && (
               <p className="mt-8 text-sm text-zinc-600 italic leading-relaxed max-w-3xl">

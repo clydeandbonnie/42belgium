@@ -2,12 +2,16 @@
 
 import { useState } from "react";
 import type { CurriculumPhase } from "@/lib/i18n";
+import type { Language } from "@/lib/themes";
+import { proposalUiStrings } from "@/lib/i18n";
 
 interface Props {
   phases: CurriculumPhase[];
+  lang: Language;
 }
 
-export function TimelineAccordion({ phases }: Props) {
+export function TimelineAccordion({ phases, lang }: Props) {
+  const t = proposalUiStrings[lang].timeline;
   const [openPhase, setOpenPhase] = useState<number>(0);
   const toggle = (i: number) => setOpenPhase((prev) => (prev === i ? -1 : i));
 
@@ -112,7 +116,7 @@ export function TimelineAccordion({ phases }: Props) {
                   </ul>
                   {phase.flexibility && phase.flexibility.length > 0 && (
                     <div className="mt-8">
-                      <p className="text-base font-bold text-black mb-3">Flexibility:</p>
+                      <p className="text-base font-bold text-black mb-3">{t.flexibility}:</p>
                       <ul className="space-y-2 list-disc pl-5">
                         {phase.flexibility.map((item, idx) => (
                           <li key={idx} className="text-sm text-zinc-800 leading-relaxed">
@@ -124,7 +128,7 @@ export function TimelineAccordion({ phases }: Props) {
                   )}
                   {phase.globalMobility && (
                     <p className="mt-6 text-sm text-zinc-800 leading-relaxed">
-                      <strong className="font-bold text-black">Global mobility:</strong>{" "}
+                      <strong className="font-bold text-black">{t.globalMobility}:</strong>{" "}
                       {phase.globalMobility}
                     </p>
                   )}

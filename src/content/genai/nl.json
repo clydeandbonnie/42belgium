@@ -1,35 +1,35 @@
 {
   "meta": {
-    "title": "Prompt engineering cursus - LLMs & RAG | 42 Belgium",
-    "description": "Prompt engineering cursus binnen de AI-specialisatie van 42 Belgium: gratis, op campus. LLM-API's, RAG en AI-automatisering. Fase 3 van het curriculum.",
+    "title": "prompt-engineering opleiding - LLMs & RAG | 42 Belgium",
+    "description": "prompt-engineering opleiding binnen de AI-specialisatie van 42 Belgium: gratis, op campus. LLM-API's, RAG en AI-automatisering. Fase 3 van het curriculum.",
     "slug": "prompt-engineering-cursus",
-    "primaryQuery": "prompt engineering cursus / generatieve AI opleiding",
+    "primaryQuery": "prompt-engineering opleiding / generatieve AI opleiding",
     "convertingKeywords": [
-      "prompt engineering cursus",
+      "prompt-engineering opleiding",
       "prompt engineer opleiding"
     ],
     "lpAngle": "bold"
   },
   "hero": {
-    "headline": "De prompt engineering cursus die je van prompt naar productie brengt.",
-    "subheadline": "42 Belgium is een software engineering-school. De AI-specialisatie in fase 3 behandelt LLM-API's, RAG-pipelines, prompt chaining en AI-automatisering — alles wat van een LLM een echt systeem maakt. Zoek je een snel prompt-engineeringcertificaat, dan ben je hier verkeerd. Zoek je echt engineeringswerk, dan zit je hier goed.",
+    "headline": "De prompt-engineering opleiding die je van prompt naar productie brengt.",
+    "subheadline": "42 Belgium is een software engineering-school. De AI-specialisatie in fase 3 behandelt LLM-API's, RAG-pipelines, prompt chaining en AI-automatisering — alles wat van een LLM een echt systeem maakt. Zoek je een snelle erkenning van prompt engineering, dan ben je hier verkeerd. Zoek je echt engineeringswerk, dan zit je hier goed.",
     "reassurance": "100% gratis · Geen diploma vereist · Brussel & Antwerpen · RNCP 7 mogelijk",
     "cta": "Start je GenAI-opleiding →"
   },
   "clusters": [
     {
       "name": "PROMPT ENGINEERING",
-      "heading": "Waarom er bij 42 geen losse prompt engineering cursus bestaat.",
-      "body": "De meeste content rond een prompt engineering cursus leert je templates aan: \"gebruik deze zin, structureer je prompt zo\". Twee uur lang nuttig, maar daarna begint het echte werk. Het werk van een prompt engineer in een bedrijf dat effectief GenAI-producten bouwt, is niet \"betere prompts in ChatGPT typen\". Het is prompt chains ontwerpen die edge cases overleven, prompt-assets in version control beheren, evaluatiepipelines bouwen en weten wanneer prompting moet plaatsmaken voor fine-tuning of RAG. Dat is engineering. Daarom biedt 42 geen losse prompt-engineeringopleiding aan. Prompt engineering zit ingebed in de AI-specialisatie in fase 3, waar systeemdenken het pas écht nuttig maakt. Voor een snel certificaat zijn er genoeg platformen. Voor de rol waarin bedrijven jou de architectuur van een GenAI-feature toevertrouwen, ben je hier op je plaats.",
+      "heading": "Waarom er bij 42 geen losse prompt-engineering opleiding bestaat.",
+      "body": "De meeste content rond een prompt-engineering opleiding leert je templates aan: \"gebruik deze zin, structureer je prompt zo\". Twee uur lang nuttig, maar daarna begint het echte werk. Het werk van een prompt engineer in een bedrijf dat effectief GenAI-producten bouwt, is niet \"betere prompts in ChatGPT typen\". Het is prompt chains ontwerpen die edge cases overleven, prompt-assets in version control beheren, evaluatiepipelines bouwen en weten wanneer prompting moet plaatsmaken voor fine-tuning of RAG. Dat is engineering. Daarom biedt 42 geen losse prompt-engineering opleiding aan. Prompt engineering zit ingebed in de AI-specialisatie in fase 3, waar systeemdenken het pas écht nuttig maakt. Voor een snel certificaat zijn er genoeg platformen. Voor de rol waarin bedrijven jou de architectuur van een GenAI-feature toevertrouwen, ben je hier op je plaats.",
       "keywords": [
-        "prompt engineering cursus",
+        "prompt-engineering opleiding",
         "prompt engineer opleiding"
       ]
     },
     {
       "name": "GENERATIEVE AI & LLMs",
       "heading": "Wat de generatieve AI opleiding écht omvat: API's, RAG en automatisering.",
-      "body": "Een generatieve AI opleiding die stopt bij \"geavanceerd werken met ChatGPT\" is een tutorial, geen curriculum. Bij 42 Belgium behandelt het GenAI-deel van de AI-specialisatie de laag die LLMs bruikbaar maakt in productie: LLM-API-integratie, bijvoorbeeld met OpenAI, Anthropic of open-sourcemodellen, RAG-pipelines om outputs te onderbouwen met echte data, vector-databases en orchestratieframeworks. AI-automatisering betekent hier: agents bouwen, tool calls aan elkaar koppelen en fallbackgedrag ontwerpen voor wanneer modellen driften of falen. Echte LLM-training — fine-tuning, distillatie en parameter-efficiënte methodes — is beschikbaar voor wie diep wil gaan, ook al stopt het meeste productiewerk vandaag op API- en RAG-niveau. Het punt: je verlaat het traject als iemand die een GenAI-feature kan architecteren, niet alleen demonstreren.",
+      "body": "Een generatieve AI opleiding die stopt bij \"geavanceerd werken met ChatGPT\" is een tutorial, geen curriculum. Bij 42 Belgium behandelt het GenAI-deel van de AI-specialisatie de laag die LLMs bruikbaar maakt in productie: LLM-API-integratie, bijvoorbeeld met OpenAI, Anthropic of open-source modellen, RAG-pipelines om outputs te onderbouwen met echte data, vector-databases en orchestratie frameworks. AI-automatisering betekent hier: agents bouwen, tool calls aan elkaar koppelen en fallback gedrag ontwerpen voor wanneer modellen driften of falen. Echte LLM-training — fine-tuning, distillatie en parameter-efficiënte methodes — is beschikbaar voor wie diep wil gaan, ook al stopt het meeste productiewerk vandaag op API- en RAG-niveau. Het doel: je verlaat het traject als iemand die een GenAI-feature kan ontwerpen, niet alleen demonstreren.",
       "keywords": [
         "generatieve AI opleiding",
         "LLM training",
@@ -41,7 +41,7 @@
   "faq": [
     {
       "question": "Geeft 42 Belgium een losstaand prompt engineering certificaat?",
-      "answer": "Nee. 42 Belgium geeft geen losstaand prompt-engineeringcertificaat. Prompt engineering zit geïntegreerd in de bredere AI-specialisatie in fase 3, naast machine learning en het werk rond LLM-systemen. Voor een kort certificaat zijn er platformen zoals Coursera, DeepLearning.AI of vendor-cursussen van bijvoorbeeld OpenAI en Anthropic. Voor de rol van engineer aan wie bedrijven de architectuur van GenAI-features toevertrouwen, past het traject bij 42 beter."
+      "answer": "Nee. 42 Belgium geeft geen losstaand prompt-engineering certificaat. Prompt engineering zit geïntegreerd in de bredere AI-specialisatie in fase 3, naast machine learning en het werk rond LLM-systemen. Voor een kort certificaat zijn er platformen zoals Coursera, DeepLearning.AI of vendor-cursussen van bijvoorbeeld OpenAI en Anthropic. Voor de rol van engineer aan wie bedrijven de architectuur van GenAI-features toevertrouwen, past het traject bij 42 beter."
     },
     {
       "question": "Hoeveel programmeerervaring heb je nodig voor de GenAI-specialisatie?",
@@ -55,7 +55,7 @@
   "stats": [
     {
       "value": "98%",
-      "label": "van de gevorderde afgestudeerden vindt een baan"
+      "label": "van de gevorderde afgestudeerden vindt een job"
     },
     {
       "value": "100%",

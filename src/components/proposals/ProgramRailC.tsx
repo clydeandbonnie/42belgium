@@ -2,10 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { CurriculumPhase } from "@/lib/i18n";
+import type { Language } from "@/lib/themes";
+import { proposalUiStrings } from "@/lib/i18n";
 import styles from "./ProposalC.module.css";
 
 interface Props {
   phases: CurriculumPhase[];
+  lang: Language;
 }
 
 function splitItem(item: string): [string, string] {
@@ -16,7 +19,8 @@ function splitItem(item: string): [string, string] {
   return [item, ""];
 }
 
-export function ProgramRailC({ phases }: Props) {
+export function ProgramRailC({ phases, lang }: Props) {
+  const t = proposalUiStrings[lang].timeline;
   const [active, setActive] = useState(0);
   const phaseRefs = useRef<(HTMLElement | null)[]>([]);
 
@@ -67,7 +71,7 @@ export function ProgramRailC({ phases }: Props) {
               className={styles.progPhase}
             >
               <div className={styles.phHead}>
-                <span className={styles.phN}>Phase {p.number}</span>
+                <span className={styles.phN}>{t.phase} {p.number}</span>
                 <span className={styles.phDur}>{p.duration}</span>
               </div>
               <h3>{p.title}</h3>
@@ -99,7 +103,7 @@ export function ProgramRailC({ phases }: Props) {
               </ul>
               {p.globalMobility && (
                 <div className={styles.extra}>
-                  <strong>Global mobility: </strong>
+                  <strong>{t.globalMobility}: </strong>
                   {p.globalMobility}
                 </div>
               )}

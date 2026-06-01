@@ -9,6 +9,7 @@
  */
 
 import type { PageContent } from "@/lib/i18n";
+import type { Language } from "@/lib/themes";
 import { ApplyLink } from "./ApplyLink";
 import { PartnerStrip } from "./PartnerStrip";
 import { ProgramTimelineB } from "./ProgramTimelineB";
@@ -16,7 +17,7 @@ import { StoryThumb } from "./StoryThumb";
 import { LookForTag } from "./LookForTag";
 import styles from "./ProposalB.module.css";
 
-export function ProposalB({ content }: { content: PageContent }) {
+export function ProposalB({ content, lang }: { content: PageContent; lang: Language }) {
   const {
     hero,
     clusters,
@@ -262,7 +263,7 @@ export function ProposalB({ content }: { content: PageContent }) {
             <p className={styles.secMarker}>The program</p>
             <h2>{whatYouBuild.heading}</h2>
             <p className={styles.body}>{whatYouBuild.intro}</p>
-            <ProgramTimelineB phases={whatYouBuild.phases} />
+            <ProgramTimelineB phases={whatYouBuild.phases} lang={lang} />
             {whatYouBuild.plusNote && (
               <p className={styles.progNote}>{whatYouBuild.plusNote}</p>
             )}

@@ -21,7 +21,7 @@
     {
       "name": "WEB DEVELOPMENT OPLEIDING",
       "heading": "Een web development opleiding rond apps die je echt bouwt, geen videomodules.",
-      "body": "De meeste front end developer opleidingen focussen op afronden: tien modules, een eindproject en een certificaat. Nuttig voor je eerste stappen, maar niet genoeg om als junior developer in een team mee te draaien. Een full stack developer opleiding bij 42 Belgium mikt op iets anders: leren bouwen op een niveau waarmee je een dev-team niet vertraagt. Je \"volgt\" hier geen web developer opleiding in de klassieke zin. Je levert apps op als onderdeel van een breder software engineering-curriculum. Echte apps, met echte bugs, nagekeken door echte peers. Een web development opleiding bij 42 wijkt af van de standaardvorm: campusonderwijs, code reviews en de discipline van een echt software engineering-curriculum. Tegen het einde heb je een repo waar je naar kunt verwijzen. Dat is wat een recruiter écht beoordeelt.",
+      "body": "De meeste front end developer opleidingen focussen op afronden: tien modules, een eindproject en een certificaat. Nuttig voor je eerste stappen, maar niet genoeg om als junior developer in een team mee te draaien. Een full stack developer opleiding bij 42 Belgium mikt op iets anders: leren bouwen op een niveau waarmee je een dev-team niet vertraagt. Je \"volgt\" hier geen web developer opleiding in de klassieke zin. Je levert apps op als onderdeel van een breder software engineering-curriculum. Echte apps, met echte bugs, nagekeken door echte peers. Een web development opleiding bij 42 wijkt af van de klassieke aanpak: leren op campus, code reviews en de discipline van een echt software engineering-curriculum. Tegen het einde heb je een portfolio waar je naar kunt verwijzen. Dat is wat een recruiter écht beoordeelt.",
       "keywords": [
         "front end developer opleiding",
         "full stack developer opleiding",
@@ -58,14 +58,14 @@
       "answer": "HTML, CSS, JavaScript, TypeScript, React en andere JavaScript-frameworks waar nodig, Node.js, Express, REST- en GraphQL-API's, SQL- en NoSQL-databases, Docker, Git en basiskennis van cloud deployment. De exacte mix verandert elk jaar. De constante: je levert echte apps op, geen oefeningen."
     },
     {
-      "question": "Welke jobs nemen afgestudeerden op?",
-      "answer": "Afgestudeerden starten vaak als junior full stack developer, front end developer, back end developer of web engineer in startups, agencies en techteams van gevestigde bedrijven. Veel afgestudeerden worden tijdens hun stage bij onze partners gerekruteerd, nog voor het einde van het traject."
+      "question": "Welke jobs kan je doen nadat je afstudeert?",
+      "answer": "Afgestudeerden starten vaak als junior full stack developer, front end developer, back end developer of web engineer in startups, agencies en tech teams van gevestigde bedrijven. Veel afgestudeerden worden tijdens hun stage bij onze partners gerekruteerd, nog voor het einde van het traject."
     }
   ],
   "stats": [
     {
       "value": "98%",
-      "label": "van de gevorderde afgestudeerden vindt een baan"
+      "label": "van de gevorderde afgestudeerden vindt een job"
     },
     {
       "value": "100%",
