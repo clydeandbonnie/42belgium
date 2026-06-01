@@ -95,7 +95,7 @@
         "title": "Start van je carrière",
         "duration": "98% aangenomen",
         "icon": "fa-solid fa-rocket",
-        "description": "Veel studenten ondertekenen hun job tijdens deze fase — vaak zelfs voor ze officieel afstuderen. Industriële certificaten (AWS en andere) voegen professionele geloofwaardigheid toe.",
+        "description": "Veel studenten ondertekenen hun jobaanbieding tijdens deze fase — vaak zelfs voor ze officieel afstuderen. Industriële certificaten (AWS en andere) voegen professionele geloofwaardigheid toe.",
         "items": [
           "**Pas gevorderde vaardigheden toe** in langere, gespecialiseerde rollen",
           "**Bouw diepere professionele expertise** en je netwerk uit",
@@ -155,7 +155,7 @@
   },
   "openDays": {
     "heading": "Ontmoet ons tijdens een opendeurdag.",
-    "intro": "Geen druk, geen verplichting. Bezoek de campus, ontmoet het team, stel al je vragen — in Brussel of Antwerpen.",
+    "intro": "No pressure, geen verplichting. Bezoek de campus, ontmoet het team, stel al je vragen — in Brussel of Antwerpen.",
     "campuses": [
       {
         "name": "Brussel",
