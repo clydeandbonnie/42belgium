@@ -24,7 +24,7 @@
     {
       "name": "LEARN PYTHON",
       "heading": "Learn Python by building, not by watching tutorials.",
-      "body": "Most ways to learn Python lead through tutorials: type this into the console, copy that into a notebook, repeat. Useful for a week. At 42 Belgium, learning Python happens differently. The Common Core treats Python as a working tool: you write scripts that solve real problems, you debug your own code, you read other people's code in peer reviews. Coding Python well isn't about syntax — it's about thinking in functions, knowing when to use a list vs a generator, building things that don't break in three months. You can learn Python free elsewhere — YouTube, Coursera, freeCodeCamp. What you can't get there is the engineering rhythm: real projects, peer feedback, code review, and a campus full of people learning Python alongside you.",
+      "body": "Most ways to learn Python lead through tutorials: type this into the console, copy that into a notebook, repeat. Useful for a week. At 42 Belgium, learning Python happens differently. The Common Core treats Python as a working tool: you write scripts that solve real problems, you debug your own code, you read other people's code in peer reviews. Coding Python well isn't about syntax — it's about thinking in functions, knowing when to use a list versus a generator, building things that don't break in three months. You can learn Python free elsewhere — YouTube, Coursera, freeCodeCamp. What you can't get there is the engineering rhythm: real projects, peer feedback, code review, and a campus full of people learning Python alongside you.",
       "keywords": [
         "Python",
         "learn Python",

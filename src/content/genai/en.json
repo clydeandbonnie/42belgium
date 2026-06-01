@@ -30,7 +30,7 @@
     {
       "name": "GENERATIVE AI & LLMs",
       "heading": "What the GenAI work actually covers: APIs, RAG, automation.",
-      "body": "A generative AI course that stops at typing into ChatGPT advanced is a tutorial. At 42 Belgium, the GenAI portion of the AI specialisation covers the layer that makes LLMs useful in production: LLM API integration (OpenAI, Anthropic, open models), RAG pipelines for grounding outputs in real data, vector databases, and orchestration frameworks. The AI automation course content here means building agents, chaining tool calls, and designing fallback behaviours when models drift or fail. Serious LLM training in the deep sense — fine-tuning, distillation, parameter-efficient methods — is available for those who go deep, though most production work stops at the API and RAG level. The point: you leave able to architect a GenAI feature, not just demo one.",
+      "body": "A generative AI course that stops at typing advanced prompts into ChatGPT is a tutorial. At 42 Belgium, the GenAI portion of the AI specialisation covers the layer that makes LLMs useful in production: LLM API integration (OpenAI, Anthropic, open models), RAG pipelines for grounding outputs in real data, vector databases, and orchestration frameworks. The AI automation course content here means building agents, chaining tool calls, and designing fallback behaviours when models drift or fail. Serious LLM training in the deep sense — fine-tuning, distillation, parameter-efficient methods — is available for those who go deep, though most production work stops at the API and RAG level. The point: you leave able to architect a GenAI feature, not just demo one.",
       "keywords": [
         "generative AI course",
         "AI automation course",
@@ -42,7 +42,7 @@
   "faq": [
     {
       "question": "Does 42 Belgium offer a standalone prompt engineering certificate?",
-      "answer": "No — 42 Belgium doesn't offer a standalone prompt engineering certificate. Prompt engineering is integrated into the broader AI specialisation in Phase 3, alongside ML and LLM systems work. If a short certificate is what you need, platforms like Coursera, DeepLearning.AI, or vendor courses (OpenAI, Anthropic) offer those. If you want to be the engineer companies trust to architect GenAI features, the 42 path is here."
+      "answer": "No — 42 Belgium doesn't offer a standalone prompt engineering certificate. Prompt engineering is integrated into the broader AI specialisation in Phase 3, alongside ML and LLM systems work. If a short certificate is what you need, platforms like Coursera, DeepLearning.AI, or vendor courses (OpenAI, Anthropic) offer those. If you want to be the engineer companies trust to build GenAI systems, the 42 path is here."
     },
     {
       "question": "How much coding background do I need?",

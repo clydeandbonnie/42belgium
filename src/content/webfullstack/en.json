@@ -21,7 +21,7 @@
     {
       "name": "WEB DEVELOPER & FULLSTACK",
       "heading": "A full stack developer track built around shipping apps, not classroom hours.",
-      "body": "Most web development classes optimise for completion: ten modules, a final project, a certificate. Useful for finding your footing. The full stack developer work at 42 Belgium optimises for something else — being able to walk into a junior dev role and not slow the team down. You don't \"take\" a web developer course here; you ship apps as part of the broader curriculum. Real apps, with real bugs, reviewed by real peers. By the time you graduate, the question \"have you built something\" has a clear answer — and a repo to point at. That's what hiring managers in Brussels and Antwerp actually look at, regardless of whether you came through a bootcamp, a degree, or 42.",
+      "body": "Most web development classes optimise for completion: ten modules, a final project, a certificate. Useful for finding your footing. The full stack developer work at 42 Belgium optimises for something else — being able to move into a junior dev role and not slow the team down. You don't \"take\" a web developer course here; you ship apps as part of the broader curriculum. Real apps, with real bugs, reviewed by real peers. By the time you graduate, the question \"have you built something\" has a clear answer — and a repo to point at. That's what hiring managers in Brussels and Antwerp actually look at, regardless of whether you came through a bootcamp, a degree, or 42.",
       "keywords": [
         "web developer",
         "full stack developer",
@@ -31,7 +31,7 @@
     {
       "name": "TECHNOLOGIES",
       "heading": "The technologies that show up in the projects.",
-      "body": "You don't enrol at 42 to learn JavaScript — you enrol to become a developer. But JavaScript shows up everywhere along the way. Modern web work means JS in the browser, JS on the server (Node), and the frameworks that have become the default. React is one of those frameworks: not the only one, but the one most Belgian employers ask about. A front end developer at 42 graduates having built real UIs, debugged real state management, and dealt with real performance constraints. The deeper layer — HTTP, REST APIs, databases, deployment — runs through the curriculum from the start. What matters isn't which technology you know on graduation day; it's how fast you can learn the next one. That's the engineering literacy this place trains.",
+      "body": "You don't enrol at 42 to learn JavaScript — you enrol to become a developer. But JavaScript shows up everywhere along the way. Modern web work means JS in the browser, JS on the server (Node), and the frameworks that have become the default. React is one of those frameworks: not the only one, but the one most Belgian employers ask about. A front end developer at 42 graduates having built real UIs, debugged real state management, and dealt with real performance constraints. The deeper layer — HTTP, REST APIs, databases, deployment — runs through the curriculum from the start. What matters isn't which technology you know at graduation; it's how fast you can learn the next one. That's the engineering literacy this place trains.",
       "keywords": [
         "JavaScript",
         "React",

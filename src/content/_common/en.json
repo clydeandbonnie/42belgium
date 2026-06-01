@@ -23,7 +23,7 @@
         "title": "Core Curriculum",
         "duration": "6-24 months, avg 18",
         "icon": "fa-solid fa-code",
-        "description": "You learn to code from scratch, then build your way up through progressively harder projects. The core gives every student a solid foundation - both hard and soft skills.",
+        "description": "You learn to code from scratch, then build your way up through progressively harder projects. The Common Core gives every student a solid foundation - both hard and soft skills.",
         "items": [
           "**Languages** - C, Python, and others along the way",
           "**Algorithms & data structures** - the logic behind every codebase",
@@ -42,11 +42,11 @@
         "title": "First work experience",
         "duration": "Recommended",
         "icon": "fa-solid fa-briefcase",
-        "description": "After the core, many students take a first internship or job in tech. Not mandatory, but strongly recommended. This phase often helps students confirm their interests and return to 42 with clearer goals.",
+        "description": "After the Common Core, many students take a first internship or job in tech. Not mandatory, but strongly recommended. This phase often helps students confirm their interests and return to 42 with clearer goals.",
         "items": [
           "**Apply your skills** in real-world conditions",
           "**Understand professional workflows**, tools, and team dynamics",
-          "**Explore possible career** paths before specialising"
+          "**Explore different career** paths before specialising"
         ]
       },
       {
@@ -113,7 +113,7 @@
       },
       {
         "number": "04",
-        "title": "Start the Core",
+        "title": "Start the Common Core",
         "description": "After passing the Piscine, you can officially start the Core Program.\n\nYou'll have 24/7 access to the campus, work on real projects, and discover a community full of fellow coders."
       }
     ],
@@ -128,14 +128,14 @@
         "name": "Brussels",
         "address": "Canterssteen 12",
         "subHeading": "Next to Central Station.",
-        "description": "A five-minute walk from Gare Centrale. Visit the campus, meet current students, see how peer-to-peer learning actually looks.",
+        "description": "A two-minute walk from the Central Station. Visit the campus, meet current students, see how peer-to-peer learning actually looks.",
         "image": "/assets/gallery/OpenDaysBrussels.png"
       },
       {
         "name": "Antwerp",
         "address": "Mediaplein 1",
         "subHeading": "In the heart of the city.",
-        "description": "Our Antwerp campus sits in the thick of the city's creative and media district. Come spend an afternoon with the team.",
+        "description": "Our Antwerp campus sits in the thick of the city's creative and media district, in the DPG building. Come spend an afternoon with the team.",
         "image": "/assets/gallery/42Belgium-Antwerp1.png"
       }
     ],
