@@ -30,6 +30,12 @@
         "formation IA",
         "formation en intelligence artificielle",
         "cours IA"
+      ],
+      "bullets": [
+        "Tout le cycle ML : données, entraînement, déploiement, monitoring",
+        "Les vrais problèmes de prod : données manquantes, leakage, drift, latence",
+        "Des mois de projets réels, pas des tutos",
+        "Sortir capable de défendre ta stack en code review"
       ]
     },
     {
@@ -40,7 +46,8 @@
         "machine learning",
         "deep learning",
         "formation ML"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     }
   ],
   "faq": [

@@ -47,6 +47,12 @@
         "AI engineer",
         "learning AI",
         "learn AI"
+      ],
+      "bullets": [
+        "The full ML lifecycle: data, training, deployment, monitoring",
+        "Real production problems: missing data, leakage, drift, latency",
+        "Months of real projects, not tutorials",
+        "Graduate able to defend your stack in a code review"
       ]
     },
     {
@@ -56,7 +62,8 @@
       "keywords": [
         "AI bootcamp",
         "artificial intelligence free online"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     }
   ],
   "faq": [

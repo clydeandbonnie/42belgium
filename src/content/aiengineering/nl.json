@@ -28,6 +28,12 @@
         "AI opleiding",
         "artificial intelligence studeren",
         "artificiële intelligentie opleiding"
+      ],
+      "bullets": [
+        "De volledige ML-cyclus: data, training, uitrol, monitoring",
+        "Echte productieproblemen: ontbrekende data, drift, latentie",
+        "Maanden echte projecten, geen tutorials",
+        "Afstuderen met een stack die je kunt verdedigen in code review"
       ]
     },
     {
@@ -36,7 +42,8 @@
       "body": "Een opleiding tot AI-specialist betekent meer dan tools leren gebruiken. Het betekent het verschil begrijpen tussen een model dat werkt op een trainingsset en een model dat stabiel draait in productie. Bij 42 Belgium leer je dat verschil door het zelf te ervaren: je traint modellen, je breekt ze, je optimaliseert ze, je deployt ze. Het machine learning-deel en het deep learning-deel gaan hand in hand. Tegen het einde van de specialisatie ken je niet alleen scikit-learn en PyTorch — je weet wanneer een aanpak verkeerd zit, wanneer een dataset niet representatief is, en wanneer je beter een simpeler model neemt. Dat is wat werkgevers van een AI-specialist verwachten, en dat is waar deze opleiding naartoe werkt.",
       "keywords": [
         "opleiding AI specialist"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     }
   ],
   "faq": [
