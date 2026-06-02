@@ -44,7 +44,10 @@
         "network engineer",
         "Linux administration",
         "system administrator course"
-      ]
+      ],
+      "image": "/assets/gallery/devop.png",
+      "imageAlt": "Students collaborating on Linux and networking in the 42 Belgium lab",
+      "imageLeft": true
     }
   ],
   "faq": [

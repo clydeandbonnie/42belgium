@@ -47,7 +47,10 @@
         "formation administrateur système",
         "formation administrateur système et réseau",
         "formation réseau informatique"
-      ]
+      ],
+      "image": "/assets/gallery/devop.png",
+      "imageAlt": "Étudiants travaillant ensemble sur Linux et le réseau au campus 42 Belgium",
+      "imageLeft": true
     },
     {
       "name": "TECHNICIEN IT",

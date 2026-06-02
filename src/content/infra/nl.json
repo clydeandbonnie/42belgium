@@ -45,7 +45,10 @@
         "netwerk beheerder opleiding",
         "opleiding netwerkbeheerder",
         "Linux cursus"
-      ]
+      ],
+      "image": "/assets/gallery/devop.png",
+      "imageAlt": "Studenten werken samen aan Linux en netwerken in het 42 Belgium-lab",
+      "imageLeft": true
     }
   ],
   "faq": [

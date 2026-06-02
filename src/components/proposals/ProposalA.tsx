@@ -183,8 +183,8 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                   </div>
                 </div>
               ) : cluster.image ? (
-                <div className="grid gap-12 lg:grid-cols-[1fr_440px] items-stretch">
-                  <div>
+                <div className={`grid gap-12 items-stretch ${cluster.imageLeft ? "lg:grid-cols-[440px_1fr]" : "lg:grid-cols-[1fr_440px]"}`}>
+                  <div className={cluster.imageLeft ? "lg:order-2" : undefined}>
                     <p className="text-base font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-4">
                       {String(i + 1).padStart(2, "0")} · {cluster.name}
                     </p>
@@ -196,10 +196,10 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                     </p>
                   </div>
                   {/* Image with pink offset block behind - 42 Belgium signature treatment */}
-                  <div className="relative min-h-[280px] lg:min-h-0">
+                  <div className={`relative min-h-[280px] lg:min-h-0 ${cluster.imageLeft ? "lg:order-1" : ""}`}>
                     <div
                       aria-hidden="true"
-                      className="absolute inset-0 bg-[var(--color-secondary)] translate-x-2 translate-y-2"
+                      className={`absolute inset-0 bg-[var(--color-secondary)] translate-y-2 ${cluster.imageLeft ? "-translate-x-2" : "translate-x-2"}`}
                     />
                     <div className="relative w-full h-full overflow-hidden">
                       <Image

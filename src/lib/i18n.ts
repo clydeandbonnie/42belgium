@@ -85,6 +85,8 @@ export interface Cluster {
   image?: string;
   /** Optional alt text for the illustrative image. */
   imageAlt?: string;
+  /** When an image is set, render it on the left (default is right). */
+  imageLeft?: boolean;
   /** Optional side-by-side comparison (e.g. MOOC vs 42). */
   comparison?: ClusterComparison;
   /** Optional decorative SVG (path under /public) rendered as a low-opacity
