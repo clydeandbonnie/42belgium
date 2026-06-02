@@ -28,6 +28,12 @@
         "DevOps course",
         "cloud computing training",
         "AWS certification"
+      ],
+      "bullets": [
+        "AWS, Linux, Docker, Kubernetes, CI/CD, IaC",
+        "Infrastructure woven through the curriculum, not a side module",
+        "AWS cert prep: Solutions Architect, SysOps, DevOps Engineer",
+        "Break it in staging, ship the fix before on-call notices"
       ]
     },
     {

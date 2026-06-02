@@ -31,6 +31,12 @@
         "formation DevOps",
         "devops course",
         "Cloud AWS formation"
+      ],
+      "bullets": [
+        "AWS, Linux, Docker, Kubernetes, CI/CD, IaC",
+        "L'infra traverse le cursus, pas un module à part",
+        "Prépa certifs AWS : Solutions Architect, SysOps, DevOps Engineer",
+        "Casser en staging, livrer le fix avant l'astreinte"
       ]
     },
     {

@@ -28,6 +28,12 @@
         "DevOps opleiding",
         "cloud engineer opleiding",
         "AWS certificering"
+      ],
+      "bullets": [
+        "AWS, Linux, Docker, Kubernetes, CI/CD, IaC",
+        "Infrastructuur door het hele curriculum, geen losse module",
+        "AWS-certificering: Solutions Architect, SysOps, DevOps Engineer",
+        "Breken in staging, fixen voor de wachtdienst het merkt"
       ]
     },
     {
