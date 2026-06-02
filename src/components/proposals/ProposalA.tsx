@@ -95,7 +95,15 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                   src={cluster.decoration}
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-8 -right-10 w-[420px] sm:w-[520px] opacity-[0.07] select-none"
+                  style={{ opacity: cluster.decorationOpacity ?? 0.07 }}
+                  className={`pointer-events-none absolute w-[420px] sm:w-[520px] select-none ${
+                    {
+                      "top-left": "-top-8 -left-10",
+                      "top-right": "-top-8 -right-10",
+                      "bottom-left": "-bottom-8 -left-10",
+                      "bottom-right": "-bottom-8 -right-10",
+                    }[cluster.decorationPosition ?? "bottom-right"]
+                  }`}
                 />
               </>
             )}

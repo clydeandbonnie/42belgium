@@ -38,7 +38,9 @@
         "study AI",
         "master data sciences"
       ],
-      "decoration": "/assets/3-chevrons-pink.svg"
+      "decoration": "/assets/3-chevrons-pink.svg",
+      "decorationPosition": "top-left",
+      "decorationOpacity": 0.3
     },
     {
       "name": "AI ENGINEERING & COURSES",

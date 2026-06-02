@@ -90,8 +90,12 @@ export interface Cluster {
   /** Optional side-by-side comparison (e.g. MOOC vs 42). */
   comparison?: ClusterComparison;
   /** Optional decorative SVG (path under /public) rendered as a low-opacity
-   * watermark bleeding off the section's bottom-right corner. */
+   * watermark bleeding off a section corner. */
   decoration?: string;
+  /** Corner the decoration bleeds from (default "bottom-right"). */
+  decorationPosition?: "top-left" | "top-right" | "bottom-left" | "bottom-right";
+  /** Decoration opacity 0–1 (default 0.07). */
+  decorationOpacity?: number;
 }
 
 export interface FaqItem {
