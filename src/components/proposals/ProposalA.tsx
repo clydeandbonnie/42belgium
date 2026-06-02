@@ -86,8 +86,19 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
         return (
           <section
             key={cluster.name}
-            className={`${bgClass}${isLowBarrier ? " relative overflow-hidden" : ""}`}
+            className={`${bgClass}${isLowBarrier || cluster.decoration ? " relative overflow-hidden" : ""}`}
           >
+            {!isLowBarrier && cluster.decoration && (
+              <>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={cluster.decoration}
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -bottom-8 -right-10 w-[420px] sm:w-[520px] opacity-[0.07] select-none"
+                />
+              </>
+            )}
             {isLowBarrier && (
               <>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -106,7 +117,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                 />
               </>
             )}
-            <div className={`mx-auto max-w-5xl px-6 py-20 sm:py-28${isLowBarrier ? " relative" : ""}`}>
+            <div className={`mx-auto max-w-5xl px-6 py-20 sm:py-28${isLowBarrier || cluster.decoration ? " relative" : ""}`}>
               {isLowBarrier ? (
                 <div className="grid gap-12 lg:grid-cols-2 items-start">
                   {/* LEFT - text content */}

@@ -87,6 +87,9 @@ export interface Cluster {
   imageAlt?: string;
   /** Optional side-by-side comparison (e.g. MOOC vs 42). */
   comparison?: ClusterComparison;
+  /** Optional decorative SVG (path under /public) rendered as a low-opacity
+   * watermark bleeding off the section's bottom-right corner. */
+  decoration?: string;
 }
 
 export interface FaqItem {
