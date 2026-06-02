@@ -94,7 +94,7 @@ export interface Cluster {
   decoration?: string;
   /** Corner the decoration bleeds from (default "bottom-right"). */
   decorationPosition?: "top-left" | "top-right" | "bottom-left" | "bottom-right";
-  /** Decoration opacity 0–1 (default 0.07). */
+  /** Decoration opacity 0–1 (default 0.1). */
   decorationOpacity?: number;
 }
 

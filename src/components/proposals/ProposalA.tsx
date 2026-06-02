@@ -95,7 +95,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                   src={cluster.decoration}
                   alt=""
                   aria-hidden="true"
-                  style={{ opacity: cluster.decorationOpacity ?? 0.07 }}
+                  style={{ opacity: cluster.decorationOpacity ?? 0.1 }}
                   className={`pointer-events-none absolute w-[420px] sm:w-[520px] select-none ${
                     {
                       "top-left": "-top-8 -left-10",
