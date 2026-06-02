@@ -29,6 +29,12 @@
         "beveiliging opleidingen",
         "cybersecurity opleiding",
         "opleiding cybersecurity"
+      ],
+      "bullets": [
+        "Specialisatie in Fase 3, na de Common Core",
+        "Analyseren, hardenen, auditen, heropbouwen",
+        "Naar het model van SOC en red team",
+        "Een portfolio dat recruiters echt beoordelen"
       ]
     },
     {
@@ -38,7 +44,9 @@
       "keywords": [
         "cursus hacken",
         "ethical hacking opleiding"
-      ]
+      ],
+      "image": "/assets/gallery/cyber-ethical-hacking.png",
+      "imageAlt": "Cybersecuritystudent die code analyseert in een donker lab"
     },
     {
       "name": "JOBS & MARKT",

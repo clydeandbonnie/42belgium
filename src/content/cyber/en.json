@@ -36,6 +36,12 @@
         "cyber security courses",
         "cyber security training",
         "cybersecurity courses"
+      ],
+      "bullets": [
+        "Phase 3 specialisation, after the Common Core",
+        "Test, harden, audit, rebuild real systems",
+        "Modelled on the SOC and red team",
+        "A portfolio recruiters can actually evaluate"
       ]
     },
     {
@@ -46,7 +52,9 @@
         "ethical hacking",
         "ethical hacking course",
         "hacking course"
-      ]
+      ],
+      "image": "/assets/gallery/cyber-ethical-hacking.png",
+      "imageAlt": "Cybersecurity student reading code with adversarial intent in a dark lab"
     },
     {
       "name": "CREDENTIALS & CERTIFICATIONS",

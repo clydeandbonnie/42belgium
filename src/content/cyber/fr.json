@@ -26,6 +26,12 @@
         "formation cybersécurité",
         "cybersécurité Belgique",
         "sécurité informatique"
+      ],
+      "bullets": [
+        "Spécialisation Phase 3, après le tronc commun",
+        "Analyser, exploiter, durcir, reconstruire",
+        "Calqué sur le SOC et la red team",
+        "Un portfolio évaluable ligne par ligne"
       ]
     },
     {
@@ -36,7 +42,9 @@
         "hacking éthique",
         "formation pentest",
         "sécurité réseau"
-      ]
+      ],
+      "image": "/assets/gallery/cyber-ethical-hacking.png",
+      "imageAlt": "Étudiant en cybersécurité analysant du code dans un labo sombre"
     },
     {
       "name": "CERTIFICATIONS",
