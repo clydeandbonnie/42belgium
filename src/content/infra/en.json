@@ -15,7 +15,9 @@
     "headline": "The DevOps course that turns sysadmins into cloud engineers.",
     "subheadline": "100% free at 42 Belgium, in Brussels and Antwerp. Infrastructure work lives inside a full software engineering curriculum — Linux internals, networking, containers, cloud platforms, and CI/CD. AWS certification prep available. RNCP 6 path open for formal recognition.",
     "reassurance": "100% free · No degree required · Brussels & Antwerp · AWS prep + RNCP 6 path",
-    "cta": "Start your DevOps journey →"
+    "cta": "Start your DevOps journey →",
+    "image": "/assets/gallery/infra-hero.jpg",
+    "imageAlt": "Students working in the 42 Belgium campus computer lab"
   },
   "clusters": [
     {

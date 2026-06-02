@@ -15,7 +15,9 @@
     "headline": "De DevOps opleiding die van systeembeheerders cloud engineers maakt.",
     "subheadline": "100% gratis bij 42 Belgium, in Brussel en Antwerpen. Infrastructuurwerk zit ingebed in een volledig software engineering-curriculum: Linux internals, netwerken, containers, cloudplatformen en CI/CD. Voorbereiding op AWS-certificering beschikbaar. Met een traject naar RNCP 6-erkenning op bachelorniveau.",
     "reassurance": "100% gratis · Geen diploma vereist · Brussel & Antwerpen · AWS-prep + RNCP 6 mogelijk",
-    "cta": "Start je Infra/DevOps-opleiding →"
+    "cta": "Start je Infra/DevOps-opleiding →",
+    "image": "/assets/gallery/infra-hero.jpg",
+    "imageAlt": "Studenten in het computerlokaal op de 42 Belgium-campus"
   },
   "clusters": [
     {

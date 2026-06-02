@@ -18,7 +18,9 @@
     "headline": "La formation DevOps qui transforme les sysadmins en ingénieurs cloud.",
     "subheadline": "100% gratuit chez 42 Belgium, à Bruxelles et Anvers. Le travail infrastructure s'inscrit dans un cursus complet en software engineering — Linux, réseau, conteneurs, plateformes cloud, CI/CD. Prépa AWS certification disponible. Voie RNCP 6 pour la reconnaissance niveau bachelor.",
     "reassurance": "100% gratuit · Sans diplôme requis · Bruxelles & Anvers · Prépa AWS + RNCP 6",
-    "cta": "Lance ta carrière Infra/DevOps →"
+    "cta": "Lance ta carrière Infra/DevOps →",
+    "image": "/assets/gallery/infra-hero.jpg",
+    "imageAlt": "Étudiants dans la salle informatique du campus 42 Belgium"
   },
   "clusters": [
     {
