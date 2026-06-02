@@ -29,7 +29,9 @@
     {
       "name": "MASTER-LEVEL AI PROGRAMS",
       "heading": "A master in artificial intelligence built on engineering, not slides.",
-      "body": "If you came here to study AI at a serious level - this is the right place. The 42 Belgium master in artificial intelligence isn't a degree we issue; it's a structured AI master pathway built on the Phase 3 specialisation of the 42 curriculum, with RNCP 7 as the formal recognition for those who pass it. You don't sit through lectures - you build. Data pipelines, model training, evaluation, deployment. Each project is the kind a hiring engineer can actually evaluate. The crossover with master data sciences is real: linear algebra, statistics, ML algorithms, infrastructure. The difference is that you write the code, debug the code, and ship the code. That's what \"engineer-level AI expertise\" means here, and it's what makes the AI master in Belgium produce people who can do the work.",
+      "body": "If you came here to study AI at a serious level - this is the right place. The 42 Belgium master in artificial intelligence isn't a degree we issue; it's a structured AI master pathway built on the Phase 3 specialisation of the 42 curriculum, with RNCP 7 as the formal recognition for those who pass it.",
+      "subheading": "What \"master-level\" actually means here.",
+      "bodyPart2": "You don't sit through lectures - you build. Data pipelines, model training, evaluation, deployment. Each project is the kind a hiring engineer can actually evaluate. The crossover with master data sciences is real: linear algebra, statistics, ML algorithms, infrastructure. The difference is that you write the code, debug the code, and ship the code. That's what \"engineer-level AI expertise\" means here, and it's what makes the AI master in Belgium produce people who can do the work.",
       "keywords": [
         "masters in artificial intelligence",
         "AI master",
