@@ -43,7 +43,8 @@
       "keywords": [
         "opleiding AI specialist"
       ],
-      "decoration": "/assets/code-blue.svg"
+      "decoration": "/assets/code-blue.svg",
+      "decorationOpacity": 0.1
     }
   ],
   "faq": [
