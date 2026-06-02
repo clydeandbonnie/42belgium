@@ -21,7 +21,9 @@
     "headline": "A master in artificial intelligence that produces engineers, not theorists.",
     "subheadline": "Free at 42 Belgium, in Brussels and Antwerp. You build ML systems from the ground up: data pipelines, model training, evaluation, and production deployment — inside the AI specialisation of a full software engineering curriculum. RNCP 7 pathway available for master-level European recognition.",
     "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 7 path available",
-    "cta": "Apply to the AI program →"
+    "cta": "Apply to the AI program →",
+    "image": "/assets/gallery/aieng-hero.jpg",
+    "imageAlt": "AI engineering student training ML models at 42 Belgium"
   },
   "clusters": [
     {

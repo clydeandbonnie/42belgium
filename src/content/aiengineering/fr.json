@@ -16,7 +16,9 @@
     "headline": "La formation intelligence artificielle qui forme des ingénieurs ML, pas des utilisateurs d'API.",
     "subheadline": "Gratuite chez 42 Belgium, à Bruxelles et Anvers. Tu travailles sur le cycle complet ML : pipelines de données, entraînement, évaluation, déploiement — dans le cadre de la spécialisation IA d'un cursus complet en software engineering. Voie RNCP 7 ouverte pour la reconnaissance niveau master.",
     "reassurance": "100% gratuit · Sans diplôme requis · Bruxelles & Anvers · Voie RNCP 7",
-    "cta": "Deviens ingénieur IA →"
+    "cta": "Deviens ingénieur IA →",
+    "image": "/assets/gallery/aieng-hero.jpg",
+    "imageAlt": "Étudiant en IA entraînant des modèles ML au campus 42 Belgium"
   },
   "clusters": [
     {
