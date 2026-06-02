@@ -16,7 +16,9 @@
     "headline": "De Python cursus waarin je leert door echte projecten te bouwen.",
     "subheadline": "100% gratis, in Brussel en Antwerpen. Python maakt deel uit van de Common Core in het 42-curriculum. Je start met C, daarna komen Python, algoritmen en het systeemwerk dat echte engineers doen. Met een traject naar RNCP 6-erkenning op bachelorniveau.",
     "reassurance": "100% gratis · Geen diploma vereist · Brussel & Antwerpen · RNCP 6 mogelijk",
-    "cta": "Start met Python →"
+    "cta": "Start met Python →",
+    "image": "/assets/gallery/python-hero.jpg",
+    "imageAlt": "Student codeert in Python op de campus van 42 Belgium"
   },
   "clusters": [
     {
@@ -38,7 +40,8 @@
         "Python programming for beginners",
         "Python projects for beginners",
         "Python programmeren cursus"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     }
   ],
   "faq": [

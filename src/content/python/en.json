@@ -18,7 +18,9 @@
     "headline": "A Python course that turns syntax into systems.",
     "subheadline": "100% free at 42 Belgium, in Brussels and Antwerp. Python is part of the Common Core curriculum — you start with C, then move into Python, algorithms, and the systems work that real engineers do. RNCP 6 path available for formal recognition.",
     "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 6 path available",
-    "cta": "Start coding in Python →"
+    "cta": "Start coding in Python →",
+    "image": "/assets/gallery/python-hero.jpg",
+    "imageAlt": "Student coding in Python at 42 Belgium"
   },
   "clusters": [
     {
@@ -40,7 +42,8 @@
       "keywords": [
         "Python certification",
         "Python course"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     }
   ],
   "faq": [

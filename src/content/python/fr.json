@@ -14,7 +14,9 @@
     "headline": "Apprendre Python comme un outil de travail, pas comme un exercice.",
     "subheadline": "100% gratuit, à Bruxelles et Anvers. Python est intégré au tronc commun du cursus 42 - tu démarres en C, puis Python, algorithmes, et le travail système que les vrais ingénieurs font. Voie RNCP 6 pour la reconnaissance niveau bachelor.",
     "reassurance": "100% gratuit · Sans diplôme requis · Bruxelles & Anvers · Voie RNCP 6",
-    "cta": "Commence Python aujourd'hui →"
+    "cta": "Commence Python aujourd'hui →",
+    "image": "/assets/gallery/python-hero.jpg",
+    "imageAlt": "Étudiant codant en Python au campus 42 Belgium"
   },
   "clusters": [
     {
@@ -36,7 +38,8 @@
         "Python data science",
         "Python web development",
         "Python Bruxelles"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     }
   ],
   "faq": [
