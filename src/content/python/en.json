@@ -33,6 +33,12 @@
         "learn Python free",
         "learning Python",
         "coding Python"
+      ],
+      "bullets": [
+        "Real scripts from day one, not tutorial snippets",
+        "Debug your own code, not copy-paste fixes",
+        "Peer code reviews, like a real team",
+        "Think in functions: list vs generator, code that lasts"
       ]
     },
     {

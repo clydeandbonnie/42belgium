@@ -28,6 +28,12 @@
         "formation Python",
         "cours Python débutant",
         "Python programmation"
+      ],
+      "bullets": [
+        "De vrais scripts dès le départ, pas des bouts de tuto",
+        "Débugger ton propre code, pas du copier-coller",
+        "Du peer review, comme en équipe",
+        "Penser en fonctions : list vs generator, du code qui dure"
       ]
     },
     {

@@ -30,6 +30,12 @@
         "Python cursus",
         "online cursus Python",
         "Python programmeren"
+      ],
+      "bullets": [
+        "Echte scripts vanaf dag één, geen tutorial-snippets",
+        "Je eigen code debuggen, geen copy-paste fixes",
+        "Peer code reviews, als een echt team",
+        "Denken in functies: list versus generator, code die blijft"
       ]
     },
     {
