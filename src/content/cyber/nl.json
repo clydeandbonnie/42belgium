@@ -15,7 +15,9 @@
     "headline": "De cybersecurityopleiding die je klaarstoomt voor een job.",
     "subheadline": "Gratis bij 42 Belgium, in Brussel en Antwerpen. Je analyseert kwetsbaarheden, schrijft exploits in lab omgevingen, beveiligt systemen en ontleedt echte incidenten — binnen het bredere software engineering-curriculum. AWS-prep beschikbaar, RNCP 6 & 7-pad open.",
     "reassurance": "100% gratis · Geen diploma vereist · Brussel & Antwerpen · RNCP 6 & 7 mogelijk",
-    "cta": "Start je cybersecurityopleiding →"
+    "cta": "Start je cybersecurityopleiding →",
+    "image": "/assets/gallery/cyber-hero.png",
+    "imageAlt": "Cybersecuritystudente die code op het scherm analyseert"
   },
   "clusters": [
     {

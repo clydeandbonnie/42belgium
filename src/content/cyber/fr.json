@@ -13,7 +13,9 @@
     "headline": "La formation en cybersécurité qui te mène à un vrai job.",
     "subheadline": "Gratuite chez 42 Belgium, à Bruxelles et Anvers. Tu analyses des vulnérabilités, écris des exploits en environnement de laboratoire, durcis des systèmes, et dissèques de vrais incidents — dans le cadre d'un cursus complet en software engineering. Prépa AWS disponible, voie RNCP 6 & 7 ouverte.",
     "reassurance": "100% gratuit · Sans diplôme requis · Bruxelles & Anvers · Voie RNCP 6 & 7",
-    "cta": "Lance ta carrière en cybersécurité →"
+    "cta": "Lance ta carrière en cybersécurité →",
+    "image": "/assets/gallery/cyber-hero.png",
+    "imageAlt": "Étudiante en cybersécurité analysant du code à l'écran"
   },
   "clusters": [
     {

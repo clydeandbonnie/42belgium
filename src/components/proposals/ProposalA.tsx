@@ -33,8 +33,8 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
         {/* Image - absolute, pinned to right half, full section height */}
         <div className="absolute top-0 right-0 bottom-0 w-1/2 hidden sm:block">
           <Image
-            src="/assets/gallery/Skills-42Blegium-1.png"
-            alt="42 Belgium students building tech skills"
+            src={hero.image ?? "/assets/gallery/Skills-42Blegium-1.png"}
+            alt={hero.imageAlt ?? "42 Belgium students building tech skills"}
             fill
             sizes="(min-width: 640px) 50vw, 100vw"
             className="object-cover object-center"

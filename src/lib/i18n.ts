@@ -36,6 +36,11 @@ export interface HeroContent {
   reassurance?: string;
   /** CTA button label — exact text from matrix CTA column. */
   cta: string;
+  /** Optional per-page hero image (path under /public). Falls back to the
+   * shared default when omitted. */
+  image?: string;
+  /** Alt text for the hero image when `image` is set. */
+  imageAlt?: string;
 }
 
 export interface ComparisonRow {
