@@ -17,7 +17,9 @@
     "headline": "A data analyst bootcamp built around Power BI, SQL, and real data.",
     "subheadline": "100% free in Brussels and Antwerp. You work with the tool stack analysts actually ship with - SQL, Power BI, Python, Tableau - on real datasets, not slides. RNCP 6 path available for formal recognition.",
     "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 6 path available",
-    "cta": "Start your data career →"
+    "cta": "Start your data career →",
+    "image": "/assets/gallery/dataan-hero.jpg",
+    "imageAlt": "Data analyst student working with dashboards and SQL at 42 Belgium"
   },
   "clusters": [
     {
