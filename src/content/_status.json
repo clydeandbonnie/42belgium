@@ -1,8 +1,8 @@
 {
-  "_comment": "Status of each landing page for client review. Values: 'draft' | 'ready' | 'approved'. Edit this file to update the status pills on /[lang]/.",
-  "opportunity-en": "ready",
-  "opportunity-fr": "draft",
-  "opportunity-nl": "draft",
+  "_comment": "Status of each landing page for client review. Values: 'draft' | 'ready' | 'approved'. Edit this file to update the status pills on /review.",
+  "opportunity-en": "approved",
+  "opportunity-fr": "ready",
+  "opportunity-nl": "ready",
   "itgen-en": "approved",
   "itgen-fr": "approved",
   "itgen-nl": "approved",
