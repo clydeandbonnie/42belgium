@@ -25,7 +25,9 @@
     "headline": "De ICT-opleiding die je klaarstoomt voor een job in IT.",
     "subheadline": "Gratis en projectgebaseerd, in Brussel en Antwerpen. Je leert programmeren met andere studenten, bouwt een portfolio op en groeit door naar knelpuntberoepen in IT.",
     "reassurance": "100% gratis · Geen diploma vereist · Geen voorkennis nodig · Brussel & Antwerpen",
-    "cta": "Start je ICT-carrière →"
+    "cta": "Start je ICT-carrière →",
+    "image": "/assets/gallery/itgen-hero.jpg",
+    "imageAlt": "Studenten van het coding bootcamp leren programmeren op de campus van 42 Belgium"
   },
   "clusters": [
     {

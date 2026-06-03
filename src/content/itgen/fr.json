@@ -28,7 +28,9 @@
     "headline": "La formation informatique à Bruxelles qui te mène à l'emploi.",
     "subheadline": "Gratuite, par projets, à Bruxelles et Anvers. Tu apprends à coder avec tes pairs, tu construis un vrai portfolio, et tu sors prêt pour les métiers que les entreprises peinent à recruter.",
     "reassurance": "100% gratuit · Sans diplôme · Sans expérience requise · Bruxelles & Anvers",
-    "cta": "Rejoins le bootcamp →"
+    "cta": "Rejoins le bootcamp →",
+    "image": "/assets/gallery/itgen-hero.jpg",
+    "imageAlt": "Étudiants du coding bootcamp apprenant à coder au campus 42 Belgium"
   },
   "clusters": [
     {
