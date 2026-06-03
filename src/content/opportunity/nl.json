@@ -30,7 +30,9 @@
         "studiekeuze",
         "studiekeuze belgie",
         "welke studie past bij mij"
-      ]
+      ],
+      "decoration": "/assets/3-chevrons-pink.svg",
+      "decorationPosition": "top-left"
     },
     {
       "name": "OMSCHOLING",
@@ -41,6 +43,12 @@
         "hoe omscholen",
         "omscholingstraject",
         "loopbaanomschakeling"
+      ],
+      "bullets": [
+        "Open voor elke achtergrond — geen technische voorkennis nodig",
+        "Studenten uit horeca, onderwijs, verkoop, zorg…",
+        "We nemen de tijd om te zien of tech bij je past",
+        "Geen snelle belofte, geen valse garantie — een eerlijk traject"
       ]
     },
     {
@@ -52,6 +60,7 @@
         "cursus gratis",
         "loopbaanadvies"
       ],
+      "decoration": "/assets/code-blue.svg",
       "bullets": [
         "Persoonlijke begeleiding bij studiekeuze",
         "Geen verplichting tot inschrijven",
