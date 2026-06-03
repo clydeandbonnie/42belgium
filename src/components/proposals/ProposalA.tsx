@@ -114,14 +114,14 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                   src="/assets/3-chevrons-blue.svg"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -top-6 -left-20 w-[300px] sm:w-[380px] opacity-[0.07] select-none"
+                  className="pointer-events-none absolute -top-6 -left-20 w-[300px] sm:w-[380px] opacity-[0.1] select-none"
                 />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/assets/3-chevrons-pink.svg"
                   alt=""
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-10 -right-16 w-[320px] sm:w-[420px] opacity-[0.08] select-none"
+                  className="pointer-events-none absolute -bottom-10 -right-16 w-[320px] sm:w-[420px] opacity-[0.1] select-none"
                 />
               </>
             )}
