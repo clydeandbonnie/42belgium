@@ -31,7 +31,8 @@
         "data-analist opleiding",
         "opleiding data-analist",
         "data-analistopleiding"
-      ]
+      ],
+      "decoration": "/assets/3-chevrons-pink.svg"
     },
     {
       "name": "SQL & DATA TOOLS",
@@ -42,6 +43,12 @@
         "Power BI-opleiding",
         "cursus data-analyse",
         "data-analyseopleiding"
+      ],
+      "bullets": [
+        "Power BI — dashboards die stakeholders in één oogopslag lezen",
+        "SQL voorbij SELECT — window functions, CTE's, query-optimalisatie",
+        "Tableau voor visuele analyse, versie-beheerde reproduceerbare rapporten",
+        "De échte skill: problemen structureren zodat data kan antwoorden"
       ]
     }
   ],

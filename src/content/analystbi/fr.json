@@ -30,7 +30,8 @@
         "formation data analyst",
         "data analyst formation",
         "data analyste formation"
-      ]
+      ],
+      "decoration": "/assets/3-chevrons-pink.svg"
     },
     {
       "name": "SQL & OUTILS",
@@ -41,6 +42,12 @@
         "SQL certification",
         "Power BI",
         "Tableau"
+      ],
+      "bullets": [
+        "Power BI — des dashboards lisibles d'un coup d'œil",
+        "SQL au-delà du SELECT — window functions, CTE, optimisation",
+        "Tableau pour l'analyse visuelle, requêtes versionnées et reproductibles",
+        "La vraie compétence : structurer le problème pour que la data réponde"
       ]
     }
   ],

@@ -32,7 +32,8 @@
         "data analysis course",
         "bootcamp data analyst",
         "data analyst course"
-      ]
+      ],
+      "decoration": "/assets/3-chevrons-pink.svg"
     },
     {
       "name": "BI TOOLS",
@@ -43,6 +44,12 @@
         "SQL training",
         "business intelligence",
         "business analysis certification"
+      ],
+      "bullets": [
+        "Power BI — dashboards stakeholders read at a glance",
+        "SQL training beyond SELECT — window functions, CTEs, query optimisation",
+        "Version-controlled queries, clean naming, reproducible reports",
+        "The deeper skill: structuring problems so the data can answer them"
       ]
     }
   ],
