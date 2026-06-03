@@ -15,7 +15,9 @@
     "headline": "Become a full stack web developer through real apps, not slides.",
     "subheadline": "100% free at 42 Belgium, in Brussels and Antwerp. Web work lives inside a full software engineering curriculum — JavaScript, React, Node, and the systems foundations underneath. Real apps shipped, peer reviewed. RNCP 6 path available.",
     "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 6 path available",
-    "cta": "Start building web apps →"
+    "cta": "Start building web apps →",
+    "image": "/assets/gallery/webfullstack-hero.jpg",
+    "imageAlt": "Full-stack web development student shipping apps at 42 Belgium"
   },
   "clusters": [
     {

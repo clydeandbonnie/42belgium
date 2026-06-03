@@ -15,7 +15,9 @@
     "headline": "Word full stack developer door echte webapps te bouwen, niet via slides.",
     "subheadline": "100% gratis, in Brussel en Antwerpen. Web development zit ingebed in een volledig software engineering-curriculum: JavaScript, React, Node en de systeembasis daaronder. Je levert echte apps op, met peer reviews. Met een traject naar RNCP 6-erkenning op bachelorniveau.",
     "reassurance": "100% gratis · Geen diploma vereist · Brussel & Antwerpen · RNCP 6 mogelijk",
-    "cta": "Start je webdev-opleiding →"
+    "cta": "Start je webdev-opleiding →",
+    "image": "/assets/gallery/webfullstack-hero.jpg",
+    "imageAlt": "Full-stack webdevelopment-student bouwt apps op de campus van 42 Belgium"
   },
   "clusters": [
     {

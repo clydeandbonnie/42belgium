@@ -15,7 +15,9 @@
     "headline": "La formation développeur web qui te fait sortir avec un portfolio, pas un certificat.",
     "subheadline": "100% gratuit à 42 Belgium, à Bruxelles et Anvers. Le travail web s'intègre dans un cursus complet en software engineering — JavaScript, React, Node, et les fondations système sous-jacentes. Vrais apps livrées, peer reviewed. Voie RNCP 6 pour la reconnaissance.",
     "reassurance": "100% gratuit · Sans diplôme requis · Bruxelles & Anvers · Voie RNCP 6",
-    "cta": "Lance ta carrière web →"
+    "cta": "Lance ta carrière web →",
+    "image": "/assets/gallery/webfullstack-hero.jpg",
+    "imageAlt": "Étudiant en développement web full stack livrant des apps au campus 42 Belgium"
   },
   "clusters": [
     {
