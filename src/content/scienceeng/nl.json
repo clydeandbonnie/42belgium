@@ -14,7 +14,9 @@
     "headline": "De data scientist opleiding voor statistiek, ML en Python op diepteniveau.",
     "subheadline": "Voor technisch geschoolde profielen en ingenieurs, bij 42 Belgium in Brussel en Antwerpen. Data science zit in de AI-specialisatie in fase 3: statistiek, ML-algoritmen, deep learning en Python op productieniveau. 100% gratis. Met een traject naar RNCP 7-erkenning op masterniveau in Europa.",
     "reassurance": "100% gratis · Geen diploma vereist · Brussel & Antwerpen · RNCP 7 mogelijk",
-    "cta": "Start het Data Science-programma →"
+    "cta": "Start het Data Science-programma →",
+    "image": "/assets/gallery/datasc-hero.png",
+    "imageAlt": "Data-scientiststudent werkt aan ML-modellen op de campus van 42 Belgium"
   },
   "clusters": [
     {
@@ -26,7 +28,9 @@
         "opleiding data scientist",
         "data science cursus",
         "machine learning opleiding"
-      ]
+      ],
+      "decoration": "/assets/3-chevrons-pink.svg",
+      "decorationPosition": "top-left"
     },
     {
       "name": "PYTHON & ML",
@@ -35,6 +39,12 @@
       "keywords": [
         "Python data science",
         "deep learning België"
+      ],
+      "bullets": [
+        "Expliciete statistiek: distributies, hypothesetoetsing, bias-variantie",
+        "ML vanaf de fundamenten — je implementeert het, je debugt het",
+        "Deep learning: CNN's, RNN's, transformers, trainen op schaal",
+        "Python: pandas, NumPy, scikit-learn, PyTorch op echte pipelines"
       ]
     }
   ],

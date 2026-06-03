@@ -15,7 +15,9 @@
     "headline": "A data science master program built around statistics, ML, and Python — at depth.",
     "subheadline": "For technical graduates and engineers, at 42 Belgium in Brussels and Antwerp. The data science work sits in the AI specialisation in Phase 3 — statistics, ML algorithms, deep learning, Python at production depth. 100% free. RNCP 7 path available for master-level European recognition.",
     "reassurance": "100% free · No tuition · Brussels & Antwerp · RNCP 7 path available",
-    "cta": "Apply to the Data Science program →"
+    "cta": "Apply to the Data Science program →",
+    "image": "/assets/gallery/datasc-hero.png",
+    "imageAlt": "Data science student working on ML models at 42 Belgium"
   },
   "clusters": [
     {
@@ -26,7 +28,9 @@
         "data science master",
         "master data sciences",
         "data science bootcamp"
-      ]
+      ],
+      "decoration": "/assets/3-chevrons-pink.svg",
+      "decorationPosition": "top-left"
     },
     {
       "name": "DATA SCIENCE TRAINING",
@@ -36,6 +40,12 @@
         "data science course",
         "deep learning",
         "machine learning program"
+      ],
+      "bullets": [
+        "Statistics, explicit: distributions, hypothesis testing, bias-variance",
+        "ML from first principles — you implement it, you debug it",
+        "Deep learning: CNNs, RNNs, transformers, training at scale",
+        "Designed to diagnose production ML, not just run notebooks"
       ]
     },
     {
@@ -44,7 +54,8 @@
       "body": "A data engineer's job overlaps with data science but isn't the same: data pipelines, ETL, warehousing, infrastructure for ML — engineering-heavy, less statistics-heavy. The 42 Belgium curriculum does cover the foundations a data engineer needs (databases, distributed systems, cloud, pipelines), but the data science specialisation focuses on the modelling side. If you're sure you want pure data engineering, look at the infrastructure specialisation instead — it maps more closely. If you want the option of either or both, the 42 curriculum's breadth means you can specialise late, and many graduates work across the data engineer / data scientist boundary in their first roles. The honest part: this page is built for the data science track.",
       "keywords": [
         "data engineer"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     }
   ],
   "faq": [
