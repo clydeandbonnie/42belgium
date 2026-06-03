@@ -2,15 +2,21 @@
 
 import { useEffect, useState } from "react";
 import { ApplyLink } from "./ApplyLink";
+import { proposalUiStrings } from "@/lib/i18n";
+import type { Language } from "@/lib/themes";
 
 interface Props {
   children: React.ReactNode;
+  /** Language for the modal copy. Defaults to English. */
+  lang?: Language;
   /** Optional custom button className. When omitted, the A-variant Tailwind styling is used. */
   className?: string;
 }
 
-export function LookForTag({ children, className }: Props) {
+export function LookForTag({ children, lang = "en", className }: Props) {
   const [isOpen, setIsOpen] = useState(false);
+  const t = proposalUiStrings[lang];
+  const modal = t.lookForModal;
 
   useEffect(() => {
     if (!isOpen) return;
@@ -43,7 +49,7 @@ export function LookForTag({ children, className }: Props) {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label="You already have what it takes"
+          aria-label={modal.title}
           className="fixed inset-0 z-[100] flex items-center justify-center p-4"
         >
           {/* Overlay */}
@@ -66,18 +72,18 @@ export function LookForTag({ children, className }: Props) {
             </button>
 
             <h3 className="text-2xl font-bold tracking-tight text-black pr-8">
-              You already have what it takes.
+              {modal.title}
             </h3>
             <p className="mt-5 text-base leading-relaxed text-zinc-700">
-              Potential, drive, willingness to start - the rest we teach on campus.
+              {modal.line1}
             </p>
             <p className="mt-3 text-base leading-relaxed text-zinc-700">
-              Next step: a one-hour online logic test. Free, from home, at your own pace.
+              {modal.line2}
             </p>
 
             <div className="mt-8">
               <ApplyLink className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-8 py-3.5 text-sm hover:brightness-110 transition-all">
-                Start your application
+                {t.cluster.applyCta}
                 <i className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
               </ApplyLink>
             </div>

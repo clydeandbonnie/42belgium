@@ -183,7 +183,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                         </p>
                         <div className="flex flex-wrap gap-2">
                           {cluster.lookFor.map((bullet, bi) => (
-                            <LookForTag key={bi}>{bullet}</LookForTag>
+                            <LookForTag key={bi} lang={lang}>{bullet}</LookForTag>
                           ))}
                         </div>
                       </div>

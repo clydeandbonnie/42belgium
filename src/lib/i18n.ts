@@ -303,6 +303,8 @@ export interface ProposalUiStrings {
     applyCta: string;
     comparisonCriteriaFallback: string; // "Feature {n}" — uses {n} placeholder
   };
+  /** Modal shown when a "what we look for" chip is clicked. */
+  lookForModal: { title: string; line1: string; line2: string };
   afterForty: { eyebrow: string };
   whatYouBuild: { eyebrow: string };
   /** Labels rendered inside the program timeline (phase header + the two
@@ -323,6 +325,11 @@ export const proposalUiStrings: Record<Language, ProposalUiStrings> = {
       applyCta: "Start your application",
       comparisonCriteriaFallback: "Feature {n}",
     },
+    lookForModal: {
+      title: "You already have what it takes.",
+      line1: "Potential, drive, willingness to start - the rest we teach on campus.",
+      line2: "Next step: a one-hour online logic test. Free, from home, at your own pace.",
+    },
     afterForty: { eyebrow: "The outcome" },
     whatYouBuild: { eyebrow: "The program" },
     timeline: { phase: "Phase", flexibility: "Flexibility", globalMobility: "Global mobility" },
@@ -339,6 +346,11 @@ export const proposalUiStrings: Record<Language, ProposalUiStrings> = {
       applyCta: "Démarre ta candidature",
       comparisonCriteriaFallback: "Critère {n}",
     },
+    lookForModal: {
+      title: "Tu as déjà ce qu'il faut.",
+      line1: "Du potentiel, de la motivation, l'envie de commencer — le reste, on te l'apprend sur le campus.",
+      line2: "Prochaine étape : un test de logique en ligne d'une heure. Gratuit, depuis chez toi, à ton rythme.",
+    },
     afterForty: { eyebrow: "Le résultat" },
     whatYouBuild: { eyebrow: "Le programme" },
     timeline: { phase: "Phase", flexibility: "Flexibilité", globalMobility: "Mobilité internationale" },
@@ -354,6 +366,11 @@ export const proposalUiStrings: Record<Language, ProposalUiStrings> = {
       lookForLabel: "Wat we zoeken",
       applyCta: "Start je aanvraag",
       comparisonCriteriaFallback: "Criterium {n}",
+    },
+    lookForModal: {
+      title: "Je hebt alles in huis.",
+      line1: "Potentieel, drive en de wil om te beginnen — de rest leren we je op de campus.",
+      line2: "Volgende stap: een online logicatest van een uur. Gratis, van thuis uit, op je eigen tempo.",
     },
     afterForty: { eyebrow: "Het resultaat" },
     whatYouBuild: { eyebrow: "Het programma" },

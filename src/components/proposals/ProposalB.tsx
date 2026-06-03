@@ -207,7 +207,7 @@ export function ProposalB({ content, lang }: { content: PageContent; lang: Langu
                 <h4>What we look for</h4>
                 <div className={styles.tagRow}>
                   {(cluster3.lookFor || []).map((item) => (
-                    <LookForTag key={item} className={styles.tagBtn}>
+                    <LookForTag key={item} lang={lang} className={styles.tagBtn}>
                       {item}
                     </LookForTag>
                   ))}
