@@ -34,6 +34,12 @@
         "formation en ligne Bruxelles",
         "école de formation Bruxelles",
         "formations à Bruxelles"
+      ],
+      "bullets": [
+        "Campus au cœur de Bruxelles, à deux pas de la gare centrale",
+        "Ouvert 24h/24, 7j/7 — tu choisis ton rythme",
+        "Présentiel + distance selon les moments",
+        "Apprentissage peer-to-peer, pas de profs"
       ]
     },
     {
@@ -45,24 +51,48 @@
         "formation gratuite Bruxelles",
         "formation en ligne gratuite",
         "formations gratuites"
-      ]
+      ],
+      "subheading": "Gratuit ne veut pas dire au rabais.",
+      "image": "/assets/gallery/6-min-scaled-1.jpg",
+      "imageAlt": "Étudiants en reconversion travaillant sur le campus 42 Belgium",
+      "comparison": {
+        "leftLabel": "Une formation gratuite classique",
+        "rightLabel": "42 Belgium",
+        "criteria": ["Apprentissage", "Preuve des compétences", "Feedback", "Accompagnement", "Débouché"],
+        "rows": [
+          { "left": "Vidéos théoriques à visionner seul", "right": "Projets réels, par la pratique" },
+          { "left": "Un certificat PDF", "right": "Un portfolio concret" },
+          { "left": "Aucun ou automatisé", "right": "Code reviews entre pairs" },
+          { "left": "Aucun ou non personnalisé", "right": "Communauté 24/7 sur le campus" },
+          { "left": "Sans connexion avec le monde du travail", "right": "Fait pour te mener vers un job dans la tech" }
+        ]
+      }
     },
     {
       "name": "SANS BARRIÈRE DE DIPLÔME",
+      "lowBarrier": true,
       "heading": "Pas de CESS ? Pas de souci.",
-      "body": "Cette formation Bruxelles sans CESS est ouverte à tous. Pas de diplôme exigé, pas de parcours académique requis. 42 Belgium est conçue pour la reconversion professionnelle d'adultes qui veulent se reconvertir dans l'IT sans repasser par les bancs d'une université. L'accès se fait via un test en ligne : une série de jeux logiques, pas de questions de code. Nous mesurons ton potentiel, pas ton passé. Si tu viens de l'hôtellerie, de la vente, de l'enseignement, de l'administration, tu es exactement le profil que nous accueillons. La majorité de nos étudiants n'avait jamais écrit une ligne de code avant d'arriver. Quelques semaines plus tard, ils livrent des projets concrets. Ta formation sans diplôme Belgique commence ici.",
+      "body": "Cette formation Bruxelles sans CESS est ouverte à tous. Pas de diplôme exigé, pas de parcours académique requis. 42 Belgium est conçue pour la reconversion professionnelle d'adultes qui veulent se reconvertir dans l'IT sans repasser par les bancs d'une université.",
+      "dontAsk": [
+        "Pas de CESS",
+        "Pas de diplôme",
+        "Pas de CV",
+        "Pas d'expérience",
+        "Pas de parcours académique",
+        "Pas de limite d'âge"
+      ],
+      "lookFor": [
+        "Du potentiel",
+        "L'envie de te reconvertir",
+        "La motivation de commencer"
+      ],
+      "subheading": "La seule condition : la motivation.",
+      "bodyPart2": "L'accès se fait via un test en ligne : une série de jeux logiques, pas de questions de code. Nous mesurons ton potentiel, pas ton passé. Si tu viens de l'hôtellerie, de la vente, de l'enseignement, de l'administration, tu es exactement le profil que nous accueillons. La majorité de nos étudiants n'avait jamais écrit une ligne de code avant d'arriver. Quelques semaines plus tard, ils livrent des projets concrets. Ta formation sans diplôme Belgique commence ici.",
       "keywords": [
         "formation Bruxelles sans CESS",
         "formation sans diplôme Belgique",
         "reconversion professionnelle",
         "se reconvertir dans l'IT"
-      ],
-      "bullets": [
-        "Pas de CESS requis - jamais",
-        "Pas de diplôme supérieur demandé",
-        "Ouverte aux adultes en reconversion professionnelle",
-        "Accès par test de logique en ligne",
-        "Pas de CV, pas de lettre de motivation"
       ]
     }
   ],
