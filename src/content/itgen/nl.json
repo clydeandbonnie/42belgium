@@ -40,6 +40,12 @@
         "opleiding IT",
         "programmeur opleiding",
         "IT opleiding"
+      ],
+      "bullets": [
+        "24/7 open campus in Brussel en Antwerpen",
+        "Projectmatig en peer-to-peer, geen klassieke lessen",
+        "Systemen, algoritmen, databases, webtechnologieën",
+        "Geen lesgeld, geen diploma vereist, geen tijdslimiet"
       ]
     },
     {
@@ -50,7 +56,8 @@
         "ICT vacatures",
         "werken in de IT",
         "studiekeuze kiezen"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     },
     {
       "name": "LEREN PROGRAMMEREN",
@@ -61,7 +68,9 @@
         "cursus programmeren",
         "code programmer",
         "programmeren voor beginners"
-      ]
+      ],
+      "decoration": "/assets/3-chevrons-pink.svg",
+      "decorationPosition": "top-left"
     }
   ],
   "faq": [

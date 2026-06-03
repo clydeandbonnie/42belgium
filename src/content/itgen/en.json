@@ -33,6 +33,12 @@
         "coding bootcamp Belgium",
         "learn to code",
         "coding"
+      ],
+      "bullets": [
+        "A 24/7 campus in Brussels or Antwerp",
+        "No teachers, no grades, no tuition",
+        "Learn by writing code from day one, with peers",
+        "Beginners welcome — curiosity and persistence, that's it"
       ]
     },
     {
@@ -43,7 +49,8 @@
         "ICT jobs",
         "IT traineeship",
         "learn coding for free"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     }
   ],
   "faq": [

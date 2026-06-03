@@ -42,6 +42,12 @@
         "formation informatique Belgique",
         "formation IT Bruxelles",
         "formation digitale Bruxelles"
+      ],
+      "bullets": [
+        "Campus ouvert 24/7, à deux pas de la gare du Midi",
+        "On apprend par la pratique, en peer-to-peer — pas avec des profs",
+        "Même cursus à Bruxelles et à Anvers",
+        "Des partenaires qui recrutent + une communauté alumni dans tout le pays"
       ]
     },
     {
@@ -53,7 +59,8 @@
         "formation en ligne informatique",
         "google ateliers numérique",
         "formation en informatique"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     },
     {
       "name": "APPRENDRE À CODER",
@@ -64,7 +71,9 @@
         "cours informatique Bruxelles",
         "formation développeur",
         "formation it"
-      ]
+      ],
+      "decoration": "/assets/3-chevrons-pink.svg",
+      "decorationPosition": "top-left"
     }
   ],
   "faq": [
