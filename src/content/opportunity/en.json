@@ -45,6 +45,7 @@
     },
     {
       "name": "OPEN TO EVERYONE",
+      "lowBarrier": true,
       "heading": "No CV. No degree. No experience required.",
       "body": "You already know the problem: every tech role asks for two years of experience at least. 42 Belgium is the bridge. We welcome career changers from every possible background - retail, hospitality, teaching, administration, music, parenting.",
       "subheading": "The only requirement is motivation.",

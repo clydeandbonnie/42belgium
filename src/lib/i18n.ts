@@ -73,6 +73,9 @@ export interface Cluster {
   keywords: string[];
   /** Optional bullet points rendered under the body. */
   bullets?: string[];
+  /** Render this cluster with the low-barrier layout (dontAsk/lookFor chips,
+   * chevron decorations). Language-agnostic trigger. */
+  lowBarrier?: boolean;
   /** Optional list of things NOT required (LOW BARRIER cluster). */
   dontAsk?: string[];
   /** Optional list of qualities we look for (LOW BARRIER cluster). */

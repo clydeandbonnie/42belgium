@@ -82,7 +82,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
       {clusters.map((cluster, i) => {
         const isEven = i % 2 === 0;
         const bgClass = isEven ? "bg-white text-black" : "bg-zinc-100 text-black";
-        const isLowBarrier = cluster.name === "OPEN TO EVERYONE";
+        const isLowBarrier = cluster.lowBarrier === true;
         return (
           <section
             key={cluster.name}
@@ -335,7 +335,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                   </ApplyLink>
                 </div>
               )}
-              {cluster.bullets && cluster.bullets.length > 0 && cluster.name !== "OPEN TO EVERYONE" && (
+              {cluster.bullets && cluster.bullets.length > 0 && !isLowBarrier && (
                 <ul className="mt-12 space-y-0 border-l-2 border-[var(--color-primary)] ml-1">
                   {cluster.bullets.map((bullet, bi) => (
                     <li key={bi} className="flex items-center gap-5 py-5 pl-6 border-b border-zinc-200 last:border-b-0">
