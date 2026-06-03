@@ -14,7 +14,9 @@
     "headline": "De prompt-engineering opleiding die je van prompt naar productie brengt.",
     "subheadline": "42 Belgium is een software engineering-school. De AI-specialisatie in fase 3 behandelt LLM-API's, RAG-pipelines, prompt chaining en AI-automatisering — alles wat van een LLM een echt systeem maakt. Zoek je een snelle erkenning van prompt engineering, dan ben je hier verkeerd. Zoek je echt engineeringswerk, dan zit je hier goed.",
     "reassurance": "100% gratis · Geen diploma vereist · Brussel & Antwerpen · RNCP 7 mogelijk",
-    "cta": "Start je GenAI-opleiding →"
+    "cta": "Start je GenAI-opleiding →",
+    "image": "/assets/gallery/genai-hero.png",
+    "imageAlt": "Student bouwt LLM- en RAG-systemen op de campus van 42 Belgium"
   },
   "clusters": [
     {
@@ -24,7 +26,8 @@
       "keywords": [
         "prompt-engineering opleiding",
         "prompt engineer opleiding"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     },
     {
       "name": "GENERATIEVE AI & LLMs",
@@ -35,6 +38,12 @@
         "LLM training",
         "AI automatisering",
         "ChatGPT gevorderd"
+      ],
+      "bullets": [
+        "LLM-API-integratie: OpenAI, Anthropic, open-source modellen",
+        "RAG-pipelines + vector-databases om outputs te onderbouwen",
+        "Agents: tool calls koppelen, fallback wanneer modellen driften",
+        "Dieper indien gewenst: fine-tuning, distillatie, parameter-efficiënt"
       ]
     }
   ],

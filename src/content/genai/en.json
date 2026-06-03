@@ -14,7 +14,9 @@
     "headline": "The prompt engineering course that takes you from prompt to production.",
     "subheadline": "42 Belgium is a software engineering school. The AI specialisation in Phase 3 covers LLM APIs, RAG pipelines, prompt chaining, and AI automation — the stuff that turns LLMs into systems. If you came for a fast prompt engineering certificate, this isn't that. If you came to build, it is.",
     "reassurance": "100% free · No degree required · Brussels & Antwerp · RNCP 7 path available",
-    "cta": "Start your GenAI journey →"
+    "cta": "Start your GenAI journey →",
+    "image": "/assets/gallery/genai-hero.png",
+    "imageAlt": "Student building LLM and RAG systems at 42 Belgium"
   },
   "clusters": [
     {
@@ -25,7 +27,8 @@
         "prompt engineering course",
         "AI prompt engineer",
         "prompt engineering"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     },
     {
       "name": "GENERATIVE AI & LLMs",
@@ -36,6 +39,12 @@
         "AI automation course",
         "LLM training",
         "ChatGPT advanced"
+      ],
+      "bullets": [
+        "LLM API integration: OpenAI, Anthropic, open models",
+        "RAG pipelines + vector databases to ground outputs in real data",
+        "Agents: chaining tool calls, fallback when models drift",
+        "Deeper if you want it: fine-tuning, distillation, PEFT"
       ]
     }
   ],

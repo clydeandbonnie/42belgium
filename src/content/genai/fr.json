@@ -13,7 +13,9 @@
     "headline": "La formation prompt engineer qui te fait passer du prompt au système.",
     "subheadline": "42 Belgium est une école d'ingénierie logicielle. La spécialisation IA (Phase 3) couvre les APIs LLM, les pipelines RAG, le prompt chaining et l'automatisation IA — ce qui transforme un LLM en système. Si tu cherches un certificat rapide en prompt engineering, ce n'est pas ça. Si tu veux construire, c'est ici.",
     "reassurance": "100% gratuit · Sans diplôme requis · Bruxelles & Anvers · Voie RNCP 7",
-    "cta": "Deviens Prompt Engineer →"
+    "cta": "Deviens Prompt Engineer →",
+    "image": "/assets/gallery/genai-hero.png",
+    "imageAlt": "Étudiant construisant des systèmes LLM et RAG au campus 42 Belgium"
   },
   "clusters": [
     {
@@ -24,7 +26,8 @@
         "prompt engineer formation",
         "formation prompt engineering",
         "formation prompt engineer"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     },
     {
       "name": "IA GÉNÉRATIVE & LLMs",
@@ -35,6 +38,12 @@
         "LLM cours",
         "ChatGPT avancé",
         "IA au travail"
+      ],
+      "bullets": [
+        "Intégration d'APIs LLM : OpenAI, Anthropic, modèles open-source",
+        "Pipelines RAG + bases vectorielles pour ancrer les sorties",
+        "Agents : enchaîner les tool calls, fallback quand le modèle dérive",
+        "Plus loin si tu veux : fine-tuning, distillation, parameter-efficient"
       ]
     }
   ],
