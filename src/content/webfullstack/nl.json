@@ -29,7 +29,8 @@
         "full stack developer opleiding",
         "web developer opleiding",
         "web development opleiding"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     },
     {
       "name": "ORIËNTATIE",
@@ -47,6 +48,12 @@
         "HTML cursus",
         "JavaScript leren",
         "web development courses"
+      ],
+      "bullets": [
+        "JavaScript overal: browser, Node, standaardframeworks",
+        "React: echte UI's, state management, performance",
+        "De diepere laag: HTTP, REST API's, databases, deployment",
+        "De échte skill: hoe snel je de volgende tool oppikt"
       ]
     }
   ],

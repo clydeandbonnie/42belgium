@@ -28,7 +28,8 @@
         "web developer",
         "full stack developer",
         "web development classes"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     },
     {
       "name": "TECHNOLOGIES",
@@ -38,6 +39,12 @@
         "JavaScript",
         "React",
         "front end developer"
+      ],
+      "bullets": [
+        "JavaScript everywhere: browser, Node, default frameworks",
+        "React: real UIs, state management, performance",
+        "The deeper layer: HTTP, REST APIs, databases, deployment",
+        "The real skill: how fast you learn the next tool"
       ]
     }
   ],

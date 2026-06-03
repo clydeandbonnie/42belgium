@@ -29,7 +29,8 @@
         "formation web developer Bruxelles",
         "formation web",
         "formation développement web"
-      ]
+      ],
+      "decoration": "/assets/code-blue.svg"
     },
     {
       "name": "SPÉCIALISATIONS FRONT/BACK",
@@ -40,6 +41,12 @@
         "formation React",
         "formation HTML CSS",
         "développeur web formation"
+      ],
+      "bullets": [
+        "JavaScript partout : navigateur, Node, frameworks dominants",
+        "React : vraies UIs, gestion d'état, performance",
+        "La couche profonde : HTTP, REST APIs, bases de données, déploiement",
+        "Front + back : tu comprends tes outils, pas juste comment les invoquer"
       ]
     }
   ],
