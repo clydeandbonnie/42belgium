@@ -462,28 +462,49 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
             <p className="mt-6 text-lg leading-relaxed text-zinc-700 max-w-3xl">
               {openDays.intro}
             </p>
-            <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2">
               {openDays.campuses.map((campus) => (
-                <a
-                  key={campus.name}
-                  href={openDays.ctaHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Register for Open Day in ${campus.name}`}
-                  className="relative aspect-[4/3] overflow-hidden group block"
-                >
-                  <Image
-                    src={campus.image}
-                    alt={`42 Belgium ${campus.name} campus`}
-                    fill
-                    sizes="(min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                  <p className="absolute bottom-5 left-6 text-2xl font-bold text-white tracking-tight">
-                    {campus.name}
-                  </p>
-                </a>
+                <div key={campus.name}>
+                  <a
+                    href={openDays.ctaHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Register for Open Day in ${campus.name}`}
+                    className="relative aspect-[4/3] overflow-hidden group block"
+                  >
+                    <Image
+                      src={campus.image}
+                      alt={`42 Belgium ${campus.name} campus`}
+                      fill
+                      sizes="(min-width: 640px) 50vw, 100vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <p className="absolute bottom-5 left-6 text-2xl font-bold text-white tracking-tight">
+                      {campus.name}
+                    </p>
+                  </a>
+                  {(campus.subHeading || campus.address || campus.description) && (
+                    <div className="mt-5">
+                      {campus.subHeading && (
+                        <h3 className="text-xl font-bold tracking-tight text-black">
+                          {campus.subHeading}
+                        </h3>
+                      )}
+                      {campus.address && (
+                        <p className="mt-1.5 flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-zinc-500">
+                          <i className="fa-solid fa-location-dot text-[var(--color-primary)]" />
+                          {campus.address}
+                        </p>
+                      )}
+                      {campus.description && (
+                        <p className="mt-3 text-base leading-relaxed text-zinc-700">
+                          {campus.description}
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
             <div className="mt-12 flex justify-center">
