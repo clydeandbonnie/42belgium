@@ -58,7 +58,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
               {hero.subheadline}
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
+              <ApplyLink lang={lang} className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
                 {hero.cta}
               </ApplyLink>
               <Link
@@ -329,7 +329,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
 
               {isLowBarrier && (
                 <div className="mt-14 flex justify-center">
-                  <ApplyLink className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
+                  <ApplyLink lang={lang} className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
                     {t.cluster.applyCta}
                     <i className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
                   </ApplyLink>
@@ -535,7 +535,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
               ))}
             </div>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 items-center">
-              <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-secondary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
+              <ApplyLink lang={lang} className="inline-flex items-center justify-center bg-[var(--color-secondary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
                 {howToApply.ctaLabel}
               </ApplyLink>
               {howToApply.microcopy && (
@@ -600,7 +600,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                 {ctaFinal.description}
               </p>
               <div className="mt-10">
-                <ApplyLink className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
+                <ApplyLink lang={lang} className="inline-flex items-center justify-center bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
                   {ctaFinal.cta}
                 </ApplyLink>
               </div>

@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import type { Cluster } from "@/lib/i18n";
+import type { Language } from "@/lib/themes";
 import { ApplyLink } from "./ApplyLink";
 import { LookForTag } from "./LookForTag";
 import styles from "./ProposalC.module.css";
 
 interface Props {
   clusters: [Cluster, Cluster, Cluster];
+  lang: Language;
 }
 
 /**
@@ -15,7 +17,7 @@ interface Props {
  * Desktop container and mobile container are both rendered; CSS toggles
  * which is visible at the 900px breakpoint.
  */
-export function WhyTabsC({ clusters }: Props) {
+export function WhyTabsC({ clusters, lang }: Props) {
   const [active, setActive] = useState(0);
   const [c1, c2, c3] = clusters;
 
@@ -132,7 +134,7 @@ export function WhyTabsC({ clusters }: Props) {
               <h5>What we look for</h5>
               <div className={styles.whyP3Row}>
                 {c3.lookFor.map((l) => (
-                  <LookForTag key={l}>{l}</LookForTag>
+                  <LookForTag key={l} lang={lang}>{l}</LookForTag>
                 ))}
               </div>
             </div>
@@ -140,7 +142,7 @@ export function WhyTabsC({ clusters }: Props) {
         </div>
       </div>
       <div className={styles.whyCta}>
-        <ApplyLink className={styles.btnPrimary}>
+        <ApplyLink lang={lang} className={styles.btnPrimary}>
           Start your application <i className="fa-solid fa-arrow-right" />
         </ApplyLink>
       </div>

@@ -65,7 +65,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
             </h1>
             <p className={styles.heroLede}>{hero.subheadline}</p>
             <div className={styles.heroCtas}>
-              <ApplyLink className={styles.btnPrimary}>
+              <ApplyLink lang={lang} className={styles.btnPrimary}>
                 {hero.cta.replace("→", "").trim()}{" "}
                 <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
@@ -96,7 +96,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
             <p className={styles.secMarker}>Why 42</p>
             <h2>Three reasons this works.</h2>
           </div>
-          <WhyTabsC clusters={whyTuple} />
+          <WhyTabsC clusters={whyTuple} lang={lang} />
         </div>
       </section>
 
@@ -245,7 +245,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
               ))}
             </div>
             <div className={styles.pathCta}>
-              <ApplyLink className={styles.btnPrimary}>
+              <ApplyLink lang={lang} className={styles.btnPrimary}>
                 {howToApply.ctaLabel.replace("→", "").trim()}{" "}
                 <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
@@ -324,7 +324,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
             </h2>
             <p>{ctaFinal.description}</p>
             <div className={styles.finalCta}>
-              <ApplyLink className={styles.big}>
+              <ApplyLink lang={lang} className={styles.big}>
                 {ctaFinal.cta.replace("→", "").trim()}{" "}
                 <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
@@ -334,7 +334,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
       )}
 
       {/* ─── FLOATING DOCK ─── */}
-      <DockC />
+      <DockC lang={lang} />
     </div>
   );
 }

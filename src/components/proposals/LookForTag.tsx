@@ -82,7 +82,7 @@ export function LookForTag({ children, lang = "en", className }: Props) {
             </p>
 
             <div className="mt-8">
-              <ApplyLink className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-8 py-3.5 text-sm hover:brightness-110 transition-all">
+              <ApplyLink lang={lang} className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-8 py-3.5 text-sm hover:brightness-110 transition-all">
                 {t.cluster.applyCta}
                 <i className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
               </ApplyLink>

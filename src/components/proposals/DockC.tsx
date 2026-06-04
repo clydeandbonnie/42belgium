@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { APPLY_URL } from "./ApplyLink";
+import { getApplyUrl } from "@/lib/navigation";
+import type { Language } from "@/lib/themes";
 import styles from "./ProposalC.module.css";
 
 const ITEMS = [
@@ -17,7 +18,7 @@ const ITEMS = [
  * (reveal via translate transform), highlights the active section via
  * scroll-spy, and includes a pink Apply CTA on the right.
  */
-export function DockC() {
+export function DockC({ lang }: { lang: Language }) {
   const [show, setShow] = useState(false);
   const [active, setActive] = useState<string | null>(null);
 
@@ -67,7 +68,7 @@ export function DockC() {
       </div>
       <div className={styles.dockDivider} />
       <a
-        href={APPLY_URL}
+        href={getApplyUrl(lang)}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.dockApply}

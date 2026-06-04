@@ -61,7 +61,7 @@ export function ProposalB({ content, lang }: { content: PageContent; lang: Langu
             </h1>
             <p className={styles.heroLede}>{hero.subheadline}</p>
             <div className={styles.heroCtas}>
-              <ApplyLink className={styles.btnPrimary}>
+              <ApplyLink lang={lang} className={styles.btnPrimary}>
                 {hero.cta.replace("→", "").trim()}{" "}
                 <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
@@ -216,7 +216,7 @@ export function ProposalB({ content, lang }: { content: PageContent; lang: Langu
             </div>
           )}
           <div className={styles.c3Cta}>
-            <ApplyLink className={styles.btnPrimary}>
+            <ApplyLink lang={lang} className={styles.btnPrimary}>
               Start your application <i className="fa-solid fa-arrow-right" />
             </ApplyLink>
           </div>
@@ -370,7 +370,7 @@ export function ProposalB({ content, lang }: { content: PageContent; lang: Langu
               ))}
             </div>
             <div className={styles.pathCta}>
-              <ApplyLink className={styles.btnPrimary}>
+              <ApplyLink lang={lang} className={styles.btnPrimary}>
                 {howToApply.ctaLabel.replace("→", "").trim()}{" "}
                 <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
@@ -455,7 +455,7 @@ export function ProposalB({ content, lang }: { content: PageContent; lang: Langu
             </h2>
             <p>{ctaFinal.description}</p>
             <div className={styles.finalCta}>
-              <ApplyLink className={styles.btnPrimary}>
+              <ApplyLink lang={lang} className={styles.btnPrimary}>
                 {ctaFinal.cta.replace("→", "").trim()}{" "}
                 <i className="fa-solid fa-arrow-right" />
               </ApplyLink>
