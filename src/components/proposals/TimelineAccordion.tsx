@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Icon } from "@/components/Icon";
 import type { CurriculumPhase } from "@/lib/i18n";
 import type { Language } from "@/lib/themes";
 import { proposalUiStrings } from "@/lib/i18n";
@@ -55,7 +56,7 @@ export function TimelineAccordion({ phases, lang }: Props) {
                 className="w-full flex items-center gap-4 py-5 text-left group"
               >
                 {phase.icon && (
-                  <i
+                  <Icon
                     className={`${phase.icon} text-lg shrink-0 transition-colors duration-300 ${
                       isReached ? "text-[var(--color-primary)]" : "text-zinc-400"
                     }`}
@@ -73,7 +74,7 @@ export function TimelineAccordion({ phases, lang }: Props) {
                     {phase.duration}
                   </span>
                 </div>
-                <i
+                <Icon
                   className={`fa-solid fa-chevron-down text-zinc-400 text-sm shrink-0 transition-transform duration-300 ${
                     isOpen ? "rotate-180" : ""
                   }`}
@@ -105,7 +106,7 @@ export function TimelineAccordion({ phases, lang }: Props) {
                       const tail = match ? match[2] : item;
                       return (
                         <li key={item} className="flex gap-3 text-sm">
-                          <i className="fa-solid fa-chevron-right text-[var(--color-primary)] mt-1 text-xs shrink-0" />
+                          <Icon className="fa-solid fa-chevron-right text-[var(--color-primary)] mt-1 text-xs shrink-0" />
                           <span className="text-zinc-800">
                             {head && <strong className="font-bold text-black">{head}</strong>}
                             {tail}

@@ -41,11 +41,6 @@ export default function RootLayout({
         <noscript>
           <link rel="stylesheet" href="https://use.typekit.net/seg0ngf.css" />
         </noscript>
-        <Script
-          src="https://kit.fontawesome.com/4334c803c2.js"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
         {/* Google Tag Manager */}
         <Script id="gtm-base" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

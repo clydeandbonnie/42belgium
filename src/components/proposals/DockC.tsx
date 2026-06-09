@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Icon } from "@/components/Icon";
 import { getApplyUrl } from "@/lib/navigation";
 import type { Language } from "@/lib/themes";
 import styles from "./ProposalC.module.css";
@@ -61,7 +62,7 @@ export function DockC({ lang }: { lang: Language }) {
             href={`#${item.id}`}
             className={`${styles.dockBtn} ${active === item.id ? styles.active : ""}`}
           >
-            <i className={item.icon} />
+            <Icon className={item.icon} />
             <span className="label">{item.label}</span>
           </a>
         ))}
@@ -73,7 +74,7 @@ export function DockC({ lang }: { lang: Language }) {
         rel="noopener noreferrer"
         className={styles.dockApply}
       >
-        Apply <i className="fa-solid fa-arrow-right" />
+        Apply <Icon className="fa-solid fa-arrow-right" />
       </a>
     </nav>
   );

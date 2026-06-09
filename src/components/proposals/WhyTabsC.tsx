@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Icon } from "@/components/Icon";
 import type { Cluster } from "@/lib/i18n";
 import type { Language } from "@/lib/themes";
 import { ApplyLink } from "./ApplyLink";
@@ -38,7 +39,7 @@ export function WhyTabsC({ clusters, lang }: Props) {
           {c1.bullets.map((b) => (
             <li key={b}>
               <span className={styles.check}>
-                <i className="fa-solid fa-check" />
+                <Icon className="fa-solid fa-check" />
               </span>
               {b}
             </li>
@@ -91,13 +92,13 @@ export function WhyTabsC({ clusters, lang }: Props) {
                   <div
                     className={`${styles.whyP2Cell} ${styles.whyP2CellLeft} ${last ? styles.whyP2CellLast : ""}`}
                   >
-                    <i className="fa-solid fa-xmark" />
+                    <Icon className="fa-solid fa-xmark" />
                     {row.left}
                   </div>
                   <div
                     className={`${styles.whyP2Cell} ${styles.whyP2CellRight} ${styles.whyP2CellRight2} ${last ? styles.whyP2CellLast : ""}`}
                   >
-                    <i className="fa-solid fa-check" />
+                    <Icon className="fa-solid fa-check" />
                     {row.right}
                   </div>
                 </div>
@@ -143,7 +144,7 @@ export function WhyTabsC({ clusters, lang }: Props) {
       </div>
       <div className={styles.whyCta}>
         <ApplyLink lang={lang} className={styles.btnPrimary}>
-          Start your application <i className="fa-solid fa-arrow-right" />
+          Start your application <Icon className="fa-solid fa-arrow-right" />
         </ApplyLink>
       </div>
     </>
@@ -197,7 +198,7 @@ export function WhyTabsC({ clusters, lang }: Props) {
             <summary>
               <span className={styles.num}>{t.num}</span>
               <span>{t.label}</span>
-              <i className={`fa-solid fa-plus ${styles.whyAccPlus}`} aria-hidden="true" />
+              <Icon className={`fa-solid fa-plus ${styles.whyAccPlus}`} aria-hidden="true" />
             </summary>
             <div className={styles.whyAccContent}>{panes[i]}</div>
           </details>

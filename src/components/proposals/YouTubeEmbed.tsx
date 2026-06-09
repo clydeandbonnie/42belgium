@@ -6,6 +6,7 @@
 "use client";
 
 import { useState } from "react";
+import { Icon } from "@/components/Icon";
 import Image from "next/image";
 
 interface Props {
@@ -45,7 +46,7 @@ export function YouTubeEmbed({ youtubeId, title }: Props) {
       />
       <span className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
         <span className="flex h-16 w-16 items-center justify-center bg-[var(--color-primary)] text-white group-hover:scale-110 transition-transform">
-          <i className="fa-solid fa-play text-xl ml-1" />
+          <Icon className="fa-solid fa-play text-xl ml-1" />
         </span>
       </span>
     </button>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { Icon } from "@/components/Icon";
 import { StoryThumb } from "./StoryThumb";
 import styles from "./ProposalC.module.css";
 
@@ -64,7 +65,7 @@ export function StoriesCarouselC({ videos }: { videos: Video[] }) {
           disabled={!canPrev}
           aria-label="Previous"
         >
-          <i className="fa-solid fa-chevron-left" />
+          <Icon className="fa-solid fa-chevron-left" />
         </button>
         <button
           type="button"
@@ -73,7 +74,7 @@ export function StoriesCarouselC({ videos }: { videos: Video[] }) {
           disabled={!canNext}
           aria-label="Next"
         >
-          <i className="fa-solid fa-chevron-right" />
+          <Icon className="fa-solid fa-chevron-right" />
         </button>
       </div>
     </div>

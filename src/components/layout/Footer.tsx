@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Icon } from "@/components/Icon";
 import type { Language } from "@/lib/themes";
 import {
   getFooterLocations,
@@ -63,7 +64,7 @@ export function Footer({ lang }: { lang: Language }) {
                   className={styles.socialLink}
                   aria-label={social.platform}
                 >
-                  <i className={social.icon} />
+                  <Icon className={social.icon} />
                 </a>
               ))}
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
+import { Icon } from "@/components/Icon";
 import { useEffect, useRef, useState } from "react";
 import type { Language } from "@/lib/themes";
 
@@ -51,7 +52,7 @@ export function LanguageSwitcher({ current }: { current: Language }) {
         className="inline-flex items-center gap-2 text-white font-bold uppercase text-base hover:text-[var(--color-primary)] transition-colors"
       >
         {current.toUpperCase()}
-        <i className={`fa-solid fa-chevron-down text-xs transition-transform ${open ? "rotate-180" : ""}`} />
+        <Icon className={`fa-solid fa-chevron-down text-xs transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
       {open && (
         <ul

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Icon } from "@/components/Icon";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -166,7 +167,7 @@ export function Header({ lang }: HeaderProps) {
           className={styles.mobileToggle}
           aria-label="Toggle menu"
         >
-          <i className={`fa-solid ${mobileOpen ? "fa-xmark" : "fa-bars"} text-xl`} />
+          <Icon className={`fa-solid ${mobileOpen ? "fa-xmark" : "fa-bars"} text-xl`} />
         </button>
       </div>
 

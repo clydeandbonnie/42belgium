@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Icon } from "@/components/Icon";
 import type { CurriculumPhase } from "@/lib/i18n";
 import type { Language } from "@/lib/themes";
 import { proposalUiStrings } from "@/lib/i18n";
@@ -73,7 +74,7 @@ export function ProgramTimelineB({ phases, lang }: Props) {
             const [head, tail] = splitItem(item);
             return (
               <li key={item}>
-                <i className="fa-solid fa-chevron-right" />
+                <Icon className="fa-solid fa-chevron-right" />
                 <span>
                   <strong>{head}</strong>
                   {tail}

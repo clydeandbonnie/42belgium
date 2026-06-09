@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Icon } from "@/components/Icon";
 import { ApplyLink } from "./ApplyLink";
 import { proposalUiStrings } from "@/lib/i18n";
 import type { Language } from "@/lib/themes";
@@ -68,7 +69,7 @@ export function LookForTag({ children, lang = "en", className }: Props) {
               aria-label="Close"
               className="absolute top-4 right-4 flex h-8 w-8 items-center justify-center text-zinc-500 hover:text-black transition-colors"
             >
-              <i className="fa-solid fa-xmark text-lg" />
+              <Icon className="fa-solid fa-xmark text-lg" />
             </button>
 
             <h3 className="text-2xl font-bold tracking-tight text-black pr-8">
@@ -84,7 +85,7 @@ export function LookForTag({ children, lang = "en", className }: Props) {
             <div className="mt-8">
               <ApplyLink lang={lang} className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-8 py-3.5 text-sm hover:brightness-110 transition-all">
                 {t.cluster.applyCta}
-                <i className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
+                <Icon className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
               </ApplyLink>
             </div>
           </div>

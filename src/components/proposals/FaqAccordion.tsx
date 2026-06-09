@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { Icon } from "@/components/Icon";
 import type { FaqItem } from "@/lib/i18n";
 
 interface Props {
@@ -84,7 +85,7 @@ export function FaqAccordion({ items }: Props) {
                 <span className="flex-1 text-sm font-bold leading-snug">
                   {item.question}
                 </span>
-                <i
+                <Icon
                   className={`fa-solid fa-chevron-down text-xs shrink-0 motion-safe:transition-transform motion-safe:duration-200 ${
                     isOpen ? "rotate-180" : ""
                   }`}
@@ -152,7 +153,7 @@ export function FaqAccordion({ items }: Props) {
                 <span className="flex-1 text-sm font-bold leading-snug">
                   {item.question}
                 </span>
-                <i
+                <Icon
                   className={`fa-solid fa-arrow-right text-xs shrink-0 motion-safe:transition-transform motion-safe:duration-200 ${
                     isActive
                       ? "motion-safe:translate-x-1"
@@ -194,7 +195,7 @@ export function FaqAccordion({ items }: Props) {
                 onClick={() => setActive((a) => ((a >= 0 ? a : 0) - 1 + n) % n)}
                 className="flex h-10 w-10 items-center justify-center border border-zinc-700 text-zinc-400 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-colors"
               >
-                <i className="fa-solid fa-chevron-left text-sm" aria-hidden="true" />
+                <Icon className="fa-solid fa-chevron-left text-sm" aria-hidden="true" />
               </button>
               <button
                 type="button"
@@ -202,7 +203,7 @@ export function FaqAccordion({ items }: Props) {
                 onClick={() => setActive((a) => ((a >= 0 ? a : 0) + 1) % n)}
                 className="flex h-10 w-10 items-center justify-center border border-zinc-700 text-zinc-400 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-colors"
               >
-                <i className="fa-solid fa-chevron-right text-sm" aria-hidden="true" />
+                <Icon className="fa-solid fa-chevron-right text-sm" aria-hidden="true" />
               </button>
             </div>
           </div>

@@ -11,6 +11,7 @@
  */
 
 import Link from "next/link";
+import { Icon } from "@/components/Icon";
 import Image from "next/image";
 import type { PageContent } from "@/lib/i18n";
 import { proposalUiStrings } from "@/lib/i18n";
@@ -46,7 +47,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
         <div className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 pl-[max(48px,calc((100vw-1400px)/2+48px))] pr-10 sm:pr-0">
           <div className="sm:w-1/2 sm:pr-24 lg:pr-32">
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-[var(--color-primary)] mb-6">
-              <i className="fa-solid fa-rocket mr-2" />
+              <Icon className="fa-solid fa-rocket mr-2" />
               {t.hero.eyebrow}
             </p>
             <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
@@ -278,12 +279,12 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                             </div>
                             {/* MOOC cell - muted */}
                             <div className="px-6 py-6 flex items-center gap-4 border-b border-zinc-200">
-                              <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-base shrink-0" />
+                              <Icon className="fa-solid fa-xmark text-[var(--color-secondary)] text-base shrink-0" />
                               <p className="text-base text-zinc-500">{row.left}</p>
                             </div>
                             {/* 42 cell - elevated, teal-tinted, bold */}
                             <div className={`px-6 py-6 flex items-center gap-4 bg-[var(--color-primary)]/5 border-l-4 border-[var(--color-primary)] ${!isLast ? "border-b border-b-zinc-200" : ""}`}>
-                              <i className="fa-solid fa-check text-[var(--color-primary)] text-2xl shrink-0" />
+                              <Icon className="fa-solid fa-check text-[var(--color-primary)] text-2xl shrink-0" />
                               <p className="text-base font-bold text-black leading-snug">{row.right}</p>
                             </div>
                           </div>
@@ -305,7 +306,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                                 {cluster.comparison!.leftLabel}
                               </p>
                               <div className="flex items-start gap-3">
-                                <i className="fa-solid fa-xmark text-[var(--color-secondary)] text-base shrink-0 mt-1" />
+                                <Icon className="fa-solid fa-xmark text-[var(--color-secondary)] text-base shrink-0 mt-1" />
                                 <p className="text-base text-zinc-500">{row.left}</p>
                               </div>
                             </div>
@@ -315,7 +316,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                                 {cluster.comparison!.rightLabel}
                               </p>
                               <div className="flex items-start gap-3">
-                                <i className="fa-solid fa-check text-[var(--color-primary)] text-xl shrink-0 mt-0.5" />
+                                <Icon className="fa-solid fa-check text-[var(--color-primary)] text-xl shrink-0 mt-0.5" />
                                 <p className="text-base font-bold text-black leading-snug">{row.right}</p>
                               </div>
                             </div>
@@ -331,7 +332,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                 <div className="mt-14 flex justify-center">
                   <ApplyLink lang={lang} className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all">
                     {t.cluster.applyCta}
-                    <i className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
+                    <Icon className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
                   </ApplyLink>
                 </div>
               )}
@@ -340,7 +341,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                   {cluster.bullets.map((bullet, bi) => (
                     <li key={bi} className="flex items-center gap-5 py-5 pl-6 border-b border-zinc-200 last:border-b-0">
                       <span className="flex h-10 w-10 shrink-0 items-center justify-center bg-[var(--color-primary)] text-white">
-                        <i className="fa-solid fa-check" />
+                        <Icon className="fa-solid fa-check" />
                       </span>
                       <p className="text-base font-bold text-black">{bullet}</p>
                     </li>
@@ -380,7 +381,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                     key={career.label}
                     className="flex items-center gap-4 bg-zinc-900 border border-zinc-800 p-4"
                   >
-                    <i className={`${career.icon} text-[var(--color-primary)] text-xl w-6`} />
+                    <Icon className={`${career.icon} text-[var(--color-primary)] text-xl w-6`} />
                     <span className="text-base">{career.label}</span>
                   </div>
                 ))}
@@ -493,7 +494,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                       )}
                       {campus.address && (
                         <p className="mt-1.5 flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-zinc-500">
-                          <i className="fa-solid fa-location-dot text-[var(--color-primary)]" />
+                          <Icon className="fa-solid fa-location-dot text-[var(--color-primary)]" />
                           {campus.address}
                         </p>
                       )}
@@ -515,7 +516,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                 className="group inline-flex items-center gap-3 bg-[var(--color-primary)] text-white font-bold uppercase tracking-wider px-10 py-4 text-base hover:brightness-110 transition-all"
               >
                 {openDays.ctaLabel}
-                <i className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
+                <Icon className="fa-solid fa-arrow-right text-sm transition-transform duration-200 group-hover:translate-x-1" />
               </a>
             </div>
           </div>

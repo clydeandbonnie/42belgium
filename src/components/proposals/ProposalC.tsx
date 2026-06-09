@@ -12,6 +12,7 @@
  */
 
 import type { Cluster, PageContent } from "@/lib/i18n";
+import { Icon } from "@/components/Icon";
 import type { Language } from "@/lib/themes";
 import { ApplyLink } from "./ApplyLink";
 import { PartnerStrip } from "./PartnerStrip";
@@ -48,7 +49,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
         <div className={styles.heroGrid}>
           <div className={styles.heroLeft}>
             <p className={styles.heroEyebrow}>
-              <i className="fa-solid fa-rocket" />
+              <Icon className="fa-solid fa-rocket" />
               Free structured training
             </p>
             <h1 className={styles.heroH1}>
@@ -67,7 +68,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
             <div className={styles.heroCtas}>
               <ApplyLink lang={lang} className={styles.btnPrimary}>
                 {hero.cta.replace("→", "").trim()}{" "}
-                <i className="fa-solid fa-arrow-right" />
+                <Icon className="fa-solid fa-arrow-right" />
               </ApplyLink>
               <a href="#after" className={styles.btnGhost}>
                 See outcomes
@@ -77,7 +78,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
               <div className={styles.heroReassurance}>
                 {hero.reassurance.split(/\s*·\s*/).map((r) => (
                   <span key={r}>
-                    <i className="fa-solid fa-check" />
+                    <Icon className="fa-solid fa-check" />
                     {r}
                   </span>
                 ))}
@@ -119,7 +120,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
               <div className={styles.afterCareers}>
                 {afterForty.careers.map((career) => (
                   <div key={career.label} className={styles.afterCareer}>
-                    <i className={career.icon} />
+                    <Icon className={career.icon} />
                     <span>{career.label}</span>
                   </div>
                 ))}
@@ -205,7 +206,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
                     rel="noopener noreferrer"
                     className={styles.more}
                   >
-                    See upcoming dates <i className="fa-solid fa-arrow-right" />
+                    See upcoming dates <Icon className="fa-solid fa-arrow-right" />
                   </a>
                 </div>
               </div>
@@ -219,7 +220,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
               rel="noopener noreferrer"
               className={styles.btnPrimary}
             >
-              {openDays.ctaLabel} <i className="fa-solid fa-arrow-right" />
+              {openDays.ctaLabel} <Icon className="fa-solid fa-arrow-right" />
             </a>
           </div>
         </section>
@@ -247,7 +248,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
             <div className={styles.pathCta}>
               <ApplyLink lang={lang} className={styles.btnPrimary}>
                 {howToApply.ctaLabel.replace("→", "").trim()}{" "}
-                <i className="fa-solid fa-arrow-right" />
+                <Icon className="fa-solid fa-arrow-right" />
               </ApplyLink>
               {howToApply.microcopy && <p>{howToApply.microcopy}</p>}
             </div>
@@ -271,7 +272,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
                   <summary>
                     <span>{item.question}</span>
                     <span className={styles.plus}>
-                      <i className="fa-solid fa-plus" />
+                      <Icon className="fa-solid fa-plus" />
                     </span>
                   </summary>
                   <p className={styles.a}>{item.answer}</p>
@@ -326,7 +327,7 @@ export function ProposalC({ content, lang }: { content: PageContent; lang: Langu
             <div className={styles.finalCta}>
               <ApplyLink lang={lang} className={styles.big}>
                 {ctaFinal.cta.replace("→", "").trim()}{" "}
-                <i className="fa-solid fa-arrow-right" />
+                <Icon className="fa-solid fa-arrow-right" />
               </ApplyLink>
             </div>
           </div>

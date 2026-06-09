@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Icon } from "@/components/Icon";
 
 interface Props {
   youtubeId: string;
@@ -79,7 +80,7 @@ export function StoryThumb({
             />
             <span className={playClass} aria-hidden="true">
               <span>
-                <i className="fa-solid fa-play" />
+                <Icon className="fa-solid fa-play" />
               </span>
             </span>
           </>
