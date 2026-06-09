@@ -34,6 +34,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://use.typekit.net/seg0ngf.css"
           media="print"
+          suppressHydrationWarning
         />
         <Script id="typekit-swap" strategy="beforeInteractive">
           {`(function(){var l=document.getElementById('typekit-css');if(!l)return;function s(){l.media='all';}if(l.sheet){s();}else{l.addEventListener('load',s);}})();`}

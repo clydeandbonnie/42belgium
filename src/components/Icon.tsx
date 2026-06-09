@@ -7,9 +7,14 @@
  * classes). It parses out the FA tokens and forwards the rest, so both the
  * static usages and the data-driven ones (`<Icon className={career.icon} />`)
  * keep working unchanged.
+ *
+ * Icons are passed to FontAwesomeIcon as imported definition OBJECTS (via the
+ * map below), not looked up by string from a global library — the string-lookup
+ * path logs "Could not find icon" errors when a name isn't pre-registered, which
+ * showed up as browser console errors. Direct objects always resolve.
  */
-import { config, library } from "@fortawesome/fontawesome-svg-core";
-import type { IconName, IconProp } from "@fortawesome/fontawesome-svg-core";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
@@ -43,42 +48,37 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
 
-// We import the CSS ourselves above; stop the kit from injecting it at runtime
-// (which would otherwise cause a flash of oversized icons).
+// We import the CSS ourselves above; stop the runtime from injecting it again.
 config.autoAddCss = false;
 
-library.add(
-  faArrowRight,
-  faBriefcase,
-  faChartLine,
-  faCheck,
-  faChevronDown,
-  faChevronLeft,
-  faChevronRight,
-  faCircleQuestion,
-  faCode,
-  faCompass,
-  faLayerGroup,
-  faListOl,
-  faLocationDot,
-  faMobileScreen,
-  faPlay,
-  faPlus,
-  faRocket,
-  faServer,
-  faShieldHalved,
-  faXmark,
-  faFacebookF,
-  faInstagram,
-  faLinkedinIn,
-  faYoutube,
-  faLightbulb,
-);
-
-const PREFIX: Record<string, "fas" | "far" | "fab"> = {
-  "fa-solid": "fas",
-  "fa-regular": "far",
-  "fa-brands": "fab",
+// Keyed by the icon name (the part after `fa-`). No name collides across styles
+// in this project, so a flat map is unambiguous.
+const ICONS: Record<string, IconDefinition> = {
+  "arrow-right": faArrowRight,
+  briefcase: faBriefcase,
+  "chart-line": faChartLine,
+  check: faCheck,
+  "chevron-down": faChevronDown,
+  "chevron-left": faChevronLeft,
+  "chevron-right": faChevronRight,
+  "circle-question": faCircleQuestion,
+  code: faCode,
+  compass: faCompass,
+  "layer-group": faLayerGroup,
+  "list-ol": faListOl,
+  "location-dot": faLocationDot,
+  "mobile-screen": faMobileScreen,
+  play: faPlay,
+  plus: faPlus,
+  rocket: faRocket,
+  server: faServer,
+  "shield-halved": faShieldHalved,
+  xmark: faXmark,
+  "facebook-f": faFacebookF,
+  instagram: faInstagram,
+  "linkedin-in": faLinkedinIn,
+  youtube: faYoutube,
+  lightbulb: faLightbulb,
 };
 
 interface IconProps {
@@ -88,13 +88,12 @@ interface IconProps {
 }
 
 export function Icon({ className = "", ...rest }: IconProps) {
-  let prefix: "fas" | "far" | "fab" = "fas";
   let name: string | null = null;
   const passthrough: string[] = [];
 
   for (const token of className.split(/\s+/).filter(Boolean)) {
-    if (token in PREFIX) {
-      prefix = PREFIX[token];
+    if (token === "fa-solid" || token === "fa-regular" || token === "fa-brands") {
+      // style prefix — the name alone is enough to resolve the object
     } else if (token.startsWith("fa-")) {
       name = token.slice(3);
     } else {
@@ -102,11 +101,12 @@ export function Icon({ className = "", ...rest }: IconProps) {
     }
   }
 
-  if (!name) return null;
+  const def = name ? ICONS[name] : null;
+  if (!def) return null;
 
   return (
     <FontAwesomeIcon
-      icon={[prefix, name as IconName] as IconProp}
+      icon={def}
       className={passthrough.join(" ") || undefined}
       {...rest}
     />
