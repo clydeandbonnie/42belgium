@@ -25,6 +25,12 @@ import { FaqAccordion } from "./FaqAccordion";
 
 export function ProposalA({ content, lang }: { content: PageContent; lang: Language }) {
   const { hero, clusters, afterForty, whatYouBuild, realStories, howToApply, openDays, faq, stats, ctaFinal } = content;
+
+  // The hero image is hidden below the `sm` breakpoint, so on mobile the first
+  // cluster that carries an image is the largest above-the-fold image — i.e. the
+  // mobile LCP. Load it eagerly (priority) instead of next/image's default lazy,
+  // otherwise the LCP image is fetched far too late on slow connections.
+  const firstImageClusterIdx = clusters.findIndex((c) => c.image);
   const t = proposalUiStrings[lang];
 
   return (
@@ -39,7 +45,6 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
             fill
             sizes="(min-width: 640px) 50vw, 100vw"
             className="object-cover object-center"
-            priority
             quality={85}
           />
         </div>
@@ -217,6 +222,7 @@ export function ProposalA({ content, lang }: { content: PageContent; lang: Langu
                         fill
                         sizes="(min-width: 1024px) 440px, 100vw"
                         className="object-cover"
+                        priority={i === firstImageClusterIdx}
                       />
                     </div>
                   </div>
