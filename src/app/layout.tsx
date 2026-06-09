@@ -23,7 +23,24 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/seg0ngf.css" />
+        {/* Adobe Fonts (Typekit) — futura-pt, loaded non-render-blocking.
+            The font itself is unchanged; only its loading no longer blocks paint.
+            media="print" makes the browser fetch without blocking render; the
+            beforeInteractive script swaps it to media="all" once loaded (SSR-safe,
+            handles the already-loaded case via .sheet). noscript = no-JS fallback. */}
+        <link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
+        <link
+          id="typekit-css"
+          rel="stylesheet"
+          href="https://use.typekit.net/seg0ngf.css"
+          media="print"
+        />
+        <Script id="typekit-swap" strategy="beforeInteractive">
+          {`(function(){var l=document.getElementById('typekit-css');if(!l)return;function s(){l.media='all';}if(l.sheet){s();}else{l.addEventListener('load',s);}})();`}
+        </Script>
+        <noscript>
+          <link rel="stylesheet" href="https://use.typekit.net/seg0ngf.css" />
+        </noscript>
         <Script
           src="https://kit.fontawesome.com/4334c803c2.js"
           crossOrigin="anonymous"
