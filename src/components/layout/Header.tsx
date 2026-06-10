@@ -161,14 +161,19 @@ export function Header({ lang }: HeaderProps) {
           </a>
         </div>
 
-        {/* ── Mobile toggle ── */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className={styles.mobileToggle}
-          aria-label="Toggle menu"
-        >
-          <Icon className={`fa-solid ${mobileOpen ? "fa-xmark" : "fa-bars"} text-xl`} />
-        </button>
+        {/* ── Mobile actions: hamburger + Apply (same dest/colour as hero CTA) ── */}
+        <div className={styles.mobileActions}>
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className={styles.mobileToggle}
+            aria-label="Toggle menu"
+          >
+            <Icon className={`fa-solid ${mobileOpen ? "fa-xmark" : "fa-bars"} text-xl`} />
+          </button>
+          <a href={applyUrl} className={styles.mobileHeaderApply}>
+            {applyLabel}
+          </a>
+        </div>
       </div>
 
       {/* ── Mobile menu ── */}
