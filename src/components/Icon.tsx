@@ -20,6 +20,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import {
   faArrowRight,
+  faBars,
   faBriefcase,
   faChartLine,
   faCheck,
@@ -55,6 +56,7 @@ config.autoAddCss = false;
 // in this project, so a flat map is unambiguous.
 const ICONS: Record<string, IconDefinition> = {
   "arrow-right": faArrowRight,
+  bars: faBars,
   briefcase: faBriefcase,
   "chart-line": faChartLine,
   check: faCheck,
