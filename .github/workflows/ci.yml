@@ -50,10 +50,14 @@ jobs:
         with:
           node-version: '22'
 
-      # The validator is scoped to the pages this pull request actually edits.
-      # A full sweep would fail on pre-existing SEO errors in pages the author
-      # never opened, which would make every check red and teach everyone to
-      # ignore it.
+      # Two deliberate limits on this job:
+      #  --structural-only: only invalid JSON and missing images fail. The SEO
+      #    checklist still prints as advice, but an editor is never blocked by
+      #    a judgement call about keyword density or meta length.
+      #  scoped to changed files: a full sweep would fail on pre-existing SEO
+      #    findings in pages the author never opened.
+      # Clyde & Bonnie still get the full blocking checklist locally with
+      # `npm run validate:seo`.
       - name: Collect the content files this pull request touches
         id: changed
         env:
@@ -73,4 +77,4 @@ jobs:
         # script, so a branch cannot inject shell through a filename.
         env:
           FILES: ${{ steps.changed.outputs.files }}
-        run: node scripts/validate-seo.mjs $FILES
+        run: node scripts/validate-seo.mjs --structural-only $FILES

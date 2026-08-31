@@ -32,6 +32,14 @@ const CONTENT_DIR = path.join(__dirname, "..", "src", "content");
 const PUBLIC_DIR = path.join(__dirname, "..", "public");
 const STATUS_PATH = path.join(CONTENT_DIR, "_status.json");
 
+// --structural-only enforces just the two checks that mean "this page is
+// broken": the file must be valid JSON, and the images it points at must
+// exist. The SEO checklist still runs and still prints, but as advice.
+// CI uses this on pull requests so an editor is never blocked by an SEO
+// judgement call; `npm run validate:seo` with no flag stays the full,
+// blocking checklist for Clyde & Bonnie.
+const structuralOnly = process.argv.includes("--structural-only");
+
 // Per-LP status drives gating: drafts are reported as skipped, ready/approved
 // run the full checklist.
 const statusMap = (() => {
@@ -271,7 +279,11 @@ function validate(filePath) {
     results.ok++;
   } else {
     console.log(`\n  ${c.bold}${rel}${c.reset} — ${wc} words`);
-    for (const [level, msg] of issues) log(level, rel, msg);
+    // In structural mode the SEO checklist is advice: it still prints, so the
+    // editor sees what could be better, but it does not fail the run.
+    for (const [level, msg] of issues) {
+      log(structuralOnly && level === "ERROR" ? "WARN" : level, rel, msg);
+    }
   }
 }
 
@@ -352,7 +364,14 @@ const scoped = args
     return rel && !rel.startsWith("..") && !path.isAbsolute(rel) && fs.existsSync(p);
   });
 
-console.log(`\n${c.bold}SEO validation — brief v2 checklist${c.reset}\n`);
+console.log(
+  `\n${c.bold}${structuralOnly ? "Content validation — structural checks" : "SEO validation — brief v2 checklist"}${c.reset}\n`
+);
+if (structuralOnly) {
+  console.log(
+    `${c.gray}Only invalid JSON and missing images fail this run. SEO findings below are advice.${c.reset}`
+  );
+}
 if (args.length > 0) {
   console.log(`${c.gray}Scoped to ${scoped.length} changed file(s) of ${args.length} passed.${c.reset}\n`);
   scoped.forEach(checkFile);

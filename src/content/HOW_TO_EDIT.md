@@ -171,23 +171,34 @@ renders as:
 
 ## What the validator checks
 
-After every commit on a PR, an automated validator runs through the briefing
-v2 checklist for the page you edited. Common errors:
+After every commit on a PR, an automated validator runs on the page you
+edited. **Only two things turn the check red**, and both mean the page is
+actually broken:
 
-| Message | What to do |
+| Blocking | What to do |
 | --- | --- |
-| `meta.title is X chars (target 50–60)` | Shorten or lengthen the title. Includes `\| 42 Belgium`. |
-| `meta.description is X chars (target 140–160)` | Same logic for the meta description. |
-| `H1 contains none of the Primary Query tokens` | Your `hero.headline` must include the Primary Query word(s). |
-| `missing converting keywords: …` | Each keyword in `meta.convertingKeywords` must appear at least once anywhere in the page body. |
-| `body has X words (target 600–1000)` | Add or trim copy until you're in the band. |
-| `Primary Query density X% (min 1% / max 2%)` | The Primary Query should appear ~6–12 times for 600 words. |
-| `first 100 words missing Primary Query` | The combined hero + first cluster body must contain the Primary Query in its first 100 words. |
+| `invalid JSON — …` | A comma, a brace or a quote is misplaced. The message names the line and column. |
 | `image not found in public/` | The image path you wrote doesn't match a real file. Check spelling, case. |
+
+Everything else the validator prints is **advice**, not a gate. It's the SEO
+checklist from the briefing, and you are not expected to satisfy it — the
+targets are tuned against Google Ads data, so acting on them is Clyde &
+Bonnie's call, not a copy edit:
+
+| Message | What it's telling you |
+| --- | --- |
+| `meta.title is X chars (target 50–60)` | The title is outside the band Google displays in full. |
+| `meta.description is X chars (target 140–160)` | Same logic for the meta description. |
+| `H1 contains none of the Primary Query tokens` | `hero.headline` doesn't include the target search phrase. |
+| `missing converting keywords: …` | A keyword from `meta.convertingKeywords` appears nowhere in the body. |
+| `body has X words (target 600–1000)` | The page is short or long for its purpose. |
+| `Primary Query density X%` | The target phrase appears more or less often than planned. |
+| `first 100 words missing Primary Query` | Hero + first cluster don't open on the target phrase. |
 | `image > 200 KB` | Compress the image (try [squoosh.app](https://squoosh.app)) before uploading. |
 | `smart quote(s) found` | You pasted from Word/Notion. Replace `’` with `'`. |
 
-Errors block the PR; warnings don't but should be fixed before merge.
+If an SEO line bothers you, mention it to Clyde & Bonnie rather than rewriting
+copy to silence it — the checklist and the ad spend are tuned together.
 
 ---
 
