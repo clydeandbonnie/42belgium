@@ -204,10 +204,34 @@ Errors block the PR; warnings don't but should be fixed before merge.
 7. On the next page, give the PR a title (e.g. *"Update Cybersecurity FR
    headline"*) and click "Create pull request".
 8. Wait ~30 seconds for the green/red check to appear.
-9. If green, ping Clyde & Bonnie or merge yourself.
+9. If green, ping Clyde & Bonnie to review and merge. `main` is protected, so
+   nothing reaches the live site without that review.
 10. If red, click "Details" next to the failed check to read the validator
     output, fix the file (the pencil icon works on the PR branch too), and
     commit again.
+
+---
+
+## Editing with Claude instead of by hand
+
+If your Claude account is connected to this repository, you can skip the
+pencil-icon workflow entirely: describe the change in plain language
+("on the French cybersecurity page, make the headline shorter and mention
+Brussels"), and Claude edits the JSON, runs the checks and opens the pull
+request for you.
+
+The rules are the same either way. Claude works on a branch, never on `main`,
+and Clyde & Bonnie still reviews and merges. The repository's `AGENTS.md`
+tells Claude what it may and may not touch — that file is the guardrail, so
+don't edit it without asking.
+
+Two things worth knowing:
+
+- **Ask for one page at a time.** "Update all 30 pages" produces a pull
+  request nobody can review properly.
+- **Claude can be wrong about SEO.** The `"meta"` blocks are tuned against
+  Google Ads data. If Claude offers to "improve" them, say no and ask Clyde &
+  Bonnie.
 
 ---
 
@@ -221,5 +245,6 @@ edit `src/content/_status.json` and commit.
 
 ## Need help
 
-Anything unclear or going wrong → ping Nicolas (Clyde & Bonnie). Don't merge a
-red PR unless you know what you're overriding.
+Anything unclear or going wrong → ping Nicolas (Clyde & Bonnie). A red PR is
+never something to work around: fix the file until the check goes green, or
+ask.

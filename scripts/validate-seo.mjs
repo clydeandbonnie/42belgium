@@ -120,7 +120,16 @@ function log(level, page, msg) {
 
 function validate(filePath) {
   const rel = path.relative(CONTENT_DIR, filePath);
-  const content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  let content;
+  try {
+    content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  } catch (err) {
+    // A missing comma or a smart quote pasted from Word is the most common
+    // edit mistake. Report it like any other error so the PR check shows the
+    // fix instead of a Node stack trace.
+    log("ERROR", rel, `invalid JSON — ${err.message}`);
+    return;
+  }
   const issues = [];
 
   // Status from _status.json gates the checks. Drafts skip detailed checks
@@ -300,6 +309,24 @@ function imageAudit(filePath) {
   }
 }
 
+function checkFile(full) {
+  const name = path.basename(full);
+  if (!full.endsWith(".json")) return;
+
+  // Image audit runs on every JSON (cluster + _common) but skips _status.
+  if (name === "_status.json") return;
+  imageAudit(full);
+
+  // SEO checks only on cluster files (skip _common/, _status.json, etc.)
+  if (name.startsWith("_")) return;
+  // _common is a directory not a file — already handled above. But just
+  // in case: if a parent dir of `full` starts with _, skip too.
+  const inUnderscoreDir = path.relative(CONTENT_DIR, full).split(path.sep).some((seg) => seg.startsWith("_"));
+  if (inUnderscoreDir) return;
+
+  validate(full);
+}
+
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
@@ -307,25 +334,31 @@ function walk(dir) {
       walk(full);
       continue;
     }
-    if (!entry.isFile() || !full.endsWith(".json")) continue;
-
-    // Image audit runs on every JSON (cluster + _common) but skips _status.
-    if (entry.name === "_status.json") continue;
-    imageAudit(full);
-
-    // SEO checks only on cluster files (skip _common/, _status.json, etc.)
-    if (entry.name.startsWith("_")) continue;
-    // _common is a directory not a file — already handled above. But just
-    // in case: if a parent dir of `full` starts with _, skip too.
-    const inUnderscoreDir = path.relative(CONTENT_DIR, full).split(path.sep).some((seg) => seg.startsWith("_"));
-    if (inUnderscoreDir) continue;
-
-    validate(full);
+    if (!entry.isFile()) continue;
+    checkFile(full);
   }
 }
 
+// File arguments scope the run to just those pages. CI passes the content
+// files a pull request actually touches, so an author is never blocked by
+// pre-existing errors on pages they never opened. No arguments = full sweep,
+// which is what `npm run validate:seo` does locally.
+const args = process.argv.slice(2).filter((a) => !a.startsWith("-"));
+const scoped = args
+  .map((a) => path.resolve(process.cwd(), a))
+  .filter((p) => {
+    // Keep only paths inside src/content/ that still exist (a PR may delete one).
+    const rel = path.relative(CONTENT_DIR, p);
+    return rel && !rel.startsWith("..") && !path.isAbsolute(rel) && fs.existsSync(p);
+  });
+
 console.log(`\n${c.bold}SEO validation — brief v2 checklist${c.reset}\n`);
-walk(CONTENT_DIR);
+if (args.length > 0) {
+  console.log(`${c.gray}Scoped to ${scoped.length} changed file(s) of ${args.length} passed.${c.reset}\n`);
+  scoped.forEach(checkFile);
+} else {
+  walk(CONTENT_DIR);
+}
 
 console.log(
   `\n${c.bold}Summary${c.reset}: ${c.green}${results.ok} OK${c.reset}, ${c.yellow}${results.warnings} warnings${c.reset}, ${c.red}${results.errors} errors${c.reset}, ${c.gray}${results.drafts} drafts${c.reset}${results.stubs ? `, ${c.gray}${results.stubs} stubs${c.reset}` : ""}\n`
