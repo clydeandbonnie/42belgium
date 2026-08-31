@@ -171,23 +171,34 @@ renders as:
 
 ## What the validator checks
 
-After every commit on a PR, an automated validator runs through the briefing
-v2 checklist for the page you edited. Common errors:
+After every commit on a PR, an automated validator runs on the page you
+edited. **Only two things turn the check red**, and both mean the page is
+actually broken:
 
-| Message | What to do |
+| Blocking | What to do |
 | --- | --- |
-| `meta.title is X chars (target 50–60)` | Shorten or lengthen the title. Includes `\| 42 Belgium`. |
-| `meta.description is X chars (target 140–160)` | Same logic for the meta description. |
-| `H1 contains none of the Primary Query tokens` | Your `hero.headline` must include the Primary Query word(s). |
-| `missing converting keywords: …` | Each keyword in `meta.convertingKeywords` must appear at least once anywhere in the page body. |
-| `body has X words (target 600–1000)` | Add or trim copy until you're in the band. |
-| `Primary Query density X% (min 1% / max 2%)` | The Primary Query should appear ~6–12 times for 600 words. |
-| `first 100 words missing Primary Query` | The combined hero + first cluster body must contain the Primary Query in its first 100 words. |
+| `invalid JSON — …` | A comma, a brace or a quote is misplaced. The message names the line and column. |
 | `image not found in public/` | The image path you wrote doesn't match a real file. Check spelling, case. |
+
+Everything else the validator prints is **advice**, not a gate. It's the SEO
+checklist from the briefing, and you are not expected to satisfy it — the
+targets are tuned against Google Ads data, so acting on them is Clyde &
+Bonnie's call, not a copy edit:
+
+| Message | What it's telling you |
+| --- | --- |
+| `meta.title is X chars (target 50–60)` | The title is outside the band Google displays in full. |
+| `meta.description is X chars (target 140–160)` | Same logic for the meta description. |
+| `H1 contains none of the Primary Query tokens` | `hero.headline` doesn't include the target search phrase. |
+| `missing converting keywords: …` | A keyword from `meta.convertingKeywords` appears nowhere in the body. |
+| `body has X words (target 600–1000)` | The page is short or long for its purpose. |
+| `Primary Query density X%` | The target phrase appears more or less often than planned. |
+| `first 100 words missing Primary Query` | Hero + first cluster don't open on the target phrase. |
 | `image > 200 KB` | Compress the image (try [squoosh.app](https://squoosh.app)) before uploading. |
 | `smart quote(s) found` | You pasted from Word/Notion. Replace `’` with `'`. |
 
-Errors block the PR; warnings don't but should be fixed before merge.
+If an SEO line bothers you, mention it to Clyde & Bonnie rather than rewriting
+copy to silence it — the checklist and the ad spend are tuned together.
 
 ---
 
@@ -204,10 +215,34 @@ Errors block the PR; warnings don't but should be fixed before merge.
 7. On the next page, give the PR a title (e.g. *"Update Cybersecurity FR
    headline"*) and click "Create pull request".
 8. Wait ~30 seconds for the green/red check to appear.
-9. If green, ping Clyde & Bonnie or merge yourself.
+9. If green, ping Clyde & Bonnie to review and merge. `main` is protected, so
+   nothing reaches the live site without that review.
 10. If red, click "Details" next to the failed check to read the validator
     output, fix the file (the pencil icon works on the PR branch too), and
     commit again.
+
+---
+
+## Editing with Claude instead of by hand
+
+If your Claude account is connected to this repository, you can skip the
+pencil-icon workflow entirely: describe the change in plain language
+("on the French cybersecurity page, make the headline shorter and mention
+Brussels"), and Claude edits the JSON, runs the checks and opens the pull
+request for you.
+
+The rules are the same either way. Claude works on a branch, never on `main`,
+and Clyde & Bonnie still reviews and merges. The repository's `AGENTS.md`
+tells Claude what it may and may not touch — that file is the guardrail, so
+don't edit it without asking.
+
+Two things worth knowing:
+
+- **Ask for one page at a time.** "Update all 30 pages" produces a pull
+  request nobody can review properly.
+- **Claude can be wrong about SEO.** The `"meta"` blocks are tuned against
+  Google Ads data. If Claude offers to "improve" them, say no and ask Clyde &
+  Bonnie.
 
 ---
 
@@ -221,5 +256,6 @@ edit `src/content/_status.json` and commit.
 
 ## Need help
 
-Anything unclear or going wrong → ping Nicolas (Clyde & Bonnie). Don't merge a
-red PR unless you know what you're overriding.
+Anything unclear or going wrong → ping Nicolas (Clyde & Bonnie). A red PR is
+never something to work around: fix the file until the check goes green, or
+ask.
